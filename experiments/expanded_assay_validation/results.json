@@ -1,0 +1,564 @@
+{
+  "bootstrap_iterations": 2000,
+  "conclusion": "The expanded evaluation does not establish reliable generalization: uncertainty includes weak or non-discriminatory performance under the prespecified criteria. The negative or inconclusive result is retained without selecting or modifying a model.",
+  "dataset": {
+    "disagreements": 24,
+    "events": 94,
+    "excluded_compromised_events": 0,
+    "input_events": 94,
+    "natural_product_disagreements": 7,
+    "natural_product_studies": 17,
+    "natural_products": 20,
+    "prevalence": 0.2553191489361702,
+    "studies": 58,
+    "targets": 12
+  },
+  "evaluation_used_for_model_selection": false,
+  "exposure_ledgers": {
+    "development": {
+      "previous_events_sha256": "759ee9123b0ecdddf328afcfdaa3a1c8a69a19651cba0b13368abde2b46f2d77",
+      "previous_specs_sha256": "18705f7a8f7329c25adf710212043c4d167e122a103bbf4ff4319f2a397c2201",
+      "prior_source_records_by_target": {
+        "CHEMBL203": 19378,
+        "CHEMBL220": 7275,
+        "CHEMBL230": 6116,
+        "CHEMBL284": 4709,
+        "CHEMBL335": 3796
+      },
+      "prior_targets": [
+        "CHEMBL203",
+        "CHEMBL220",
+        "CHEMBL230",
+        "CHEMBL284",
+        "CHEMBL335"
+      ],
+      "unique_activities": 41274,
+      "unique_assays": 4415,
+      "unique_documents": 2736,
+      "unique_molecules": 27996
+    },
+    "prior_validation": {
+      "previous_events_sha256": "d0667350270f1190e90dcb50e10c2c2f7cc0fd32c3094e98726f7abf7dcc2228",
+      "previous_specs_sha256": "bf51005506468ea3f95ba7bc7f808ec46dea13906179cfc855f224d46292c5af",
+      "prior_source_records_by_target": {
+        "CHEMBL1824": 3375,
+        "CHEMBL1862": 4158,
+        "CHEMBL1871": 3585,
+        "CHEMBL206": 5935,
+        "CHEMBL279": 13091
+      },
+      "prior_targets": [
+        "CHEMBL1824",
+        "CHEMBL1862",
+        "CHEMBL1871",
+        "CHEMBL206",
+        "CHEMBL279"
+      ],
+      "unique_activities": 30144,
+      "unique_assays": 2802,
+      "unique_documents": 1730,
+      "unique_molecules": 19404
+    }
+  },
+  "feature_contract": {
+    "forbidden_feature_violations": [],
+    "frozen_full_features": [
+      "molecular_weight",
+      "logp",
+      "tpsa",
+      "hbd",
+      "hba",
+      "rotatable_bonds",
+      "fraction_csp3",
+      "ring_count",
+      "heavy_atoms",
+      "formal_charge",
+      "prior_median_pactivity",
+      "prior_distance_to_active_threshold",
+      "prior_measurements",
+      "prior_documents",
+      "prior_assays",
+      "prior_year_span",
+      "prior_mad",
+      "prior_iqr",
+      "prior_range",
+      "prior_standard_deviation",
+      "prior_document_median_range",
+      "prior_document_threshold_disagreement",
+      "prior_records_per_document",
+      "prior_assays_per_document",
+      "prior_journals",
+      "prior_descriptions",
+      "prior_missing_description_fraction",
+      "prior_missing_journal_fraction"
+    ],
+    "unseen_target_encoder_categories": [
+      "CHEMBL1865",
+      "CHEMBL1929",
+      "CHEMBL1951",
+      "CHEMBL1973",
+      "CHEMBL1978",
+      "CHEMBL2039",
+      "CHEMBL205",
+      "CHEMBL228",
+      "CHEMBL235",
+      "CHEMBL289",
+      "CHEMBL3397",
+      "CHEMBL340"
+    ],
+    "uses_only_pre_heldout_information": true
+  },
+  "frozen_full_validation_status": "not_supported_for_reliable_prediction",
+  "frozen_selected_validation_status": "not_supported_for_reliable_prediction",
+  "generated_at": "2026-10-21T11:55:09.789358+00:00",
+  "leakage_audit": {
+    "model_development_and_original_evaluation": {
+      "compromised_events": 0,
+      "ledger_sizes": {
+        "activities": 41274,
+        "assays": 4415,
+        "documents": 2736,
+        "molecules": 27996,
+        "targets": 5
+      },
+      "overlap_counts": {
+        "previous_activity": 0,
+        "previous_assay": 0,
+        "previous_compound": 0,
+        "previous_publication": 0,
+        "previous_target": 0
+      }
+    },
+    "prior_independent_validation": {
+      "compromised_events": 0,
+      "ledger_sizes": {
+        "activities": 30144,
+        "assays": 2802,
+        "documents": 1730,
+        "molecules": 19404,
+        "targets": 5
+      },
+      "overlap_counts": {
+        "previous_activity": 0,
+        "previous_assay": 0,
+        "previous_compound": 0,
+        "previous_publication": 0,
+        "previous_target": 0
+      }
+    },
+    "union": {
+      "compromised_events": 0,
+      "duplicate_compounds": 0,
+      "within_event_assay_overlap": 0,
+      "within_event_publication_overlap": 0
+    }
+  },
+  "metrics": {
+    "natural_products": {
+      "frozen_constant_prevalence": {
+        "point": {
+          "auroc": 0.5,
+          "brier": 0.24053043787824852,
+          "calibration_intercept": null,
+          "calibration_slope": null,
+          "ece_10": 0.11415094339622647,
+          "log_loss": 0.6804406048711116,
+          "n": 20,
+          "positives": 7,
+          "pr_auc": 0.35,
+          "precision_at_10": 0.35,
+          "prevalence": 0.35
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.5,
+            0.5
+          ],
+          "brier": [
+            0.17302519678810174,
+            0.29996440014239667
+          ],
+          "ece_10": [
+            0.013626834381551323,
+            0.22665094339622124
+          ],
+          "log_loss": [
+            0.5302284571739035,
+            0.8126926044740822
+          ],
+          "positives": [
+            4.0,
+            11.0
+          ],
+          "pr_auc": [
+            0.2222222222222222,
+            0.4624999999999948
+          ],
+          "precision_at_10": [
+            0.22222222222222224,
+            0.4624999999999948
+          ],
+          "prevalence": [
+            0.2222222222222222,
+            0.4624999999999948
+          ]
+        }
+      },
+      "frozen_full": {
+        "point": {
+          "auroc": 0.20879120879120877,
+          "brier": 0.34582609279389753,
+          "calibration_intercept": -2.8035294660993237,
+          "calibration_slope": -1.3506642840027123,
+          "ece_10": 0.3593289493531468,
+          "log_loss": 1.0234727544415878,
+          "n": 20,
+          "positives": 7,
+          "pr_auc": 0.26051305137439595,
+          "precision_at_10": 0.1,
+          "prevalence": 0.35
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.10714285714285715,
+            0.3384615384615385
+          ],
+          "brier": [
+            0.24265098781707742,
+            0.44440706214717884
+          ],
+          "calibration_intercept": [
+            -5.075604144086427,
+            -1.6779814388713141
+          ],
+          "calibration_slope": [
+            -2.51978381928344,
+            -0.627377815915854
+          ],
+          "ece_10": [
+            0.2707088902628231,
+            0.49279533523614155
+          ],
+          "log_loss": [
+            0.717726226891265,
+            1.3395146800714681
+          ],
+          "positives": [
+            4.0,
+            11.0
+          ],
+          "pr_auc": [
+            0.17536630036630035,
+            0.3829153154537769
+          ],
+          "precision_at_10": [
+            0.0,
+            0.3
+          ],
+          "prevalence": [
+            0.2222222222222222,
+            0.4583333333333333
+          ]
+        }
+      },
+      "historical_tenfold_fraction": {
+        "point": {
+          "auroc": 0.4065934065934066,
+          "brier": 0.357243289439788,
+          "calibration_intercept": -1.6061481367674555,
+          "calibration_slope": -0.08802813757113506,
+          "ece_10": 0.38232733857808854,
+          "log_loss": 4.324268548694914,
+          "n": 20,
+          "positives": 7,
+          "pr_auc": 0.3357142857142857,
+          "precision_at_10": 0.3,
+          "prevalence": 0.35
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.2692307692307692,
+            0.5538888888888887
+          ],
+          "brier": [
+            0.2252526008187203,
+            0.4901854274579391
+          ],
+          "calibration_intercept": [
+            -13.699015176511926,
+            0.004370551410741123
+          ],
+          "calibration_slope": [
+            -0.981561666348808,
+            0.05558100977448055
+          ],
+          "ece_10": [
+            0.2480126106869982,
+            0.5092437251536341
+          ],
+          "log_loss": [
+            1.9385298054092255,
+            6.364381426790406
+          ],
+          "positives": [
+            4.0,
+            11.0
+          ],
+          "pr_auc": [
+            0.2222222222222222,
+            0.5
+          ],
+          "precision_at_10": [
+            0.16666666666666669,
+            0.4636363636363637
+          ],
+          "prevalence": [
+            0.2222222222222222,
+            0.5
+          ]
+        }
+      }
+    },
+    "overall": {
+      "frozen_constant_prevalence": {
+        "point": {
+          "auroc": 0.5,
+          "brier": 0.19051036561811194,
+          "calibration_intercept": null,
+          "calibration_slope": null,
+          "ece_10": 0.01947009233239666,
+          "log_loss": 0.5691363215173063,
+          "n": 94,
+          "positives": 24,
+          "pr_auc": 0.2553191489361702,
+          "precision_at_10": 0.2553191489361702,
+          "prevalence": 0.2553191489361702
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.5,
+            0.5
+          ],
+          "brier": [
+            0.14286611450686112,
+            0.24956798979729725
+          ],
+          "ece_10": [
+            0.0018065034122841661,
+            0.1312577381001403
+          ],
+          "log_loss": [
+            0.46311869726663585,
+            0.7005508964834691
+          ],
+          "positives": [
+            16.0,
+            32.0
+          ],
+          "pr_auc": [
+            0.16513538790415963,
+            0.3671067947039138
+          ],
+          "precision_at_10": [
+            0.16513538790415963,
+            0.3671067947039138
+          ],
+          "prevalence": [
+            0.16513538790415963,
+            0.3671067947039138
+          ]
+        }
+      },
+      "frozen_full": {
+        "point": {
+          "auroc": 0.3904761904761905,
+          "brier": 0.24448381030555255,
+          "calibration_intercept": -1.3983133923995295,
+          "calibration_slope": -0.30210285196137654,
+          "ece_10": 0.2242275820821493,
+          "log_loss": 0.7127255886249398,
+          "n": 94,
+          "positives": 24,
+          "pr_auc": 0.2251909141121648,
+          "precision_at_10": 0.3,
+          "prevalence": 0.2553191489361702
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.2403670634920635,
+            0.5404080478916179
+          ],
+          "brier": [
+            0.19146074616603484,
+            0.30749957204541406
+          ],
+          "calibration_intercept": [
+            -2.632708375281628,
+            -0.5677646702667147
+          ],
+          "calibration_slope": [
+            -1.0288127122537232,
+            0.2208486539690419
+          ],
+          "ece_10": [
+            0.17411165144668939,
+            0.33139327872224233
+          ],
+          "log_loss": [
+            0.5800726556739062,
+            0.8695723567193451
+          ],
+          "positives": [
+            16.0,
+            33.0
+          ],
+          "pr_auc": [
+            0.13577261425949685,
+            0.39672588544309284
+          ],
+          "precision_at_10": [
+            0.0,
+            0.5
+          ],
+          "prevalence": [
+            0.16666666666666666,
+            0.36363636363636365
+          ]
+        }
+      },
+      "historical_tenfold_fraction": {
+        "point": {
+          "auroc": 0.46934523809523815,
+          "brier": 0.25900234763569835,
+          "calibration_intercept": -2.15471235097081,
+          "calibration_slope": -0.0833363764243813,
+          "ece_10": 0.27017527416555076,
+          "log_loss": 3.427920991453956,
+          "n": 94,
+          "positives": 24,
+          "pr_auc": 0.25063323201621074,
+          "precision_at_10": 0.15348837209302327,
+          "prevalence": 0.2553191489361702
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.41665723981900454,
+            0.5173585746133647
+          ],
+          "brier": [
+            0.17263583155585782,
+            0.36359701610403344
+          ],
+          "calibration_intercept": [
+            -14.945453118108814,
+            -0.6611190376169873
+          ],
+          "calibration_slope": [
+            -1.0101493288482881,
+            0.03862158567474302
+          ],
+          "ece_10": [
+            0.18084903019867177,
+            0.3778611391576254
+          ],
+          "log_loss": [
+            2.250878183742254,
+            4.836195683545624
+          ],
+          "positives": [
+            16.0,
+            33.0
+          ],
+          "pr_auc": [
+            0.16819392230576444,
+            0.35645880848247413
+          ],
+          "precision_at_10": [
+            0.0,
+            0.32667647058823523
+          ],
+          "prevalence": [
+            0.16666666666666666,
+            0.3595734256597856
+          ]
+        }
+      }
+    },
+    "paired_full_minus_baselines": {
+      "frozen_constant_prevalence": {
+        "auroc": {
+          "difference": -0.10952380952380952,
+          "study_clustered_ci95": [
+            -0.2652549617407939,
+            0.04313215994512588
+          ]
+        },
+        "brier": {
+          "difference": 0.053973444687440614,
+          "study_clustered_ci95": [
+            0.015052687108514335,
+            0.09182247574413324
+          ]
+        },
+        "pr_auc": {
+          "difference": -0.030128234824005395,
+          "study_clustered_ci95": [
+            -0.07021866183415065,
+            0.08204255140902546
+          ]
+        },
+        "precision_at_10": {
+          "difference": 0.044680851063829796,
+          "study_clustered_ci95": [
+            -0.26732961086806356,
+            0.2600217391304347
+          ]
+        }
+      },
+      "historical_tenfold_fraction": {
+        "auroc": {
+          "difference": -0.07886904761904767,
+          "study_clustered_ci95": [
+            -0.24498696524064173,
+            0.07866417469998027
+          ]
+        },
+        "brier": {
+          "difference": -0.014518537330145798,
+          "study_clustered_ci95": [
+            -0.08901507121193887,
+            0.046691411141637176
+          ]
+        },
+        "pr_auc": {
+          "difference": -0.02544231790404594,
+          "study_clustered_ci95": [
+            -0.07166240349113502,
+            0.08485721869013255
+          ]
+        },
+        "precision_at_10": {
+          "difference": 0.14651162790697672,
+          "study_clustered_ci95": [
+            -0.2,
+            0.4
+          ]
+        }
+      }
+    }
+  },
+  "model_hashes_after": {
+    "full_model": "0d2d032945eeb29d4c19dd0b910c491d8949d53b2bd79074000f1cd3652de716",
+    "selected_model": "27fc55fa4e6e39273915df6b2b7b57d043ce3c5abdf1c3eccd9f71db4f2a3842"
+  },
+  "model_hashes_before": {
+    "full_model": "0d2d032945eeb29d4c19dd0b910c491d8949d53b2bd79074000f1cd3652de716",
+    "selected_model": "27fc55fa4e6e39273915df6b2b7b57d043ce3c5abdf1c3eccd9f71db4f2a3842"
+  },
+  "models_retrained_recalibrated_or_tuned": false,
+  "precision_k": 10,
+  "protocol_sha256": "5539ae7e3509bed9546ba5be1daf388a7ecdd5670a2692759640c293cc61cd12",
+  "representative_prevalence_claim": false,
+  "seed": 2026,
+  "validation_version": "expanded-frozen-model-validation-v1"
+}

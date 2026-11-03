@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
+<rect width="100%" height="100%" fill="#07131d"/>
+<style>text{font-family:Arial,sans-serif;fill:#dcecf4}.muted{fill:#8da9b8}</style>
+<text x="45" y="45" font-size="23" font-weight="700">Frozen-full calibration</text>
+<line x1="85" y1="535" x2="625" y2="535" stroke="#8da9b8"/>
+<line x1="85" y1="535" x2="85" y2="85" stroke="#8da9b8"/>
+<line x1="85" y1="535" x2="625" y2="85" stroke="#475569" stroke-dasharray="7 7"/>
+<circle cx="149.6" cy="360.8" r="10.6" fill="#2dd4bf" opacity="0.88"/>
+<text x="161.6" y="351.8" font-size="12">n=31</text>
+<circle cx="243.0" cy="463.4" r="11.6" fill="#2dd4bf" opacity="0.88"/>
+<text x="255.0" y="454.4" font-size="12">n=44</text>
+<circle cx="358.7" cy="435.0" r="8.0" fill="#2dd4bf" opacity="0.88"/>
+<text x="370.7" y="426.0" font-size="12">n=9</text>
+<circle cx="448.4" cy="385.0" r="8.0" fill="#2dd4bf" opacity="0.88"/>
+<text x="460.4" y="376.0" font-size="12">n=9</text>
+<circle cx="522.3" cy="535.0" r="6.0" fill="#2dd4bf" opacity="0.88"/>
+<text x="534.3" y="526.0" font-size="12">n=1</text>
+<text x="300" y="585" font-size="14">Mean predicted risk</text>
+<text x="20" y="310" font-size="14" transform="rotate(-90 20 310)">Observed disagreement fraction</text>
+</svg>

@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-10-21T11:55:09.809987+00:00",
+  "inputs": {
+    "assay_disagreement_model.joblib": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\assay_disagreement\\assay_disagreement_model.joblib",
+      "sha256": "0d2d032945eeb29d4c19dd0b910c491d8949d53b2bd79074000f1cd3652de716"
+    },
+    "dataset.csv": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\assay_disagreement_generalization\\dataset.csv",
+      "sha256": "759ee9123b0ecdddf328afcfdaa3a1c8a69a19651cba0b13368abde2b46f2d77"
+    },
+    "expanded_validation_protocol.json": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\expanded_validation_protocol.json",
+      "sha256": "5539ae7e3509bed9546ba5be1daf388a7ecdd5670a2692759640c293cc61cd12"
+    },
+    "expansion_events.csv": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\assay_disagreement_expansion\\expansion_events.csv",
+      "sha256": "73c4bb0ebea618fc488015e68013cac01f70d0e8fb285c44b49e5715de061296"
+    },
+    "independent_dataset.csv": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\independent_assay_validation\\independent_dataset.csv",
+      "sha256": "d0667350270f1190e90dcb50e10c2c2f7cc0fd32c3094e98726f7abf7dcc2228"
+    },
+    "independent_validation_targets.json": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\independent_validation_targets.json",
+      "sha256": "bf51005506468ea3f95ba7bc7f808ec46dea13906179cfc855f224d46292c5af"
+    },
+    "multitarget_targets.json": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\multitarget_targets.json",
+      "sha256": "18705f7a8f7329c25adf710212043c4d167e122a103bbf4ff4319f2a397c2201"
+    },
+    "study_generalized_model.joblib": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\assay_disagreement_generalization\\study_generalized_model.joblib",
+      "sha256": "27fc55fa4e6e39273915df6b2b7b57d043ce3c5abdf1c3eccd9f71db4f2a3842"
+    },
+    "used_measurements.csv": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\assay_disagreement_expansion\\used_measurements.csv",
+      "sha256": "4699dca19c173d732c788634b3a24c811d180da7b9bbdc08981dfd0eeeddc4f5"
+    }
+  },
+  "models_retrained_recalibrated_or_tuned": false,
+  "outputs": {
+    "SCIENTIFIC_REPORT.md": "71b14c741ede23d3bf14f7872b7df7af495e70b41e07c4aff6b187bbef6e09d0",
+    "calibration.svg": "28bee65d02cd6daecf0a1bf91ab55fa829ccdfe7d195c5cce6eed2cdd1b1c80f",
+    "eligible_events.csv": "1b7757fc33644fdda0053b88d38e2e578c92adbdf8af25a6b37750a7757488d9",
+    "frozen_predictions.csv": "f67c36fc844f89f8590d1f9f001f48ae8f3e5d71d8b39d7ea0f19810a005821a",
+    "leakage_exclusions.csv": "c1a93092ec3be7ad96eab00d146e93aa444e4c9bd05e5e55a2c170186bd16578",
+    "metric_summary.csv": "f4d917358615ac6bf1e41a0778e7822c6c232c002a9f3ec8f8b9bcf0e3bc7e66",
+    "model_comparison.svg": "da469521937a628e602c6d658485cd815025596f03536432761990151f997a80",
+    "natural_product_error_analysis.csv": "a581af344ec3127510205ffdf10ab8a16d37d40a55ac294743e1632cc48685d9",
+    "results.json": "8efc3588ef3a69a9bd852841cd21b702e711fde863538ff6baa19382b13f0dff"
+  },
+  "validation_version": "expanded-frozen-model-validation-v1"
+}

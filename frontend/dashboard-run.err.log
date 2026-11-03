@@ -1,0 +1,461 @@
+3:30:42 PM [vite] Internal server error: Failed to resolve import "./data/robust-multitarget-results.json" from "src/RobustExperimentWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/RobustExperimentWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, BarChart3, BookOpen, FlaskConical, Info } from "lucide-react";
+  3  |  import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/robust-multitarget-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/RobustExperimentWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+      at TransformPluginContext._formatLog (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8766:39)
+      at TransformPluginContext.error (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8763:14)
+      at normalizeUrl (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26632:18)
+      at async file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26702:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26668:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8545:14)
+      at async loadAndTransform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:20184:26)
+3:30:42 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/robust-multitarget-results.json" from "src/RobustExperimentWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/RobustExperimentWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, BarChart3, BookOpen, FlaskConical, Info } from "lucide-react";
+  3  |  import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/robust-multitarget-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/RobustExperimentWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+3:30:42 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/robust-multitarget-results.json" from "src/RobustExperimentWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/RobustExperimentWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, BarChart3, BookOpen, FlaskConical, Info } from "lucide-react";
+  3  |  import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/robust-multitarget-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/RobustExperimentWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+3:30:42 PM [vite] (client) [console.error] [vite] Failed to reload /src/ExperimentWorkspace.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] Internal server error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+      at TransformPluginContext._formatLog (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8766:39)
+      at TransformPluginContext.error (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8763:14)
+      at normalizeUrl (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26632:18)
+      at async file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26702:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26668:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8545:14)
+      at async loadAndTransform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:20184:26)
+      at async viteTransformMiddleware (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:20404:20)
+4:19:18 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:18 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:23 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+4:19:23 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:19:23 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] Internal server error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+      at TransformPluginContext._formatLog (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8766:39)
+      at TransformPluginContext.error (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8763:14)
+      at normalizeUrl (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26632:18)
+      at async file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26702:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:26668:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:8545:14)
+      at async loadAndTransform (file:///C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/node_modules/vite/dist/node/chunks/node.js:20184:26)
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";
+4:20:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./data/evidence-intelligence-results.json" from "src/StudyPlannerWorkspace.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx:4:23
+  2  |  import { AlertTriangle, Beaker, BrainCircuit, CheckCircle2, FlaskConical, ShieldCheck, Target } from "lucide-react";
+  3  |  import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+  4  |  import rawResults from "./data/evidence-intelligence-results.json";
+     |                          ^
+  5  |  var _jsxFileName = "C:/Users/erand.kurtaliqi/Desktop/Ethon/frontend/src/StudyPlannerWorkspace.tsx";
+  6  |  import { jsxDEV as _jsxDEV, Fragment as _Fragment } from "react/jsx-dev-runtime";

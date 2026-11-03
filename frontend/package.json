@@ -1,0 +1,38 @@
+{
+  "name": "phytotruth-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync:artifacts": "node scripts/sync-scientific-artifacts.mjs",
+    "predev": "npm run sync:artifacts",
+    "prebuild": "npm run sync:artifacts",
+    "pretest": "npm run sync:artifacts",
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "recharts": "latest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "3.4.17",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "jsdom": "latest"
+  }
+}
+

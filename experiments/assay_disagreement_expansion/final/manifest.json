@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-21T11:38:01.964730+00:00",
+  "extraction_version": "assay-protocol-rules-v1",
+  "inputs": {
+    "assays.raw.jsonl": "30ae5408c43e4d3c14679506bbe4327b2c1a0ea12348e90b0c5d6c877ea5a632",
+    "expansion_events.csv": "73c4bb0ebea618fc488015e68013cac01f70d0e8fb285c44b49e5715de061296",
+    "used_measurements.csv": "4699dca19c173d732c788634b3a24c811d180da7b9bbdc08981dfd0eeeddc4f5"
+  },
+  "label_quarantine": "not available to model development",
+  "no_model_training_or_evaluation": true,
+  "outputs": {
+    "SCIENTIFIC_REPORT.md": "2138d04d0a76df54c2398830f4702926927724905b75a01b3868ccba3bc95d7c",
+    "assay_protocol_features.csv": "fd9a864d7ec58a8bc271599e96cb5efc203b5b2d34e2aa9f6a532a6901ef8d59",
+    "coverage_statistics.json": "6fdb1c5b2fb4ba844cabd20b05875424254332b6c92d55c22c1528f4dadd8694",
+    "disagreement_case_studies.csv": "082ffb08e22b793315fb6c0d43386418ab04ae0fa7b0656f4a951648e052efd8",
+    "disagreement_case_studies.json": "9677ca3f1af866d044352891b8c69839047766ebee771fbe5463635788b070fa",
+    "enriched_expansion_events.csv": "61bc9a3b888dcb40b73f221a0fb45c3b25f0deada8db5a04f12736be71d958b0"
+  },
+  "version": "assay-disagreement-dataset-expansion-v1"
+}

@@ -1,0 +1,1224 @@
+[
+  {
+    "expansion_event_id": "ADE-acbb1cad209dbe94",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL320497",
+    "canonical_smiles": "O=C(CCCCCCC(=O)NO)NO",
+    "verified_natural_product": true,
+    "natural_product_sources": "COCONUT",
+    "prior_median_pchembl": 5.692503962086787,
+    "independent_median_pchembl": 7.181444220702198,
+    "signed_shift_pchembl": 1.4889402586154104,
+    "absolute_shift_pchembl": 1.4889402586154104,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 16410038,
+        "assay_chembl_id": "CHEMBL3744284",
+        "document_chembl_id": "CHEMBL3739297",
+        "document_year": 2016,
+        "pchembl": 5.692503962086787,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of HDAC6 (unknown origin) by fluorimetric assay"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 23140980,
+        "assay_chembl_id": "CHEMBL4808152",
+        "document_chembl_id": "CHEMBL4808148",
+        "document_year": 2021,
+        "pchembl": 7.181444220702198,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Determination of IC50 values for inhibition of enzymatic assay of human HDAC6 with custom peptide substrate"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-7f211d477f65226b",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL3693786",
+    "canonical_smiles": "O=C(CCCCCCNC(=O)c1cnc(N(c2ccccc2)c2ccccc2Cl)nc1)NO",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 8.397940008672037,
+    "independent_median_pchembl": 5.657577319177793,
+    "signed_shift_pchembl": -2.740362689494244,
+    "absolute_shift_pchembl": 2.740362689494244,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 17618827,
+        "assay_chembl_id": "CHEMBL3705705",
+        "document_chembl_id": "CHEMBL3639257",
+        "document_year": 2013,
+        "pchembl": 8.397940008672037,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Enzyme Assays: Compounds for testing were diluted in DMSO to 50 fold the final concentration and a ten point three fold dilution series was made. The compounds were diluted in assay buffer (50 mM HEPES, pH 7.4, 100 mM KCl, 0.001% Tween-20, 0.05% BSA, 20 uM TCEP) to 6 fold their final concentration. The HDAC enzymes (purchased from BPS Biosciences) were diluted to 1.5 fold their final concentration in assay buffer. The tripeptide substrate and trypsin at 0.05 uM final concentration were diluted in assay buffer at 6 fold their final concentration. The final enzyme concentrations used in these assays were 3.3 ng/ml (HDAC1), 0.2 ng/ml (HDAC2), 0.08 ng/ml (HDAC3) and 2 ng/ml (HDAC6). The final substrate concentrations used were 16 uM (HDAC1), 10 uM (HDAC2), 17 uM (HDAC3) and 14 uM (HDAC6)."
+      },
+      {
+        "activity_id": 17619009,
+        "assay_chembl_id": "CHEMBL3705705",
+        "document_chembl_id": "CHEMBL3639257",
+        "document_year": 2013,
+        "pchembl": 7.119186407719209,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Enzyme Assays: Compounds for testing were diluted in DMSO to 50 fold the final concentration and a ten point three fold dilution series was made. The compounds were diluted in assay buffer (50 mM HEPES, pH 7.4, 100 mM KCl, 0.001% Tween-20, 0.05% BSA, 20 uM TCEP) to 6 fold their final concentration. The HDAC enzymes (purchased from BPS Biosciences) were diluted to 1.5 fold their final concentration in assay buffer. The tripeptide substrate and trypsin at 0.05 uM final concentration were diluted in assay buffer at 6 fold their final concentration. The final enzyme concentrations used in these assays were 3.3 ng/ml (HDAC1), 0.2 ng/ml (HDAC2), 0.08 ng/ml (HDAC3) and 2 ng/ml (HDAC6). The final substrate concentrations used were 16 uM (HDAC1), 10 uM (HDAC2), 17 uM (HDAC3) and 14 uM (HDAC6)."
+      },
+      {
+        "activity_id": 26580705,
+        "assay_chembl_id": "CHEMBL5729872",
+        "document_chembl_id": "CHEMBL3639257",
+        "document_year": 2013,
+        "pchembl": 8.397940008672037,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Enzyme Assays: Compounds for testing were diluted in DMSO to 50 fold the final concentration and a ten point three fold dilution series was made. The compounds were diluted in assay buffer (50 mM HEPES, pH 7.4, 100 mM KCl, 0.001% Tween-20, 0.05% BSA, 20 uM TCEP) to 6 fold their final concentration. The HDAC enzymes (purchased from BPS Biosciences) were diluted to 1.5 fold their final concentration in assay buffer. The tripeptide substrate and trypsin at 0.05 uM final concentration were diluted in assay buffer at 6 fold their final concentration. The final enzyme concentrations used in these assays were 3.3 ng/ml (HDAC1), 0.2 ng/ml (HDAC2), 0.08 ng/ml (HDAC3) and 2 ng/ml (HDAC6). The final substrate concentrations used were 16 uM (HDAC1), 10 uM (HDAC2), 17 uM (HDAC3) and 14 uM (HDAC6)."
+      },
+      {
+        "activity_id": 26581251,
+        "assay_chembl_id": "CHEMBL5729872",
+        "document_chembl_id": "CHEMBL3639257",
+        "document_year": 2013,
+        "pchembl": 7.119186407719209,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Enzyme Assays: Compounds for testing were diluted in DMSO to 50 fold the final concentration and a ten point three fold dilution series was made. The compounds were diluted in assay buffer (50 mM HEPES, pH 7.4, 100 mM KCl, 0.001% Tween-20, 0.05% BSA, 20 uM TCEP) to 6 fold their final concentration. The HDAC enzymes (purchased from BPS Biosciences) were diluted to 1.5 fold their final concentration in assay buffer. The tripeptide substrate and trypsin at 0.05 uM final concentration were diluted in assay buffer at 6 fold their final concentration. The final enzyme concentrations used in these assays were 3.3 ng/ml (HDAC1), 0.2 ng/ml (HDAC2), 0.08 ng/ml (HDAC3) and 2 ng/ml (HDAC6). The final substrate concentrations used were 16 uM (HDAC1), 10 uM (HDAC2), 17 uM (HDAC3) and 14 uM (HDAC6)."
+      },
+      {
+        "activity_id": 22974807,
+        "assay_chembl_id": "CHEMBL4771379",
+        "document_chembl_id": "CHEMBL4765362",
+        "document_year": 2020,
+        "pchembl": 8.522878745280337,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of HDAC6 (unknown origin) using FTS as substrate preincubated for 10 mins followed by substrate addition and shaken for 60 secs and measured over 30 mins"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 24396309,
+        "assay_chembl_id": "CHEMBL5042562",
+        "document_chembl_id": "CHEMBL5042469",
+        "document_year": 2021,
+        "pchembl": 5.657577319177793,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of full length human HDAC6 using FAM-labeled acetylated peptide as substrate by electrophoretic mobility shift assay"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-7f1a2f5ef5935b52",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL5752411",
+    "canonical_smiles": "CN(Cc1ccc(/C=C/C(=O)NO)cc1F)CC12CC3CC(CC(C3)C1)C2",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 7.931814138253839,
+    "independent_median_pchembl": 6.7447274948966935,
+    "signed_shift_pchembl": -1.1870866433571452,
+    "absolute_shift_pchembl": 1.1870866433571452,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "documented_protocol_difference_possible_explanation",
+    "documented_differences": [
+      "endpoint"
+    ],
+    "historical_measurements": [
+      {
+        "activity_id": 27196520,
+        "assay_chembl_id": "CHEMBL5732285",
+        "document_chembl_id": "CHEMBL5726205",
+        "document_year": 2019,
+        "pchembl": 7.931814138253839,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "HDAC Inhibition Assay: All histone deacetylases were purchased from BPS Bioscience. The substrates, Broad Substrate A, and Broad Substrate B, were synthesized and are now available commercially through Perkin Elmer. All the other reagents were purchased from Sigma-Aldrich. Caliper EZ reader II system was used to collect all data. HDAC inhibition assays: Compounds were tested in duplicate in a 12-point dose curve with 3-fold serial dilution starting from 33.33 μM. Purified HDACs were incubated with 2 μM carboxyfluorescein (FAM)-labeled acetylated or trifluoroacetylated peptide substrate (Broad Substrate A and B respectively) and test compound for 60 minutes at room temperature, in HDAC assay buffer that contained 50 mM HEPES (pH 7.4), 100 mM KCl, 0.01% BSA and 0.001% Tween-20. Reactions were terminated by the addition of the known pan HDAC inhibitor LBH-589 (panobinostat) with a final concentration of 1.5 μM. Substrate and product were separated electrophoretically and fluorescence intensity in the substrate and product peaks was determined and analyzed by Labchip EZ Reader. The reactions were performed in duplicate for each sample. IC50 values were automatically calculated by Origin 8 using 4 Parameter Logistic Model. The percent inhibition was plotted against the compound concentration, and the IC50 value was determined from the logistic dose-response curve fitting by Origin 8.0 software."
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 28576172,
+        "assay_chembl_id": "CHEMBL5737690",
+        "document_chembl_id": "CHEMBL5728890",
+        "document_year": 2021,
+        "pchembl": 6.7447274948966935,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "IC50 Assay: IC50 measurements were conducted by BPS Biosciences (Table 1) or by Nanosyn (Table 1A) with an established fluorescence assay."
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-31ac1aad140447ba",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL609583",
+    "canonical_smiles": "O=C(NO)c1cnc(N2CCN(S(=O)(=O)c3ccc4ccccc4c3)CC2)nc1",
+    "verified_natural_product": true,
+    "natural_product_sources": "COCONUT",
+    "prior_median_pchembl": 7.180456064458132,
+    "independent_median_pchembl": 4.984640244590786,
+    "signed_shift_pchembl": -2.195815819867346,
+    "absolute_shift_pchembl": 2.195815819867346,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 3079143,
+        "assay_chembl_id": "CHEMBL1068535",
+        "document_chembl_id": "CHEMBL1153112",
+        "document_year": 2010,
+        "pchembl": 7.180456064458132,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human HDAC6"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 23141111,
+        "assay_chembl_id": "CHEMBL4808152",
+        "document_chembl_id": "CHEMBL4808148",
+        "document_year": 2021,
+        "pchembl": 4.984640244590786,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Determination of IC50 values for inhibition of enzymatic assay of human HDAC6 with custom peptide substrate"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-d41b04101dcea093",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL3110004",
+    "canonical_smiles": "O=C(NCC1(c2nc(-c3ccccc3)cs2)CCOCC1)c1cccc(-c2noc(C(F)(F)F)n2)c1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 5.844441078668747,
+    "independent_median_pchembl": 4.684674212158379,
+    "signed_shift_pchembl": -1.1597668665103678,
+    "absolute_shift_pchembl": 1.1597668665103678,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unexplained_with_partial_documented_similarity",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 13897054,
+        "assay_chembl_id": "CHEMBL3112169",
+        "document_chembl_id": "CHEMBL3108758",
+        "document_year": 2013,
+        "pchembl": 5.638272163982407,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human recombinant full length HDAC6 after 60 mins by fluorescence assay"
+      },
+      {
+        "activity_id": 23249645,
+        "assay_chembl_id": "CHEMBL4830769",
+        "document_chembl_id": "CHEMBL4828751",
+        "document_year": 2021,
+        "pchembl": 6.050609993355087,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of HDAC6 (unknown origin)"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 26160536,
+        "assay_chembl_id": "CHEMBL5628524",
+        "document_chembl_id": "CHEMBL5625236",
+        "document_year": 2023,
+        "pchembl": 4.283162276700476,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant HDAC6 (unknown origin) using RHKK-Ac-AMC as substrate"
+      },
+      {
+        "activity_id": 26160678,
+        "assay_chembl_id": "CHEMBL5628554",
+        "document_chembl_id": "CHEMBL5625236",
+        "document_year": 2023,
+        "pchembl": 5.086186147616283,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant HDAC6 (unknown origin) using (Arg-His-Lys-Lys(Ac)) as substrate"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-98fd867055b03b51",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL4283263",
+    "canonical_smiles": "Nc1ccccc1NC(=O)c1cnccn1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 5.466609291982449,
+    "independent_median_pchembl": 4.4665838582041095,
+    "signed_shift_pchembl": -1.0000254337783394,
+    "absolute_shift_pchembl": 1.0000254337783394,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 24732863,
+        "assay_chembl_id": "CHEMBL5116093",
+        "document_chembl_id": "CHEMBL5113420",
+        "document_year": 2022,
+        "pchembl": 5.466609291982449,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human HDAC6 using fluorescent as substrate measured for 10 mins by fluorescence based microtiter plate assay"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 25637049,
+        "assay_chembl_id": "CHEMBL5367300",
+        "document_chembl_id": "CHEMBL5365457",
+        "document_year": 2023,
+        "pchembl": 4.4665838582041095,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of HDAC6 (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-747215c7201b70dd",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL4589724",
+    "canonical_smiles": "Nc1ccccc1NC(=O)c1cnc(NCc2ccccc2)cn1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 5.42969061456412,
+    "independent_median_pchembl": 4.429667253466677,
+    "signed_shift_pchembl": -1.0000233610974432,
+    "absolute_shift_pchembl": 1.0000233610974432,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unexplained_with_partial_documented_similarity",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 24732864,
+        "assay_chembl_id": "CHEMBL5116093",
+        "document_chembl_id": "CHEMBL5113420",
+        "document_year": 2022,
+        "pchembl": 5.42969061456412,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human HDAC6 using fluorescent as substrate measured for 10 mins by fluorescence based microtiter plate assay"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 25637051,
+        "assay_chembl_id": "CHEMBL5367302",
+        "document_chembl_id": "CHEMBL5365457",
+        "document_year": 2023,
+        "pchembl": 4.429667253466677,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human recombinant HDAC6 incubated for 15 mins by fluorescence based microplate analysis"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-c6fc6b653e6e426d",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL3426805",
+    "canonical_smiles": "Cn1c(/C=C/C(=O)NO)ccc1/C=C/C(=O)c1cccc(F)c1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 6.115204636051019,
+    "independent_median_pchembl": 5.075720713938118,
+    "signed_shift_pchembl": -1.0394839221129013,
+    "absolute_shift_pchembl": 1.0394839221129013,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 23141026,
+        "assay_chembl_id": "CHEMBL4808152",
+        "document_chembl_id": "CHEMBL4808148",
+        "document_year": 2021,
+        "pchembl": 6.115204636051019,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Determination of IC50 values for inhibition of enzymatic assay of human HDAC6 with custom peptide substrate"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 29054868,
+        "assay_chembl_id": "CHEMBL6071332",
+        "document_chembl_id": "CHEMBL6071125",
+        "document_year": 2024,
+        "pchembl": 5.075720713938118,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human recombinant HDAC6 using AMC-K(Ac)GL as substrate by fluorescence based assay"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-c2019a92434a9ebd",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL4104247",
+    "canonical_smiles": "O=C(NO)c1ccc(CN2c3ccccc3S(=O)(=O)C[C@H]3CCCC[C@H]32)cc1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 8.096910013008056,
+    "independent_median_pchembl": 7.0,
+    "signed_shift_pchembl": -1.0969100130080562,
+    "absolute_shift_pchembl": 1.0969100130080562,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 18157096,
+        "assay_chembl_id": "CHEMBL4035206",
+        "document_chembl_id": "CHEMBL4033665",
+        "document_year": 2017,
+        "pchembl": 8.096910013008056,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of HDAC6 (unknown origin)"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 29077470,
+        "assay_chembl_id": "CHEMBL6078835",
+        "document_chembl_id": "CHEMBL6078616",
+        "document_year": 2024,
+        "pchembl": 7.0,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of HDAC6 (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-b366bf4c4fa04df8",
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "molecule_id": "CHEMBL4577299",
+    "canonical_smiles": "O=C(NO)c1ccc(Cn2c3c(c4ccccc42)CS(=O)(=O)CC3)cc1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 8.721246399047171,
+    "independent_median_pchembl": 7.721246399047171,
+    "signed_shift_pchembl": -1.0,
+    "absolute_shift_pchembl": 1.0,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 19361554,
+        "assay_chembl_id": "CHEMBL4422771",
+        "document_chembl_id": "CHEMBL4422610",
+        "document_year": 2018,
+        "pchembl": 8.721246399047171,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human HDAC6 using fluorogenic HDAC substrate"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 29278039,
+        "assay_chembl_id": "CHEMBL6155529",
+        "document_chembl_id": "CHEMBL6153073",
+        "document_year": 2025,
+        "pchembl": 7.721246399047171,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of HDAC6 deacetylase domain 2 (unknown origin) using fluorogenic HDAC substrate incubated for 15 to 60 mins by fluorimetric analysis"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-e668a22000eceda9",
+    "target_chembl_id": "CHEMBL1929",
+    "target_name": "Xanthine dehydrogenase/oxidase",
+    "molecule_id": "CHEMBL5395750",
+    "canonical_smiles": "CSc1nc(O)c(C(=O)Nc2ccc(-c3cnn[nH]3)cn2)c(=O)[nH]1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 10.69897000433602,
+    "independent_median_pchembl": 7.602059991327962,
+    "signed_shift_pchembl": -3.096910013008056,
+    "absolute_shift_pchembl": 3.096910013008056,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 28358885,
+        "assay_chembl_id": "CHEMBL5736861",
+        "document_chembl_id": "CHEMBL5728487",
+        "document_year": 2021,
+        "pchembl": 10.69897000433602,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "xanthine oxidase activity assay: Xanthine oxidase inhibition was determined using a standard fluorescence-based assay for xanthine oxidase activity (McHale A, Grimes H, Coughlan M P: Int J Biochem. 10:317-9, 1979) with minor variations. The procedure was internally standardized using allopurinol and DPI as controls for all experiments after determination of their optimal inhibitory concentrations. Experiments on test compounds were performed in triplicate in multi-well plates using 10 concentrations of each compound that ranged over a 3-fold dilution."
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 25597597,
+        "assay_chembl_id": "CHEMBL5357575",
+        "document_chembl_id": "CHEMBL5356950",
+        "document_year": 2023,
+        "pchembl": 7.602059991327962,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of XO (unknown origin)"
+      },
+      {
+        "activity_id": 25597689,
+        "assay_chembl_id": "CHEMBL5357614",
+        "document_chembl_id": "CHEMBL5356950",
+        "document_year": 2023,
+        "pchembl": 7.602059991327962,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of XO (unknown origin) assessed as decrease in uric acid level"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-4b8f391e913f1180",
+    "target_chembl_id": "CHEMBL1929",
+    "target_name": "Xanthine dehydrogenase/oxidase",
+    "molecule_id": "CHEMBL5397864",
+    "canonical_smiles": "CSc1nc(O)c(C(=O)Nc2ccc(-c3cnn[nH]3)cc2)c(=O)[nH]1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 7.451544993495972,
+    "independent_median_pchembl": 5.619788758288394,
+    "signed_shift_pchembl": -1.8317562352075785,
+    "absolute_shift_pchembl": 1.8317562352075785,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 28531367,
+        "assay_chembl_id": "CHEMBL5737503",
+        "document_chembl_id": "CHEMBL5728809",
+        "document_year": 2021,
+        "pchembl": 7.301029995663981,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Bioactivity Assay: Xanthine oxidase inhibition was determined using a standard fluorescence-based assay for xanthine oxidase activity (McHale A, Grimes H, Coughlan M P: Int J Biochem. 10:317-9, 1979) with minor variations. The procedure was internally standardized using allopurinol and DPI as controls for all experiments after determination of their optimal inhibitory concentrations. Experiments on test compounds were performed in triplicate in multi-well plates using 10 concentrations of each compound that ranged over a 3-fold dilution."
+      },
+      {
+        "activity_id": 28531373,
+        "assay_chembl_id": "CHEMBL5737503",
+        "document_chembl_id": "CHEMBL5728809",
+        "document_year": 2021,
+        "pchembl": 7.602059991327962,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Bioactivity Assay: Xanthine oxidase inhibition was determined using a standard fluorescence-based assay for xanthine oxidase activity (McHale A, Grimes H, Coughlan M P: Int J Biochem. 10:317-9, 1979) with minor variations. The procedure was internally standardized using allopurinol and DPI as controls for all experiments after determination of their optimal inhibitory concentrations. Experiments on test compounds were performed in triplicate in multi-well plates using 10 concentrations of each compound that ranged over a 3-fold dilution."
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 25597688,
+        "assay_chembl_id": "CHEMBL5357614",
+        "document_chembl_id": "CHEMBL5356950",
+        "document_year": 2023,
+        "pchembl": 5.619788758288394,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of XO (unknown origin) assessed as decrease in uric acid level"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-d6b6c5c2cc715415",
+    "target_chembl_id": "CHEMBL1951",
+    "target_name": "Amine oxidase [flavin-containing] A",
+    "molecule_id": "CHEMBL1256153",
+    "canonical_smiles": "c1ccc(Cc2nc3ccccc3n3cnnc23)cc1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 7.060480747381382,
+    "independent_median_pchembl": 9.154901959985745,
+    "signed_shift_pchembl": 2.0944212126043613,
+    "absolute_shift_pchembl": 2.0944212126043613,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 3513487,
+        "assay_chembl_id": "CHEMBL1261743",
+        "document_chembl_id": "CHEMBL1255505",
+        "document_year": 2010,
+        "pchembl": 7.060480747381382,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of MAOA by spectrophotometry"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 23231083,
+        "assay_chembl_id": "CHEMBL4826791",
+        "document_chembl_id": "CHEMBL4825689",
+        "document_year": 2021,
+        "pchembl": 9.154901959985745,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of MAO-A (unknown origin) by multi-well spectrophotometry"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-885b8e1de09a6c07",
+    "target_chembl_id": "CHEMBL1951",
+    "target_name": "Amine oxidase [flavin-containing] A",
+    "molecule_id": "CHEMBL257990",
+    "canonical_smiles": "N[C@H]1C[C@@H]1c1ccccc1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 5.468521082957745,
+    "independent_median_pchembl": 6.570086302236246,
+    "signed_shift_pchembl": 1.101565219278501,
+    "absolute_shift_pchembl": 1.101565219278501,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 18694305,
+        "assay_chembl_id": "CHEMBL4253675",
+        "document_chembl_id": "CHEMBL4251603",
+        "document_year": 2018,
+        "pchembl": 5.468521082957745,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of MAO-A (unknown origin) using beetle luciferin derived luminogenic substrate preincubated for 15 mins followed by substrate addition measured after 60 mins by MAO-Glo assay"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 24775779,
+        "assay_chembl_id": "CHEMBL5127904",
+        "document_chembl_id": "CHEMBL5126529",
+        "document_year": 2022,
+        "pchembl": 6.570086302236246,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of MAO-A (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-dfde35e5af8db3a5",
+    "target_chembl_id": "CHEMBL1951",
+    "target_name": "Amine oxidase [flavin-containing] A",
+    "molecule_id": "CHEMBL3906257",
+    "canonical_smiles": "NC1CCC(N[C@@H]2C[C@H]2c2ccccc2)CC1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 4.316052869248487,
+    "independent_median_pchembl": 6.292429823902063,
+    "signed_shift_pchembl": 1.976376954653576,
+    "absolute_shift_pchembl": 1.976376954653576,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 18036648,
+        "assay_chembl_id": "CHEMBL4008773",
+        "document_chembl_id": "CHEMBL4007415",
+        "document_year": 2017,
+        "pchembl": 4.316052869248487,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human MAOA incubated for 15 mins measured after 30 mins by luminescence-Glo assay"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 26050786,
+        "assay_chembl_id": "CHEMBL5588909",
+        "document_chembl_id": "CHEMBL5584353",
+        "document_year": 2024,
+        "pchembl": 6.292429823902063,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of MAO-A (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-1071b5b258f0e486",
+    "target_chembl_id": "CHEMBL1951",
+    "target_name": "Amine oxidase [flavin-containing] A",
+    "molecule_id": "CHEMBL426110",
+    "canonical_smiles": "O=C1/C(=C/c2ccc(O)cc2)Oc2cc(O)ccc21",
+    "verified_natural_product": true,
+    "natural_product_sources": "NPASS",
+    "prior_median_pchembl": 6.585026652029182,
+    "independent_median_pchembl": 5.277366077466188,
+    "signed_shift_pchembl": -1.307660574562994,
+    "absolute_shift_pchembl": 1.307660574562994,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "documented_protocol_difference_possible_explanation",
+    "documented_differences": [
+      "duration"
+    ],
+    "historical_measurements": [
+      {
+        "activity_id": 18493998,
+        "assay_chembl_id": "CHEMBL4187838",
+        "document_chembl_id": "CHEMBL4184231",
+        "document_year": 2018,
+        "pchembl": 6.585026652029182,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human recombinant MAOA using kynuramine as substrate preincubated for 30 mins followed by substrate addition"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 26011366,
+        "assay_chembl_id": "CHEMBL5577662",
+        "document_chembl_id": "CHEMBL5576105",
+        "document_year": 2024,
+        "pchembl": 5.277366077466188,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human recombinant MAO-A using p-tyramine as substrate preincubated with enzyme for 15 mins followed by substrate addition and measured after 20 mins by Amplex Red reagent based fluorescence analysis"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-b5bbb0ec7d1100c8",
+    "target_chembl_id": "CHEMBL1978",
+    "target_name": "Aromatase",
+    "molecule_id": "CHEMBL1200374",
+    "canonical_smiles": "C=C1C[C@@H]2[C@H](CC[C@]3(C)C(=O)CC[C@@H]23)[C@@]2(C)C=CC(=O)C=C12",
+    "verified_natural_product": true,
+    "natural_product_sources": "COCONUT",
+    "prior_median_pchembl": 6.638272163982407,
+    "independent_median_pchembl": 7.638272163982407,
+    "signed_shift_pchembl": 1.0,
+    "absolute_shift_pchembl": 1.0,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 16432446,
+        "assay_chembl_id": "CHEMBL3756944",
+        "document_chembl_id": "CHEMBL3751755",
+        "document_year": 2015,
+        "pchembl": 6.638272163982407,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of aromatase (unknown origin)"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 23277440,
+        "assay_chembl_id": "CHEMBL4836470",
+        "document_chembl_id": "CHEMBL4834458",
+        "document_year": 2021,
+        "pchembl": 7.638272163982407,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of aromatase (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-f7302392d18bb303",
+    "target_chembl_id": "CHEMBL1978",
+    "target_name": "Aromatase",
+    "molecule_id": "CHEMBL1444",
+    "canonical_smiles": "N#Cc1ccc(C(c2ccc(C#N)cc2)n2cncn2)cc1",
+    "verified_natural_product": true,
+    "natural_product_sources": "COCONUT;NPASS",
+    "prior_median_pchembl": 8.397940008672037,
+    "independent_median_pchembl": 6.554395796726403,
+    "signed_shift_pchembl": -1.843544211945635,
+    "absolute_shift_pchembl": 1.843544211945635,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "documented_protocol_difference_possible_explanation",
+    "documented_differences": [
+      "duration"
+    ],
+    "historical_measurements": [
+      {
+        "activity_id": 2247780,
+        "assay_chembl_id": "CHEMBL1011777",
+        "document_chembl_id": "CHEMBL1139349",
+        "document_year": 2009,
+        "pchembl": 8.214670164989233,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human aromatase-mediated conversion of [1beta3H]androstenedione to estrone by liquid scintillation counting in presence of NADPH"
+      },
+      {
+        "activity_id": 6222867,
+        "assay_chembl_id": "CHEMBL1785943",
+        "document_chembl_id": "CHEMBL1781936",
+        "document_year": 2011,
+        "pchembl": 8.3767507096021,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human recombinant aromatase using 7-methoxy-4-trifluoromethyl coumarin as substrate by fluorimetric analysis"
+      },
+      {
+        "activity_id": 6354694,
+        "assay_chembl_id": "CHEMBL1828368",
+        "document_chembl_id": "CHEMBL1821589",
+        "document_year": 2011,
+        "pchembl": 8.096910013008056,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of aromatase using 7-methoxy-4-trifluoromethyl coumarin as substrate after 30 mins by fluorescence-based colorimetric analysis"
+      },
+      {
+        "activity_id": 8055533,
+        "assay_chembl_id": "CHEMBL1958525",
+        "document_chembl_id": "CHEMBL1955805",
+        "document_year": 2012,
+        "pchembl": 9.0,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human aromatase coexpressed with P450 reductase by fluorimetry"
+      },
+      {
+        "activity_id": 8060182,
+        "assay_chembl_id": "CHEMBL1961307",
+        "document_chembl_id": "CHEMBL1955720",
+        "document_year": 2012,
+        "pchembl": 8.698970004336019,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human aromatase using dibenzylfluorescein substrate preincubated for 30 mins measured after 30 mins by fluorescence assay"
+      },
+      {
+        "activity_id": 13510532,
+        "assay_chembl_id": "CHEMBL2444880",
+        "document_chembl_id": "CHEMBL2440047",
+        "document_year": 2013,
+        "pchembl": 8.468521082957745,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of aromatase (unknown origin) using 7-methoxy-4-trifluoromethylcoumarin as substrate after 30 mins by fluorimetric analysis"
+      },
+      {
+        "activity_id": 15236575,
+        "assay_chembl_id": "CHEMBL3425269",
+        "document_chembl_id": "CHEMBL3421623",
+        "document_year": 2015,
+        "pchembl": 8.275724130399212,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human recombinant aromatase using 7-methoxy-trifluoromethylcoumarin as substrate assessed as formation of fluorescent metabolite after 30 mins by fluorescence assay"
+      },
+      {
+        "activity_id": 16587929,
+        "assay_chembl_id": "CHEMBL3806799",
+        "document_chembl_id": "CHEMBL3804764",
+        "document_year": 2016,
+        "pchembl": 8.397940008672037,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human aromatase using 7-methoxy-4-trifluoromethyl coumarin as substrate measured at anoxic conditions by fluorescence analysis"
+      },
+      {
+        "activity_id": 19480222,
+        "assay_chembl_id": "CHEMBL4480339",
+        "document_chembl_id": "CHEMBL4477276",
+        "document_year": 2016,
+        "pchembl": 8.661543506395395,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human aromatase using 7-methoxy-trifluoromethylcoumarin as substrate incubated for 30 mins by fluorescence microplate reader analysis"
+      },
+      {
+        "activity_id": 19480249,
+        "assay_chembl_id": "CHEMBL4480339",
+        "document_chembl_id": "CHEMBL4477276",
+        "document_year": 2016,
+        "pchembl": 8.661942124580245,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human aromatase using 7-methoxy-trifluoromethylcoumarin as substrate incubated for 30 mins by fluorescence microplate reader analysis"
+      },
+      {
+        "activity_id": 18364270,
+        "assay_chembl_id": "CHEMBL4142230",
+        "document_chembl_id": "CHEMBL4138181",
+        "document_year": 2018,
+        "pchembl": 8.721246399047171,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of aromatase (unknown origin) using O-benzyl fluorescein benzyl ester as substrate in presence of NADPH-generating system by fluorescence assay"
+      },
+      {
+        "activity_id": 18368644,
+        "assay_chembl_id": "CHEMBL4143196",
+        "document_chembl_id": "CHEMBL4138218",
+        "document_year": 2018,
+        "pchembl": 7.305394801066432,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human aromatase using androstenedione as substrate and NADPH preincubated for 24 hrs followed by substrate addition measured after 24 hrs by ELISA"
+      },
+      {
+        "activity_id": 24886567,
+        "assay_chembl_id": "CHEMBL5157477",
+        "document_chembl_id": "CHEMBL5154692",
+        "document_year": 2022,
+        "pchembl": 7.585026652029182,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of aromatase (unknown origin)"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 25892891,
+        "assay_chembl_id": "CHEMBL5519992",
+        "document_chembl_id": "CHEMBL5518192",
+        "document_year": 2024,
+        "pchembl": 6.554395796726403,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of human aromatase preincubated for 10 mins followed by NADP+/fluorogenic substrate mixture addition and measured for 60 mins by fluorimetric assay"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-04d55e72c3a44e0d",
+    "target_chembl_id": "CHEMBL205",
+    "target_name": "Carbonic anhydrase 2",
+    "molecule_id": "CHEMBL414",
+    "canonical_smiles": "NS(=O)(=O)c1ccc(C(=O)O)cc1",
+    "verified_natural_product": true,
+    "natural_product_sources": "COCONUT",
+    "prior_median_pchembl": 6.055517327849832,
+    "independent_median_pchembl": 4.823908740944319,
+    "signed_shift_pchembl": -1.2316085869055131,
+    "absolute_shift_pchembl": 1.2316085869055131,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 1456130,
+        "assay_chembl_id": "CHEMBL828069",
+        "document_chembl_id": "CHEMBL1138639",
+        "document_year": 2004,
+        "pchembl": 6.055517327849832,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibitory concentration against human cystolic isozyme II of Carbonic anhydrase"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 24351344,
+        "assay_chembl_id": "CHEMBL5032271",
+        "document_chembl_id": "CHEMBL5030561",
+        "document_year": 2021,
+        "pchembl": 4.823908740944319,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human CA2 using 4-nitrophenylacetate as substrate by esterase assay"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-a94fa9c2a415f983",
+    "target_chembl_id": "CHEMBL228",
+    "target_name": "Sodium-dependent serotonin transporter",
+    "molecule_id": "CHEMBL3770651",
+    "canonical_smiles": "CN(C)CC1(c2ccc(Cl)c(Cl)c2)CCCC(O)C1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 7.356547323513812,
+    "independent_median_pchembl": 5.983563349775982,
+    "signed_shift_pchembl": -1.3729839737378304,
+    "absolute_shift_pchembl": 1.3729839737378304,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unexplained_with_partial_documented_similarity",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 16489794,
+        "assay_chembl_id": "CHEMBL3773322",
+        "document_chembl_id": "CHEMBL3769327",
+        "document_year": 2016,
+        "pchembl": 7.356547323513812,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant human 5-HT transporter expressed in HEK293 cells assessed as reduction in [3H]-5-HT reuptake"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 27895331,
+        "assay_chembl_id": "CHEMBL5734920",
+        "document_chembl_id": "CHEMBL5727566",
+        "document_year": 2020,
+        "pchembl": 5.52841494581481,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Functional Uptake Assay (hSERT): Inhibition of human serotonin reuptake transporter was assayed using the recombinant human serotonin transporter expressed in HEK-293 cells. HEK-293 cells expressing human serotonin transporter were plated before the assay. Test compound and/or vehicle was preincubated with cells in modified HEPES buffer pH 7.1 or pH 7.4 for 20 minutes at 18 to 25° C. and 65 nM [3H]serotonin was then added for an additional timed incubation period (ten to thirty minutes). Cells with internalized [3H]serotonin were washed and the amount of tritium taken into cells is counted using a liquid scintillation counter to determine [3H]serotonin uptake. Non-specific binding of tritium was measured in a control reaction containing 10 uM fluoxetine, and was subtracted from the counts for assays to correct for non-specific binding of tritium. Reduction of [3H]serotonin uptake by 50 percent or more (50%) relative to an uninhibited control reaction indicates significant inhibitory activity. Compounds were screened at 10, 1, 0.1, 0.01 and 0.001 uM. The reference compound for the assay was fluoxetine, for which the IC50 value of 7.1 nM was obtained in a typical experiment."
+      },
+      {
+        "activity_id": 27895358,
+        "assay_chembl_id": "CHEMBL5734920",
+        "document_chembl_id": "CHEMBL5727566",
+        "document_year": 2020,
+        "pchembl": 5.596536298654683,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Functional Uptake Assay (hSERT): Inhibition of human serotonin reuptake transporter was assayed using the recombinant human serotonin transporter expressed in HEK-293 cells. HEK-293 cells expressing human serotonin transporter were plated before the assay. Test compound and/or vehicle was preincubated with cells in modified HEPES buffer pH 7.1 or pH 7.4 for 20 minutes at 18 to 25° C. and 65 nM [3H]serotonin was then added for an additional timed incubation period (ten to thirty minutes). Cells with internalized [3H]serotonin were washed and the amount of tritium taken into cells is counted using a liquid scintillation counter to determine [3H]serotonin uptake. Non-specific binding of tritium was measured in a control reaction containing 10 uM fluoxetine, and was subtracted from the counts for assays to correct for non-specific binding of tritium. Reduction of [3H]serotonin uptake by 50 percent or more (50%) relative to an uninhibited control reaction indicates significant inhibitory activity. Compounds were screened at 10, 1, 0.1, 0.01 and 0.001 uM. The reference compound for the assay was fluoxetine, for which the IC50 value of 7.1 nM was obtained in a typical experiment."
+      },
+      {
+        "activity_id": 27895367,
+        "assay_chembl_id": "CHEMBL5734920",
+        "document_chembl_id": "CHEMBL5727566",
+        "document_year": 2020,
+        "pchembl": 6.370590400897281,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Functional Uptake Assay (hSERT): Inhibition of human serotonin reuptake transporter was assayed using the recombinant human serotonin transporter expressed in HEK-293 cells. HEK-293 cells expressing human serotonin transporter were plated before the assay. Test compound and/or vehicle was preincubated with cells in modified HEPES buffer pH 7.1 or pH 7.4 for 20 minutes at 18 to 25° C. and 65 nM [3H]serotonin was then added for an additional timed incubation period (ten to thirty minutes). Cells with internalized [3H]serotonin were washed and the amount of tritium taken into cells is counted using a liquid scintillation counter to determine [3H]serotonin uptake. Non-specific binding of tritium was measured in a control reaction containing 10 uM fluoxetine, and was subtracted from the counts for assays to correct for non-specific binding of tritium. Reduction of [3H]serotonin uptake by 50 percent or more (50%) relative to an uninhibited control reaction indicates significant inhibitory activity. Compounds were screened at 10, 1, 0.1, 0.01 and 0.001 uM. The reference compound for the assay was fluoxetine, for which the IC50 value of 7.1 nM was obtained in a typical experiment."
+      },
+      {
+        "activity_id": 27896753,
+        "assay_chembl_id": "CHEMBL5734920",
+        "document_chembl_id": "CHEMBL5727566",
+        "document_year": 2020,
+        "pchembl": 7.251811972993799,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Functional Uptake Assay (hSERT): Inhibition of human serotonin reuptake transporter was assayed using the recombinant human serotonin transporter expressed in HEK-293 cells. HEK-293 cells expressing human serotonin transporter were plated before the assay. Test compound and/or vehicle was preincubated with cells in modified HEPES buffer pH 7.1 or pH 7.4 for 20 minutes at 18 to 25° C. and 65 nM [3H]serotonin was then added for an additional timed incubation period (ten to thirty minutes). Cells with internalized [3H]serotonin were washed and the amount of tritium taken into cells is counted using a liquid scintillation counter to determine [3H]serotonin uptake. Non-specific binding of tritium was measured in a control reaction containing 10 uM fluoxetine, and was subtracted from the counts for assays to correct for non-specific binding of tritium. Reduction of [3H]serotonin uptake by 50 percent or more (50%) relative to an uninhibited control reaction indicates significant inhibitory activity. Compounds were screened at 10, 1, 0.1, 0.01 and 0.001 uM. The reference compound for the assay was fluoxetine, for which the IC50 value of 7.1 nM was obtained in a typical experiment."
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-7da3dea9114cfd62",
+    "target_chembl_id": "CHEMBL235",
+    "target_name": "Peroxisome proliferator-activated receptor gamma",
+    "molecule_id": "CHEMBL3598140",
+    "canonical_smiles": "O=C(O)c1ccc(-c2nn(C(=O)c3c(Cl)cccc3C(F)(F)F)c3ccccc23)cc1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 6.886056647693163,
+    "independent_median_pchembl": 5.200659450546418,
+    "signed_shift_pchembl": -1.6853971971467452,
+    "absolute_shift_pchembl": 1.6853971971467452,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "documented_protocol_difference_possible_explanation",
+    "documented_differences": [
+      "detection"
+    ],
+    "historical_measurements": [
+      {
+        "activity_id": 15656836,
+        "assay_chembl_id": "CHEMBL3599864",
+        "document_chembl_id": "CHEMBL3596163",
+        "document_year": 2015,
+        "pchembl": 6.886056647693163,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Displacement of fluormone PPARgamma green from GST-tagged human PPARgamma-LBD after 2 hrs by fluorescence polarization assay"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 24789116,
+        "assay_chembl_id": "CHEMBL5131995",
+        "document_chembl_id": "CHEMBL5131377",
+        "document_year": 2021,
+        "pchembl": 5.200659450546418,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inverse agonist activity at His6-tagged PPARgamma LBD (unknown origin) assessed as N-terminal biotinylated PGC1a coactivator peptide recruitment in presence of rosiglitazone by TR-FRET assay"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-0e42d1b0b1833995",
+    "target_chembl_id": "CHEMBL289",
+    "target_name": "Cytochrome P450 2D6",
+    "molecule_id": "CHEMBL3799799",
+    "canonical_smiles": "Cc1nc2ccccc2n1C1CCN(CCC(c2ccccc2)c2ccccc2)CC1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 7.397940008672037,
+    "independent_median_pchembl": 6.1487416512809245,
+    "signed_shift_pchembl": -1.249198357391113,
+    "absolute_shift_pchembl": 1.249198357391113,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 16572644,
+        "assay_chembl_id": "CHEMBL3802811",
+        "document_chembl_id": "CHEMBL3797033",
+        "document_year": 2016,
+        "pchembl": 7.397940008672037,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of CYP2D6 (unknown origin)"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 26182536,
+        "assay_chembl_id": "CHEMBL5634339",
+        "document_chembl_id": "CHEMBL5634071",
+        "document_year": 2023,
+        "pchembl": 6.1487416512809245,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of CYP2D6 (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-efe0426478e5e43e",
+    "target_chembl_id": "CHEMBL3397",
+    "target_name": "Cytochrome P450 2C9",
+    "molecule_id": "CHEMBL782",
+    "canonical_smiles": "CCCCNC(=O)NS(=O)(=O)c1ccc(C)cc1",
+    "verified_natural_product": true,
+    "natural_product_sources": "COCONUT;NPASS",
+    "prior_median_pchembl": 6.393618634889395,
+    "independent_median_pchembl": 5.114073660198569,
+    "signed_shift_pchembl": -1.2795449746908265,
+    "absolute_shift_pchembl": 1.2795449746908265,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 24740404,
+        "assay_chembl_id": "CHEMBL5117644",
+        "document_chembl_id": "CHEMBL5113480",
+        "document_year": 2022,
+        "pchembl": 6.393618634889395,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of CYP2C9 (unknown origin)"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 26109720,
+        "assay_chembl_id": "CHEMBL5609487",
+        "document_chembl_id": "CHEMBL5608191",
+        "document_year": 2024,
+        "pchembl": 5.114073660198569,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of CYP2C9 (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  },
+  {
+    "expansion_event_id": "ADE-9ad9e22c0ab753f4",
+    "target_chembl_id": "CHEMBL340",
+    "target_name": "Cytochrome P450 3A4",
+    "molecule_id": "CHEMBL214957",
+    "canonical_smiles": "COc1cc(-n2cnc3cc(-c4ccc(Cl)cc4)sc3c2=O)ccc1OCCN1CCCC1",
+    "verified_natural_product": false,
+    "natural_product_sources": "nan",
+    "prior_median_pchembl": 5.795880017344075,
+    "independent_median_pchembl": 4.522878745280337,
+    "signed_shift_pchembl": -1.2730012720637376,
+    "absolute_shift_pchembl": 1.2730012720637376,
+    "threshold_pchembl": 1.0,
+    "protocol_interpretation": "unresolved_due_to_incomplete_protocol_metadata",
+    "documented_differences": [],
+    "historical_measurements": [
+      {
+        "activity_id": 3597763,
+        "assay_chembl_id": "CHEMBL1293108",
+        "document_chembl_id": "CHEMBL1287674",
+        "document_year": 2010,
+        "pchembl": 5.795880017344075,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of CYP3A4"
+      }
+    ],
+    "independent_measurements": [
+      {
+        "activity_id": 26112027,
+        "assay_chembl_id": "CHEMBL5610164",
+        "document_chembl_id": "CHEMBL5608206",
+        "document_year": 2024,
+        "pchembl": 4.522878745280337,
+        "standard_value": NaN,
+        "standard_units": NaN,
+        "assay_description": "Inhibition of recombinant CYP3A4 (unknown origin)"
+      }
+    ],
+    "interpretation_limit": "Association is descriptive; protocol differences do not establish causation."
+  }
+]

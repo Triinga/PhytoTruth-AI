@@ -1,0 +1,76 @@
+{
+  "assays_requested": 196,
+  "assays_retrieved": 196,
+  "comparison_coverage": {
+    "protocol_assay_type_comparison": {
+      "same": 94
+    },
+    "protocol_bao_format_comparison": {
+      "same": 94
+    },
+    "protocol_biological_system_text_comparison": {
+      "different": 2,
+      "same": 21,
+      "unknown": 71
+    },
+    "protocol_cell_type_comparison": {
+      "same": 1,
+      "unknown": 93
+    },
+    "protocol_detection_comparison": {
+      "different": 1,
+      "same": 16,
+      "unknown": 77
+    },
+    "protocol_duration_comparison": {
+      "different": 12,
+      "same": 2,
+      "unknown": 80
+    },
+    "protocol_endpoint_comparison": {
+      "different": 2,
+      "unknown": 92
+    },
+    "protocol_methodology_comparison": {
+      "different": 1,
+      "unknown": 93
+    },
+    "protocol_organism_comparison": {
+      "same": 91,
+      "unknown": 3
+    },
+    "protocol_parameter_type_comparison": {
+      "unknown": 94
+    },
+    "protocol_ph_comparison": {
+      "unknown": 94
+    },
+    "protocol_strain_comparison": {
+      "unknown": 94
+    },
+    "protocol_subcellular_fraction_comparison": {
+      "unknown": 94
+    },
+    "protocol_temperature_comparison": {
+      "unknown": 94
+    },
+    "protocol_tissue_comparison": {
+      "unknown": 94
+    },
+    "protocol_variant_mutation_comparison": {
+      "unknown": 94
+    }
+  },
+  "events": 94,
+  "heldout_studies": 58,
+  "negative_events": 70,
+  "positive_events": 24,
+  "positive_protocol_interpretations": {
+    "documented_protocol_difference_possible_explanation": 4,
+    "unexplained_with_partial_documented_similarity": 3,
+    "unresolved_due_to_incomplete_protocol_metadata": 17
+  },
+  "targets": 12,
+  "verified_natural_product_positives": 7,
+  "verified_natural_products": 20
+}

@@ -1,0 +1,917 @@
+{
+  "active_threshold": 6.0,
+  "assay_context": {
+    "assay_type": "B",
+    "bao_format": "BAO_0000357",
+    "standard_type": "IC50",
+    "target_chembl_id": "CHEMBL335",
+    "target_organism": "Homo sapiens"
+  },
+  "assay_context_key": "bee3486ec6fbd9a6ba15",
+  "bootstrap_iterations": 2000,
+  "cohorts": {
+    "global_all": {
+      "baseline_vs_phytotruth": {
+        "enrichment_factor_at_k": {
+          "baseline": 1.7333333333333334,
+          "baseline_ci95": [
+            1.1142857142857143,
+            2.5999999999999996
+          ],
+          "candidate": 2.1666666666666665,
+          "candidate_ci95": [
+            1.625,
+            3.0
+          ],
+          "difference": 0.4333333333333331,
+          "difference_ci95": [
+            0.0,
+            1.2
+          ],
+          "paired_randomization_p": 0.49525237381309345
+        },
+        "kendall_tau": {
+          "baseline": 0.6129910889632239,
+          "baseline_ci95": [
+            0.3902956115667898,
+            0.7955850825979184
+          ],
+          "candidate": 0.6527027027027027,
+          "candidate_ci95": [
+            0.4408719985919615,
+            0.819493973300532
+          ],
+          "difference": 0.039711613739478846,
+          "difference_ci95": [
+            -0.09630951954073122,
+            0.21824337243076716
+          ],
+          "paired_randomization_p": 0.6101949025487257
+        },
+        "ndcg_at_k": {
+          "baseline": 0.8350445332897459,
+          "baseline_ci95": [
+            0.49533662077290486,
+            0.9948640721633903
+          ],
+          "candidate": 0.9850869753655577,
+          "candidate_ci95": [
+            0.8923521505836121,
+            1.0
+          ],
+          "difference": 0.15004244207581174,
+          "difference_ci95": [
+            0.0,
+            0.46765371347544804
+          ],
+          "paired_randomization_p": 0.12743628185907047
+        },
+        "precision_at_k": {
+          "baseline": 0.8,
+          "baseline_ci95": [
+            0.5,
+            1.0
+          ],
+          "candidate": 1.0,
+          "candidate_ci95": [
+            0.9,
+            1.0
+          ],
+          "difference": 0.19999999999999996,
+          "difference_ci95": [
+            0.0,
+            0.5
+          ],
+          "paired_randomization_p": 0.49525237381309345
+        }
+      },
+      "evaluation": {
+        "active_threshold": 6.0,
+        "heldout_active_molecules": 18,
+        "k": 10,
+        "metrics": {
+          "ablate_explicit_consistency": {
+            "enrichment_factor_at_k": 2.1666666666666665,
+            "kendall_tau": 0.6797297297297298,
+            "ndcg_at_k": 0.9850869753655577,
+            "precision_at_k": 1.0
+          },
+          "ablate_reliability": {
+            "enrichment_factor_at_k": 2.1666666666666665,
+            "kendall_tau": 0.6554054054054054,
+            "ndcg_at_k": 0.9850869753655577,
+            "precision_at_k": 1.0
+          },
+          "ablate_support": {
+            "enrichment_factor_at_k": 2.1666666666666665,
+            "kendall_tau": 0.6418918918918919,
+            "ndcg_at_k": 0.9835083092907323,
+            "precision_at_k": 1.0
+          },
+          "ablate_uncertainty": {
+            "enrichment_factor_at_k": 2.1666666666666665,
+            "kendall_tau": 0.6527027027027027,
+            "ndcg_at_k": 0.9850869753655577,
+            "precision_at_k": 1.0
+          },
+          "baseline_max_potency": {
+            "enrichment_factor_at_k": 1.7333333333333334,
+            "kendall_tau": 0.6129910889632239,
+            "ndcg_at_k": 0.8350445332897459,
+            "precision_at_k": 0.8
+          },
+          "median_potency": {
+            "enrichment_factor_at_k": 2.1666666666666665,
+            "kendall_tau": 0.7212455859103716,
+            "ndcg_at_k": 0.9831470815062245,
+            "precision_at_k": 1.0
+          },
+          "phytotruth_full": {
+            "enrichment_factor_at_k": 2.1666666666666665,
+            "kendall_tau": 0.6527027027027027,
+            "ndcg_at_k": 0.9850869753655577,
+            "precision_at_k": 1.0
+          }
+        },
+        "n_molecules": 39
+      }
+    },
+    "global_natural": {
+      "baseline_vs_phytotruth": {
+        "enrichment_factor_at_k": {
+          "baseline": 1.4000000000000001,
+          "baseline_ci95": [
+            0.7000000000000001,
+            1.4000000000000001
+          ],
+          "candidate": 1.05,
+          "candidate_ci95": [
+            0.46666666666666673,
+            1.4000000000000001
+          ],
+          "difference": -0.3500000000000001,
+          "difference_ci95": [
+            -0.7000000000000001,
+            0.0
+          ],
+          "paired_randomization_p": 1.0
+        },
+        "kendall_tau": {
+          "baseline": 0.3626373626373626,
+          "baseline_ci95": [
+            -0.09523809523809523,
+            0.7701149425287356
+          ],
+          "candidate": 0.34065934065934067,
+          "candidate_ci95": [
+            -0.11912020905923344,
+            0.7590361445783133
+          ],
+          "difference": -0.021978021978021955,
+          "difference_ci95": [
+            -0.32941176470588235,
+            0.39531176746366486
+          ],
+          "paired_randomization_p": 0.936031984007996
+        },
+        "ndcg_at_k": {
+          "baseline": 0.6471253136732552,
+          "baseline_ci95": [
+            0.0,
+            1.0
+          ],
+          "candidate": 0.86322558987501,
+          "candidate_ci95": [
+            0.0,
+            1.0
+          ],
+          "difference": 0.21610027620175476,
+          "difference_ci95": [
+            -0.36907024642854247,
+            0.5645287204067696
+          ],
+          "paired_randomization_p": 0.688655672163918
+        },
+        "precision_at_k": {
+          "baseline": 0.4,
+          "baseline_ci95": [
+            0.1,
+            0.7
+          ],
+          "candidate": 0.3,
+          "candidate_ci95": [
+            0.1,
+            0.6
+          ],
+          "difference": -0.10000000000000003,
+          "difference_ci95": [
+            -0.10000000000000003,
+            0.0
+          ],
+          "paired_randomization_p": 1.0
+        }
+      },
+      "evaluation": {
+        "active_threshold": 6.0,
+        "heldout_active_molecules": 4,
+        "k": 10,
+        "metrics": {
+          "ablate_explicit_consistency": {
+            "enrichment_factor_at_k": 1.05,
+            "kendall_tau": 0.38461538461538464,
+            "ndcg_at_k": 0.8887666616834325,
+            "precision_at_k": 0.3
+          },
+          "ablate_reliability": {
+            "enrichment_factor_at_k": 1.05,
+            "kendall_tau": 0.34065934065934067,
+            "ndcg_at_k": 0.86322558987501,
+            "precision_at_k": 0.3
+          },
+          "ablate_support": {
+            "enrichment_factor_at_k": 1.4000000000000001,
+            "kendall_tau": 0.38461538461538464,
+            "ndcg_at_k": 0.9659797021428318,
+            "precision_at_k": 0.4
+          },
+          "ablate_uncertainty": {
+            "enrichment_factor_at_k": 1.05,
+            "kendall_tau": 0.34065934065934067,
+            "ndcg_at_k": 0.86322558987501,
+            "precision_at_k": 0.3
+          },
+          "baseline_max_potency": {
+            "enrichment_factor_at_k": 1.4000000000000001,
+            "kendall_tau": 0.3626373626373626,
+            "ndcg_at_k": 0.6471253136732552,
+            "precision_at_k": 0.4
+          },
+          "median_potency": {
+            "enrichment_factor_at_k": 1.4000000000000001,
+            "kendall_tau": 0.4725274725274725,
+            "ndcg_at_k": 0.8852608782330778,
+            "precision_at_k": 0.4
+          },
+          "phytotruth_full": {
+            "enrichment_factor_at_k": 1.05,
+            "kendall_tau": 0.34065934065934067,
+            "ndcg_at_k": 0.86322558987501,
+            "precision_at_k": 0.3
+          }
+        },
+        "n_molecules": 14
+      }
+    },
+    "latest_all": {
+      "baseline_vs_phytotruth": {
+        "enrichment_factor_at_k": {
+          "baseline": 1.51875,
+          "baseline_ci95": [
+            1.1454545454545453,
+            1.862068965517241
+          ],
+          "candidate": 1.6875,
+          "candidate_ci95": [
+            1.5,
+            1.9285714285714286
+          ],
+          "difference": 0.16874999999999996,
+          "difference_ci95": [
+            0.0,
+            0.5460674157303371
+          ],
+          "paired_randomization_p": 1.0
+        },
+        "kendall_tau": {
+          "baseline": 0.8448529738314585,
+          "baseline_ci95": [
+            0.7703268414341701,
+            0.9109480302171172
+          ],
+          "candidate": 0.866682044966364,
+          "candidate_ci95": [
+            0.8022880132938991,
+            0.9261553380231242
+          ],
+          "difference": 0.02182907113490551,
+          "difference_ci95": [
+            -0.025063165247734973,
+            0.07289967390776649
+          ],
+          "paired_randomization_p": 0.41379310344827586
+        },
+        "ndcg_at_k": {
+          "baseline": 0.8905124639737027,
+          "baseline_ci95": [
+            0.7018461112876737,
+            0.9952844289237915
+          ],
+          "candidate": 0.9769087515644869,
+          "candidate_ci95": [
+            0.9225244200583887,
+            1.0
+          ],
+          "difference": 0.08639628759078422,
+          "difference_ci95": [
+            0.0,
+            0.2646629702570483
+          ],
+          "paired_randomization_p": 0.3458270864567716
+        },
+        "precision_at_k": {
+          "baseline": 0.9,
+          "baseline_ci95": [
+            0.7,
+            1.0
+          ],
+          "candidate": 1.0,
+          "candidate_ci95": [
+            1.0,
+            1.0
+          ],
+          "difference": 0.09999999999999998,
+          "difference_ci95": [
+            0.0,
+            0.30000000000000004
+          ],
+          "paired_randomization_p": 1.0
+        }
+      },
+      "evaluation": {
+        "active_threshold": 6.0,
+        "heldout_active_molecules": 96,
+        "k": 10,
+        "metrics": {
+          "ablate_explicit_consistency": {
+            "enrichment_factor_at_k": 1.6875,
+            "kendall_tau": 0.8834332361892266,
+            "ndcg_at_k": 0.9769087515644869,
+            "precision_at_k": 1.0
+          },
+          "ablate_reliability": {
+            "enrichment_factor_at_k": 1.6875,
+            "kendall_tau": 0.8683290589400555,
+            "ndcg_at_k": 0.9769087515644869,
+            "precision_at_k": 1.0
+          },
+          "ablate_support": {
+            "enrichment_factor_at_k": 1.6875,
+            "kendall_tau": 0.8688335741142547,
+            "ndcg_at_k": 0.9769087515644869,
+            "precision_at_k": 1.0
+          },
+          "ablate_uncertainty": {
+            "enrichment_factor_at_k": 1.6875,
+            "kendall_tau": 0.8714461452224076,
+            "ndcg_at_k": 0.9769087515644869,
+            "precision_at_k": 1.0
+          },
+          "baseline_max_potency": {
+            "enrichment_factor_at_k": 1.51875,
+            "kendall_tau": 0.8448529738314585,
+            "ndcg_at_k": 0.8905124639737027,
+            "precision_at_k": 0.9
+          },
+          "median_potency": {
+            "enrichment_factor_at_k": 1.6875,
+            "kendall_tau": 0.9014951738237446,
+            "ndcg_at_k": 0.9769087515644869,
+            "precision_at_k": 1.0
+          },
+          "phytotruth_full": {
+            "enrichment_factor_at_k": 1.6875,
+            "kendall_tau": 0.866682044966364,
+            "ndcg_at_k": 0.9769087515644869,
+            "precision_at_k": 1.0
+          }
+        },
+        "n_molecules": 162
+      }
+    },
+    "latest_natural": {
+      "baseline_vs_phytotruth": {
+        "enrichment_factor_at_k": {
+          "baseline": 2.325,
+          "baseline_ci95": [
+            1.1625,
+            3.1
+          ],
+          "candidate": 1.9375,
+          "candidate_ci95": [
+            0.8857142857142858,
+            3.1
+          ],
+          "difference": -0.3875000000000002,
+          "difference_ci95": [
+            -1.2400000000000002,
+            0.6888888888888891
+          ],
+          "paired_randomization_p": 1.0
+        },
+        "kendall_tau": {
+          "baseline": 0.5268817204301075,
+          "baseline_ci95": [
+            0.2699009105780791,
+            0.7571776173822456
+          ],
+          "candidate": 0.5096774193548387,
+          "candidate_ci95": [
+            0.23765772125719625,
+            0.7522649304934073
+          ],
+          "difference": -0.017204301075268824,
+          "difference_ci95": [
+            -0.2306243487622161,
+            0.13808463251670378
+          ],
+          "paired_randomization_p": 0.9440279860069966
+        },
+        "ndcg_at_k": {
+          "baseline": 0.8908771040928207,
+          "baseline_ci95": [
+            0.13005017983208225,
+            0.99812448707548
+          ],
+          "candidate": 0.7649591496132703,
+          "candidate_ci95": [
+            0.07553437660115293,
+            1.0
+          ],
+          "difference": -0.12591795447955045,
+          "difference_ci95": [
+            -0.758468764530203,
+            0.41776466087261865
+          ],
+          "paired_randomization_p": 0.48875562218890556
+        },
+        "precision_at_k": {
+          "baseline": 0.6,
+          "baseline_ci95": [
+            0.2,
+            0.9
+          ],
+          "candidate": 0.5,
+          "candidate_ci95": [
+            0.1,
+            0.9
+          ],
+          "difference": -0.09999999999999998,
+          "difference_ci95": [
+            -0.3,
+            0.20000000000000007
+          ],
+          "paired_randomization_p": 1.0
+        }
+      },
+      "evaluation": {
+        "active_threshold": 6.0,
+        "heldout_active_molecules": 8,
+        "k": 10,
+        "metrics": {
+          "ablate_explicit_consistency": {
+            "enrichment_factor_at_k": 2.325,
+            "kendall_tau": 0.578494623655914,
+            "ndcg_at_k": 0.9048264651158087,
+            "precision_at_k": 0.6
+          },
+          "ablate_reliability": {
+            "enrichment_factor_at_k": 1.9375,
+            "kendall_tau": 0.5182795698924731,
+            "ndcg_at_k": 0.7649591496132703,
+            "precision_at_k": 0.5
+          },
+          "ablate_support": {
+            "enrichment_factor_at_k": 1.9375,
+            "kendall_tau": 0.5311827956989247,
+            "ndcg_at_k": 0.7649591496132703,
+            "precision_at_k": 0.5
+          },
+          "ablate_uncertainty": {
+            "enrichment_factor_at_k": 1.9375,
+            "kendall_tau": 0.535483870967742,
+            "ndcg_at_k": 0.7649591496132703,
+            "precision_at_k": 0.5
+          },
+          "baseline_max_potency": {
+            "enrichment_factor_at_k": 2.325,
+            "kendall_tau": 0.5268817204301075,
+            "ndcg_at_k": 0.8908771040928207,
+            "precision_at_k": 0.6
+          },
+          "median_potency": {
+            "enrichment_factor_at_k": 2.325,
+            "kendall_tau": 0.6172043010752688,
+            "ndcg_at_k": 0.9062362510435188,
+            "precision_at_k": 0.6
+          },
+          "phytotruth_full": {
+            "enrichment_factor_at_k": 1.9375,
+            "kendall_tau": 0.5096774193548387,
+            "ndcg_at_k": 0.7649591496132703,
+            "precision_at_k": 0.5
+          }
+        },
+        "n_molecules": 31
+      }
+    }
+  },
+  "exclusions": {
+    "global_split": {
+      "not_observed_on_both_sides": 2412
+    },
+    "latest_split": {
+      "single_publication_year": 2289
+    },
+    "normalization_and_context": {
+      "other_assay_context": 881
+    }
+  },
+  "experiment": "PhytoTruth Evidence Reversal",
+  "generated_at": "2026-10-20T11:55:14.956329+00:00",
+  "global_cutoff_year": 2015,
+  "k": 10,
+  "permutation_iterations": 2000,
+  "primary_ablation_inference": {
+    "ablate_explicit_consistency": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.6875,
+        "baseline_ci95": [
+          1.5,
+          1.9285714285714286
+        ],
+        "candidate": 1.6875,
+        "candidate_ci95": [
+          1.5,
+          1.9285714285714286
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8834332361892266,
+        "baseline_ci95": [
+          0.8262098003526261,
+          0.9282994866841219
+        ],
+        "candidate": 0.866682044966364,
+        "candidate_ci95": [
+          0.7953346377065599,
+          0.9235411795769983
+        ],
+        "difference": -0.016751191222862616,
+        "difference_ci95": [
+          -0.053146457849791884,
+          0.008810080852904575
+        ],
+        "paired_randomization_p": 0.4085914085914086
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9769087515644869,
+        "baseline_ci95": [
+          0.9247182494867361,
+          1.0
+        ],
+        "candidate": 0.9769087515644869,
+        "candidate_ci95": [
+          0.9247182494867361,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "precision_at_k": {
+        "baseline": 1.0,
+        "baseline_ci95": [
+          1.0,
+          1.0
+        ],
+        "candidate": 1.0,
+        "candidate_ci95": [
+          1.0,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    },
+    "ablate_reliability": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.6875,
+        "baseline_ci95": [
+          1.5136682242990653,
+          1.9285714285714286
+        ],
+        "candidate": 1.6875,
+        "candidate_ci95": [
+          1.5136682242990653,
+          1.9285714285714286
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8683290589400555,
+        "baseline_ci95": [
+          0.8001484737548056,
+          0.9269193521414123
+        ],
+        "candidate": 0.866682044966364,
+        "candidate_ci95": [
+          0.7987570590170382,
+          0.9264960879743753
+        ],
+        "difference": -0.0016470139736914913,
+        "difference_ci95": [
+          -0.005898457209681504,
+          0.0030960141023503333
+        ],
+        "paired_randomization_p": 0.7932067932067932
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9769087515644869,
+        "baseline_ci95": [
+          0.9215110030440913,
+          1.0
+        ],
+        "candidate": 0.9769087515644869,
+        "candidate_ci95": [
+          0.9215110030440913,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "precision_at_k": {
+        "baseline": 1.0,
+        "baseline_ci95": [
+          1.0,
+          1.0
+        ],
+        "candidate": 1.0,
+        "candidate_ci95": [
+          1.0,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    },
+    "ablate_support": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.6875,
+        "baseline_ci95": [
+          1.5,
+          1.9285714285714286
+        ],
+        "candidate": 1.6875,
+        "candidate_ci95": [
+          1.5,
+          1.9285714285714286
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8688335741142547,
+        "baseline_ci95": [
+          0.8031673538288108,
+          0.9219873287863967
+        ],
+        "candidate": 0.866682044966364,
+        "candidate_ci95": [
+          0.8013063886462192,
+          0.9200253713047755
+        ],
+        "difference": -0.0021515291478906295,
+        "difference_ci95": [
+          -0.01406879419295895,
+          0.008508400145247058
+        ],
+        "paired_randomization_p": 0.7982017982017982
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9769087515644869,
+        "baseline_ci95": [
+          0.9129853032521686,
+          1.0
+        ],
+        "candidate": 0.9769087515644869,
+        "candidate_ci95": [
+          0.9129853032521686,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "precision_at_k": {
+        "baseline": 1.0,
+        "baseline_ci95": [
+          1.0,
+          1.0
+        ],
+        "candidate": 1.0,
+        "candidate_ci95": [
+          1.0,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    },
+    "ablate_uncertainty": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.6875,
+        "baseline_ci95": [
+          1.5136682242990653,
+          1.9518072289156625
+        ],
+        "candidate": 1.6875,
+        "candidate_ci95": [
+          1.5136682242990653,
+          1.9518072289156625
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8714461452224076,
+        "baseline_ci95": [
+          0.8122285397561431,
+          0.9208904512925996
+        ],
+        "candidate": 0.866682044966364,
+        "candidate_ci95": [
+          0.8026422510711135,
+          0.9201521924872436
+        ],
+        "difference": -0.004764100256043569,
+        "difference_ci95": [
+          -0.013285034920610343,
+          0.0013902888399501601
+        ],
+        "paired_randomization_p": 0.22477522477522477
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9769087515644869,
+        "baseline_ci95": [
+          0.9271604195451201,
+          1.0
+        ],
+        "candidate": 0.9769087515644869,
+        "candidate_ci95": [
+          0.9271604195451201,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "precision_at_k": {
+        "baseline": 1.0,
+        "baseline_ci95": [
+          1.0,
+          1.0
+        ],
+        "candidate": 1.0,
+        "candidate_ci95": [
+          1.0,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    },
+    "median_potency": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.6875,
+        "baseline_ci95": [
+          1.4862385321100917,
+          1.9285714285714286
+        ],
+        "candidate": 1.6875,
+        "candidate_ci95": [
+          1.4862385321100917,
+          1.9285714285714286
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.9014951738237446,
+        "baseline_ci95": [
+          0.8494295752520435,
+          0.9428066506601039
+        ],
+        "candidate": 0.866682044966364,
+        "candidate_ci95": [
+          0.8034102550001881,
+          0.9228173595158339
+        ],
+        "difference": -0.034813128857380526,
+        "difference_ci95": [
+          -0.07904595923435871,
+          -0.003366525295240656
+        ],
+        "paired_randomization_p": 0.03996003996003996
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9769087515644869,
+        "baseline_ci95": [
+          0.922876890235159,
+          1.0
+        ],
+        "candidate": 0.9769087515644869,
+        "candidate_ci95": [
+          0.922876890235159,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "precision_at_k": {
+        "baseline": 1.0,
+        "baseline_ci95": [
+          1.0,
+          1.0
+        ],
+        "candidate": 1.0,
+        "candidate_ci95": [
+          1.0,
+          1.0
+        ],
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    }
+  },
+  "scientific_conclusion": {
+    "ablation_finding": "Median potency alone matched the full heuristic's top-K metrics and its Kendall \u03c4 exceeded the full heuristic by 0.035. The full-minus-median Kendall difference was -0.035 (95% CI [-0.079, -0.003], p=0.0400). Thus the reliability, uncertainty, consistency, and support terms did not improve this benchmark beyond robust central potency and may have modestly worsened global ordering.",
+    "natural_product_finding": "In the NPASS-verified natural-product cohort, PhytoTruth-minus-baseline nDCG was -0.126 (95% CI [-0.758, 0.418]); the available natural-product data do not support an improvement.",
+    "status": "advantage_not_demonstrated",
+    "summary": "The evidence-aware heuristic's all-compound nDCG point estimate was higher, but its paired 95% interval included zero and the randomization test was not significant. The experiment therefore does not demonstrate an advantage over potency-only ranking."
+  },
+  "seed": 2026,
+  "selected_measurements": 2915,
+  "selected_molecules": 2451,
+  "target_chembl_id": "CHEMBL335",
+  "verified_natural_product_molecules_in_context": 362
+}

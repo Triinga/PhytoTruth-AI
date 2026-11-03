@@ -1,0 +1,8 @@
+{
+  "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.normalized.jsonl",
+  "activities_sha256": "442c53a321dea17c74533970a688efec5cddfd118b4c24ea4daa92e48d61288a",
+  "code_contract": "latest-publication evidence is held out before all ranking scores are computed",
+  "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.npass.jsonl",
+  "natural_products_sha256": "a1991e053a612c009ab3915d47f73e43eda30c1f3471878a826ab9254d0725c2",
+  "results_sha256": "8570ce96c5b6d4296ca022d34a3f9050f8190f5f9b6a43b7cf49d1ba78575027"
+}

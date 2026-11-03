@@ -1,0 +1,11 @@
+{
+  "source": "ChEMBL REST API",
+  "target_chembl_id": "CHEMBL1951",
+  "standard_type": "IC50",
+  "retrieved_at": "2026-10-21T11:16:23.632562+00:00",
+  "records": 3687,
+  "page_size": 1000,
+  "max_records": null,
+  "sha256": "c61314ee6401c74c826b05543d4de87e0f4bef5f12da36596e4c4ac3b397c24f",
+  "data_file": "CHEMBL1951.raw.jsonl"
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "target_chembl_id": "CHEMBL1951",
+    "target_name": "Amine oxidase [flavin-containing] A",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1951.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1951.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL2039",
+    "target_name": "Amine oxidase [flavin-containing] B",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL2039.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL2039.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1978",
+    "target_name": "Aromatase",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1978.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1978.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL340",
+    "target_name": "Cytochrome P450 3A4",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL340.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL340.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL289",
+    "target_name": "Cytochrome P450 2D6",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL289.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL289.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL3397",
+    "target_name": "Cytochrome P450 2C9",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL3397.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL3397.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL215",
+    "target_name": "Polyunsaturated fatty acid 5-lipoxygenase",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL215.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL215.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL221",
+    "target_name": "Prostaglandin G/H synthase 1",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL221.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL221.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL205",
+    "target_name": "Carbonic anhydrase 2",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL205.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL205.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1865",
+    "target_name": "Protein deacetylase HDAC6",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1865.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1865.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL228",
+    "target_name": "Sodium-dependent serotonin transporter",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL228.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL228.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL235",
+    "target_name": "Peroxisome proliferator-activated receptor gamma",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL235.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL235.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1900",
+    "target_name": "Aldo-keto reductase family 1 member B1",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1900.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1900.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1929",
+    "target_name": "Xanthine dehydrogenase/oxidase",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1929.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1929.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1973",
+    "target_name": "Tyrosinase",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1973.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1973.natural.jsonl"
+  }
+]

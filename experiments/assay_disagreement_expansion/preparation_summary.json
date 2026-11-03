@@ -1,0 +1,557 @@
+{
+  "accepted_events": 94,
+  "candidate_events_before_independence_filter": 394,
+  "construction": {
+    "exclusions": {
+      "cross_target_molecule_overlap_removed_from_development": 11,
+      "potential_duplicate": 4508,
+      "single_publication_year": 23395
+    },
+    "inputs": [
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1951.normalized.jsonl",
+        "activities_sha256": "e8cc9bcbe1b2895d331c9c060480adc360eca6c1a6419285e764502486e5effe",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1951.natural.jsonl",
+        "natural_products_sha256": "93beb917dec13c2ca5ad4b73cb72ffc6217211e90be3b13d479c295496e0b1c6",
+        "target_chembl_id": "CHEMBL1951"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL2039.normalized.jsonl",
+        "activities_sha256": "72c957b9b8e991a88b775a03fa441426f20826d3bca296706fda6f68e037a36d",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL2039.natural.jsonl",
+        "natural_products_sha256": "2d43aaeffb6cd3e5d91e90ef21310dcf70753f7eb3494797be62352bc0924fb8",
+        "target_chembl_id": "CHEMBL2039"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1978.normalized.jsonl",
+        "activities_sha256": "e566351ab616ba42bd7fd6556a6649993dfaa900ab8c8406ad6be549803a309a",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1978.natural.jsonl",
+        "natural_products_sha256": "39d24b8dce8fd880ea37bdafdd46cc102eddb5ed84c24402ee5ac8ac2c7d9796",
+        "target_chembl_id": "CHEMBL1978"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL340.normalized.jsonl",
+        "activities_sha256": "8007e037543daf0862974749362e547d5a0097c8e2fa04e92ded840014255cd4",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL340.natural.jsonl",
+        "natural_products_sha256": "81fe4e60c3dd1cad2f9a103d336b16d77cad82104394506df256459423776791",
+        "target_chembl_id": "CHEMBL340"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL289.normalized.jsonl",
+        "activities_sha256": "2a620c18d1b39e14d0e66cd13c8c853b6e8291e25117cdb3006758cd520b0f66",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL289.natural.jsonl",
+        "natural_products_sha256": "4e6d7ad04c46865fff81670819b8cd171be8bad44833c9b8c706f4c9dbae39d2",
+        "target_chembl_id": "CHEMBL289"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL3397.normalized.jsonl",
+        "activities_sha256": "2e7caa53c3ac776edf212f1f9d7b847783800524118d4916d5a48cd1a4d64945",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL3397.natural.jsonl",
+        "natural_products_sha256": "3b28f43996fb283a79aeba98037d26be23b1061ef855ba1f1e9a869dd29c4f44",
+        "target_chembl_id": "CHEMBL3397"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL215.normalized.jsonl",
+        "activities_sha256": "1833b0bb7a19671879d9ff29dc2d9fa6dc3865d0d86a6aa23204c060cde8f5fc",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL215.natural.jsonl",
+        "natural_products_sha256": "6fdc73a60f8a590bd48b1da9d08e7444acbcc7faaab0c8da4b0319f6ddb4259c",
+        "target_chembl_id": "CHEMBL215"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL221.normalized.jsonl",
+        "activities_sha256": "616faa8c1d331de8a4bc18d906255d413ad3a07138c0ed75443fd83d3fb6afe1",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL221.natural.jsonl",
+        "natural_products_sha256": "7717d726c53b2ab17440ff477cb71b464645824a3d75a16a43caea9260add829",
+        "target_chembl_id": "CHEMBL221"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL205.normalized.jsonl",
+        "activities_sha256": "b2093b781b210fe69996ebdb0277486a201a5b01d65a09da056fa652dce0faee",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL205.natural.jsonl",
+        "natural_products_sha256": "6638fda8917c72c37806331408734d67f731ceb30d6d13a965d5dff0dfd61a31",
+        "target_chembl_id": "CHEMBL205"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1865.normalized.jsonl",
+        "activities_sha256": "b893930985de78c522109207a3e55d93b5193985360e2631b89a7454f25b39a3",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1865.natural.jsonl",
+        "natural_products_sha256": "0351533434a07610362cc300ec6ded9a1d43bbf0bf7faf826fba6fec2cf704cc",
+        "target_chembl_id": "CHEMBL1865"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL228.normalized.jsonl",
+        "activities_sha256": "12df67a41dfb987c25d5bcfcfb9ddc740e33f7fcc3029d3e973f3bd4dfc5840e",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL228.natural.jsonl",
+        "natural_products_sha256": "203ddb4de8946eebf1ca8cc14476f4d363840421be965b269323bafcb6b9619e",
+        "target_chembl_id": "CHEMBL228"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL235.normalized.jsonl",
+        "activities_sha256": "3f7770a4ebb33cfa848fd435972fa4165efb0ae7311de2f39060193f8abb7dc7",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL235.natural.jsonl",
+        "natural_products_sha256": "a592201d7bd743ba42d7f9cb7df5da83becabcf05912ab1c099fb16c61afd529",
+        "target_chembl_id": "CHEMBL235"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1900.normalized.jsonl",
+        "activities_sha256": "7275c71ea7f0b5f6cc72c891b780223e9e9fadabb5a62a872b1f831408c6106b",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1900.natural.jsonl",
+        "natural_products_sha256": "3fa135c821fb4b63c5bea56d3fbc7627d2efef61c4579f39c01b9d57c8b84f4b",
+        "target_chembl_id": "CHEMBL1900"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1929.normalized.jsonl",
+        "activities_sha256": "963af925664df9f57e48c873ecfa9ef93f23a314bb591debe6f0fc17a6de8670",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1929.natural.jsonl",
+        "natural_products_sha256": "b100c3f6ed987b29b3ea80b8a3656d8cf6dda487a9b564d5bd596e1aa02454dc",
+        "target_chembl_id": "CHEMBL1929"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1973.normalized.jsonl",
+        "activities_sha256": "bd392243eee0ed8e5dd7404bfc9d6fe0a0963f7c18078ed8b9666e09d3b632a9",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1973.natural.jsonl",
+        "natural_products_sha256": "2f7247b1b2b02b45f5fa900a1f39e6848bc075e84a6d847e908490c7414d669c",
+        "target_chembl_id": "CHEMBL1973"
+      }
+    ],
+    "outcome": "absolute difference between prior-study and latest-year median exact IC50 pActivity >= 1.0 log10 unit",
+    "split": "development held-out publications <= 2019; untouched evaluation >= 2020",
+    "targets": [
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 23,
+          "other_assay_context": 1212
+        },
+        "development_events": 15,
+        "eligible_events": 37,
+        "eligible_events_before_cross_target_deduplication": 38,
+        "evaluation_disagreements": 7,
+        "evaluation_events": 22,
+        "evaluation_natural_products": 14,
+        "event_exclusions": {
+          "single_publication_year": 1716
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 495
+        },
+        "selected_context_key": "f88b4f5761e7a6de7b1c",
+        "selected_measurements": 1957,
+        "selected_molecules": 1754,
+        "target_chembl_id": "CHEMBL1951",
+        "target_name": "Amine oxidase [flavin-containing] A"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 2245
+        },
+        "development_events": 38,
+        "eligible_events": 60,
+        "eligible_events_before_cross_target_deduplication": 61,
+        "evaluation_disagreements": 3,
+        "evaluation_events": 22,
+        "evaluation_natural_products": 8,
+        "event_exclusions": {
+          "single_publication_year": 2580
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 620
+        },
+        "selected_context_key": "1944868c975637c4d98c",
+        "selected_measurements": 2917,
+        "selected_molecules": 2641,
+        "target_chembl_id": "CHEMBL2039",
+        "target_name": "Amine oxidase [flavin-containing] B"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 1685
+        },
+        "development_events": 23,
+        "eligible_events": 29,
+        "eligible_events_before_cross_target_deduplication": 31,
+        "evaluation_disagreements": 2,
+        "evaluation_events": 6,
+        "evaluation_natural_products": 3,
+        "event_exclusions": {
+          "single_publication_year": 1323
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 700
+        },
+        "selected_context_key": "cb249566c5ef67a3c1a2",
+        "selected_measurements": 1463,
+        "selected_molecules": 1354,
+        "target_chembl_id": "CHEMBL1978",
+        "target_name": "Aromatase"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 128,
+          "other_assay_context": 2652
+        },
+        "development_events": 16,
+        "eligible_events": 23,
+        "eligible_events_before_cross_target_deduplication": 25,
+        "evaluation_disagreements": 2,
+        "evaluation_events": 7,
+        "evaluation_natural_products": 4,
+        "event_exclusions": {
+          "single_publication_year": 3131
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 305
+        },
+        "selected_context_key": "27a41f9c2f18ba6ebd25",
+        "selected_measurements": 3557,
+        "selected_molecules": 3156,
+        "target_chembl_id": "CHEMBL340",
+        "target_name": "Cytochrome P450 3A4"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 76,
+          "other_assay_context": 1292
+        },
+        "development_events": 6,
+        "eligible_events": 10,
+        "eligible_events_before_cross_target_deduplication": 10,
+        "evaluation_disagreements": 2,
+        "evaluation_events": 4,
+        "evaluation_natural_products": 3,
+        "event_exclusions": {
+          "single_publication_year": 1734
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 141
+        },
+        "selected_context_key": "c42ca5fe253356b52e5e",
+        "selected_measurements": 1840,
+        "selected_molecules": 1744,
+        "target_chembl_id": "CHEMBL289",
+        "target_name": "Cytochrome P450 2D6"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 51,
+          "other_assay_context": 1233
+        },
+        "development_events": 7,
+        "eligible_events": 9,
+        "eligible_events_before_cross_target_deduplication": 10,
+        "evaluation_disagreements": 1,
+        "evaluation_events": 2,
+        "evaluation_natural_products": 1,
+        "event_exclusions": {
+          "single_publication_year": 1631
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 135
+        },
+        "selected_context_key": "e94515bd53110366966b",
+        "selected_measurements": 1688,
+        "selected_molecules": 1641,
+        "target_chembl_id": "CHEMBL3397",
+        "target_name": "Cytochrome P450 2C9"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 2024
+        },
+        "development_events": 7,
+        "eligible_events": 15,
+        "eligible_events_before_cross_target_deduplication": 16,
+        "evaluation_disagreements": 1,
+        "evaluation_events": 8,
+        "evaluation_natural_products": 5,
+        "event_exclusions": {
+          "single_publication_year": 1050
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 195
+        },
+        "selected_context_key": "924d758aafa14f254152",
+        "selected_measurements": 1309,
+        "selected_molecules": 1066,
+        "target_chembl_id": "CHEMBL215",
+        "target_name": "Polyunsaturated fatty acid 5-lipoxygenase"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 45,
+          "other_assay_context": 740
+        },
+        "development_events": 17,
+        "eligible_events": 27,
+        "eligible_events_before_cross_target_deduplication": 29,
+        "evaluation_disagreements": 3,
+        "evaluation_events": 10,
+        "evaluation_natural_products": 10,
+        "event_exclusions": {
+          "single_publication_year": 999
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 236
+        },
+        "selected_context_key": "3dab0a9d178c9e5ebd96",
+        "selected_measurements": 1121,
+        "selected_molecules": 1028,
+        "target_chembl_id": "CHEMBL221",
+        "target_name": "Prostaglandin G/H synthase 1"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 11,
+          "other_assay_context": 188
+        },
+        "development_events": 14,
+        "eligible_events": 23,
+        "eligible_events_before_cross_target_deduplication": 23,
+        "evaluation_disagreements": 2,
+        "evaluation_events": 9,
+        "evaluation_natural_products": 2,
+        "event_exclusions": {
+          "single_publication_year": 704
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 77
+        },
+        "selected_context_key": "0681995232b7bdbfd9d9",
+        "selected_measurements": 909,
+        "selected_molecules": 727,
+        "target_chembl_id": "CHEMBL205",
+        "target_name": "Carbonic anhydrase 2"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 2384
+        },
+        "development_events": 25,
+        "eligible_events": 81,
+        "eligible_events_before_cross_target_deduplication": 81,
+        "evaluation_disagreements": 12,
+        "evaluation_events": 56,
+        "evaluation_natural_products": 12,
+        "event_exclusions": {
+          "single_publication_year": 4187
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 898
+        },
+        "selected_context_key": "f866df3e4a02994c91ac",
+        "selected_measurements": 5320,
+        "selected_molecules": 4268,
+        "target_chembl_id": "CHEMBL1865",
+        "target_name": "Protein deacetylase HDAC6"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 92,
+          "other_assay_context": 1027
+        },
+        "development_events": 24,
+        "eligible_events": 34,
+        "eligible_events_before_cross_target_deduplication": 34,
+        "evaluation_disagreements": 1,
+        "evaluation_events": 10,
+        "evaluation_natural_products": 3,
+        "event_exclusions": {
+          "single_publication_year": 1983
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 260
+        },
+        "selected_context_key": "a1a5d5586fa6683aed37",
+        "selected_measurements": 2278,
+        "selected_molecules": 2017,
+        "target_chembl_id": "CHEMBL228",
+        "target_name": "Sodium-dependent serotonin transporter"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 388
+        },
+        "development_events": 9,
+        "eligible_events": 14,
+        "eligible_events_before_cross_target_deduplication": 14,
+        "evaluation_disagreements": 2,
+        "evaluation_events": 5,
+        "evaluation_natural_products": 1,
+        "event_exclusions": {
+          "single_publication_year": 1229
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 274
+        },
+        "selected_context_key": "fbffe72cc60da6ee0c76",
+        "selected_measurements": 1307,
+        "selected_molecules": 1243,
+        "target_chembl_id": "CHEMBL235",
+        "target_name": "Peroxisome proliferator-activated receptor gamma"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 525
+        },
+        "development_events": 4,
+        "eligible_events": 4,
+        "eligible_events_before_cross_target_deduplication": 4,
+        "evaluation_disagreements": 0,
+        "evaluation_events": 0,
+        "evaluation_natural_products": 0,
+        "event_exclusions": {
+          "single_publication_year": 435
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 75
+        },
+        "selected_context_key": "b4f7d030c36cb7ccd077",
+        "selected_measurements": 490,
+        "selected_molecules": 439,
+        "target_chembl_id": "CHEMBL1900",
+        "target_name": "Aldo-keto reductase family 1 member B1"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 37
+        },
+        "development_events": 2,
+        "eligible_events": 23,
+        "eligible_events_before_cross_target_deduplication": 24,
+        "evaluation_disagreements": 2,
+        "evaluation_events": 21,
+        "evaluation_natural_products": 7,
+        "event_exclusions": {
+          "single_publication_year": 574
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 73
+        },
+        "selected_context_key": "6a6e70763cd3dcf33b18",
+        "selected_measurements": 679,
+        "selected_molecules": 598,
+        "target_chembl_id": "CHEMBL1929",
+        "target_name": "Xanthine dehydrogenase/oxidase"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 91
+        },
+        "development_events": 1,
+        "eligible_events": 5,
+        "eligible_events_before_cross_target_deduplication": 5,
+        "evaluation_disagreements": 1,
+        "evaluation_events": 4,
+        "evaluation_natural_products": 1,
+        "event_exclusions": {
+          "single_publication_year": 119
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 24
+        },
+        "selected_context_key": "561e0f867c15305e91e7",
+        "selected_measurements": 140,
+        "selected_molecules": 124,
+        "target_chembl_id": "CHEMBL1973",
+        "target_name": "Tyrosinase"
+      }
+    ]
+  },
+  "created_at": "2026-10-21T11:37:58.760564+00:00",
+  "exclusion_counts": {
+    "compound_repeated_across_new_targets": 58,
+    "heldout_before_frozen_temporal_boundary": 208,
+    "not_evaluation_partition": 208,
+    "previous_activity": 0,
+    "previous_assay": 0,
+    "previous_compound": 88,
+    "previous_publication": 110,
+    "previous_target": 0,
+    "within_event_assay_overlap": 0,
+    "within_event_publication_overlap": 0
+  },
+  "full_provenance_records": 295,
+  "heldout_studies": 58,
+  "inputs": {
+    "frozen_target_specifications": {
+      "path": "..\\experiments\\assay_expansion_targets.json",
+      "sha256": "33392600be0e0c1c0cc70346c4c245adca320b87725e5f209b410661a19e2f9c"
+    },
+    "resolved_target_specifications": {
+      "path": "..\\experiments\\assay_disagreement_expansion\\resolved_targets.json",
+      "sha256": "bd5706b32109a307116235e3e1ec919c49dc96a0c65a8ace505046a70c3a7d2d"
+    }
+  },
+  "labels_available_to_model_development": false,
+  "natural_product_sources": {
+    "COCONUT": {
+      "events": 19,
+      "positive_events": 6
+    },
+    "NPASS": {
+      "events": 7,
+      "positive_events": 3
+    }
+  },
+  "negative_events": 70,
+  "positive_events": 24,
+  "previous_exposure_ledgers": [
+    {
+      "previous_events_sha256": "759ee9123b0ecdddf328afcfdaa3a1c8a69a19651cba0b13368abde2b46f2d77",
+      "previous_specs_sha256": "18705f7a8f7329c25adf710212043c4d167e122a103bbf4ff4319f2a397c2201",
+      "prior_source_records_by_target": {
+        "CHEMBL203": 19378,
+        "CHEMBL220": 7275,
+        "CHEMBL230": 6116,
+        "CHEMBL284": 4709,
+        "CHEMBL335": 3796
+      },
+      "prior_targets": [
+        "CHEMBL203",
+        "CHEMBL220",
+        "CHEMBL230",
+        "CHEMBL284",
+        "CHEMBL335"
+      ],
+      "unique_activities": 41274,
+      "unique_assays": 4415,
+      "unique_documents": 2736,
+      "unique_molecules": 27996
+    },
+    {
+      "previous_events_sha256": "d0667350270f1190e90dcb50e10c2c2f7cc0fd32c3094e98726f7abf7dcc2228",
+      "previous_specs_sha256": "bf51005506468ea3f95ba7bc7f808ec46dea13906179cfc855f224d46292c5af",
+      "prior_source_records_by_target": {
+        "CHEMBL1824": 3375,
+        "CHEMBL1862": 4158,
+        "CHEMBL1871": 3585,
+        "CHEMBL206": 5935,
+        "CHEMBL279": 13091
+      },
+      "prior_targets": [
+        "CHEMBL1824",
+        "CHEMBL1862",
+        "CHEMBL1871",
+        "CHEMBL206",
+        "CHEMBL279"
+      ],
+      "unique_activities": 30144,
+      "unique_assays": 2802,
+      "unique_documents": 1730,
+      "unique_molecules": 19404
+    }
+  ],
+  "previous_exposure_union": {
+    "activities": 71418,
+    "assays": 7217,
+    "documents": 4009,
+    "molecules": 44750,
+    "targets": 10
+  },
+  "protocol_frozen_before_outcomes": true,
+  "targets_with_events": 12,
+  "threshold_pchembl": 1.0,
+  "used_measurements": 295,
+  "verified_natural_product_events": 20,
+  "verified_natural_product_positive_events": 7,
+  "version": "assay-disagreement-dataset-expansion-v1"
+}

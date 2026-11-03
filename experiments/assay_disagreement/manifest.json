@@ -1,0 +1,165 @@
+{
+  "code_contract": "all predictors derive from structure or evidence strictly preceding each held-out independent publication",
+  "exclusions": {
+    "missing_or_inconsistent_structure": 2,
+    "potential_duplicate": 4623,
+    "single_publication_year": 20036
+  },
+  "inputs": [
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.normalized.jsonl",
+      "activities_sha256": "a914cf9dbc98670500659ef779fd6386ff42786eec42a292174149310caa0ab6",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.natural.jsonl",
+      "natural_products_sha256": "6dec9450ff6839067b637a6eddde68012cc11ed37e535ca87ad71d81d406cf37",
+      "target_chembl_id": "CHEMBL220"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.normalized.jsonl",
+      "activities_sha256": "ea8063b7c10e3e7a026c9ef56ec39c992ac7734becb8d44c2d7d44795cdeba48",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.natural.jsonl",
+      "natural_products_sha256": "87d51d7992233324235a960dac7449f0816e84699fbf3fa3818c338174ba7032",
+      "target_chembl_id": "CHEMBL203"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.normalized.jsonl",
+      "activities_sha256": "1cd2cacf6ab7ee58a7b72ba20fa6ef84e261c927f23435a21875eae9d8e30e66",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.natural.jsonl",
+      "natural_products_sha256": "6e8e897d5f6a8197142c021486172d2c83847d09600c2dd93786d4e3e1e3f87d",
+      "target_chembl_id": "CHEMBL230"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.normalized.jsonl",
+      "activities_sha256": "b0f55355f03b4ee82c163d585f186bff31d53a152dc8fafc2ad109706a8ab35a",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.natural.jsonl",
+      "natural_products_sha256": "2d9a987ed09f58122299bf23a56a7ffaa2dc92f328958788a5c4f7bf25ff7c2a",
+      "target_chembl_id": "CHEMBL284"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.normalized.jsonl",
+      "activities_sha256": "442c53a321dea17c74533970a688efec5cddfd118b4c24ea4daa92e48d61288a",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl335_ic50.natural.jsonl",
+      "natural_products_sha256": "fd897420025bd1f1ad5003a04f843647717d577d8555c3982b5b58274392c7b3",
+      "target_chembl_id": "CHEMBL335"
+    }
+  ],
+  "outcome": "absolute difference between prior-study and latest-year median exact IC50 pActivity >= 1.0 log10 unit",
+  "specifications": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\multitarget_targets.json",
+  "specifications_sha256": "18705f7a8f7329c25adf710212043c4d167e122a103bbf4ff4319f2a397c2201",
+  "split": "development held-out publications <= 2019; untouched evaluation >= 2020",
+  "targets": [
+    {
+      "context_exclusions": {
+        "missing_year_or_activity": 30,
+        "other_assay_context": 1210
+      },
+      "development_events": 49,
+      "eligible_events": 91,
+      "eligible_events_before_cross_target_deduplication": 91,
+      "evaluation_disagreements": 11,
+      "evaluation_events": 42,
+      "evaluation_natural_products": 20,
+      "event_exclusions": {
+        "single_publication_year": 4639
+      },
+      "quality_exclusions": {
+        "potential_duplicate": 819
+      },
+      "selected_context_key": "c0161cb1c4ad947056d9",
+      "selected_measurements": 5216,
+      "selected_molecules": 4730,
+      "target_chembl_id": "CHEMBL220",
+      "target_name": "Acetylcholinesterase"
+    },
+    {
+      "context_exclusions": {
+        "missing_year_or_activity": 47,
+        "other_assay_context": 7405
+      },
+      "development_events": 81,
+      "eligible_events": 293,
+      "eligible_events_before_cross_target_deduplication": 293,
+      "evaluation_disagreements": 132,
+      "evaluation_events": 212,
+      "evaluation_natural_products": 12,
+      "event_exclusions": {
+        "single_publication_year": 6795
+      },
+      "quality_exclusions": {
+        "potential_duplicate": 2106
+      },
+      "selected_context_key": "1777516c62f2ea08fa2d",
+      "selected_measurements": 9820,
+      "selected_molecules": 7088,
+      "target_chembl_id": "CHEMBL203",
+      "target_name": "Epidermal growth factor receptor"
+    },
+    {
+      "context_exclusions": {
+        "missing_year_or_activity": 30,
+        "other_assay_context": 1399
+      },
+      "development_events": 42,
+      "eligible_events": 67,
+      "eligible_events_before_cross_target_deduplication": 67,
+      "evaluation_disagreements": 8,
+      "evaluation_events": 25,
+      "evaluation_natural_products": 16,
+      "event_exclusions": {
+        "single_publication_year": 3300
+      },
+      "quality_exclusions": {
+        "potential_duplicate": 994
+      },
+      "selected_context_key": "e07acbdecc0d14c26c2f",
+      "selected_measurements": 3693,
+      "selected_molecules": 3367,
+      "target_chembl_id": "CHEMBL230",
+      "target_name": "Prostaglandin G/H synthase 2"
+    },
+    {
+      "context_exclusions": {
+        "other_assay_context": 1093
+      },
+      "development_events": 16,
+      "eligible_events": 41,
+      "eligible_events_before_cross_target_deduplication": 41,
+      "evaluation_disagreements": 16,
+      "evaluation_events": 25,
+      "evaluation_natural_products": 7,
+      "event_exclusions": {
+        "single_publication_year": 2904
+      },
+      "quality_exclusions": {
+        "potential_duplicate": 431
+      },
+      "selected_context_key": "a62a37da1d1ecf5f9088",
+      "selected_measurements": 3185,
+      "selected_molecules": 2945,
+      "target_chembl_id": "CHEMBL284",
+      "target_name": "Dipeptidyl peptidase 4"
+    },
+    {
+      "context_exclusions": {
+        "other_assay_context": 854
+      },
+      "development_events": 24,
+      "eligible_events": 39,
+      "eligible_events_before_cross_target_deduplication": 39,
+      "evaluation_disagreements": 2,
+      "evaluation_events": 15,
+      "evaluation_natural_products": 5,
+      "event_exclusions": {
+        "missing_or_inconsistent_structure": 2,
+        "single_publication_year": 2398
+      },
+      "quality_exclusions": {
+        "potential_duplicate": 273
+      },
+      "selected_context_key": "bee3486ec6fbd9a6ba15",
+      "selected_measurements": 2669,
+      "selected_molecules": 2439,
+      "target_chembl_id": "CHEMBL335",
+      "target_name": "Tyrosine-protein phosphatase non-receptor type 1"
+    }
+  ]
+}

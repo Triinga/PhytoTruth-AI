@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430">
+<rect width="100%" height="100%" fill="#07111f"/>
+<text x="40" y="28" fill="#e2e8f0" font-family="sans-serif" font-size="18">Untouched 2020+ evaluation: PR-AUC</text>
+<line x1="80" x2="860" y1="345.0" y2="345.0" stroke="#1e293b"/>
+<text x="42" y="350.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.0</text>
+<line x1="80" x2="860" y1="285.0" y2="285.0" stroke="#1e293b"/>
+<text x="42" y="290.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.2</text>
+<line x1="80" x2="860" y1="225.0" y2="225.0" stroke="#1e293b"/>
+<text x="42" y="230.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.4</text>
+<line x1="80" x2="860" y1="165.0" y2="165.0" stroke="#1e293b"/>
+<text x="42" y="170.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.6</text>
+<line x1="80" x2="860" y1="104.99999999999999" y2="104.99999999999999" stroke="#1e293b"/>
+<text x="42" y="109.99999999999999" fill="#94a3b8" font-family="sans-serif" font-size="12">0.8</text>
+<line x1="80" x2="860" y1="45.0" y2="45.0" stroke="#1e293b"/>
+<text x="42" y="50.0" fill="#94a3b8" font-family="sans-serif" font-size="12">1.0</text>
+<rect x="110" y="186.06583072100312" width="90" height="158.93416927899688" rx="5" fill="#64748b"/>
+<text x="155.0" y="179.06583072100312" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="12">0.530</text>
+<text x="155.0" y="367" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">constant prevalence</text>
+<rect x="245" y="190.6166307463925" width="90" height="154.3833692536075" rx="5" fill="#94a3b8"/>
+<text x="290.0" y="183.6166307463925" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="12">0.515</text>
+<text x="290.0" y="367" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">target only</text>
+<rect x="380" y="191.43096356769942" width="90" height="153.56903643230058" rx="5" fill="#38bdf8"/>
+<text x="425.0" y="184.43096356769942" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="12">0.512</text>
+<text x="425.0" y="367" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">molecular only</text>
+<rect x="515" y="177.23343718677452" width="90" height="167.76656281322548" rx="5" fill="#f59e0b"/>
+<text x="560.0" y="170.23343718677452" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="12">0.559</text>
+<text x="560.0" y="367" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">evidence history</text>
+<rect x="650" y="137.83455093844736" width="90" height="207.16544906155264" rx="5" fill="#a78bfa"/>
+<text x="695.0" y="130.83455093844736" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="12">0.691</text>
+<text x="695.0" y="367" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">assay provenance</text>
+<rect x="785" y="162.36962205427065" width="90" height="182.63037794572935" rx="5" fill="#14b8a6"/>
+<text x="830.0" y="155.36962205427065" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="12">0.609</text>
+<text x="830.0" y="367" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">full</text>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "checked_measurements": 1689,
+  "matched_measurements": 160,
+  "matched_molecules": 68,
+  "matched_source_databases": [
+    "COCONUT",
+    "NPASS"
+  ],
+  "missing_structure": 0,
+  "invalid_structure": 0,
+  "natural_product_index": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\natural_products_npass_coconut.sqlite",
+  "sha256": "d546f29e1e7a210019a095b8bc34a6ea9a56f574f59b35a789bb4b079fde74ac"
+}

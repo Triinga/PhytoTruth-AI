@@ -1,0 +1,7 @@
+{
+  "source": "ChEMBL REST API target endpoint",
+  "retrieved_at": "2026-10-22T11:23:53.067154+00:00",
+  "records": 10,
+  "sha256": "032eb60850e90e1abe41fcff516ba24f09dc8377f085d6d83feb3d1c5bf3ee59",
+  "data_file": "target_metadata.json"
+}

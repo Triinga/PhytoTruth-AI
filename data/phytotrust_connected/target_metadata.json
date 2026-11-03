@@ -1,0 +1,96 @@
+{
+  "source": "ChEMBL REST API target endpoint",
+  "retrieved_at": "2026-10-22T11:23:53.067154+00:00",
+  "records": [
+    {
+      "target_chembl_id": "CHEMBL214",
+      "pref_name": "5-hydroxytryptamine receptor 1A",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL214.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL217",
+      "pref_name": "D(2) dopamine receptor",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL217.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL218",
+      "pref_name": "Cannabinoid receptor 1",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL218.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL219",
+      "pref_name": "D(4) dopamine receptor",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL219.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL222",
+      "pref_name": "Sodium-dependent noradrenaline transporter",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL222.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL224",
+      "pref_name": "5-hydroxytryptamine receptor 2A",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL224.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL225",
+      "pref_name": "5-hydroxytryptamine receptor 2C",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL225.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL226",
+      "pref_name": "Adenosine receptor A1",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL226.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL233",
+      "pref_name": "Mu-type opioid receptor",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL233.json"
+    },
+    {
+      "target_chembl_id": "CHEMBL236",
+      "pref_name": "Delta-type opioid receptor",
+      "organism": "Homo sapiens",
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606,
+      "species_group_flag": false,
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL236.json"
+    }
+  ]
+}

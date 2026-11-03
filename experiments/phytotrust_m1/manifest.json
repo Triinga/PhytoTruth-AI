@@ -1,0 +1,21 @@
+{
+  "model_version": "phytotrust-m1-v1",
+  "development_source_sha256": "37f732f0e591f3000a508510a235c3529850f9c7b0b03d034b44fbde45a00beb",
+  "protocol_source_sha256": "7fae05cd6ba5853868e4fedbd34bc06d6d72b01340d3b64a8aa6f1c23fc2fcec",
+  "files": {
+    "SCIENTIFIC_REPORT.md": "b8a2986a99b3d4e15a73af493d3190dd5ebadac3548f0debe734ef003c942ff8",
+    "bootstrap_differences.csv": "48cae9a03fc715e3971eeddb4ca33e63d3f56b4318b07c73384e9b5d6de7e671",
+    "calibration_comparison.svg": "2de24a128169f417ac65db8c727d704a19795ab0108979ae6ec9354cc31ab756",
+    "command.txt": "6e0253a9b642300e5705791185f0f66b06b0befa60f245e88c5b3dde6cebc72c",
+    "enriched_compound_study_edges.csv": "f14bb58961ed38c8149dff26a98d1859523df1f604661b0c18558817043c12ca",
+    "fold_parameters.csv": "901a975cb0aaa394b41a7bce542258c5bde9d05e174fd9ae752dc2e488be8dc6",
+    "m1_connected_events.csv": "4018f000eccf0734a55b2492b77806ee82701841aee46d6bdb8f02ba2026d984",
+    "metrics.csv": "e72788ba438b424b757b00d7f5fa54575a80d72847df91a9323d62b6a6d1780b",
+    "model_config.json": "5a2f5798c45149a1bfcb381cdae65ab67fdab1f042e2597a0d97f0da46f0bc2a",
+    "model_parameters.json": "d278b12ff098e92c8d6f725e8b5158f13fc14c13f3102ac365ca2d6db803a1a6",
+    "nll_comparison.svg": "c388ac0395a6d70eb8b535f7b11cbd95b53f116cc4470744e0f43ec542da1327",
+    "predictions.csv": "08ab096d2897494a6d4e82af44b21d57506e075e8064c52bbe9acf94e2df2947",
+    "results.json": "47cf07f897f141b76c79cffe2d43896193403bf3b81b1c88ad25099fe7bbff19"
+  },
+  "quarantined_artifacts_loaded": false
+}

@@ -1,0 +1,1 @@
+python -m app.phytotrust_m1 run --dataset ../experiments/phytotrust_connected_dataset/development_measurements.csv --protocol-features ../data/phytotrust_m1/CHEMBL222.assay_protocol_features.csv --output-dir ../experiments/phytotrust_m1 --bootstrap-iterations 1000 --seed 2026

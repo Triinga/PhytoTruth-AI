@@ -1,0 +1,1931 @@
+{
+  "generated_at": "2026-10-22T12:49:33.375981+00:00",
+  "model_version": "phytotrust-m1-v1",
+  "seed": 2026,
+  "configuration": {
+    "degrees_of_freedom": 4.0,
+    "quadrature_nodes": 15,
+    "mean_coefficient_scale": 0.35,
+    "log_scale_coefficient_scale": 0.5,
+    "minimum_scale": 0.001,
+    "optimizer_maxiter": 900,
+    "optimizer_maxfun": 100000
+  },
+  "dataset": {
+    "source_path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\phytotrust_connected_dataset\\development_measurements.csv",
+    "source_sha256": "37f732f0e591f3000a508510a235c3529850f9c7b0b03d034b44fbde45a00beb",
+    "raw_measurements": 966,
+    "compounds": 877,
+    "studies": 61,
+    "targets": [
+      "CHEMBL222"
+    ],
+    "contexts": [
+      "0ee2eccfc112354b355a"
+    ],
+    "year_range": [
+      2000,
+      2018
+    ],
+    "quarantined_files_opened": false,
+    "compound_study_edges": 907,
+    "connected_transfer_events": 59,
+    "repeated_compounds": 29,
+    "connected_studies": 18,
+    "verified_natural_product_transfer_events": 6,
+    "protocol_artifact": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_m1\\CHEMBL222.assay_protocol_features.csv",
+      "sha256": "7fae05cd6ba5853868e4fedbd34bc06d6d72b01340d3b64a8aa6f1c23fc2fcec",
+      "assays": 67,
+      "missing_assays": [],
+      "extra_assays": []
+    }
+  },
+  "protocol_coverage": {
+    "compound_study_edges": 907,
+    "assays": 961,
+    "mean_direct_field_completeness": 0.4972436604189636,
+    "mean_protocol_missing_fraction": 0.9093623667769201,
+    "edges_with_any_extracted_protocol_category": 907,
+    "fraction_with_any_extracted_protocol_category": 1.0,
+    "median_protocol_category_count": 2.0
+  },
+  "validation": {
+    "study_grouped": "retrospective leave-one-publication-out",
+    "forward_temporal": "strictly earlier publication years only",
+    "heldout_protocol_used_as_predictor": false,
+    "heldout_publication_assay_activity_outcome_excluded": true,
+    "quarantined_artifacts_loaded": false,
+    "skipped_folds": [
+      {
+        "scheme": "forward_temporal",
+        "group": 2003,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2006,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2007,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2008,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2009,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2012,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2013,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2014,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "group": 2018,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      }
+    ]
+  },
+  "metrics": {
+    "forward_temporal": {
+      "all": {
+        "m1_homoscedastic": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.518934496402126,
+          "rmse": 0.6858396135524093,
+          "nll": 1.5100641132420833,
+          "coverage_80": 0.76,
+          "mean_width_80": 1.195536255642039,
+          "coverage_90": 0.84,
+          "mean_width_90": 1.4478173621842774,
+          "mean_absolute_calibration_error": 0.050000000000000044
+        },
+        "m1_no_protocol": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5183058738161875,
+          "rmse": 0.6847590308121453,
+          "nll": 1.5064097302416588,
+          "coverage_80": 0.76,
+          "mean_width_80": 1.1960394303204946,
+          "coverage_90": 0.84,
+          "mean_width_90": 1.4484552290064914,
+          "mean_absolute_calibration_error": 0.050000000000000044
+        },
+        "m1_no_study_variance": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5146843451263003,
+          "rmse": 0.6669041421114794,
+          "nll": 1.363583842348464,
+          "coverage_80": 0.64,
+          "mean_width_80": 5.910628530920685,
+          "coverage_90": 0.76,
+          "mean_width_90": 8.218433913301931,
+          "mean_absolute_calibration_error": 0.15000000000000002
+        },
+        "median_potency": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5052989004563453,
+          "rmse": 0.6685000815480163,
+          "nll": 1.1673794616680493,
+          "coverage_80": 0.56,
+          "mean_width_80": 0.8788671215758304,
+          "coverage_90": 0.68,
+          "mean_width_90": 1.2220208594499633,
+          "mean_absolute_calibration_error": 0.22999999999999998
+        },
+        "phytotrust_m0": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5258294918476996,
+          "rmse": 0.701469157115047,
+          "nll": 1.1447682143585207,
+          "coverage_80": 0.68,
+          "mean_width_80": 1.1490966758953638,
+          "coverage_90": 0.84,
+          "mean_width_90": 1.4551757154645912,
+          "mean_absolute_calibration_error": 0.09000000000000002
+        },
+        "phytotrust_m1": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5387881934970261,
+          "rmse": 0.7241758286715899,
+          "nll": 1.5211577145163957,
+          "coverage_80": 0.6,
+          "mean_width_80": 5.888024144502938,
+          "coverage_90": 0.76,
+          "mean_width_90": 8.157190076644316,
+          "mean_absolute_calibration_error": 0.17000000000000004
+        },
+        "student_t_regression": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5168454880556085,
+          "rmse": 0.6898999843407665,
+          "nll": 1.1003012977737416,
+          "coverage_80": 0.64,
+          "mean_width_80": 1.0270601750372583,
+          "coverage_90": 0.84,
+          "mean_width_90": 1.4280759024811909,
+          "mean_absolute_calibration_error": 0.11000000000000004
+        },
+        "xgboost": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5042261675430375,
+          "rmse": 0.668390525460267,
+          "nll": 1.0540394463516756,
+          "coverage_80": 0.64,
+          "mean_width_80": 1.050470107088034,
+          "coverage_90": 0.72,
+          "mean_width_90": 1.4606262443730005,
+          "mean_absolute_calibration_error": 0.17000000000000004
+        }
+      },
+      "natural_products": {
+        "m1_homoscedastic": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8696009522269271,
+          "rmse": 1.222452978474941,
+          "nll": 2.4242732654967454,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.172605493025787,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.5511433635984442,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "m1_no_protocol": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8696008927908639,
+          "rmse": 1.2224528801569545,
+          "nll": 2.4242730320029238,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.1726055312197465,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.5511434075625805,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "m1_no_study_variance": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8470376402008757,
+          "rmse": 1.1494228774197093,
+          "nll": 2.0846659593500525,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.5330173213261193,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 2.131584056984032,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "median_potency": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8542298395167561,
+          "rmse": 1.1764727560555186,
+          "nll": 2.2625697416640174,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.2082081273359158,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.6799530872359234,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "phytotrust_m0": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8945923773988014,
+          "rmse": 1.2442822937922704,
+          "nll": 2.4681372365078564,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.1738596551783356,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.5535372132856156,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "phytotrust_m1": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.9191658699810988,
+          "rmse": 1.2763253982270295,
+          "nll": 2.4801319093207725,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3117550535401288,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.7611252764427725,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "student_t_regression": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8798349525659868,
+          "rmse": 1.219752265820767,
+          "nll": 2.108720558117181,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.142028593432362,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.5879337490291767,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "xgboost": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8544435040074857,
+          "rmse": 1.1823444622517607,
+          "nll": 2.1654630583527683,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.4742714459598265,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 2.0499008498851015,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        }
+      },
+      "one_prior_study": {
+        "m1_homoscedastic": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.517373254115658,
+          "rmse": 0.6907065715125504,
+          "nll": 1.5321909249763186,
+          "coverage_80": 0.75,
+          "mean_width_80": 1.1973899025034935,
+          "coverage_90": 0.8333333333333334,
+          "mean_width_90": 1.4442999353600368,
+          "mean_absolute_calibration_error": 0.05833333333333335
+        },
+        "m1_no_protocol": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5167184390841527,
+          "rmse": 0.6895888721940628,
+          "nll": 1.5283842764916298,
+          "coverage_80": 0.75,
+          "mean_width_80": 1.1979140428519643,
+          "coverage_90": 0.8333333333333334,
+          "mean_width_90": 1.4449643800535135,
+          "mean_absolute_calibration_error": 0.05833333333333335
+        },
+        "m1_no_study_variance": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5124061927082719,
+          "rmse": 0.6706606679219073,
+          "nll": 1.3445065516801629,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 6.127339538130758,
+          "coverage_90": 0.7916666666666666,
+          "mean_width_90": 8.5197597506006,
+          "mean_absolute_calibration_error": 0.1208333333333334
+        },
+        "median_potency": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5032798011881275,
+          "rmse": 0.6728565302556749,
+          "nll": 1.1744824675572796,
+          "coverage_80": 0.5416666666666666,
+          "mean_width_80": 0.8596725892901654,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.1953318204989885,
+          "mean_absolute_calibration_error": 0.2458333333333334
+        },
+        "phytotrust_m0": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5250204689714443,
+          "rmse": 0.707229960671074,
+          "nll": 1.153041906922903,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.1489769205946139,
+          "coverage_90": 0.8333333333333334,
+          "mean_width_90": 1.4518763477538954,
+          "mean_absolute_calibration_error": 0.10000000000000003
+        },
+        "phytotrust_m1": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5358278704730645,
+          "rmse": 0.7285506699858212,
+          "nll": 1.530333044549369,
+          "coverage_80": 0.625,
+          "mean_width_80": 6.092068157599619,
+          "coverage_90": 0.75,
+          "mean_width_90": 8.442694046128004,
+          "mean_absolute_calibration_error": 0.16250000000000003
+        },
+        "student_t_regression": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5155895765209623,
+          "rmse": 0.6952174279943109,
+          "nll": 1.1020834731023665,
+          "coverage_80": 0.625,
+          "mean_width_80": 1.0213579822189434,
+          "coverage_90": 0.8333333333333334,
+          "mean_width_90": 1.420147288021134,
+          "mean_absolute_calibration_error": 0.12083333333333335
+        },
+        "xgboost": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5024519379820108,
+          "rmse": 0.6729799627865282,
+          "nll": 1.0589724571152654,
+          "coverage_80": 0.625,
+          "mean_width_80": 1.0262790855648438,
+          "coverage_90": 0.7083333333333334,
+          "mean_width_90": 1.4269898365623,
+          "mean_absolute_calibration_error": 0.18333333333333335
+        }
+      },
+      "multiple_prior_studies": {
+        "m1_homoscedastic": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5564043112773547,
+          "rmse": 0.5564043112773547,
+          "nll": 0.9790206316204327,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.1510487309671298,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.5322356059660445,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        },
+        "m1_no_protocol": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5564043073850211,
+          "rmse": 0.5564043073850211,
+          "nll": 0.9790206202423518,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.1510487295652272,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.532235603877961,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        },
+        "m1_no_study_variance": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5693600031589838,
+          "rmse": 0.5693600031589838,
+          "nll": 1.8214388183876928,
+          "coverage_80": 0.0,
+          "mean_width_80": 0.7095643578789481,
+          "coverage_90": 0.0,
+          "mean_width_90": 0.986613818133832,
+          "mean_absolute_calibration_error": 0.8500000000000001
+        },
+        "median_potency": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.55375728289357,
+          "rmse": 0.55375728289357,
+          "nll": 0.9969073203265232,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.3395358964317907,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.862557794273357,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        },
+        "phytotrust_m0": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5452460408778279,
+          "rmse": 0.5452460408778279,
+          "nll": 0.9461995928133495,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.1519708031133664,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.5343605405212886,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        },
+        "phytotrust_m1": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.6098359460721063,
+          "rmse": 0.6098359460721063,
+          "nll": 1.30094979372504,
+          "coverage_80": 0.0,
+          "mean_width_80": 0.9909678301826119,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.3050948090358139,
+          "mean_absolute_calibration_error": 0.45
+        },
+        "student_t_regression": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5469873648871184,
+          "rmse": 0.5469873648871184,
+          "nll": 1.0575290898867487,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.1639128026768226,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.618362649522548,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        },
+        "xgboost": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5468076770076769,
+          "rmse": 0.5468076770076769,
+          "nll": 0.9356471880255142,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.631054623644598,
+          "coverage_90": 1.0,
+          "mean_width_90": 2.2679000318298197,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        }
+      }
+    },
+    "study_grouped": {
+      "all": {
+        "m1_homoscedastic": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.4601046502571394,
+          "rmse": 0.6316345261325659,
+          "nll": 0.9897216219364465,
+          "coverage_80": 0.7288135593220338,
+          "mean_width_80": 1.226235459887979,
+          "coverage_90": 0.847457627118644,
+          "mean_width_90": 1.6485904154103546,
+          "mean_absolute_calibration_error": 0.061864406779661096
+        },
+        "m1_no_protocol": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.4549277891559965,
+          "rmse": 0.6185538759649721,
+          "nll": 0.969880320172063,
+          "coverage_80": 0.7627118644067796,
+          "mean_width_80": 1.2727375327702362,
+          "coverage_90": 0.847457627118644,
+          "mean_width_90": 1.7238137059233845,
+          "mean_absolute_calibration_error": 0.044915254237288205
+        },
+        "m1_no_study_variance": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.45466846961956475,
+          "rmse": 0.6233163755643112,
+          "nll": 1.166459749199254,
+          "coverage_80": 0.6779661016949152,
+          "mean_width_80": 1.971438383249322,
+          "coverage_90": 0.7966101694915254,
+          "mean_width_90": 2.741186657581516,
+          "mean_absolute_calibration_error": 0.11271186440677972
+        },
+        "median_potency": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.45178114258451957,
+          "rmse": 0.6228840743285761,
+          "nll": 1.0326730876439383,
+          "coverage_80": 0.7966101694915254,
+          "mean_width_80": 1.4249688026682845,
+          "coverage_90": 0.864406779661017,
+          "mean_width_90": 1.9813479855792244,
+          "mean_absolute_calibration_error": 0.01949152542372884
+        },
+        "phytotrust_m0": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.45251654727608454,
+          "rmse": 0.626698277507525,
+          "nll": 0.9732742769816245,
+          "coverage_80": 0.7796610169491526,
+          "mean_width_80": 1.3639380936514864,
+          "coverage_90": 0.8983050847457628,
+          "mean_width_90": 1.8054278834760475,
+          "mean_absolute_calibration_error": 0.011016949152542366
+        },
+        "phytotrust_m1": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.5113367890528703,
+          "rmse": 0.6994889704656375,
+          "nll": 1.3721043258750758,
+          "coverage_80": 0.6949152542372882,
+          "mean_width_80": 4.394996925675461,
+          "coverage_90": 0.7966101694915254,
+          "mean_width_90": 6.051678951089986,
+          "mean_absolute_calibration_error": 0.10423728813559324
+        },
+        "student_t_regression": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.4525074086152972,
+          "rmse": 0.6261233236589862,
+          "nll": 0.9641758768989713,
+          "coverage_80": 0.7796610169491526,
+          "mean_width_80": 1.3333974570316793,
+          "coverage_90": 0.8813559322033898,
+          "mean_width_90": 1.8540226007187044,
+          "mean_absolute_calibration_error": 0.01949152542372884
+        },
+        "xgboost": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.4496001512719912,
+          "rmse": 0.621268015736509,
+          "nll": 1.049101260517063,
+          "coverage_80": 0.8305084745762712,
+          "mean_width_80": 1.748289612221451,
+          "coverage_90": 0.9152542372881356,
+          "mean_width_90": 2.430909431068032,
+          "mean_absolute_calibration_error": 0.022881355932203362
+        }
+      },
+      "natural_products": {
+        "m1_homoscedastic": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8478267764588386,
+          "rmse": 1.1695124538384531,
+          "nll": 2.1503555645021932,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.2419883809797974,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.6672089988276133,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "m1_no_protocol": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8462158527971964,
+          "rmse": 1.1499170161384749,
+          "nll": 2.19352266187337,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.2934790881758034,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.7486803659139205,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "m1_no_study_variance": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8076118694682037,
+          "rmse": 1.1232682076654728,
+          "nll": 2.3405090440146874,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 2.1014685504240624,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 2.921987113924042,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "median_potency": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8542298395167561,
+          "rmse": 1.1764727560555188,
+          "nll": 2.1590092423078797,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.266295311942841,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.760720417715995,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "phytotrust_m0": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.855906984061115,
+          "rmse": 1.1788035778001082,
+          "nll": 2.1969939731839236,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3740391427265137,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.8122371366580208,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "phytotrust_m1": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8824582901777243,
+          "rmse": 1.2537252203626634,
+          "nll": 2.8608717555134198,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 2.1628627872114636,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 2.945933838798874,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "student_t_regression": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8566136846377734,
+          "rmse": 1.1810666599580055,
+          "nll": 1.979082501759667,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.311186475478696,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.8231393396428206,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "xgboost": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.850550273276197,
+          "rmse": 1.1713085394402123,
+          "nll": 2.03234106912389,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.5221884418572376,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 2.1165270406610435,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        }
+      },
+      "one_prior_study": {
+        "m1_homoscedastic": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.4599534908380497,
+          "rmse": 0.6349727706481066,
+          "nll": 0.99297181897453,
+          "coverage_80": 0.7321428571428571,
+          "mean_width_80": 1.2241028258873676,
+          "coverage_90": 0.8392857142857143,
+          "mean_width_90": 1.6463443495808332,
+          "mean_absolute_calibration_error": 0.06428571428571433
+        },
+        "m1_no_protocol": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.45449929923808824,
+          "rmse": 0.621257655745856,
+          "nll": 0.9720675932409195,
+          "coverage_80": 0.7678571428571429,
+          "mean_width_80": 1.2730960821836625,
+          "coverage_90": 0.8392857142857143,
+          "mean_width_90": 1.7255974604377613,
+          "mean_absolute_calibration_error": 0.04642857142857143
+        },
+        "m1_no_study_variance": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.4540898835165694,
+          "rmse": 0.6259404708113133,
+          "nll": 1.17432402906544,
+          "coverage_80": 0.6785714285714286,
+          "mean_width_80": 2.0216509612689997,
+          "coverage_90": 0.8035714285714286,
+          "mean_width_90": 2.8110047407028764,
+          "mean_absolute_calibration_error": 0.10892857142857143
+        },
+        "median_potency": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.4494674665414852,
+          "rmse": 0.6267489374591335,
+          "nll": 1.0450846185994522,
+          "coverage_80": 0.7857142857142857,
+          "mean_width_80": 1.4279426809214502,
+          "coverage_90": 0.8571428571428571,
+          "mean_width_90": 1.9854830148340636,
+          "mean_absolute_calibration_error": 0.028571428571428636
+        },
+        "phytotrust_m0": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.44964680535060253,
+          "rmse": 0.6303511343751429,
+          "nll": 0.9766671777708877,
+          "coverage_80": 0.7857142857142857,
+          "mean_width_80": 1.3643529734541742,
+          "coverage_90": 0.8928571428571429,
+          "mean_width_90": 1.8061357874949715,
+          "mean_absolute_calibration_error": 0.010714285714285732
+        },
+        "phytotrust_m1": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.5097385986544618,
+          "rmse": 0.7054980465049968,
+          "nll": 1.3806569450215178,
+          "coverage_80": 0.7142857142857143,
+          "mean_width_80": 4.552680284354492,
+          "coverage_90": 0.8035714285714286,
+          "mean_width_90": 6.272963940400092,
+          "mean_absolute_calibration_error": 0.09107142857142858
+        },
+        "student_t_regression": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.45011628899927836,
+          "rmse": 0.6299823546175611,
+          "nll": 0.9659133595720706,
+          "coverage_80": 0.7857142857142857,
+          "mean_width_80": 1.33517210609663,
+          "coverage_90": 0.875,
+          "mean_width_90": 1.8564901616529261,
+          "mean_absolute_calibration_error": 0.019642857142857184
+        },
+        "xgboost": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.44692684036397917,
+          "rmse": 0.6248886255057163,
+          "nll": 1.0619444231996555,
+          "coverage_80": 0.8214285714285714,
+          "mean_width_80": 1.751957591997755,
+          "coverage_90": 0.9107142857142857,
+          "mean_width_90": 2.436009573841204,
+          "mean_absolute_calibration_error": 0.016071428571428514
+        }
+      },
+      "multiple_prior_studies": {
+        "m1_homoscedastic": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.46292629274681446,
+          "rmse": 0.5657163045043279,
+          "nll": 0.9290512772255539,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.2660446278993864,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.6905169775614235,
+          "mean_absolute_calibration_error": 0.1166666666666667
+        },
+        "m1_no_protocol": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.4629262676236185,
+          "rmse": 0.5657162895325049,
+          "nll": 0.9290512228867399,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.266044610386274,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.690516954988346,
+          "mean_absolute_calibration_error": 0.1166666666666667
+        },
+        "m1_no_study_variance": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.46546874354214296,
+          "rmse": 0.572128322080448,
+          "nll": 1.019659858363782,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.0341369268820113,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.4379157726494398,
+          "mean_absolute_calibration_error": 0.1833333333333334
+        },
+        "median_potency": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.49496976205449555,
+          "rmse": 0.5457388628068965,
+          "nll": 0.8009911764743425,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.3694564086091987,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.9041607728222196,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        },
+        "phytotrust_m0": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.506085063218416,
+          "rmse": 0.5541089498084225,
+          "nll": 0.9099401289153777,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3561936706679845,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.7922136751227964,
+          "mean_absolute_calibration_error": 0.1166666666666667
+        },
+        "phytotrust_m1": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.5411696764898277,
+          "rmse": 0.5759238160060863,
+          "nll": 1.2124554351414847,
+          "coverage_80": 0.3333333333333333,
+          "mean_width_80": 1.4515742303335324,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.9210258173013404,
+          "mean_absolute_calibration_error": 0.3500000000000001
+        },
+        "student_t_regression": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.49714164144764944,
+          "rmse": 0.5491325310904784,
+          "nll": 0.9317428670011187,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3002706744859367,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.8079614632799073,
+          "mean_absolute_calibration_error": 0.1166666666666667
+        },
+        "xgboost": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.4995019548882172,
+          "rmse": 0.5493203119048926,
+          "nll": 0.8093622237753371,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.6798206563971114,
+          "coverage_90": 1.0,
+          "mean_width_90": 2.3357067659688098,
+          "mean_absolute_calibration_error": 0.14999999999999997
+        }
+      }
+    }
+  },
+  "study_cluster_bootstrap_differences": {
+    "forward_temporal": {
+      "all": {
+        "median_potency": {
+          "point": {
+            "mae": 0.03348929304068082,
+            "rmse": 0.05567574712357359,
+            "nll": 0.3537782528483464,
+            "calibration": -0.05999999999999994
+          },
+          "ci95": {
+            "mae": [
+              -0.008047174530231588,
+              0.09593543579438725
+            ],
+            "rmse": [
+              -0.00017202175472390822,
+              0.09991147123729212
+            ],
+            "nll": [
+              -0.047212572430114896,
+              1.5751835655429243
+            ],
+            "calibration": [
+              -0.10911363636363634,
+              0.1072420634920634
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "student_t_regression": {
+          "point": {
+            "mae": 0.02194270544141763,
+            "rmse": 0.034275844330823424,
+            "nll": 0.42085641674265406,
+            "calibration": 0.06
+          },
+          "ci95": {
+            "mae": [
+              -0.004025954743819061,
+              0.05780048208228809
+            ],
+            "rmse": [
+              0.003071128944959392,
+              0.05834577597446275
+            ],
+            "nll": [
+              0.03901054971096073,
+              1.6977544983146728
+            ],
+            "calibration": [
+              -0.04999999999999999,
+              0.17879464285714264
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": true,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "xgboost": {
+          "point": {
+            "mae": 0.03456202595398861,
+            "rmse": 0.05578530321132291,
+            "nll": 0.46711826816472013,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.007781096359158091,
+              0.0979854383099486
+            ],
+            "rmse": [
+              -3.598619508777821e-05,
+              0.09912152773340459
+            ],
+            "nll": [
+              0.016751565270393835,
+              1.6300405157611504
+            ],
+            "calibration": [
+              -0.0714285714285714,
+              0.12520833333333314
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "phytotrust_m0": {
+          "point": {
+            "mae": 0.012958701649326554,
+            "rmse": 0.022706671556542934,
+            "nll": 0.376389500157875,
+            "calibration": 0.08000000000000002
+          },
+          "ci95": {
+            "mae": [
+              -0.005388730253787298,
+              0.04432433843277647
+            ],
+            "rmse": [
+              0.006487831655190944,
+              0.04709544031612457
+            ],
+            "nll": [
+              0.020594898766954306,
+              1.6755761440673749
+            ],
+            "calibration": [
+              -0.055113378684807195,
+              0.2
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": true,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "m1_no_protocol": {
+          "point": {
+            "mae": 0.02048231968083858,
+            "rmse": 0.03941679785944463,
+            "nll": 0.014747984274736892,
+            "calibration": 0.12
+          },
+          "ci95": {
+            "mae": [
+              -0.0033140218109392145,
+              0.05465416809723078
+            ],
+            "rmse": [
+              0.01259209994437882,
+              0.05584070581514901
+            ],
+            "nll": [
+              -0.6207194365365212,
+              1.4964256090819494
+            ],
+            "calibration": [
+              -0.1285714285714285,
+              0.23756249999999998
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": true,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "m1_homoscedastic": {
+          "point": {
+            "mae": 0.019853697094900147,
+            "rmse": 0.03833621511918062,
+            "nll": 0.011093601274312359,
+            "calibration": 0.12
+          },
+          "ci95": {
+            "mae": [
+              -0.003935172587326703,
+              0.055239716172477915
+            ],
+            "rmse": [
+              0.006026300384455355,
+              0.055831572056193456
+            ],
+            "nll": [
+              -0.6183436477986166,
+              1.4676961819478944
+            ],
+            "calibration": [
+              -0.13228494623655915,
+              0.2501136363636363
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": true,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "m1_no_study_variance": {
+          "point": {
+            "mae": 0.024103848370725767,
+            "rmse": 0.0572716865601105,
+            "nll": 0.15757387216793162,
+            "calibration": 0.020000000000000018
+          },
+          "ci95": {
+            "mae": [
+              -0.10405182033848034,
+              0.11484774158983942
+            ],
+            "rmse": [
+              -0.06756342000654383,
+              0.12374992595160984
+            ],
+            "nll": [
+              -0.10101096371848958,
+              0.46411724771612073
+            ],
+            "calibration": [
+              -0.08333333333333337,
+              0.09523809523809529
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        }
+      },
+      "natural_products": {
+        "median_potency": {
+          "point": {
+            "mae": 0.06493603046434271,
+            "rmse": 0.09985264217151091,
+            "nll": 0.21756216765675518,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              0.005584237478315046,
+              0.1737997459298768
+            ],
+            "rmse": [
+              0.005584237478315046,
+              0.17379974592987701
+            ],
+            "nll": [
+              -0.03802796572504813,
+              0.6062063857083206
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": true,
+            "rmse": true,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "student_t_regression": {
+          "point": {
+            "mae": 0.03933091741511208,
+            "rmse": 0.056573132406262605,
+            "nll": 0.3714113512035917,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.0021394141035386838,
+              0.09793814035758697
+            ],
+            "rmse": [
+              -0.0021394141035386838,
+              0.09793814035758697
+            ],
+            "nll": [
+              0.06753166070988462,
+              0.9496991761528166
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "xgboost": {
+          "point": {
+            "mae": 0.06472236597361314,
+            "rmse": 0.0939809359752688,
+            "nll": 0.31466885096800423,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              0.0013821868557624128,
+              0.16261608917776726
+            ],
+            "rmse": [
+              0.0013821868557624128,
+              0.16261608917776726
+            ],
+            "nll": [
+              -0.17418698949867123,
+              1.139229902733227
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": true,
+            "rmse": true,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "phytotrust_m0": {
+          "point": {
+            "mae": 0.024573492582297463,
+            "rmse": 0.032043104434759107,
+            "nll": 0.011994672812916107,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.005183906046807074,
+              0.0549690337931219
+            ],
+            "rmse": [
+              -0.005183906046807074,
+              0.0549690337931219
+            ],
+            "nll": [
+              -0.15593128044223015,
+              0.13497533935837613
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "m1_no_protocol": {
+          "point": {
+            "mae": 0.04956497719023489,
+            "rmse": 0.05387251807007498,
+            "nll": 0.055858877317848776,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              0.008552745790981753,
+              0.08859595148991062
+            ],
+            "rmse": [
+              0.008552745790981753,
+              0.08859595148991062
+            ],
+            "nll": [
+              -0.08535972225976618,
+              0.16276089244623132
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": true,
+            "rmse": true,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "m1_homoscedastic": {
+          "point": {
+            "mae": 0.04956491775417171,
+            "rmse": 0.05387241975208856,
+            "nll": 0.055858643824027165,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              0.008552750556223288,
+              0.08859577826974263
+            ],
+            "rmse": [
+              0.008552750556223288,
+              0.08859577826974263
+            ],
+            "nll": [
+              -0.08536041267279693,
+              0.16276089419399625
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": true,
+            "rmse": true,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "m1_no_study_variance": {
+          "point": {
+            "mae": 0.07212822978022315,
+            "rmse": 0.12690252080732023,
+            "nll": 0.39546594997072004,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.011402834847936916,
+              0.22641241343118956
+            ],
+            "rmse": [
+              -0.011402834847936916,
+              0.22641241343118956
+            ],
+            "nll": [
+              -0.20908679970161825,
+              1.3942266054299042
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        }
+      }
+    },
+    "study_grouped": {
+      "all": {
+        "median_potency": {
+          "point": {
+            "mae": 0.05955564646835071,
+            "rmse": 0.07660489613706145,
+            "nll": 0.3394312382311375,
+            "calibration": 0.0847457627118644
+          },
+          "ci95": {
+            "mae": [
+              0.002254840844099057,
+              0.15906952888370537
+            ],
+            "rmse": [
+              -0.009007985913544047,
+              0.1840115944346283
+            ],
+            "nll": [
+              0.05370204281206158,
+              0.916260913413888
+            ],
+            "calibration": [
+              -0.10629645270270266,
+              0.13546874999999997
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": true,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "student_t_regression": {
+          "point": {
+            "mae": 0.058829380437573076,
+            "rmse": 0.07336564680665136,
+            "nll": 0.4079284489761045,
+            "calibration": 0.0847457627118644
+          },
+          "ci95": {
+            "mae": [
+              -0.006698218116358491,
+              0.14915505927244946
+            ],
+            "rmse": [
+              -0.022281102791217554,
+              0.18074824393641276
+            ],
+            "nll": [
+              0.0730325031618373,
+              0.8964485528806695
+            ],
+            "calibration": [
+              -0.07378793163585627,
+              0.12195799457994579
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "xgboost": {
+          "point": {
+            "mae": 0.06173663778087907,
+            "rmse": 0.07822095472912849,
+            "nll": 0.3230030653580127,
+            "calibration": 0.08135593220338988
+          },
+          "ci95": {
+            "mae": [
+              0.0019295260881569411,
+              0.15231652996284137
+            ],
+            "rmse": [
+              -0.00868251231635694,
+              0.17720637844877715
+            ],
+            "nll": [
+              -0.03063949621993843,
+              0.9171014777169636
+            ],
+            "calibration": [
+              -0.1153947368421053,
+              0.18067129629629616
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": true,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "phytotrust_m0": {
+          "point": {
+            "mae": 0.05882024177678574,
+            "rmse": 0.07279069295811247,
+            "nll": 0.3988300488934513,
+            "calibration": 0.09322033898305088
+          },
+          "ci95": {
+            "mae": [
+              -0.0018421371187871398,
+              0.14729796302078987
+            ],
+            "rmse": [
+              -0.015154671096248464,
+              0.17278216313865888
+            ],
+            "nll": [
+              0.07011631872787981,
+              0.9004681276265804
+            ],
+            "calibration": [
+              -0.06364119922630558,
+              0.1428571428571429
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "m1_no_protocol": {
+          "point": {
+            "mae": 0.05640899989687376,
+            "rmse": 0.08093509450066538,
+            "nll": 0.40222400570301275,
+            "calibration": 0.05932203389830504
+          },
+          "ci95": {
+            "mae": [
+              -0.027316194501461163,
+              0.17538768015096995
+            ],
+            "rmse": [
+              -0.05011112504645835,
+              0.2288087339372478
+            ],
+            "nll": [
+              0.04022264055792592,
+              0.9401758705803944
+            ],
+            "calibration": [
+              -0.05714285714285705,
+              0.125
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "m1_homoscedastic": {
+          "point": {
+            "mae": 0.05123213879573085,
+            "rmse": 0.06785444433307164,
+            "nll": 0.3823827039386293,
+            "calibration": 0.042372881355932146
+          },
+          "ci95": {
+            "mae": [
+              -0.03601885790823625,
+              0.16332112075418712
+            ],
+            "rmse": [
+              -0.07064738280028855,
+              0.21112302542760758
+            ],
+            "nll": [
+              0.003750438501099199,
+              0.9434080273583607
+            ],
+            "calibration": [
+              -0.04214237516869086,
+              0.08823529411764702
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "m1_no_study_variance": {
+          "point": {
+            "mae": 0.056668319433305525,
+            "rmse": 0.07617259490132633,
+            "nll": 0.2056445766758217,
+            "calibration": -0.008474576271186474
+          },
+          "ci95": {
+            "mae": [
+              -0.02422897159312851,
+              0.17406577633963993
+            ],
+            "rmse": [
+              -0.04082098054720017,
+              0.211199160146346
+            ],
+            "nll": [
+              -0.06162420476243303,
+              0.6118104054333997
+            ],
+            "calibration": [
+              -0.03949490662139215,
+              0.02439024390243899
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        }
+      },
+      "natural_products": {
+        "median_potency": {
+          "point": {
+            "mae": 0.02822845066096813,
+            "rmse": 0.07725246430714461,
+            "nll": 0.70186251320554,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.07169076908075867,
+              0.1693739085566588
+            ],
+            "rmse": [
+              -0.08807197462868754,
+              0.21644029132850773
+            ],
+            "nll": [
+              0.04155059112238457,
+              1.5164289596119502
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "student_t_regression": {
+          "point": {
+            "mae": 0.025844605539950827,
+            "rmse": 0.0726585604046579,
+            "nll": 0.8817892537537528,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.08571273871903787,
+              0.17823386398800783
+            ],
+            "rmse": [
+              -0.10461423143597881,
+              0.27029576359147806
+            ],
+            "nll": [
+              0.14755700971638475,
+              1.9230517812748944
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "xgboost": {
+          "point": {
+            "mae": 0.031908016901527225,
+            "rmse": 0.08241668092245114,
+            "nll": 0.8285306863895299,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.06884715662746299,
+              0.19066033573044147
+            ],
+            "rmse": [
+              -0.08054717172886239,
+              0.27183662026866295
+            ],
+            "nll": [
+              -0.004882188894607234,
+              1.901964772587003
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "phytotrust_m0": {
+          "point": {
+            "mae": 0.026551306116609275,
+            "rmse": 0.07492164256255518,
+            "nll": 0.6638777823294961,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.08776938048534004,
+              0.18278589193954342
+            ],
+            "rmse": [
+              -0.08919257783023762,
+              0.2617778563638341
+            ],
+            "nll": [
+              0.0389256461793621,
+              1.5593845480355297
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true,
+            "calibration": false
+          }
+        },
+        "m1_no_protocol": {
+          "point": {
+            "mae": 0.0362424373805279,
+            "rmse": 0.10380820422418857,
+            "nll": 0.6673490936400497,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.14515962429407725,
+              0.2717171333775461
+            ],
+            "rmse": [
+              -0.1536222714661032,
+              0.4049888393147578
+            ],
+            "nll": [
+              -0.18454838169022159,
+              1.8317444332526356
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "m1_homoscedastic": {
+          "point": {
+            "mae": 0.03463151371888562,
+            "rmse": 0.08421276652421028,
+            "nll": 0.7105161910112265,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.1560726256875009,
+              0.27325610927818617
+            ],
+            "rmse": [
+              -0.1980419489645271,
+              0.4065805589781908
+            ],
+            "nll": [
+              -0.12319440763809733,
+              1.8837839879206062
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        },
+        "m1_no_study_variance": {
+          "point": {
+            "mae": 0.07484642070952052,
+            "rmse": 0.13045701269719068,
+            "nll": 0.5203627114987324,
+            "calibration": 0.0
+          },
+          "ci95": {
+            "mae": [
+              -0.06553859927127699,
+              0.2914494156353673
+            ],
+            "rmse": [
+              -0.0981328899730396,
+              0.4043758407758157
+            ],
+            "nll": [
+              -0.06493408088526965,
+              1.6542334077953535
+            ],
+            "calibration": [
+              0.0,
+              0.0
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false,
+            "calibration": false
+          }
+        }
+      }
+    }
+  },
+  "connectivity": {
+    "study_grouped_multiple_prior_events": 3,
+    "forward_temporal_multiple_prior_events": 1
+  },
+  "final_parameters": {
+    "alpha": -0.036459269352153094,
+    "mean_coefficients": {
+      "history_mean_minus_median": -1.7315147826610842e-09,
+      "history_mad": 0.004423473361056918,
+      "log1p_prior_studies": -0.12764985544818896,
+      "molecular_weight_scaled": -0.018197162125100516,
+      "logp_scaled": -0.015318404105757157
+    },
+    "base_residual_scale": 0.31397676754005327,
+    "log_scale_coefficients": {
+      "history_mad": -0.6528382304647988,
+      "inverse_sqrt_prior_studies": 0.642108420161048,
+      "protocol_missing_fraction": -0.1817857825678033,
+      "protocol_category_diversity": -0.026145726183885918,
+      "history_year_span_scaled": 1.0637567170145166
+    },
+    "between_study_sd": 0.173238538781926,
+    "feature_means": {
+      "history_mean_minus_median": 0.0,
+      "history_mad": 0.014646462440399025,
+      "log1p_prior_studies": 0.7137640504637502,
+      "molecular_weight_scaled": 0.5644102372881356,
+      "logp_scaled": 0.66218786440678,
+      "inverse_sqrt_prior_studies": 0.9851071244671125,
+      "protocol_missing_fraction": 0.9138418079096045,
+      "protocol_category_diversity": 1.9661016949152543,
+      "history_year_span_scaled": 0.02372881355932203
+    },
+    "feature_scales": {
+      "history_mean_minus_median": 1.0,
+      "history_mad": 0.06952310840297554,
+      "log1p_prior_studies": 0.0890750585729127,
+      "molecular_weight_scaled": 0.10163603266097292,
+      "logp_scaled": 0.17376614930275444,
+      "inverse_sqrt_prior_studies": 0.06434457638820408,
+      "protocol_missing_fraction": 0.015080619000044211,
+      "protocol_category_diversity": 0.41029554023424425,
+      "history_year_span_scaled": 0.11837742434057101
+    },
+    "degrees_of_freedom": 4.0,
+    "include_study_variance": true,
+    "optimization": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 61,
+      "objective": 0.6130351569910981
+    }
+  },
+  "strongest_baselines": {
+    "study_grouped": "student_t_regression",
+    "forward_temporal": "xgboost"
+  },
+  "support_rule_passed": false,
+  "scientific_verdict": "M1 did not meet the frozen development-only support rule. The evidence-conditioned formulation remains a valid negative feasibility result, but the available data do not support a claim of superiority, methodological novelty, or IEEE journal readiness. M1 must not be promoted to the quarantined final test.",
+  "scientific_status": "development_only_m1_not_independently_validated"
+}

@@ -1,0 +1,32 @@
+{
+  "model_version": "phytotrust-m1-v1",
+  "configuration": {
+    "degrees_of_freedom": 4.0,
+    "quadrature_nodes": 15,
+    "mean_coefficient_scale": 0.35,
+    "log_scale_coefficient_scale": 0.5,
+    "minimum_scale": 0.001,
+    "optimizer_maxiter": 900,
+    "optimizer_maxfun": 100000
+  },
+  "mean_features": [
+    "history_mean_minus_median",
+    "history_mad",
+    "log1p_prior_studies",
+    "molecular_weight_scaled",
+    "logp_scaled"
+  ],
+  "scale_features": [
+    "history_mad",
+    "inverse_sqrt_prior_studies",
+    "protocol_missing_fraction",
+    "protocol_category_diversity",
+    "history_year_span_scaled"
+  ],
+  "equations": {
+    "location": "mu_i = historical_median_i + alpha + beta^T x_i",
+    "scale": "log sigma_i = log sigma_0 + gamma^T r_i",
+    "measurement": "Y_is = mu_i + u_s + StudentT(df, 0, sigma_i)",
+    "study_effect": "u_s ~ Normal(0, tau^2); integrate u_new for blind transfer"
+  }
+}

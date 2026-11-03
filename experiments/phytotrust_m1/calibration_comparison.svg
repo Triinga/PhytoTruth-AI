@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#07111f"/>
+<text x="55" y="45" fill="#f8fafc" font-family="sans-serif" font-size="24">PhytoTRUST-M1 calibration comparison</text>
+<text x="55" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">Development-only; lower is better.</text>
+<text x="55" y="115" fill="#e2e8f0" font-family="sans-serif" font-size="18">Study Grouped</text>
+<text x="55" y="161" fill="#cbd5e1" font-family="sans-serif" font-size="12">median_potency</text>
+<rect x="245" y="145" width="57.1" height="24" rx="4" fill="#0ea5e9"/>
+<text x="309.1" y="162" fill="#f8fafc" font-family="sans-serif" font-size="12">0.019</text>
+<text x="55" y="223" fill="#cbd5e1" font-family="sans-serif" font-size="12">student_t_regression</text>
+<rect x="245" y="207" width="57.1" height="24" rx="4" fill="#a78bfa"/>
+<text x="309.1" y="224" fill="#f8fafc" font-family="sans-serif" font-size="12">0.019</text>
+<text x="55" y="285" fill="#cbd5e1" font-family="sans-serif" font-size="12">xgboost</text>
+<rect x="245" y="269" width="67.0" height="24" rx="4" fill="#f59e0b"/>
+<text x="319.0" y="286" fill="#f8fafc" font-family="sans-serif" font-size="12">0.023</text>
+<text x="55" y="347" fill="#cbd5e1" font-family="sans-serif" font-size="12">phytotrust_m0</text>
+<rect x="245" y="331" width="32.3" height="24" rx="4" fill="#22c55e"/>
+<text x="284.3" y="348" fill="#f8fafc" font-family="sans-serif" font-size="12">0.011</text>
+<text x="55" y="409" fill="#cbd5e1" font-family="sans-serif" font-size="12">m1_no_protocol</text>
+<rect x="245" y="393" width="131.5" height="24" rx="4" fill="#64748b"/>
+<text x="383.5" y="410" fill="#f8fafc" font-family="sans-serif" font-size="12">0.045</text>
+<text x="55" y="471" fill="#cbd5e1" font-family="sans-serif" font-size="12">m1_homoscedastic</text>
+<rect x="245" y="455" width="181.1" height="24" rx="4" fill="#14b8a6"/>
+<text x="433.1" y="472" fill="#f8fafc" font-family="sans-serif" font-size="12">0.062</text>
+<text x="55" y="533" fill="#cbd5e1" font-family="sans-serif" font-size="12">m1_no_study_variance</text>
+<rect x="245" y="517" width="330.0" height="24" rx="4" fill="#ec4899"/>
+<text x="582.0" y="534" fill="#f8fafc" font-family="sans-serif" font-size="12">0.113</text>
+<text x="55" y="595" fill="#cbd5e1" font-family="sans-serif" font-size="12">phytotrust_m1</text>
+<rect x="245" y="579" width="305.2" height="24" rx="4" fill="#f8fafc"/>
+<text x="557.2" y="596" fill="#f8fafc" font-family="sans-serif" font-size="12">0.104</text>
+<text x="665" y="115" fill="#e2e8f0" font-family="sans-serif" font-size="18">Forward Temporal</text>
+<text x="665" y="161" fill="#cbd5e1" font-family="sans-serif" font-size="12">median_potency</text>
+<rect x="855" y="145" width="330.0" height="24" rx="4" fill="#0ea5e9"/>
+<text x="1192.0" y="162" fill="#f8fafc" font-family="sans-serif" font-size="12">0.230</text>
+<text x="665" y="223" fill="#cbd5e1" font-family="sans-serif" font-size="12">student_t_regression</text>
+<rect x="855" y="207" width="157.8" height="24" rx="4" fill="#a78bfa"/>
+<text x="1019.8" y="224" fill="#f8fafc" font-family="sans-serif" font-size="12">0.110</text>
+<text x="665" y="285" fill="#cbd5e1" font-family="sans-serif" font-size="12">xgboost</text>
+<rect x="855" y="269" width="243.9" height="24" rx="4" fill="#f59e0b"/>
+<text x="1105.9" y="286" fill="#f8fafc" font-family="sans-serif" font-size="12">0.170</text>
+<text x="665" y="347" fill="#cbd5e1" font-family="sans-serif" font-size="12">phytotrust_m0</text>
+<rect x="855" y="331" width="129.1" height="24" rx="4" fill="#22c55e"/>
+<text x="991.1" y="348" fill="#f8fafc" font-family="sans-serif" font-size="12">0.090</text>
+<text x="665" y="409" fill="#cbd5e1" font-family="sans-serif" font-size="12">m1_no_protocol</text>
+<rect x="855" y="393" width="71.7" height="24" rx="4" fill="#64748b"/>
+<text x="933.7" y="410" fill="#f8fafc" font-family="sans-serif" font-size="12">0.050</text>
+<text x="665" y="471" fill="#cbd5e1" font-family="sans-serif" font-size="12">m1_homoscedastic</text>
+<rect x="855" y="455" width="71.7" height="24" rx="4" fill="#14b8a6"/>
+<text x="933.7" y="472" fill="#f8fafc" font-family="sans-serif" font-size="12">0.050</text>
+<text x="665" y="533" fill="#cbd5e1" font-family="sans-serif" font-size="12">m1_no_study_variance</text>
+<rect x="855" y="517" width="215.2" height="24" rx="4" fill="#ec4899"/>
+<text x="1077.2" y="534" fill="#f8fafc" font-family="sans-serif" font-size="12">0.150</text>
+<text x="665" y="595" fill="#cbd5e1" font-family="sans-serif" font-size="12">phytotrust_m1</text>
+<rect x="855" y="579" width="243.9" height="24" rx="4" fill="#f8fafc"/>
+<text x="1105.9" y="596" fill="#f8fafc" font-family="sans-serif" font-size="12">0.170</text>
+</svg>

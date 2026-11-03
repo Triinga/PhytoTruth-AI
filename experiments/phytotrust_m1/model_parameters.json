@@ -1,0 +1,49 @@
+{
+  "alpha": -0.036459269352153094,
+  "mean_coefficients": {
+    "history_mean_minus_median": -1.7315147826610842e-09,
+    "history_mad": 0.004423473361056918,
+    "log1p_prior_studies": -0.12764985544818896,
+    "molecular_weight_scaled": -0.018197162125100516,
+    "logp_scaled": -0.015318404105757157
+  },
+  "base_residual_scale": 0.31397676754005327,
+  "log_scale_coefficients": {
+    "history_mad": -0.6528382304647988,
+    "inverse_sqrt_prior_studies": 0.642108420161048,
+    "protocol_missing_fraction": -0.1817857825678033,
+    "protocol_category_diversity": -0.026145726183885918,
+    "history_year_span_scaled": 1.0637567170145166
+  },
+  "between_study_sd": 0.173238538781926,
+  "feature_means": {
+    "history_mean_minus_median": 0.0,
+    "history_mad": 0.014646462440399025,
+    "log1p_prior_studies": 0.7137640504637502,
+    "molecular_weight_scaled": 0.5644102372881356,
+    "logp_scaled": 0.66218786440678,
+    "inverse_sqrt_prior_studies": 0.9851071244671125,
+    "protocol_missing_fraction": 0.9138418079096045,
+    "protocol_category_diversity": 1.9661016949152543,
+    "history_year_span_scaled": 0.02372881355932203
+  },
+  "feature_scales": {
+    "history_mean_minus_median": 1.0,
+    "history_mad": 0.06952310840297554,
+    "log1p_prior_studies": 0.0890750585729127,
+    "molecular_weight_scaled": 0.10163603266097292,
+    "logp_scaled": 0.17376614930275444,
+    "inverse_sqrt_prior_studies": 0.06434457638820408,
+    "protocol_missing_fraction": 0.015080619000044211,
+    "protocol_category_diversity": 0.41029554023424425,
+    "history_year_span_scaled": 0.11837742434057101
+  },
+  "degrees_of_freedom": 4.0,
+  "include_study_variance": true,
+  "optimization": {
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 61,
+    "objective": 0.6130351569910981
+  }
+}

@@ -1,0 +1,801 @@
+target_chembl_id,target_name,partition,subgroup,n_molecules,method,metric,value
+CHEMBL220,Acetylcholinesterase,development,all,156,baseline_max_potency,ndcg_at_k,0.8605886460765729
+CHEMBL220,Acetylcholinesterase,development,all,156,baseline_max_potency,enrichment_factor_at_k,1.210344827586207
+CHEMBL220,Acetylcholinesterase,development,all,156,baseline_max_potency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,all,156,baseline_max_potency,kendall_tau,0.7392890613057506
+CHEMBL220,Acetylcholinesterase,development,all,156,median_potency,ndcg_at_k,0.9631890288023943
+CHEMBL220,Acetylcholinesterase,development,all,156,median_potency,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,median_potency,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,median_potency,kendall_tau,0.7852852561012988
+CHEMBL220,Acetylcholinesterase,development,all,156,mean_potency,ndcg_at_k,0.9415463436922268
+CHEMBL220,Acetylcholinesterase,development,all,156,mean_potency,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,mean_potency,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,mean_potency,kendall_tau,0.787524853596573
+CHEMBL220,Acetylcholinesterase,development,all,156,latest_training_potency,ndcg_at_k,0.9391565100314595
+CHEMBL220,Acetylcholinesterase,development,all,156,latest_training_potency,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,latest_training_potency,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,latest_training_potency,kendall_tau,0.7788732634949108
+CHEMBL220,Acetylcholinesterase,development,all,156,lower_confidence_bound,ndcg_at_k,0.9391565100314595
+CHEMBL220,Acetylcholinesterase,development,all,156,lower_confidence_bound,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,lower_confidence_bound,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,lower_confidence_bound,kendall_tau,0.7630925414657866
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_reliability,ndcg_at_k,0.9396103749312964
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_reliability,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_reliability,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_reliability,kendall_tau,0.7887370708604291
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_uncertainty,ndcg_at_k,0.9558708833175997
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_uncertainty,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_uncertainty,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_uncertainty,kendall_tau,0.7847619155263992
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_explicit_consistency,ndcg_at_k,0.9563663500745688
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_explicit_consistency,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_explicit_consistency,kendall_tau,0.7624016667724811
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_support,ndcg_at_k,0.9369201238925079
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_support,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_support,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,ablate_support,kendall_tau,0.794087218376101
+CHEMBL220,Acetylcholinesterase,development,all,156,phytotruth_full,ndcg_at_k,0.9416337057569546
+CHEMBL220,Acetylcholinesterase,development,all,156,phytotruth_full,enrichment_factor_at_k,1.3448275862068966
+CHEMBL220,Acetylcholinesterase,development,all,156,phytotruth_full,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,all,156,phytotruth_full,kendall_tau,0.7842650211096455
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,baseline_max_potency,ndcg_at_k,0.6172246790303934
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,baseline_max_potency,enrichment_factor_at_k,1.6666666666666667
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,baseline_max_potency,precision_at_k,0.8
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,baseline_max_potency,kendall_tau,0.5484980509143339
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,median_potency,ndcg_at_k,0.733681672174904
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,median_potency,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,median_potency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,median_potency,kendall_tau,0.6510860492118234
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,mean_potency,ndcg_at_k,0.7318966662099073
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,mean_potency,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,mean_potency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,mean_potency,kendall_tau,0.64
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,latest_training_potency,ndcg_at_k,0.7476444142547738
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,latest_training_potency,enrichment_factor_at_k,2.0833333333333335
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,latest_training_potency,precision_at_k,1.0
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,latest_training_potency,kendall_tau,0.6466666666666666
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,lower_confidence_bound,ndcg_at_k,0.7288083842110594
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,lower_confidence_bound,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,lower_confidence_bound,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,lower_confidence_bound,kendall_tau,0.5933333333333334
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_reliability,ndcg_at_k,0.735295323586135
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_reliability,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_reliability,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_reliability,kendall_tau,0.6533333333333333
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_uncertainty,ndcg_at_k,0.735295323586135
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_uncertainty,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_uncertainty,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_uncertainty,kendall_tau,0.6733333333333333
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_explicit_consistency,ndcg_at_k,0.6939412157823771
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_explicit_consistency,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_explicit_consistency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_explicit_consistency,kendall_tau,0.6133333333333333
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_support,ndcg_at_k,0.7423921705261136
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_support,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_support,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,ablate_support,kendall_tau,0.6
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,phytotruth_full,ndcg_at_k,0.735295323586135
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,phytotruth_full,enrichment_factor_at_k,1.8750000000000002
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,phytotruth_full,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,development,natural_products,25,phytotruth_full,kendall_tau,0.6466666666666666
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,baseline_max_potency,ndcg_at_k,0.9090990639727378
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,baseline_max_potency,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,baseline_max_potency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,baseline_max_potency,kendall_tau,0.7411012293162972
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,median_potency,ndcg_at_k,0.9468097428531245
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,median_potency,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,median_potency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,median_potency,kendall_tau,0.7707264556394428
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,mean_potency,ndcg_at_k,0.9468097428531245
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,mean_potency,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,mean_potency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,mean_potency,kendall_tau,0.7684268556006919
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,latest_training_potency,ndcg_at_k,0.9477028125255202
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,latest_training_potency,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,latest_training_potency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,latest_training_potency,kendall_tau,0.7815081905994661
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,lower_confidence_bound,ndcg_at_k,0.9477028125255202
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,lower_confidence_bound,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,lower_confidence_bound,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,lower_confidence_bound,kendall_tau,0.7680456503591956
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_reliability,ndcg_at_k,0.9442465120749881
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_reliability,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_reliability,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_reliability,kendall_tau,0.7596259753647499
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_uncertainty,ndcg_at_k,0.9439241129636684
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_uncertainty,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_uncertainty,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_uncertainty,kendall_tau,0.7511685486593837
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_explicit_consistency,ndcg_at_k,0.9415386253538857
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_explicit_consistency,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_explicit_consistency,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_explicit_consistency,kendall_tau,0.7416368833274442
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_support,ndcg_at_k,0.9467760143958529
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_support,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_support,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,ablate_support,kendall_tau,0.764732841631759
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,phytotruth_full,ndcg_at_k,0.9439241129636684
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,phytotruth_full,enrichment_factor_at_k,1.2272727272727273
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,phytotruth_full,precision_at_k,0.9
+CHEMBL220,Acetylcholinesterase,evaluation,all,105,phytotruth_full,kendall_tau,0.7504353436338498
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,baseline_max_potency,ndcg_at_k,0.9078773708766977
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,baseline_max_potency,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,baseline_max_potency,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,baseline_max_potency,kendall_tau,0.33210558207753577
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,median_potency,ndcg_at_k,0.8944188397636159
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,median_potency,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,median_potency,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,median_potency,kendall_tau,0.36764705882352944
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,mean_potency,ndcg_at_k,0.8944188397636159
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,mean_potency,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,mean_potency,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,mean_potency,kendall_tau,0.36764705882352944
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,latest_training_potency,ndcg_at_k,0.8721016233751274
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,latest_training_potency,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,latest_training_potency,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,latest_training_potency,kendall_tau,0.35294117647058826
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,lower_confidence_bound,ndcg_at_k,0.90122522059382
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,lower_confidence_bound,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,lower_confidence_bound,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,lower_confidence_bound,kendall_tau,0.39705882352941174
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_reliability,ndcg_at_k,0.90122522059382
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_reliability,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_reliability,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_reliability,kendall_tau,0.39705882352941174
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_uncertainty,ndcg_at_k,0.8958546100086596
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_uncertainty,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_uncertainty,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_uncertainty,kendall_tau,0.38235294117647056
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_explicit_consistency,ndcg_at_k,0.8881448828989695
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_explicit_consistency,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_explicit_consistency,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_explicit_consistency,kendall_tau,0.36764705882352944
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_support,ndcg_at_k,0.90122522059382
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_support,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_support,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,ablate_support,kendall_tau,0.39705882352941174
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,phytotruth_full,ndcg_at_k,0.8958546100086596
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,phytotruth_full,enrichment_factor_at_k,1.457142857142857
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,phytotruth_full,precision_at_k,0.6
+CHEMBL220,Acetylcholinesterase,evaluation,natural_products,17,phytotruth_full,kendall_tau,0.38235294117647056
+CHEMBL203,Epidermal growth factor receptor,development,all,491,baseline_max_potency,ndcg_at_k,0.7430478089261549
+CHEMBL203,Epidermal growth factor receptor,development,all,491,baseline_max_potency,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,baseline_max_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,baseline_max_potency,kendall_tau,0.7447719705118767
+CHEMBL203,Epidermal growth factor receptor,development,all,491,median_potency,ndcg_at_k,0.8868567839848532
+CHEMBL203,Epidermal growth factor receptor,development,all,491,median_potency,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,median_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,median_potency,kendall_tau,0.7474657342222617
+CHEMBL203,Epidermal growth factor receptor,development,all,491,mean_potency,ndcg_at_k,0.9254757718532286
+CHEMBL203,Epidermal growth factor receptor,development,all,491,mean_potency,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,mean_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,mean_potency,kendall_tau,0.7528642887775446
+CHEMBL203,Epidermal growth factor receptor,development,all,491,latest_training_potency,ndcg_at_k,0.8868567839848532
+CHEMBL203,Epidermal growth factor receptor,development,all,491,latest_training_potency,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,latest_training_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,latest_training_potency,kendall_tau,0.7310718002585332
+CHEMBL203,Epidermal growth factor receptor,development,all,491,lower_confidence_bound,ndcg_at_k,0.9382622612663943
+CHEMBL203,Epidermal growth factor receptor,development,all,491,lower_confidence_bound,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,lower_confidence_bound,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,lower_confidence_bound,kendall_tau,0.6674417079548042
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_reliability,ndcg_at_k,0.9296886028324457
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_reliability,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_reliability,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_reliability,kendall_tau,0.6697041979706841
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_uncertainty,ndcg_at_k,0.8869180814310089
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_uncertainty,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_uncertainty,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_uncertainty,kendall_tau,0.6866614327311108
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_explicit_consistency,ndcg_at_k,0.8913142694772964
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_explicit_consistency,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_explicit_consistency,kendall_tau,0.7175141773366358
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_support,ndcg_at_k,0.9299727328936542
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_support,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_support,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,ablate_support,kendall_tau,0.6578024750059358
+CHEMBL203,Epidermal growth factor receptor,development,all,491,phytotruth_full,ndcg_at_k,0.9300155443777262
+CHEMBL203,Epidermal growth factor receptor,development,all,491,phytotruth_full,enrichment_factor_at_k,1.2557544757033248
+CHEMBL203,Epidermal growth factor receptor,development,all,491,phytotruth_full,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,all,491,phytotruth_full,kendall_tau,0.663836243412678
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,baseline_max_potency,ndcg_at_k,0.8576071222490305
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,baseline_max_potency,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,baseline_max_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,baseline_max_potency,kendall_tau,0.6608187134502924
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,median_potency,ndcg_at_k,0.9584700908148943
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,median_potency,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,median_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,median_potency,kendall_tau,0.8967902788460657
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,mean_potency,ndcg_at_k,0.9396200627376238
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,mean_potency,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,mean_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,mean_potency,kendall_tau,0.847953216374269
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,latest_training_potency,ndcg_at_k,0.8305979267789789
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,latest_training_potency,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,latest_training_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,latest_training_potency,kendall_tau,0.6842105263157895
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,lower_confidence_bound,ndcg_at_k,0.9397770311994382
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,lower_confidence_bound,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,lower_confidence_bound,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,lower_confidence_bound,kendall_tau,0.7894736842105263
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_reliability,ndcg_at_k,0.9342295696664804
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_reliability,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_reliability,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_reliability,kendall_tau,0.7894736842105263
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_uncertainty,ndcg_at_k,0.9342295696664804
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_uncertainty,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_uncertainty,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_uncertainty,kendall_tau,0.7894736842105263
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_explicit_consistency,ndcg_at_k,0.9483343889033975
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_explicit_consistency,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_explicit_consistency,kendall_tau,0.8245614035087719
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_support,ndcg_at_k,0.9000292352648904
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_support,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_support,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,ablate_support,kendall_tau,0.8011695906432749
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,phytotruth_full,ndcg_at_k,0.9342295696664804
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,phytotruth_full,enrichment_factor_at_k,1.4615384615384615
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,phytotruth_full,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,development,natural_products,19,phytotruth_full,kendall_tau,0.7894736842105263
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,baseline_max_potency,ndcg_at_k,0.8521864111788824
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,baseline_max_potency,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,baseline_max_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,baseline_max_potency,kendall_tau,0.7727733253880178
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,median_potency,ndcg_at_k,0.958774156785032
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,median_potency,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,median_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,median_potency,kendall_tau,0.7815201445853444
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,mean_potency,ndcg_at_k,0.9583674493527556
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,mean_potency,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,mean_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,mean_potency,kendall_tau,0.7811310709302819
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,latest_training_potency,ndcg_at_k,0.9553061667262859
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,latest_training_potency,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,latest_training_potency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,latest_training_potency,kendall_tau,0.7648515999221218
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,lower_confidence_bound,ndcg_at_k,0.9056909235289704
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,lower_confidence_bound,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,lower_confidence_bound,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,lower_confidence_bound,kendall_tau,0.6956369498092576
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_reliability,ndcg_at_k,0.9260408616607476
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_reliability,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_reliability,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_reliability,kendall_tau,0.7063863011881575
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_uncertainty,ndcg_at_k,0.9295014665100987
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_uncertainty,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_uncertainty,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_uncertainty,kendall_tau,0.7288831923839512
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_explicit_consistency,ndcg_at_k,0.9563621718179904
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_explicit_consistency,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_explicit_consistency,kendall_tau,0.7561080314882753
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_support,ndcg_at_k,0.9230023459354518
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_support,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_support,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,ablate_support,kendall_tau,0.6896762812351553
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,phytotruth_full,ndcg_at_k,0.9268053080465123
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,phytotruth_full,enrichment_factor_at_k,1.2074074074074075
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,phytotruth_full,precision_at_k,1.0
+CHEMBL203,Epidermal growth factor receptor,evaluation,all,326,phytotruth_full,kendall_tau,0.7059797563120594
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,baseline_max_potency,ndcg_at_k,0.8487131827793901
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,baseline_max_potency,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,baseline_max_potency,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,baseline_max_potency,kendall_tau,0.4732962328281559
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,median_potency,ndcg_at_k,0.8829189020370867
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,median_potency,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,median_potency,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,median_potency,kendall_tau,0.4732962328281559
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,mean_potency,ndcg_at_k,0.8900608628913129
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,mean_potency,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,mean_potency,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,mean_potency,kendall_tau,0.5038314736557788
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,latest_training_potency,ndcg_at_k,0.8950133222867174
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,latest_training_potency,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,latest_training_potency,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,latest_training_potency,kendall_tau,0.5038314736557788
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,lower_confidence_bound,ndcg_at_k,0.823804130922906
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,lower_confidence_bound,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,lower_confidence_bound,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,lower_confidence_bound,kendall_tau,0.4427609920005329
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_reliability,ndcg_at_k,0.8297017777420671
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_reliability,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_reliability,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_reliability,kendall_tau,0.4732962328281559
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_uncertainty,ndcg_at_k,0.8385506255961168
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_uncertainty,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_uncertainty,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_uncertainty,kendall_tau,0.4732962328281559
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_explicit_consistency,ndcg_at_k,0.7899141412556678
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_explicit_consistency,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_explicit_consistency,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_explicit_consistency,kendall_tau,0.35115526951766407
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_support,ndcg_at_k,0.901369859624596
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_support,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_support,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,ablate_support,kendall_tau,0.4427609920005329
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,phytotruth_full,ndcg_at_k,0.8273802050244157
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,phytotruth_full,enrichment_factor_at_k,0.9818181818181819
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,phytotruth_full,precision_at_k,0.9
+CHEMBL203,Epidermal growth factor receptor,evaluation,natural_products,12,phytotruth_full,kendall_tau,0.4427609920005329
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,baseline_max_potency,ndcg_at_k,0.7147722007311693
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,baseline_max_potency,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,baseline_max_potency,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,baseline_max_potency,kendall_tau,0.8632435237707791
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,median_potency,ndcg_at_k,0.7755069836981975
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,median_potency,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,median_potency,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,median_potency,kendall_tau,0.8821925780255299
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,mean_potency,ndcg_at_k,0.7755069836981975
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,mean_potency,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,mean_potency,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,mean_potency,kendall_tau,0.8897106288211242
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,latest_training_potency,ndcg_at_k,0.7755069836981975
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,latest_training_potency,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,latest_training_potency,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,latest_training_potency,kendall_tau,0.8974018117444436
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,lower_confidence_bound,ndcg_at_k,0.7755091619263099
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,lower_confidence_bound,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,lower_confidence_bound,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,lower_confidence_bound,kendall_tau,0.8833100876035903
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_reliability,ndcg_at_k,0.7754112629351594
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_reliability,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_reliability,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_reliability,kendall_tau,0.8689243199652128
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_uncertainty,ndcg_at_k,0.7754112629351594
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_uncertainty,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_uncertainty,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_uncertainty,kendall_tau,0.8652256324592612
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_explicit_consistency,ndcg_at_k,0.7754112629351594
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_explicit_consistency,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_explicit_consistency,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_explicit_consistency,kendall_tau,0.8642334283210144
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_support,ndcg_at_k,0.7755069836981975
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_support,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_support,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,ablate_support,kendall_tau,0.8726096060811003
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,phytotruth_full,ndcg_at_k,0.7754112629351594
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,phytotruth_full,enrichment_factor_at_k,1.1475982532751092
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,phytotruth_full,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,development,all,292,phytotruth_full,kendall_tau,0.8646586586659774
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,baseline_max_potency,ndcg_at_k,0.7414819046654559
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,baseline_max_potency,enrichment_factor_at_k,1.33
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,baseline_max_potency,precision_at_k,0.7
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,baseline_max_potency,kendall_tau,0.49559462778335206
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,median_potency,ndcg_at_k,0.7913346807382968
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,median_potency,enrichment_factor_at_k,1.5200000000000002
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,median_potency,precision_at_k,0.8
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,median_potency,kendall_tau,0.5235384696020512
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,mean_potency,ndcg_at_k,0.8704807168029606
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,mean_potency,enrichment_factor_at_k,1.5200000000000002
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,mean_potency,precision_at_k,0.8
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,mean_potency,kendall_tau,0.6608187134502924
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,latest_training_potency,ndcg_at_k,0.9411639038336465
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,latest_training_potency,enrichment_factor_at_k,1.5200000000000002
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,latest_training_potency,precision_at_k,0.8
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,latest_training_potency,kendall_tau,0.6334338087700082
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,lower_confidence_bound,ndcg_at_k,0.8534490011992694
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,lower_confidence_bound,enrichment_factor_at_k,1.33
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,lower_confidence_bound,precision_at_k,0.7
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,lower_confidence_bound,kendall_tau,0.6058928356068682
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_reliability,ndcg_at_k,0.8352648122906059
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_reliability,enrichment_factor_at_k,1.33
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_reliability,precision_at_k,0.7
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_reliability,kendall_tau,0.5555555555555556
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_uncertainty,ndcg_at_k,0.7850587115370486
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_uncertainty,enrichment_factor_at_k,1.33
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_uncertainty,precision_at_k,0.7
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_uncertainty,kendall_tau,0.49707602339181284
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_explicit_consistency,ndcg_at_k,0.7612554175997367
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_explicit_consistency,enrichment_factor_at_k,1.5200000000000002
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_explicit_consistency,precision_at_k,0.8
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_explicit_consistency,kendall_tau,0.4619883040935672
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_support,ndcg_at_k,0.8404563782125062
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_support,enrichment_factor_at_k,1.33
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_support,precision_at_k,0.7
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,ablate_support,kendall_tau,0.543859649122807
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,phytotruth_full,ndcg_at_k,0.7875447455889086
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,phytotruth_full,enrichment_factor_at_k,1.33
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,phytotruth_full,precision_at_k,0.7
+CHEMBL230,Prostaglandin G/H synthase 2,development,natural_products,19,phytotruth_full,kendall_tau,0.5321637426900585
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,baseline_max_potency,ndcg_at_k,0.6558115291304845
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,baseline_max_potency,enrichment_factor_at_k,1.1562913907284769
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,baseline_max_potency,precision_at_k,0.9
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,baseline_max_potency,kendall_tau,0.815883807979515
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,median_potency,ndcg_at_k,0.9760194842413843
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,median_potency,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,median_potency,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,median_potency,kendall_tau,0.8448344505987136
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,mean_potency,ndcg_at_k,0.9654891626656228
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,mean_potency,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,mean_potency,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,mean_potency,kendall_tau,0.8341866638006897
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,latest_training_potency,ndcg_at_k,0.9492111017345983
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,latest_training_potency,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,latest_training_potency,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,latest_training_potency,kendall_tau,0.8162961290932955
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,lower_confidence_bound,ndcg_at_k,0.9760194842413843
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,lower_confidence_bound,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,lower_confidence_bound,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,lower_confidence_bound,kendall_tau,0.8215208215983981
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_reliability,ndcg_at_k,0.9760194842413843
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_reliability,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_reliability,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_reliability,kendall_tau,0.8232584022944782
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_uncertainty,ndcg_at_k,0.9760194842413843
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_uncertainty,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_uncertainty,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_uncertainty,kendall_tau,0.8280371587762385
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_explicit_consistency,ndcg_at_k,0.9760194842413843
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_explicit_consistency,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_explicit_consistency,kendall_tau,0.8320026486642427
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_support,ndcg_at_k,0.9760194842413843
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_support,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_support,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,ablate_support,kendall_tau,0.8175339693431461
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,phytotruth_full,ndcg_at_k,0.9760194842413843
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,phytotruth_full,enrichment_factor_at_k,1.2847682119205297
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,phytotruth_full,precision_at_k,1.0
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,all,194,phytotruth_full,kendall_tau,0.8233214410715848
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,baseline_max_potency,ndcg_at_k,0.5871715427664118
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,baseline_max_potency,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,baseline_max_potency,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,baseline_max_potency,kendall_tau,0.36363636363636365
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,median_potency,ndcg_at_k,0.6695995340886596
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,median_potency,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,median_potency,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,median_potency,kendall_tau,0.6363636363636364
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,mean_potency,ndcg_at_k,0.6546734628394103
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,mean_potency,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,mean_potency,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,mean_potency,kendall_tau,0.5454545454545454
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,latest_training_potency,ndcg_at_k,0.5485598706085841
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,latest_training_potency,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,latest_training_potency,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,latest_training_potency,kendall_tau,0.3333333333333333
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,lower_confidence_bound,ndcg_at_k,0.6125233507413275
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,lower_confidence_bound,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,lower_confidence_bound,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,lower_confidence_bound,kendall_tau,0.3939393939393939
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_reliability,ndcg_at_k,0.6626372495210012
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_reliability,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_reliability,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_reliability,kendall_tau,0.5757575757575758
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_uncertainty,ndcg_at_k,0.6626372495210012
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_uncertainty,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_uncertainty,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_uncertainty,kendall_tau,0.6060606060606061
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_explicit_consistency,ndcg_at_k,0.7640394254976485
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_explicit_consistency,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_explicit_consistency,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_explicit_consistency,kendall_tau,0.6060606060606061
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_support,ndcg_at_k,0.6601122175195212
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_support,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_support,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,ablate_support,kendall_tau,0.5757575757575758
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,phytotruth_full,ndcg_at_k,0.6626372495210012
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,phytotruth_full,enrichment_factor_at_k,1.2
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,phytotruth_full,precision_at_k,0.6
+CHEMBL230,Prostaglandin G/H synthase 2,evaluation,natural_products,12,phytotruth_full,kendall_tau,0.5757575757575758
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,baseline_max_potency,ndcg_at_k,0.8138521366496477
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,baseline_max_potency,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,baseline_max_potency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,baseline_max_potency,kendall_tau,0.8304828893738985
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,median_potency,ndcg_at_k,0.9608389390919339
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,median_potency,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,median_potency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,median_potency,kendall_tau,0.8988635435346689
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,mean_potency,ndcg_at_k,0.9608389390919339
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,mean_potency,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,mean_potency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,mean_potency,kendall_tau,0.9022483014754441
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,latest_training_potency,ndcg_at_k,0.9608389390919339
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,latest_training_potency,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,latest_training_potency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,latest_training_potency,kendall_tau,0.8896003816657525
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,lower_confidence_bound,ndcg_at_k,0.9608389390919339
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,lower_confidence_bound,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,lower_confidence_bound,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,lower_confidence_bound,kendall_tau,0.887541775008599
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_reliability,ndcg_at_k,0.9593892411571178
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_reliability,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_reliability,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_reliability,kendall_tau,0.8653559620649358
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_uncertainty,ndcg_at_k,0.9592195519829856
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_uncertainty,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_uncertainty,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_uncertainty,kendall_tau,0.8658785617536449
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_explicit_consistency,ndcg_at_k,0.9592195519829856
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_explicit_consistency,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_explicit_consistency,kendall_tau,0.8856988663679863
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_support,ndcg_at_k,0.9608389390919339
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_support,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_support,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,ablate_support,kendall_tau,0.8591598144267495
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,phytotruth_full,ndcg_at_k,0.9592195519829856
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,phytotruth_full,enrichment_factor_at_k,1.2790697674418603
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,phytotruth_full,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,all,110,phytotruth_full,kendall_tau,0.8601676265257838
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,baseline_max_potency,ndcg_at_k,0.9673568598520952
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,baseline_max_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,baseline_max_potency,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,baseline_max_potency,kendall_tau,0.7606388292556648
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,median_potency,ndcg_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,median_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,median_potency,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,median_potency,kendall_tau,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,mean_potency,ndcg_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,mean_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,mean_potency,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,mean_potency,kendall_tau,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,latest_training_potency,ndcg_at_k,0.9989607383217185
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,latest_training_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,latest_training_potency,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,latest_training_potency,kendall_tau,0.9444444444444444
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,lower_confidence_bound,ndcg_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,lower_confidence_bound,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,lower_confidence_bound,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,lower_confidence_bound,kendall_tau,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_reliability,ndcg_at_k,0.9989607383217185
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_reliability,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_reliability,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_reliability,kendall_tau,0.9444444444444444
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_uncertainty,ndcg_at_k,0.9989607383217185
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_uncertainty,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_uncertainty,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_uncertainty,kendall_tau,0.9444444444444444
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_explicit_consistency,ndcg_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_explicit_consistency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_explicit_consistency,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_explicit_consistency,kendall_tau,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_support,ndcg_at_k,0.9906644650429454
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_support,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_support,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,ablate_support,kendall_tau,0.8888888888888888
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,phytotruth_full,ndcg_at_k,0.9989607383217185
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,phytotruth_full,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,phytotruth_full,precision_at_k,0.5555555555555556
+CHEMBL284,Dipeptidyl peptidase 4,development,natural_products,9,phytotruth_full,kendall_tau,0.9444444444444444
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,baseline_max_potency,ndcg_at_k,0.6004801388458287
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,baseline_max_potency,enrichment_factor_at_k,0.957377049180328
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,baseline_max_potency,precision_at_k,0.8
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,baseline_max_potency,kendall_tau,0.6660290742157613
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,median_potency,ndcg_at_k,0.8920132279871023
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,median_potency,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,median_potency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,median_potency,kendall_tau,0.7633441884483149
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,mean_potency,ndcg_at_k,0.8876547785385879
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,mean_potency,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,mean_potency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,mean_potency,kendall_tau,0.7682600944148608
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,latest_training_potency,ndcg_at_k,0.8987142841723482
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,latest_training_potency,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,latest_training_potency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,latest_training_potency,kendall_tau,0.7850038255547054
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,lower_confidence_bound,ndcg_at_k,0.8920132279871023
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,lower_confidence_bound,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,lower_confidence_bound,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,lower_confidence_bound,kendall_tau,0.7463657230298393
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_reliability,ndcg_at_k,0.8397669911931873
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_reliability,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_reliability,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_reliability,kendall_tau,0.753152959521075
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_uncertainty,ndcg_at_k,0.8397669911931873
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_uncertainty,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_uncertainty,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_uncertainty,kendall_tau,0.7684376466752317
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_explicit_consistency,ndcg_at_k,0.8397669911931873
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_explicit_consistency,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_explicit_consistency,kendall_tau,0.7806653963985571
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_support,ndcg_at_k,0.8982722812507958
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_support,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_support,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,ablate_support,kendall_tau,0.7393967410823339
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,phytotruth_full,ndcg_at_k,0.8397669911931873
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,phytotruth_full,enrichment_factor_at_k,1.1967213114754098
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,phytotruth_full,precision_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,all,73,phytotruth_full,kendall_tau,0.7554456625941985
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,baseline_max_potency,ndcg_at_k,0.8960068336819871
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,baseline_max_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,baseline_max_potency,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,baseline_max_potency,kendall_tau,0.4666666666666667
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,median_potency,ndcg_at_k,0.9193109399220455
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,median_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,median_potency,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,median_potency,kendall_tau,0.6
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,mean_potency,ndcg_at_k,0.9318246451918258
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,mean_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,mean_potency,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,mean_potency,kendall_tau,0.7333333333333333
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,latest_training_potency,ndcg_at_k,0.9318246451918258
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,latest_training_potency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,latest_training_potency,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,latest_training_potency,kendall_tau,0.7333333333333333
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,lower_confidence_bound,ndcg_at_k,0.8948412913252421
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,lower_confidence_bound,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,lower_confidence_bound,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,lower_confidence_bound,kendall_tau,0.4666666666666667
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_reliability,ndcg_at_k,0.9318246451918258
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_reliability,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_reliability,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_reliability,kendall_tau,0.7333333333333333
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_uncertainty,ndcg_at_k,0.9318246451918258
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_uncertainty,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_uncertainty,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_uncertainty,kendall_tau,0.7333333333333333
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_explicit_consistency,ndcg_at_k,0.9318246451918258
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_explicit_consistency,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_explicit_consistency,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_explicit_consistency,kendall_tau,0.7333333333333333
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_support,ndcg_at_k,0.9099384481922794
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_support,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_support,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,ablate_support,kendall_tau,0.6
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,phytotruth_full,ndcg_at_k,0.9318246451918258
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,phytotruth_full,enrichment_factor_at_k,1.0
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,phytotruth_full,precision_at_k,0.6666666666666666
+CHEMBL284,Dipeptidyl peptidase 4,evaluation,natural_products,6,phytotruth_full,kendall_tau,0.7333333333333333
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,baseline_max_potency,ndcg_at_k,0.9131241048306113
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,baseline_max_potency,enrichment_factor_at_k,1.5473684210526317
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,baseline_max_potency,precision_at_k,0.9
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,baseline_max_potency,kendall_tau,0.8646769575388165
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,median_potency,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,median_potency,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,median_potency,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,median_potency,kendall_tau,0.91235126649314
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,mean_potency,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,mean_potency,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,mean_potency,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,mean_potency,kendall_tau,0.9133096112388286
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,latest_training_potency,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,latest_training_potency,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,latest_training_potency,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,latest_training_potency,kendall_tau,0.8951699746183807
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,lower_confidence_bound,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,lower_confidence_bound,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,lower_confidence_bound,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,lower_confidence_bound,kendall_tau,0.8857717845097561
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_reliability,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_reliability,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_reliability,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_reliability,kendall_tau,0.8549136146290427
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_uncertainty,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_uncertainty,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_uncertainty,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_uncertainty,kendall_tau,0.8616618227366226
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_explicit_consistency,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_explicit_consistency,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_explicit_consistency,kendall_tau,0.8903417071938377
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_support,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_support,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_support,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,ablate_support,kendall_tau,0.8506959845618052
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,phytotruth_full,ndcg_at_k,0.997377219535429
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,phytotruth_full,enrichment_factor_at_k,1.719298245614035
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,phytotruth_full,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,all,98,phytotruth_full,kendall_tau,0.8511177475685289
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,baseline_max_potency,ndcg_at_k,0.9823559025310548
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,baseline_max_potency,enrichment_factor_at_k,1.8857142857142857
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,baseline_max_potency,precision_at_k,0.6
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,baseline_max_potency,kendall_tau,0.645021645021645
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,median_potency,ndcg_at_k,0.9989725881368059
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,median_potency,enrichment_factor_at_k,1.8857142857142857
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,median_potency,precision_at_k,0.6
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,median_potency,kendall_tau,0.7316017316017316
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,mean_potency,ndcg_at_k,0.9989725881368059
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,mean_potency,enrichment_factor_at_k,1.8857142857142857
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,mean_potency,precision_at_k,0.6
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,mean_potency,kendall_tau,0.7229437229437229
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,latest_training_potency,ndcg_at_k,0.994725033118191
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,latest_training_potency,enrichment_factor_at_k,1.8857142857142857
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,latest_training_potency,precision_at_k,0.6
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,latest_training_potency,kendall_tau,0.6796536796536796
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,lower_confidence_bound,ndcg_at_k,0.9582617039291191
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,lower_confidence_bound,enrichment_factor_at_k,1.8857142857142857
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,lower_confidence_bound,precision_at_k,0.6
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,lower_confidence_bound,kendall_tau,0.7288520401581433
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_reliability,ndcg_at_k,0.8551988441502584
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_reliability,enrichment_factor_at_k,1.5714285714285714
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_reliability,precision_at_k,0.5
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_reliability,kendall_tau,0.5757575757575758
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_uncertainty,ndcg_at_k,0.8551988441502584
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_uncertainty,enrichment_factor_at_k,1.5714285714285714
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_uncertainty,precision_at_k,0.5
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_uncertainty,kendall_tau,0.5844155844155844
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_explicit_consistency,ndcg_at_k,0.9978417004508522
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_explicit_consistency,enrichment_factor_at_k,1.8857142857142857
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_explicit_consistency,precision_at_k,0.6
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_explicit_consistency,kendall_tau,0.6883116883116883
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_support,ndcg_at_k,0.8551988441502584
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_support,enrichment_factor_at_k,1.5714285714285714
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_support,precision_at_k,0.5
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,ablate_support,kendall_tau,0.5757575757575758
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,phytotruth_full,ndcg_at_k,0.8551988441502584
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,phytotruth_full,enrichment_factor_at_k,1.5714285714285714
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,phytotruth_full,precision_at_k,0.5
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,development,natural_products,22,phytotruth_full,kendall_tau,0.5584415584415584
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,baseline_max_potency,ndcg_at_k,0.8818773648259807
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,baseline_max_potency,enrichment_factor_at_k,1.476923076923077
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,baseline_max_potency,precision_at_k,0.9
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,baseline_max_potency,kendall_tau,0.8285292363757025
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,median_potency,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,median_potency,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,median_potency,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,median_potency,kendall_tau,0.8864598735585809
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,mean_potency,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,mean_potency,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,mean_potency,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,mean_potency,kendall_tau,0.8864598735585809
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,latest_training_potency,ndcg_at_k,0.8818773648259807
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,latest_training_potency,enrichment_factor_at_k,1.476923076923077
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,latest_training_potency,precision_at_k,0.9
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,latest_training_potency,kendall_tau,0.8427331533382024
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,lower_confidence_bound,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,lower_confidence_bound,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,lower_confidence_bound,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,lower_confidence_bound,kendall_tau,0.8954039754218401
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_reliability,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_reliability,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_reliability,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_reliability,kendall_tau,0.8897169503193234
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_uncertainty,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_uncertainty,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_uncertainty,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_uncertainty,kendall_tau,0.8877298661198386
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_explicit_consistency,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_explicit_consistency,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_explicit_consistency,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_explicit_consistency,kendall_tau,0.878787987222157
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_support,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_support,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_support,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,ablate_support,kendall_tau,0.8946846608180354
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,phytotruth_full,ndcg_at_k,0.9293510811748794
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,phytotruth_full,enrichment_factor_at_k,1.641025641025641
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,phytotruth_full,precision_at_k,1.0
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,all,64,phytotruth_full,kendall_tau,0.8897169503193234
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,baseline_max_potency,ndcg_at_k,0.543364911856411
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,baseline_max_potency,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,baseline_max_potency,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,baseline_max_potency,kendall_tau,0.45054945054945056
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,median_potency,ndcg_at_k,0.543364911856411
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,median_potency,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,median_potency,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,median_potency,kendall_tau,0.5164835164835165
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,mean_potency,ndcg_at_k,0.543364911856411
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,mean_potency,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,mean_potency,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,mean_potency,kendall_tau,0.4945054945054945
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,latest_training_potency,ndcg_at_k,0.543364911856411
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,latest_training_potency,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,latest_training_potency,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,latest_training_potency,kendall_tau,0.4945054945054945
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,lower_confidence_bound,ndcg_at_k,0.5580256255953018
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,lower_confidence_bound,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,lower_confidence_bound,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,lower_confidence_bound,kendall_tau,0.5604395604395604
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_reliability,ndcg_at_k,0.5580256255953018
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_reliability,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_reliability,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_reliability,kendall_tau,0.5604395604395604
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_uncertainty,ndcg_at_k,0.543364911856411
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_uncertainty,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_uncertainty,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_uncertainty,kendall_tau,0.5604395604395604
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_explicit_consistency,ndcg_at_k,0.543364911856411
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_explicit_consistency,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_explicit_consistency,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_explicit_consistency,kendall_tau,0.5164835164835165
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_support,ndcg_at_k,0.5580256255953018
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_support,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_support,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,ablate_support,kendall_tau,0.6043956043956044
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,phytotruth_full,ndcg_at_k,0.5580256255953018
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,phytotruth_full,enrichment_factor_at_k,1.4000000000000001
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,phytotruth_full,precision_at_k,0.2
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,evaluation,natural_products,14,phytotruth_full,kendall_tau,0.5824175824175825

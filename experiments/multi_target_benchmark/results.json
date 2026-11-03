@@ -1,0 +1,1822 @@
+{
+  "active_threshold": 6.0,
+  "development_fraction": 0.6,
+  "development_macro_comparisons": {
+    "lower_confidence_bound": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.3493096656482453,
+        "candidate": 1.3493096656482453,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8452316756753799,
+        "candidate": 0.8174315793085072,
+        "difference": -0.02780009636687275,
+        "difference_ci95": [
+          -0.05821363077081141,
+          -0.0018271496803174243
+        ],
+        "paired_randomization_p": 0.000999000999000999
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9167537910225615,
+        "candidate": 0.9222288183703053,
+        "difference": 0.005475027347743855,
+        "difference_ci95": [
+          -0.020964281395426672,
+          0.03266432233887175
+        ],
+        "paired_randomization_p": 0.7362637362637363
+      },
+      "precision_at_k": {
+        "baseline": 0.9800000000000001,
+        "candidate": 0.9800000000000001,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    },
+    "phytotruth_full": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.3493096656482453,
+        "candidate": 1.3493096656482453,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8452316756753799,
+        "candidate": 0.8048090594565227,
+        "difference": -0.04042261621885723,
+        "difference_ci95": [
+          -0.07350728580447419,
+          -0.012591308474911427
+        ],
+        "paired_randomization_p": 0.000999000999000999
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9167537910225615,
+        "candidate": 0.9207314569176509,
+        "difference": 0.003977665895089411,
+        "difference_ci95": [
+          -0.019642144329116634,
+          0.033651149597601
+        ],
+        "paired_randomization_p": 0.6643356643356644
+      },
+      "precision_at_k": {
+        "baseline": 0.9800000000000001,
+        "candidate": 0.9800000000000001,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    }
+  },
+  "development_selection": {
+    "gate": "Across-target macro nDCG@K and Kendall tau-b must both have paired hierarchical-bootstrap 95% interval lower bounds above zero and paired score-swap p<0.05 on development targets/molecules.",
+    "passing_candidates": [],
+    "selected_method": "median_potency"
+  },
+  "eligibility": {
+    "context_selection": "maximum distinct molecule coverage; no activity-value criterion",
+    "minimum_latest_publication_molecules": 30,
+    "minimum_latest_publication_natural_products": 5
+  },
+  "evaluation_macro_comparisons": {
+    "lower_confidence_bound": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.3114390598203431,
+        "candidate": 1.3114390598203431,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8093770225660792,
+        "candidate": 0.7853946240437061,
+        "difference": -0.02398239852237316,
+        "difference_ci95": [
+          -0.060368863029914184,
+          0.005995487688751568
+        ],
+        "paired_randomization_p": 0.004995004995004995
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9405935386083046,
+        "candidate": 0.9301555058915714,
+        "difference": -0.01043803271673327,
+        "difference_ci95": [
+          -0.0476390982738599,
+          0.0015625656181825842
+        ],
+        "paired_randomization_p": 0.04795204795204795
+      },
+      "precision_at_k": {
+        "baseline": 0.9800000000000001,
+        "candidate": 0.9800000000000001,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    },
+    "phytotruth_full": {
+      "enrichment_factor_at_k": {
+        "baseline": 1.3114390598203431,
+        "candidate": 1.3114390598203431,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      },
+      "kendall_tau": {
+        "baseline": 0.8093770225660792,
+        "candidate": 0.784979830786203,
+        "difference": -0.024397191779876204,
+        "difference_ci95": [
+          -0.055928651884076516,
+          0.0038015634262898424
+        ],
+        "paired_randomization_p": 0.001998001998001998
+      },
+      "ndcg_at_k": {
+        "baseline": 0.9405935386083046,
+        "candidate": 0.9231733955239264,
+        "difference": -0.017420143084378226,
+        "difference_ci95": [
+          -0.042675544013068625,
+          0.0012758285645659436
+        ],
+        "paired_randomization_p": 0.056943056943056944
+      },
+      "precision_at_k": {
+        "baseline": 0.9800000000000001,
+        "candidate": 0.9800000000000001,
+        "difference": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_randomization_p": 1.0
+      }
+    }
+  },
+  "experiment": "PhytoTruth Multi-Target Evidence Benchmark",
+  "generated_at": "2026-10-20T15:17:54.992129+00:00",
+  "included_targets": [
+    "CHEMBL220",
+    "CHEMBL203",
+    "CHEMBL230",
+    "CHEMBL284",
+    "CHEMBL335"
+  ],
+  "iterations": 1000,
+  "k": 10,
+  "natural_product_index": {
+    "coconut_records": 695128,
+    "npass_records": 201971,
+    "provenance_records": 897099,
+    "rejected_records": 1423,
+    "sha256": "61b4c354d7affadf51a4e1662a446571bc9e98707e80ce8e047de02c859bb309",
+    "source_versions": {
+      "COCONUT": [
+        "2024-08"
+      ],
+      "NPASS": [
+        "NPASS-3.0"
+      ]
+    },
+    "structures_with_both_npass_and_coconut": 179739,
+    "unique_structures": 702036
+  },
+  "scientific_conclusion": {
+    "organism_transfer": "not_estimable_all_selected_targets_and_available_contexts_are_human",
+    "selected_ranking": "median_potency",
+    "status": "superiority_not_demonstrated",
+    "superiority_claim": false
+  },
+  "seed": 2026,
+  "selection_was_frozen_before_evaluation": true,
+  "targets": {
+    "CHEMBL203": {
+      "compatible_measurements": 11400,
+      "compatible_molecules": 7275,
+      "evaluation_error_analysis": {
+        "beneficial_reversals": 518,
+        "comparable_pairs": 49866,
+        "dominant_component_counts": {
+          "assay_support": 203,
+          "bootstrap_uncertainty": 56,
+          "composite_reliability": 2,
+          "experimental_consistency": 2049
+        },
+        "harmful_reversals": 2310,
+        "net_harmful_reversals": 1792
+      },
+      "exclusions": {
+        "context": {
+          "missing_year_or_activity": 47,
+          "other_assay_context": 7931
+        },
+        "temporal": {
+          "single_publication_year": 6458
+        }
+      },
+      "latest_natural_product_source_molecules": {
+        "COCONUT": 26,
+        "NPASS": 11
+      },
+      "latest_publication_molecules": 817,
+      "latest_publication_natural_products": 31,
+      "normalized_measurements": 19378,
+      "partitions": {
+        "development": {
+          "all": {
+            "active_molecules": 391,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.7175141773366358,
+                "ndcg_at_k": 0.8913142694772964,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.6697041979706841,
+                "ndcg_at_k": 0.9296886028324457,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.6578024750059358,
+                "ndcg_at_k": 0.9299727328936542,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.6866614327311108,
+                "ndcg_at_k": 0.8869180814310089,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.7447719705118767,
+                "ndcg_at_k": 0.7430478089261549,
+                "precision_at_k": 1.0
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.7310718002585332,
+                "ndcg_at_k": 0.8868567839848532,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.6674417079548042,
+                "ndcg_at_k": 0.9382622612663943,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.7528642887775446,
+                "ndcg_at_k": 0.9254757718532286,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.7474657342222617,
+                "ndcg_at_k": 0.8868567839848532,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.2557544757033248,
+                "kendall_tau": 0.663836243412678,
+                "ndcg_at_k": 0.9300155443777262,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 491,
+            "natural_products": 19
+          },
+          "natural_products": {
+            "active_molecules": 13,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.8245614035087719,
+                "ndcg_at_k": 0.9483343889033975,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.7894736842105263,
+                "ndcg_at_k": 0.9342295696664804,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.8011695906432749,
+                "ndcg_at_k": 0.9000292352648904,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.7894736842105263,
+                "ndcg_at_k": 0.9342295696664804,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.6608187134502924,
+                "ndcg_at_k": 0.8576071222490305,
+                "precision_at_k": 1.0
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.6842105263157895,
+                "ndcg_at_k": 0.8305979267789789,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.7894736842105263,
+                "ndcg_at_k": 0.9397770311994382,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.847953216374269,
+                "ndcg_at_k": 0.9396200627376238,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.8967902788460657,
+                "ndcg_at_k": 0.9584700908148943,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.4615384615384615,
+                "kendall_tau": 0.7894736842105263,
+                "ndcg_at_k": 0.9342295696664804,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 19,
+            "natural_products": 19
+          }
+        },
+        "evaluation": {
+          "all": {
+            "active_molecules": 270,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7561080314882753,
+                "ndcg_at_k": 0.9563621718179904,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7063863011881575,
+                "ndcg_at_k": 0.9260408616607476,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.6896762812351553,
+                "ndcg_at_k": 0.9230023459354518,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7288831923839512,
+                "ndcg_at_k": 0.9295014665100987,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7727733253880178,
+                "ndcg_at_k": 0.8521864111788824,
+                "precision_at_k": 1.0
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7648515999221218,
+                "ndcg_at_k": 0.9553061667262859,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.6956369498092576,
+                "ndcg_at_k": 0.9056909235289704,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7811310709302819,
+                "ndcg_at_k": 0.9583674493527556,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7815201445853444,
+                "ndcg_at_k": 0.958774156785032,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.2074074074074075,
+                "kendall_tau": 0.7059797563120594,
+                "ndcg_at_k": 0.9268053080465123,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 326,
+            "natural_products": 12
+          },
+          "natural_products": {
+            "active_molecules": 11,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.35115526951766407,
+                "ndcg_at_k": 0.7899141412556678,
+                "precision_at_k": 0.9
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.4732962328281559,
+                "ndcg_at_k": 0.8297017777420671,
+                "precision_at_k": 0.9
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.4427609920005329,
+                "ndcg_at_k": 0.901369859624596,
+                "precision_at_k": 0.9
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.4732962328281559,
+                "ndcg_at_k": 0.8385506255961168,
+                "precision_at_k": 0.9
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.4732962328281559,
+                "ndcg_at_k": 0.8487131827793901,
+                "precision_at_k": 0.9
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.5038314736557788,
+                "ndcg_at_k": 0.8950133222867174,
+                "precision_at_k": 0.9
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.4427609920005329,
+                "ndcg_at_k": 0.823804130922906,
+                "precision_at_k": 0.9
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.5038314736557788,
+                "ndcg_at_k": 0.8900608628913129,
+                "precision_at_k": 0.9
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.4732962328281559,
+                "ndcg_at_k": 0.8829189020370867,
+                "precision_at_k": 0.9
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 0.9818181818181819,
+                "kendall_tau": 0.4427609920005329,
+                "ndcg_at_k": 0.8273802050244157,
+                "precision_at_k": 0.9
+              }
+            },
+            "n_molecules": 12,
+            "natural_products": 12
+          }
+        }
+      },
+      "selected_context": {
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "standard_type": "IC50",
+        "target_chembl_id": "CHEMBL203",
+        "target_organism": "Homo sapiens"
+      },
+      "selected_context_key": "1777516c62f2ea08fa2d",
+      "status": "included",
+      "target_chembl_id": "CHEMBL203",
+      "target_name": "Epidermal growth factor receptor"
+    },
+    "CHEMBL220": {
+      "compatible_measurements": 5920,
+      "compatible_molecules": 4774,
+      "evaluation_error_analysis": {
+        "beneficial_reversals": 35,
+        "comparable_pairs": 5446,
+        "dominant_component_counts": {
+          "assay_support": 60,
+          "bootstrap_uncertainty": 1,
+          "composite_reliability": 4,
+          "experimental_consistency": 24
+        },
+        "harmful_reversals": 89,
+        "net_harmful_reversals": 54
+      },
+      "exclusions": {
+        "context": {
+          "missing_year_or_activity": 30,
+          "other_assay_context": 1325
+        },
+        "temporal": {
+          "single_publication_year": 4513
+        }
+      },
+      "latest_natural_product_source_molecules": {
+        "COCONUT": 38,
+        "NPASS": 28
+      },
+      "latest_publication_molecules": 261,
+      "latest_publication_natural_products": 42,
+      "normalized_measurements": 7275,
+      "partitions": {
+        "development": {
+          "all": {
+            "active_molecules": 116,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.7624016667724811,
+                "ndcg_at_k": 0.9563663500745688,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.7887370708604291,
+                "ndcg_at_k": 0.9396103749312964,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.794087218376101,
+                "ndcg_at_k": 0.9369201238925079,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.7847619155263992,
+                "ndcg_at_k": 0.9558708833175997,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.210344827586207,
+                "kendall_tau": 0.7392890613057506,
+                "ndcg_at_k": 0.8605886460765729,
+                "precision_at_k": 0.9
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.7788732634949108,
+                "ndcg_at_k": 0.9391565100314595,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.7630925414657866,
+                "ndcg_at_k": 0.9391565100314595,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.787524853596573,
+                "ndcg_at_k": 0.9415463436922268,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.7852852561012988,
+                "ndcg_at_k": 0.9631890288023943,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.3448275862068966,
+                "kendall_tau": 0.7842650211096455,
+                "ndcg_at_k": 0.9416337057569546,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 156,
+            "natural_products": 25
+          },
+          "natural_products": {
+            "active_molecules": 12,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.6133333333333333,
+                "ndcg_at_k": 0.6939412157823771,
+                "precision_at_k": 0.9
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.6533333333333333,
+                "ndcg_at_k": 0.735295323586135,
+                "precision_at_k": 0.9
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.6,
+                "ndcg_at_k": 0.7423921705261136,
+                "precision_at_k": 0.9
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.6733333333333333,
+                "ndcg_at_k": 0.735295323586135,
+                "precision_at_k": 0.9
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.6666666666666667,
+                "kendall_tau": 0.5484980509143339,
+                "ndcg_at_k": 0.6172246790303934,
+                "precision_at_k": 0.8
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 2.0833333333333335,
+                "kendall_tau": 0.6466666666666666,
+                "ndcg_at_k": 0.7476444142547738,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.5933333333333334,
+                "ndcg_at_k": 0.7288083842110594,
+                "precision_at_k": 0.9
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.64,
+                "ndcg_at_k": 0.7318966662099073,
+                "precision_at_k": 0.9
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.6510860492118234,
+                "ndcg_at_k": 0.733681672174904,
+                "precision_at_k": 0.9
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.8750000000000002,
+                "kendall_tau": 0.6466666666666666,
+                "ndcg_at_k": 0.735295323586135,
+                "precision_at_k": 0.9
+              }
+            },
+            "n_molecules": 25,
+            "natural_products": 25
+          }
+        },
+        "evaluation": {
+          "all": {
+            "active_molecules": 77,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7416368833274442,
+                "ndcg_at_k": 0.9415386253538857,
+                "precision_at_k": 0.9
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7596259753647499,
+                "ndcg_at_k": 0.9442465120749881,
+                "precision_at_k": 0.9
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.764732841631759,
+                "ndcg_at_k": 0.9467760143958529,
+                "precision_at_k": 0.9
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7511685486593837,
+                "ndcg_at_k": 0.9439241129636684,
+                "precision_at_k": 0.9
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7411012293162972,
+                "ndcg_at_k": 0.9090990639727378,
+                "precision_at_k": 0.9
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7815081905994661,
+                "ndcg_at_k": 0.9477028125255202,
+                "precision_at_k": 0.9
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7680456503591956,
+                "ndcg_at_k": 0.9477028125255202,
+                "precision_at_k": 0.9
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7684268556006919,
+                "ndcg_at_k": 0.9468097428531245,
+                "precision_at_k": 0.9
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7707264556394428,
+                "ndcg_at_k": 0.9468097428531245,
+                "precision_at_k": 0.9
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.2272727272727273,
+                "kendall_tau": 0.7504353436338498,
+                "ndcg_at_k": 0.9439241129636684,
+                "precision_at_k": 0.9
+              }
+            },
+            "n_molecules": 105,
+            "natural_products": 17
+          },
+          "natural_products": {
+            "active_molecules": 7,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.36764705882352944,
+                "ndcg_at_k": 0.8881448828989695,
+                "precision_at_k": 0.6
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.39705882352941174,
+                "ndcg_at_k": 0.90122522059382,
+                "precision_at_k": 0.6
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.39705882352941174,
+                "ndcg_at_k": 0.90122522059382,
+                "precision_at_k": 0.6
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.38235294117647056,
+                "ndcg_at_k": 0.8958546100086596,
+                "precision_at_k": 0.6
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.33210558207753577,
+                "ndcg_at_k": 0.9078773708766977,
+                "precision_at_k": 0.6
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.35294117647058826,
+                "ndcg_at_k": 0.8721016233751274,
+                "precision_at_k": 0.6
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.39705882352941174,
+                "ndcg_at_k": 0.90122522059382,
+                "precision_at_k": 0.6
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.36764705882352944,
+                "ndcg_at_k": 0.8944188397636159,
+                "precision_at_k": 0.6
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.36764705882352944,
+                "ndcg_at_k": 0.8944188397636159,
+                "precision_at_k": 0.6
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.457142857142857,
+                "kendall_tau": 0.38235294117647056,
+                "ndcg_at_k": 0.8958546100086596,
+                "precision_at_k": 0.6
+              }
+            },
+            "n_molecules": 17,
+            "natural_products": 17
+          }
+        }
+      },
+      "selected_context": {
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "standard_type": "IC50",
+        "target_chembl_id": "CHEMBL220",
+        "target_organism": "Homo sapiens"
+      },
+      "selected_context_key": "c0161cb1c4ad947056d9",
+      "status": "included",
+      "target_chembl_id": "CHEMBL220",
+      "target_name": "Acetylcholinesterase"
+    },
+    "CHEMBL230": {
+      "compatible_measurements": 4529,
+      "compatible_molecules": 3431,
+      "evaluation_error_analysis": {
+        "beneficial_reversals": 95,
+        "comparable_pairs": 18623,
+        "dominant_component_counts": {
+          "assay_support": 74,
+          "bootstrap_uncertainty": 1,
+          "experimental_consistency": 217
+        },
+        "harmful_reversals": 292,
+        "net_harmful_reversals": 197
+      },
+      "exclusions": {
+        "context": {
+          "missing_year_or_activity": 30,
+          "other_assay_context": 1557
+        },
+        "temporal": {
+          "single_publication_year": 2945
+        }
+      },
+      "latest_natural_product_source_molecules": {
+        "COCONUT": 22,
+        "NPASS": 19
+      },
+      "latest_publication_molecules": 486,
+      "latest_publication_natural_products": 31,
+      "normalized_measurements": 6116,
+      "partitions": {
+        "development": {
+          "all": {
+            "active_molecules": 229,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8642334283210144,
+                "ndcg_at_k": 0.7754112629351594,
+                "precision_at_k": 0.9
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8689243199652128,
+                "ndcg_at_k": 0.7754112629351594,
+                "precision_at_k": 0.9
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8726096060811003,
+                "ndcg_at_k": 0.7755069836981975,
+                "precision_at_k": 0.9
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8652256324592612,
+                "ndcg_at_k": 0.7754112629351594,
+                "precision_at_k": 0.9
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8632435237707791,
+                "ndcg_at_k": 0.7147722007311693,
+                "precision_at_k": 0.9
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8974018117444436,
+                "ndcg_at_k": 0.7755069836981975,
+                "precision_at_k": 0.9
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8833100876035903,
+                "ndcg_at_k": 0.7755091619263099,
+                "precision_at_k": 0.9
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8897106288211242,
+                "ndcg_at_k": 0.7755069836981975,
+                "precision_at_k": 0.9
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8821925780255299,
+                "ndcg_at_k": 0.7755069836981975,
+                "precision_at_k": 0.9
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.1475982532751092,
+                "kendall_tau": 0.8646586586659774,
+                "ndcg_at_k": 0.7754112629351594,
+                "precision_at_k": 0.9
+              }
+            },
+            "n_molecules": 292,
+            "natural_products": 19
+          },
+          "natural_products": {
+            "active_molecules": 10,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.5200000000000002,
+                "kendall_tau": 0.4619883040935672,
+                "ndcg_at_k": 0.7612554175997367,
+                "precision_at_k": 0.8
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.33,
+                "kendall_tau": 0.5555555555555556,
+                "ndcg_at_k": 0.8352648122906059,
+                "precision_at_k": 0.7
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.33,
+                "kendall_tau": 0.543859649122807,
+                "ndcg_at_k": 0.8404563782125062,
+                "precision_at_k": 0.7
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.33,
+                "kendall_tau": 0.49707602339181284,
+                "ndcg_at_k": 0.7850587115370486,
+                "precision_at_k": 0.7
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.33,
+                "kendall_tau": 0.49559462778335206,
+                "ndcg_at_k": 0.7414819046654559,
+                "precision_at_k": 0.7
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.5200000000000002,
+                "kendall_tau": 0.6334338087700082,
+                "ndcg_at_k": 0.9411639038336465,
+                "precision_at_k": 0.8
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.33,
+                "kendall_tau": 0.6058928356068682,
+                "ndcg_at_k": 0.8534490011992694,
+                "precision_at_k": 0.7
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.5200000000000002,
+                "kendall_tau": 0.6608187134502924,
+                "ndcg_at_k": 0.8704807168029606,
+                "precision_at_k": 0.8
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.5200000000000002,
+                "kendall_tau": 0.5235384696020512,
+                "ndcg_at_k": 0.7913346807382968,
+                "precision_at_k": 0.8
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.33,
+                "kendall_tau": 0.5321637426900585,
+                "ndcg_at_k": 0.7875447455889086,
+                "precision_at_k": 0.7
+              }
+            },
+            "n_molecules": 19,
+            "natural_products": 19
+          }
+        },
+        "evaluation": {
+          "all": {
+            "active_molecules": 151,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8320026486642427,
+                "ndcg_at_k": 0.9760194842413843,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8232584022944782,
+                "ndcg_at_k": 0.9760194842413843,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8175339693431461,
+                "ndcg_at_k": 0.9760194842413843,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8280371587762385,
+                "ndcg_at_k": 0.9760194842413843,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.1562913907284769,
+                "kendall_tau": 0.815883807979515,
+                "ndcg_at_k": 0.6558115291304845,
+                "precision_at_k": 0.9
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8162961290932955,
+                "ndcg_at_k": 0.9492111017345983,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8215208215983981,
+                "ndcg_at_k": 0.9760194842413843,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8341866638006897,
+                "ndcg_at_k": 0.9654891626656228,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8448344505987136,
+                "ndcg_at_k": 0.9760194842413843,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.2847682119205297,
+                "kendall_tau": 0.8233214410715848,
+                "ndcg_at_k": 0.9760194842413843,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 194,
+            "natural_products": 12
+          },
+          "natural_products": {
+            "active_molecules": 6,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.6060606060606061,
+                "ndcg_at_k": 0.7640394254976485,
+                "precision_at_k": 0.6
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.5757575757575758,
+                "ndcg_at_k": 0.6626372495210012,
+                "precision_at_k": 0.6
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.5757575757575758,
+                "ndcg_at_k": 0.6601122175195212,
+                "precision_at_k": 0.6
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.6060606060606061,
+                "ndcg_at_k": 0.6626372495210012,
+                "precision_at_k": 0.6
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.36363636363636365,
+                "ndcg_at_k": 0.5871715427664118,
+                "precision_at_k": 0.6
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.3333333333333333,
+                "ndcg_at_k": 0.5485598706085841,
+                "precision_at_k": 0.6
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.3939393939393939,
+                "ndcg_at_k": 0.6125233507413275,
+                "precision_at_k": 0.6
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.5454545454545454,
+                "ndcg_at_k": 0.6546734628394103,
+                "precision_at_k": 0.6
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.6363636363636364,
+                "ndcg_at_k": 0.6695995340886596,
+                "precision_at_k": 0.6
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.2,
+                "kendall_tau": 0.5757575757575758,
+                "ndcg_at_k": 0.6626372495210012,
+                "precision_at_k": 0.6
+              }
+            },
+            "n_molecules": 12,
+            "natural_products": 12
+          }
+        }
+      },
+      "selected_context": {
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "standard_type": "IC50",
+        "target_chembl_id": "CHEMBL230",
+        "target_organism": "Homo sapiens"
+      },
+      "selected_context_key": "e07acbdecc0d14c26c2f",
+      "status": "included",
+      "target_chembl_id": "CHEMBL230",
+      "target_name": "Prostaglandin G/H synthase 2"
+    },
+    "CHEMBL284": {
+      "compatible_measurements": 3549,
+      "compatible_molecules": 2976,
+      "evaluation_error_analysis": {
+        "beneficial_reversals": 72,
+        "comparable_pairs": 2607,
+        "dominant_component_counts": {
+          "assay_support": 25,
+          "experimental_consistency": 57
+        },
+        "harmful_reversals": 82,
+        "net_harmful_reversals": 10
+      },
+      "exclusions": {
+        "context": {
+          "other_assay_context": 1160
+        },
+        "temporal": {
+          "single_publication_year": 2793
+        }
+      },
+      "latest_natural_product_source_molecules": {
+        "COCONUT": 15,
+        "NPASS": 2
+      },
+      "latest_publication_molecules": 183,
+      "latest_publication_natural_products": 15,
+      "normalized_measurements": 4709,
+      "partitions": {
+        "development": {
+          "all": {
+            "active_molecules": 86,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8856988663679863,
+                "ndcg_at_k": 0.9592195519829856,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8653559620649358,
+                "ndcg_at_k": 0.9593892411571178,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8591598144267495,
+                "ndcg_at_k": 0.9608389390919339,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8658785617536449,
+                "ndcg_at_k": 0.9592195519829856,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8304828893738985,
+                "ndcg_at_k": 0.8138521366496477,
+                "precision_at_k": 1.0
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8896003816657525,
+                "ndcg_at_k": 0.9608389390919339,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.887541775008599,
+                "ndcg_at_k": 0.9608389390919339,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.9022483014754441,
+                "ndcg_at_k": 0.9608389390919339,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8988635435346689,
+                "ndcg_at_k": 0.9608389390919339,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.2790697674418603,
+                "kendall_tau": 0.8601676265257838,
+                "ndcg_at_k": 0.9592195519829856,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 110,
+            "natural_products": 9
+          },
+          "natural_products": {
+            "active_molecules": 5,
+            "k": 9,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 1.0,
+                "ndcg_at_k": 1.0,
+                "precision_at_k": 0.5555555555555556
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.9444444444444444,
+                "ndcg_at_k": 0.9989607383217185,
+                "precision_at_k": 0.5555555555555556
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.8888888888888888,
+                "ndcg_at_k": 0.9906644650429454,
+                "precision_at_k": 0.5555555555555556
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.9444444444444444,
+                "ndcg_at_k": 0.9989607383217185,
+                "precision_at_k": 0.5555555555555556
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.7606388292556648,
+                "ndcg_at_k": 0.9673568598520952,
+                "precision_at_k": 0.5555555555555556
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.9444444444444444,
+                "ndcg_at_k": 0.9989607383217185,
+                "precision_at_k": 0.5555555555555556
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 1.0,
+                "ndcg_at_k": 1.0,
+                "precision_at_k": 0.5555555555555556
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 1.0,
+                "ndcg_at_k": 1.0,
+                "precision_at_k": 0.5555555555555556
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 1.0,
+                "ndcg_at_k": 1.0,
+                "precision_at_k": 0.5555555555555556
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.9444444444444444,
+                "ndcg_at_k": 0.9989607383217185,
+                "precision_at_k": 0.5555555555555556
+              }
+            },
+            "n_molecules": 9,
+            "natural_products": 9
+          }
+        },
+        "evaluation": {
+          "all": {
+            "active_molecules": 61,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7806653963985571,
+                "ndcg_at_k": 0.8397669911931873,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.753152959521075,
+                "ndcg_at_k": 0.8397669911931873,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7393967410823339,
+                "ndcg_at_k": 0.8982722812507958,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7684376466752317,
+                "ndcg_at_k": 0.8397669911931873,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 0.957377049180328,
+                "kendall_tau": 0.6660290742157613,
+                "ndcg_at_k": 0.6004801388458287,
+                "precision_at_k": 0.8
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7850038255547054,
+                "ndcg_at_k": 0.8987142841723482,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7463657230298393,
+                "ndcg_at_k": 0.8920132279871023,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7682600944148608,
+                "ndcg_at_k": 0.8876547785385879,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7633441884483149,
+                "ndcg_at_k": 0.8920132279871023,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.1967213114754098,
+                "kendall_tau": 0.7554456625941985,
+                "ndcg_at_k": 0.8397669911931873,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 73,
+            "natural_products": 6
+          },
+          "natural_products": {
+            "active_molecules": 4,
+            "k": 6,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.7333333333333333,
+                "ndcg_at_k": 0.9318246451918258,
+                "precision_at_k": 0.6666666666666666
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.7333333333333333,
+                "ndcg_at_k": 0.9318246451918258,
+                "precision_at_k": 0.6666666666666666
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.6,
+                "ndcg_at_k": 0.9099384481922794,
+                "precision_at_k": 0.6666666666666666
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.7333333333333333,
+                "ndcg_at_k": 0.9318246451918258,
+                "precision_at_k": 0.6666666666666666
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.4666666666666667,
+                "ndcg_at_k": 0.8960068336819871,
+                "precision_at_k": 0.6666666666666666
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.7333333333333333,
+                "ndcg_at_k": 0.9318246451918258,
+                "precision_at_k": 0.6666666666666666
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.4666666666666667,
+                "ndcg_at_k": 0.8948412913252421,
+                "precision_at_k": 0.6666666666666666
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.7333333333333333,
+                "ndcg_at_k": 0.9318246451918258,
+                "precision_at_k": 0.6666666666666666
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.6,
+                "ndcg_at_k": 0.9193109399220455,
+                "precision_at_k": 0.6666666666666666
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.0,
+                "kendall_tau": 0.7333333333333333,
+                "ndcg_at_k": 0.9318246451918258,
+                "precision_at_k": 0.6666666666666666
+              }
+            },
+            "n_molecules": 6,
+            "natural_products": 6
+          }
+        }
+      },
+      "selected_context": {
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "standard_type": "IC50",
+        "target_chembl_id": "CHEMBL284",
+        "target_organism": "Homo sapiens"
+      },
+      "selected_context_key": "a62a37da1d1ecf5f9088",
+      "status": "included",
+      "target_chembl_id": "CHEMBL284",
+      "target_name": "Dipeptidyl peptidase 4"
+    },
+    "CHEMBL335": {
+      "compatible_measurements": 2915,
+      "compatible_molecules": 2451,
+      "evaluation_error_analysis": {
+        "beneficial_reversals": 16,
+        "comparable_pairs": 2010,
+        "dominant_component_counts": {
+          "assay_support": 5,
+          "experimental_consistency": 8
+        },
+        "harmful_reversals": 13,
+        "net_harmful_reversals": -3
+      },
+      "exclusions": {
+        "context": {
+          "other_assay_context": 881
+        },
+        "temporal": {
+          "single_publication_year": 2289
+        }
+      },
+      "latest_natural_product_source_molecules": {
+        "COCONUT": 29,
+        "NPASS": 31
+      },
+      "latest_publication_molecules": 162,
+      "latest_publication_natural_products": 36,
+      "normalized_measurements": 3796,
+      "partitions": {
+        "development": {
+          "all": {
+            "active_molecules": 57,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.8903417071938377,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.8549136146290427,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.8506959845618052,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.8616618227366226,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.5473684210526317,
+                "kendall_tau": 0.8646769575388165,
+                "ndcg_at_k": 0.9131241048306113,
+                "precision_at_k": 0.9
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.8951699746183807,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.8857717845097561,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.9133096112388286,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.91235126649314,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.719298245614035,
+                "kendall_tau": 0.8511177475685289,
+                "ndcg_at_k": 0.997377219535429,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 98,
+            "natural_products": 22
+          },
+          "natural_products": {
+            "active_molecules": 7,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.8857142857142857,
+                "kendall_tau": 0.6883116883116883,
+                "ndcg_at_k": 0.9978417004508522,
+                "precision_at_k": 0.6
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.5714285714285714,
+                "kendall_tau": 0.5757575757575758,
+                "ndcg_at_k": 0.8551988441502584,
+                "precision_at_k": 0.5
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.5714285714285714,
+                "kendall_tau": 0.5757575757575758,
+                "ndcg_at_k": 0.8551988441502584,
+                "precision_at_k": 0.5
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.5714285714285714,
+                "kendall_tau": 0.5844155844155844,
+                "ndcg_at_k": 0.8551988441502584,
+                "precision_at_k": 0.5
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.8857142857142857,
+                "kendall_tau": 0.645021645021645,
+                "ndcg_at_k": 0.9823559025310548,
+                "precision_at_k": 0.6
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.8857142857142857,
+                "kendall_tau": 0.6796536796536796,
+                "ndcg_at_k": 0.994725033118191,
+                "precision_at_k": 0.6
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.8857142857142857,
+                "kendall_tau": 0.7288520401581433,
+                "ndcg_at_k": 0.9582617039291191,
+                "precision_at_k": 0.6
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.8857142857142857,
+                "kendall_tau": 0.7229437229437229,
+                "ndcg_at_k": 0.9989725881368059,
+                "precision_at_k": 0.6
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.8857142857142857,
+                "kendall_tau": 0.7316017316017316,
+                "ndcg_at_k": 0.9989725881368059,
+                "precision_at_k": 0.6
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.5714285714285714,
+                "kendall_tau": 0.5584415584415584,
+                "ndcg_at_k": 0.8551988441502584,
+                "precision_at_k": 0.5
+              }
+            },
+            "n_molecules": 22,
+            "natural_products": 22
+          }
+        },
+        "evaluation": {
+          "all": {
+            "active_molecules": 39,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.878787987222157,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.8897169503193234,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.8946846608180354,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.8877298661198386,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.476923076923077,
+                "kendall_tau": 0.8285292363757025,
+                "ndcg_at_k": 0.8818773648259807,
+                "precision_at_k": 0.9
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.476923076923077,
+                "kendall_tau": 0.8427331533382024,
+                "ndcg_at_k": 0.8818773648259807,
+                "precision_at_k": 0.9
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.8954039754218401,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.8864598735585809,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.8864598735585809,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.641025641025641,
+                "kendall_tau": 0.8897169503193234,
+                "ndcg_at_k": 0.9293510811748794,
+                "precision_at_k": 1.0
+              }
+            },
+            "n_molecules": 64,
+            "natural_products": 14
+          },
+          "natural_products": {
+            "active_molecules": 2,
+            "k": 10,
+            "metrics": {
+              "ablate_explicit_consistency": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.5164835164835165,
+                "ndcg_at_k": 0.543364911856411,
+                "precision_at_k": 0.2
+              },
+              "ablate_reliability": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.5604395604395604,
+                "ndcg_at_k": 0.5580256255953018,
+                "precision_at_k": 0.2
+              },
+              "ablate_support": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.6043956043956044,
+                "ndcg_at_k": 0.5580256255953018,
+                "precision_at_k": 0.2
+              },
+              "ablate_uncertainty": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.5604395604395604,
+                "ndcg_at_k": 0.543364911856411,
+                "precision_at_k": 0.2
+              },
+              "baseline_max_potency": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.45054945054945056,
+                "ndcg_at_k": 0.543364911856411,
+                "precision_at_k": 0.2
+              },
+              "latest_training_potency": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.4945054945054945,
+                "ndcg_at_k": 0.543364911856411,
+                "precision_at_k": 0.2
+              },
+              "lower_confidence_bound": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.5604395604395604,
+                "ndcg_at_k": 0.5580256255953018,
+                "precision_at_k": 0.2
+              },
+              "mean_potency": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.4945054945054945,
+                "ndcg_at_k": 0.543364911856411,
+                "precision_at_k": 0.2
+              },
+              "median_potency": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.5164835164835165,
+                "ndcg_at_k": 0.543364911856411,
+                "precision_at_k": 0.2
+              },
+              "phytotruth_full": {
+                "enrichment_factor_at_k": 1.4000000000000001,
+                "kendall_tau": 0.5824175824175825,
+                "ndcg_at_k": 0.5580256255953018,
+                "precision_at_k": 0.2
+              }
+            },
+            "n_molecules": 14,
+            "natural_products": 14
+          }
+        }
+      },
+      "selected_context": {
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "standard_type": "IC50",
+        "target_chembl_id": "CHEMBL335",
+        "target_organism": "Homo sapiens"
+      },
+      "selected_context_key": "bee3486ec6fbd9a6ba15",
+      "status": "included",
+      "target_chembl_id": "CHEMBL335",
+      "target_name": "Tyrosine-protein phosphatase non-receptor type 1"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+target_chembl_id,target_name,status,normalized_measurements,compatible_measurements,compatible_molecules,latest_publication_molecules,latest_publication_natural_products,latest_npass_molecules,latest_coconut_molecules
+CHEMBL220,Acetylcholinesterase,included,7275,5920,4774,261,42,28,38
+CHEMBL203,Epidermal growth factor receptor,included,19378,11400,7275,817,31,11,26
+CHEMBL230,Prostaglandin G/H synthase 2,included,6116,4529,3431,486,31,19,22
+CHEMBL284,Dipeptidyl peptidase 4,included,4709,3549,2976,183,15,2,15
+CHEMBL335,Tyrosine-protein phosphatase non-receptor type 1,included,3796,2915,2451,162,36,31,29

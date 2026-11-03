@@ -1,0 +1,45 @@
+{
+  "inputs": [
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.normalized.jsonl",
+      "activities_sha256": "a914cf9dbc98670500659ef779fd6386ff42786eec42a292174149310caa0ab6",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.natural.jsonl",
+      "natural_products_sha256": "6dec9450ff6839067b637a6eddde68012cc11ed37e535ca87ad71d81d406cf37",
+      "target_chembl_id": "CHEMBL220"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.normalized.jsonl",
+      "activities_sha256": "ea8063b7c10e3e7a026c9ef56ec39c992ac7734becb8d44c2d7d44795cdeba48",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.natural.jsonl",
+      "natural_products_sha256": "87d51d7992233324235a960dac7449f0816e84699fbf3fa3818c338174ba7032",
+      "target_chembl_id": "CHEMBL203"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.normalized.jsonl",
+      "activities_sha256": "1cd2cacf6ab7ee58a7b72ba20fa6ef84e261c927f23435a21875eae9d8e30e66",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.natural.jsonl",
+      "natural_products_sha256": "6e8e897d5f6a8197142c021486172d2c83847d09600c2dd93786d4e3e1e3f87d",
+      "target_chembl_id": "CHEMBL230"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.normalized.jsonl",
+      "activities_sha256": "b0f55355f03b4ee82c163d585f186bff31d53a152dc8fafc2ad109706a8ab35a",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.natural.jsonl",
+      "natural_products_sha256": "2d9a987ed09f58122299bf23a56a7ffaa2dc92f328958788a5c4f7bf25ff7c2a",
+      "target_chembl_id": "CHEMBL284"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.normalized.jsonl",
+      "activities_sha256": "442c53a321dea17c74533970a688efec5cddfd118b4c24ea4daa92e48d61288a",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl335_ic50.natural.jsonl",
+      "natural_products_sha256": "fd897420025bd1f1ad5003a04f843647717d577d8555c3982b5b58274392c7b3",
+      "target_chembl_id": "CHEMBL335"
+    }
+  ],
+  "leakage_contract": "temporal evidence split precedes molecule development/evaluation split; evaluation is not used for selection",
+  "natural_product_database": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\natural_products_npass_coconut.sqlite",
+  "natural_product_database_sha256": "61b4c354d7affadf51a4e1662a446571bc9e98707e80ce8e047de02c859bb309",
+  "results_sha256": "534649bce291b9bd6adc8c5fa52648fd3dc80d495090b22819e929e12a87ce7e",
+  "specification": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\multitarget_targets.json",
+  "specification_sha256": "18705f7a8f7329c25adf710212043c4d167e122a103bbf4ff4319f2a397c2201"
+}

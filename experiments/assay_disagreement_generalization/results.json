@@ -1,0 +1,760 @@
+{
+  "dataset": {
+    "development_disagreements": 50,
+    "development_events": 212,
+    "development_singleton_studies": 112,
+    "development_studies": 141,
+    "eligible_events": 531,
+    "evaluation_disagreements": 169,
+    "evaluation_events": 319,
+    "evaluation_natural_products": 60,
+    "evaluation_studies": 108
+  },
+  "development_selection": {
+    "candidate_metrics": {
+      "compact_hist_gradient_boosting": {
+        "pooled": {
+          "auroc": 0.33024691358024694,
+          "brier": 0.18765345978383022,
+          "calibration_intercept": -5.181045227719282,
+          "calibration_slope": -3.370869130585799,
+          "ece_10": 0.05839906433146004,
+          "log_loss": 0.5672550111459191,
+          "n": 212,
+          "positives": 50,
+          "pr_auc": 0.17442477687379415,
+          "prevalence": 0.2358490566037736
+        },
+        "study_balanced": {
+          "auroc": 0.37253635726665146,
+          "brier": 0.20164745983486032,
+          "log_loss": 0.5977541433306006,
+          "n": 212,
+          "pr_auc": 0.215145511922723,
+          "studies": 141
+        }
+      },
+      "compact_history_logistic": {
+        "pooled": {
+          "auroc": 0.3606172839506173,
+          "brier": 0.18846369959523512,
+          "calibration_intercept": -2.757667498058571,
+          "calibration_slope": -1.3032875379454227,
+          "ece_10": 0.0870620751595227,
+          "log_loss": 0.5703574164495953,
+          "n": 212,
+          "positives": 50,
+          "pr_auc": 0.19521613070050273,
+          "prevalence": 0.2358490566037736
+        },
+        "study_balanced": {
+          "auroc": 0.39537190262748745,
+          "brier": 0.20392728910931357,
+          "log_loss": 0.6055933956796192,
+          "n": 212,
+          "pr_auc": 0.23219960855228283,
+          "studies": 141
+        }
+      },
+      "compact_logistic": {
+        "pooled": {
+          "auroc": 0.37,
+          "brier": 0.18633647887387145,
+          "calibration_intercept": -3.894415656148273,
+          "calibration_slope": -2.2340069788167827,
+          "ece_10": 0.020134746341541672,
+          "log_loss": 0.5638159389208506,
+          "n": 212,
+          "positives": 50,
+          "pr_auc": 0.18709904576803066,
+          "prevalence": 0.2358490566037736
+        },
+        "study_balanced": {
+          "auroc": 0.40063901325118667,
+          "brier": 0.20108224308941386,
+          "log_loss": 0.5960602070010399,
+          "n": 212,
+          "pr_auc": 0.22135856062775727,
+          "studies": 141
+        }
+      },
+      "constant_prevalence": {
+        "pooled": {
+          "auroc": 0.5,
+          "brier": 0.18022427910288358,
+          "calibration_intercept": null,
+          "calibration_slope": null,
+          "ece_10": 0.0,
+          "log_loss": 0.5462478002425148,
+          "n": 212,
+          "positives": 50,
+          "pr_auc": 0.2358490566037736,
+          "prevalence": 0.2358490566037736
+        },
+        "study_balanced": {
+          "auroc": 0.5,
+          "brier": 0.1956560010166578,
+          "log_loss": 0.5805863501669363,
+          "n": 212,
+          "pr_auc": 0.2650591016548465,
+          "studies": 141
+        }
+      },
+      "current_full_calibrated": {
+        "pooled": {
+          "auroc": 0.3314814814814815,
+          "brier": 0.19104216226599557,
+          "calibration_intercept": -4.007504377061436,
+          "calibration_slope": -2.272151267859765,
+          "ece_10": 0.10290752395575171,
+          "log_loss": 0.5798055010266261,
+          "n": 212,
+          "positives": 50,
+          "pr_auc": 0.17448095547008033,
+          "prevalence": 0.2358490566037736
+        },
+        "study_balanced": {
+          "auroc": 0.35059263884698877,
+          "brier": 0.20779174813862433,
+          "log_loss": 0.6188683664010369,
+          "n": 212,
+          "pr_auc": 0.2075298081265347,
+          "studies": 141
+        }
+      },
+      "current_full_logistic": {
+        "pooled": {
+          "auroc": 0.5304938271604939,
+          "brier": 0.202618859553453,
+          "calibration_intercept": -1.2200202139905423,
+          "calibration_slope": -0.03214579707356871,
+          "ece_10": 0.10016773020586739,
+          "log_loss": 0.664900923642984,
+          "n": 212,
+          "positives": 50,
+          "pr_auc": 0.2762939824895758,
+          "prevalence": 0.2358490566037736
+        },
+        "study_balanced": {
+          "auroc": 0.49129080300332534,
+          "brier": 0.2271260187964428,
+          "log_loss": 0.7410083931419862,
+          "n": 212,
+          "pr_auc": 0.29006575723957295,
+          "studies": 141
+        }
+      }
+    },
+    "criterion": "minimum equal-study-weighted Brier score from leave-one-study-out development predictions",
+    "evaluation_used_for_selection": false,
+    "selected_model": "constant_prevalence"
+  },
+  "evaluation": {
+    "compact_hist_gradient_boosting": {
+      "clustered_ci95": {
+        "auroc": [
+          0.4264744953878545,
+          0.631942221094716
+        ],
+        "brier": [
+          0.21447054875379984,
+          0.4017599721535619
+        ],
+        "ece_10": [
+          0.06476122416752418,
+          0.41956030009341166
+        ],
+        "log_loss": [
+          0.6224703670359414,
+          1.0391066281530639
+        ],
+        "pr_auc": [
+          0.2806423359107465,
+          0.7139454900793437
+        ]
+      },
+      "point": {
+        "auroc": 0.5797633136094674,
+        "brier": 0.33541129508698164,
+        "calibration_intercept": 0.05023403052726408,
+        "calibration_slope": -0.05840642510182659,
+        "ece_10": 0.29388045898668524,
+        "log_loss": 0.8915155427753977,
+        "n": 319,
+        "positives": 169,
+        "pr_auc": 0.5625743395763507,
+        "prevalence": 0.5297805642633229
+      }
+    },
+    "compact_history_logistic": {
+      "clustered_ci95": {
+        "auroc": [
+          0.3481827822580645,
+          0.5850406126008207
+        ],
+        "brier": [
+          0.21199619882336443,
+          0.42168378308741444
+        ],
+        "ece_10": [
+          0.06655688609067142,
+          0.4409215226973111
+        ],
+        "log_loss": [
+          0.6179234594878966,
+          1.0945108795544203
+        ],
+        "pr_auc": [
+          0.30119985309332337,
+          0.694214695261167
+        ]
+      },
+      "point": {
+        "auroc": 0.39218934911242603,
+        "brier": 0.3456206311890734,
+        "calibration_intercept": -4.666296307136276,
+        "calibration_slope": -3.933355818572482,
+        "ece_10": 0.3058275968683444,
+        "log_loss": 0.9209785559893716,
+        "n": 319,
+        "positives": 169,
+        "pr_auc": 0.49585923368802653,
+        "prevalence": 0.5297805642633229
+      }
+    },
+    "compact_logistic": {
+      "clustered_ci95": {
+        "auroc": [
+          0.3702163644072086,
+          0.6779156951775082
+        ],
+        "brier": [
+          0.21092604023199343,
+          0.3870523226946516
+        ],
+        "ece_10": [
+          0.07499188889860295,
+          0.4073438386021745
+        ],
+        "log_loss": [
+          0.6142951075390943,
+          0.9998012890636225
+        ],
+        "pr_auc": [
+          0.28130048821444403,
+          0.639438971713467
+        ]
+      },
+      "point": {
+        "auroc": 0.626232741617357,
+        "brier": 0.3275257559797003,
+        "calibration_intercept": 3.594717534473224,
+        "calibration_slope": 3.0238028300689814,
+        "ece_10": 0.28830163452395113,
+        "log_loss": 0.8710837836750255,
+        "n": 319,
+        "positives": 169,
+        "pr_auc": 0.5962177681241603,
+        "prevalence": 0.5297805642633229
+      }
+    },
+    "constant_prevalence": {
+      "clustered_ci95": {
+        "auroc": [
+          0.5,
+          0.5
+        ],
+        "brier": [
+          0.21001186661920018,
+          0.404024598250939
+        ],
+        "ece_10": [
+          0.056383647798742186,
+          0.42362203267310494
+        ],
+        "log_loss": [
+          0.6125309128317915,
+          1.0442465637704765
+        ],
+        "pr_auc": [
+          0.29223270440251575,
+          0.6594710892768786
+        ]
+      },
+      "point": {
+        "auroc": 0.5,
+        "brier": 0.3355088491871738,
+        "calibration_intercept": null,
+        "calibration_slope": null,
+        "ece_10": 0.29393150765954934,
+        "log_loss": 0.8917858414362311,
+        "n": 319,
+        "positives": 169,
+        "pr_auc": 0.5297805642633229,
+        "prevalence": 0.5297805642633229
+      }
+    },
+    "current_full_calibrated": {
+      "clustered_ci95": {
+        "auroc": [
+          0.3089371225052819,
+          0.5817294523880183
+        ],
+        "brier": [
+          0.21189839768557098,
+          0.4092421142355281
+        ],
+        "ece_10": [
+          0.05516461186418382,
+          0.4271089459607784
+        ],
+        "log_loss": [
+          0.6163012026871676,
+          1.0595587296140931
+        ],
+        "pr_auc": [
+          0.27799295070255015,
+          0.5893478449181857
+        ]
+      },
+      "point": {
+        "auroc": 0.35842209072978304,
+        "brier": 0.3383144517649499,
+        "calibration_intercept": -9.360695261326406,
+        "calibration_slope": -8.046698774197475,
+        "ece_10": 0.29421677355722853,
+        "log_loss": 0.8997781580456645,
+        "n": 319,
+        "positives": 169,
+        "pr_auc": 0.4408072462451499,
+        "prevalence": 0.5297805642633229
+      }
+    },
+    "current_full_logistic": {
+      "clustered_ci95": {
+        "auroc": [
+          0.414858059445303,
+          0.6820809653248475
+        ],
+        "brier": [
+          0.23976575387700283,
+          0.3562866278775525
+        ],
+        "ece_10": [
+          0.17160420451995625,
+          0.3342498973651531
+        ],
+        "log_loss": [
+          0.7794037321310496,
+          1.297781104937551
+        ],
+        "pr_auc": [
+          0.3114092209229677,
+          0.6528511544373704
+        ]
+      },
+      "point": {
+        "auroc": 0.641577909270217,
+        "brier": 0.2955708045691592,
+        "calibration_intercept": 0.4551928946670727,
+        "calibration_slope": 0.2578893701796184,
+        "ece_10": 0.2709066474181946,
+        "log_loss": 0.9515169896634635,
+        "n": 319,
+        "positives": 169,
+        "pr_auc": 0.6087679264857645,
+        "prevalence": 0.5297805642633229
+      }
+    }
+  },
+  "feature_contract": {
+    "compact_history": [
+      "prior_median_pactivity",
+      "prior_distance_to_active_threshold",
+      "prior_documents",
+      "prior_assays",
+      "prior_year_span",
+      "prior_mad",
+      "prior_document_median_range",
+      "prior_assay_median_range",
+      "prior_historical_tenfold_fraction",
+      "prior_recent_shift",
+      "prior_temporal_slope"
+    ],
+    "compact_metadata": [
+      "prior_records_per_document",
+      "prior_assays_per_document",
+      "prior_journals",
+      "prior_descriptions",
+      "prior_missing_description_fraction",
+      "prior_missing_journal_fraction",
+      "prior_cell_keyword_fraction",
+      "prior_recombinant_keyword_fraction",
+      "prior_substrate_keyword_fraction"
+    ],
+    "enhanced_molecular": [
+      "molecular_weight",
+      "logp",
+      "tpsa",
+      "fraction_csp3",
+      "ring_count",
+      "aromatic_atom_fraction",
+      "heteroatom_fraction",
+      "bertz_complexity"
+    ],
+    "prohibited": [
+      "heldout values",
+      "heldout assay/document identifiers",
+      "future assay outcomes",
+      "natural-product status"
+    ]
+  },
+  "generated_at": "2026-10-21T08:26:12.070276+00:00",
+  "input_manifest": {
+    "exclusions": {
+      "missing_or_inconsistent_structure": 2,
+      "potential_duplicate": 4623,
+      "single_publication_year": 20036
+    },
+    "inputs": [
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.normalized.jsonl",
+        "activities_sha256": "a914cf9dbc98670500659ef779fd6386ff42786eec42a292174149310caa0ab6",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.natural.jsonl",
+        "natural_products_sha256": "6dec9450ff6839067b637a6eddde68012cc11ed37e535ca87ad71d81d406cf37",
+        "target_chembl_id": "CHEMBL220"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.normalized.jsonl",
+        "activities_sha256": "ea8063b7c10e3e7a026c9ef56ec39c992ac7734becb8d44c2d7d44795cdeba48",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.natural.jsonl",
+        "natural_products_sha256": "87d51d7992233324235a960dac7449f0816e84699fbf3fa3818c338174ba7032",
+        "target_chembl_id": "CHEMBL203"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.normalized.jsonl",
+        "activities_sha256": "1cd2cacf6ab7ee58a7b72ba20fa6ef84e261c927f23435a21875eae9d8e30e66",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.natural.jsonl",
+        "natural_products_sha256": "6e8e897d5f6a8197142c021486172d2c83847d09600c2dd93786d4e3e1e3f87d",
+        "target_chembl_id": "CHEMBL230"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.normalized.jsonl",
+        "activities_sha256": "b0f55355f03b4ee82c163d585f186bff31d53a152dc8fafc2ad109706a8ab35a",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.natural.jsonl",
+        "natural_products_sha256": "2d9a987ed09f58122299bf23a56a7ffaa2dc92f328958788a5c4f7bf25ff7c2a",
+        "target_chembl_id": "CHEMBL284"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.normalized.jsonl",
+        "activities_sha256": "442c53a321dea17c74533970a688efec5cddfd118b4c24ea4daa92e48d61288a",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl335_ic50.natural.jsonl",
+        "natural_products_sha256": "fd897420025bd1f1ad5003a04f843647717d577d8555c3982b5b58274392c7b3",
+        "target_chembl_id": "CHEMBL335"
+      }
+    ],
+    "outcome": "absolute difference between prior-study and latest-year median exact IC50 pActivity >= 1.0 log10 unit",
+    "split": "development held-out publications <= 2019; untouched evaluation >= 2020",
+    "targets": [
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 30,
+          "other_assay_context": 1210
+        },
+        "development_events": 49,
+        "eligible_events": 91,
+        "eligible_events_before_cross_target_deduplication": 91,
+        "evaluation_disagreements": 11,
+        "evaluation_events": 42,
+        "evaluation_natural_products": 20,
+        "event_exclusions": {
+          "single_publication_year": 4639
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 819
+        },
+        "selected_context_key": "c0161cb1c4ad947056d9",
+        "selected_measurements": 5216,
+        "selected_molecules": 4730,
+        "target_chembl_id": "CHEMBL220",
+        "target_name": "Acetylcholinesterase"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 47,
+          "other_assay_context": 7405
+        },
+        "development_events": 81,
+        "eligible_events": 293,
+        "eligible_events_before_cross_target_deduplication": 293,
+        "evaluation_disagreements": 132,
+        "evaluation_events": 212,
+        "evaluation_natural_products": 12,
+        "event_exclusions": {
+          "single_publication_year": 6795
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 2106
+        },
+        "selected_context_key": "1777516c62f2ea08fa2d",
+        "selected_measurements": 9820,
+        "selected_molecules": 7088,
+        "target_chembl_id": "CHEMBL203",
+        "target_name": "Epidermal growth factor receptor"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 30,
+          "other_assay_context": 1399
+        },
+        "development_events": 42,
+        "eligible_events": 67,
+        "eligible_events_before_cross_target_deduplication": 67,
+        "evaluation_disagreements": 8,
+        "evaluation_events": 25,
+        "evaluation_natural_products": 16,
+        "event_exclusions": {
+          "single_publication_year": 3300
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 994
+        },
+        "selected_context_key": "e07acbdecc0d14c26c2f",
+        "selected_measurements": 3693,
+        "selected_molecules": 3367,
+        "target_chembl_id": "CHEMBL230",
+        "target_name": "Prostaglandin G/H synthase 2"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 1093
+        },
+        "development_events": 16,
+        "eligible_events": 41,
+        "eligible_events_before_cross_target_deduplication": 41,
+        "evaluation_disagreements": 16,
+        "evaluation_events": 25,
+        "evaluation_natural_products": 7,
+        "event_exclusions": {
+          "single_publication_year": 2904
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 431
+        },
+        "selected_context_key": "a62a37da1d1ecf5f9088",
+        "selected_measurements": 3185,
+        "selected_molecules": 2945,
+        "target_chembl_id": "CHEMBL284",
+        "target_name": "Dipeptidyl peptidase 4"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 854
+        },
+        "development_events": 24,
+        "eligible_events": 39,
+        "eligible_events_before_cross_target_deduplication": 39,
+        "evaluation_disagreements": 2,
+        "evaluation_events": 15,
+        "evaluation_natural_products": 5,
+        "event_exclusions": {
+          "missing_or_inconsistent_structure": 2,
+          "single_publication_year": 2398
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 273
+        },
+        "selected_context_key": "bee3486ec6fbd9a6ba15",
+        "selected_measurements": 2669,
+        "selected_molecules": 2439,
+        "target_chembl_id": "CHEMBL335",
+        "target_name": "Tyrosine-protein phosphatase non-receptor type 1"
+      }
+    ]
+  },
+  "natural_products": {
+    "current_full_metrics": {
+      "clustered_ci95": {
+        "auroc": [
+          0.32231008816302936,
+          0.6456342943681538
+        ],
+        "brier": [
+          0.187361094355352,
+          0.3779441381078889
+        ],
+        "ece_10": [
+          0.17403863471951223,
+          0.3901695527776799
+        ],
+        "log_loss": [
+          0.6656302628245475,
+          1.4064422132449443
+        ],
+        "pr_auc": [
+          0.2084535544331963,
+          0.5222108375764678
+        ]
+      },
+      "point": {
+        "auroc": 0.48267008985879334,
+        "brier": 0.2800617921001158,
+        "calibration_intercept": -0.7964025896757239,
+        "calibration_slope": -0.011186024828597147,
+        "ece_10": 0.2523528533403466,
+        "log_loss": 1.022816614714664,
+        "n": 60,
+        "positives": 19,
+        "pr_auc": 0.33626511367971135,
+        "prevalence": 0.31666666666666665
+      }
+    },
+    "error_summary": {
+      "by_target": {
+        "CHEMBL203": {
+          "brier": 0.18770024919900316,
+          "n": 12,
+          "positives": 3
+        },
+        "CHEMBL220": {
+          "brier": 0.24053043787824846,
+          "n": 20,
+          "positives": 7
+        },
+        "CHEMBL230": {
+          "brier": 0.1877002491990032,
+          "n": 16,
+          "positives": 4
+        },
+        "CHEMBL284": {
+          "brier": 0.3575115699537201,
+          "n": 7,
+          "positives": 4
+        },
+        "CHEMBL335": {
+          "brier": 0.16128515485938055,
+          "n": 5,
+          "positives": 1
+        }
+      },
+      "current_full_error_types": {
+        "false_negative": 18,
+        "false_positive": 3,
+        "true_negative": 38,
+        "true_positive": 1
+      },
+      "current_full_mean_squared_error": 0.2800617921001158,
+      "descriptor_domain_threshold": 2.44347937691294,
+      "error_types": {
+        "false_negative": 19,
+        "true_negative": 41
+      },
+      "mean_squared_error": 0.2229203749851667,
+      "n": 60,
+      "outside_descriptor_domain": 4,
+      "outside_descriptor_domain_fraction": 0.06666666666666667,
+      "positives": 19
+    },
+    "metrics": {
+      "clustered_ci95": {
+        "auroc": [
+          0.5,
+          0.5
+        ],
+        "brier": [
+          0.16636102532341815,
+          0.28843577846027585
+        ],
+        "ece_10": [
+          0.005079825834542834,
+          0.20482890949792126
+        ],
+        "log_loss": [
+          0.5153993936498465,
+          0.7870392034211571
+        ],
+        "pr_auc": [
+          0.2096078976640712,
+          0.4406779661016949
+        ]
+      },
+      "point": {
+        "auroc": 0.5,
+        "brier": 0.22292037498516673,
+        "calibration_intercept": null,
+        "calibration_slope": null,
+        "ece_10": 0.08081761006289301,
+        "log_loss": 0.6412548272109705,
+        "n": 60,
+        "positives": 19,
+        "pr_auc": 0.31666666666666665,
+        "prevalence": 0.31666666666666665
+      }
+    }
+  },
+  "outcome_definition": "absolute earlier-vs-later exact IC50 median shift >= 1.0 log10",
+  "scientific_conclusion": "Study-grouped selection did not establish reliable generalization. Study identity and protocol shift remain stronger determinants of disagreement than transferable compound-history signals.",
+  "seed": 2026,
+  "selected_vs_current_full": {
+    "auroc": {
+      "clustered_ci95": [
+        -0.18547687269112706,
+        0.09192424394263833
+      ],
+      "difference": -0.14157790927021696
+    },
+    "brier": {
+      "clustered_ci95": [
+        -0.08087532145223342,
+        0.11062301619946542
+      ],
+      "difference": 0.03993804461801459
+    },
+    "pr_auc": {
+      "clustered_ci95": [
+        -0.11954040449225768,
+        0.0418781409032972
+      ],
+      "difference": -0.07898736222244163
+    }
+  },
+  "study_bias": {
+    "CHEMBL5729139": {
+      "auroc_influence": 0.0,
+      "auroc_without_study": 0.5,
+      "brier": 0.4669743382095174,
+      "disagreements": 102,
+      "mean_predicted_risk": 0.23584905660377364,
+      "molecules": 131,
+      "natural_products": 0,
+      "observed_rate": 0.7786259541984732,
+      "pr_auc_influence": 0.17339758553991863,
+      "pr_auc_without_study": 0.35638297872340424,
+      "study": "CHEMBL5729139",
+      "target_chembl_id": "CHEMBL203",
+      "year": 2022
+    },
+    "CHEMBL5729139_current_full": {
+      "auroc_influence": 0.15890861113280486,
+      "auroc_without_study": 0.4826692981374121,
+      "brier": 0.29358950195827105,
+      "disagreements": 102,
+      "mean_predicted_risk": 0.5488469026134556,
+      "molecules": 131,
+      "natural_products": 0,
+      "observed_rate": 0.7786259541984732,
+      "pr_auc_influence": 0.250729715089978,
+      "pr_auc_without_study": 0.3580382113957865,
+      "study": "CHEMBL5729139",
+      "target_chembl_id": "CHEMBL203",
+      "year": 2022
+    },
+    "development_binary_icc": 0.41872028379887505,
+    "evaluation_binary_icc": 0.2883610901772933
+  },
+  "validation_decision": {
+    "reason": "At least one prespecified study-generalization or calibration condition failed.",
+    "rule": "study-clustered AUROC CI > 0.5, PR-AUC CI > evaluation prevalence, and calibration slope 0.5-1.5",
+    "status": "not_supported_for_reliable_prediction"
+  }
+}

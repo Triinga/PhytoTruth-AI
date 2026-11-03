@@ -1,0 +1,263 @@
+{
+  "dataset": {
+    "assay_context": {
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "standard_type": "IC50",
+      "target_chembl_id": "CHEMBL335",
+      "target_organism": "Homo sapiens"
+    },
+    "assay_context_key": "bee3486ec6fbd9a6ba15",
+    "normalization_exclusions": {
+      "other_assay_context": 881
+    },
+    "rejected_structures": 19,
+    "selected_measurements": 2915,
+    "unique_standardized_structures": 2444,
+    "verified_natural_products": 362
+  },
+  "evidence_reversal_status": "advantage_not_demonstrated; not used as a validated model feature",
+  "experiment": "PhytoTruth molecular bioactivity regression",
+  "generated_at": "2026-10-20T12:19:12.510239+00:00",
+  "model_comparisons": {
+    "best_learned_vs_mean_baseline": {
+      "mae": {
+        "candidate": 0.43200804883699406,
+        "difference_candidate_minus_reference": -0.3061572851385902,
+        "difference_ci95": [
+          -0.3612438866977171,
+          -0.25866014494283696
+        ],
+        "reference": 0.7381653339755843
+      },
+      "r2": {
+        "candidate": 0.6115795917704442,
+        "difference_candidate_minus_reference": 0.6173942951206254,
+        "difference_ci95": [
+          0.5580857973619038,
+          0.6804634264177125
+        ],
+        "reference": -0.005814703350181194
+      },
+      "rmse": {
+        "candidate": 0.5746804224145521,
+        "difference_candidate_minus_reference": -0.3500909394378554,
+        "difference_ci95": [
+          -0.4174221145892645,
+          -0.29326346524079405
+        ],
+        "reference": 0.9247713618524075
+      }
+    },
+    "xgboost_vs_random_forest": {
+      "mae": {
+        "candidate": 0.43200804883699406,
+        "difference_candidate_minus_reference": -0.023188118790183954,
+        "difference_ci95": [
+          -0.038187565593847395,
+          -0.009614361173831496
+        ],
+        "reference": 0.455196167627178
+      },
+      "r2": {
+        "candidate": 0.6115795917704442,
+        "difference_candidate_minus_reference": 0.030758648536074018,
+        "difference_ci95": [
+          0.004855886131020569,
+          0.058263921082343274
+        ],
+        "reference": 0.5808209432343702
+      },
+      "rmse": {
+        "candidate": 0.5746804224145521,
+        "difference_candidate_minus_reference": -0.022320730973090175,
+        "difference_ci95": [
+          -0.044579894713086925,
+          -0.0032668095894667236
+        ],
+        "reference": 0.5970011533876423
+      }
+    }
+  },
+  "models": {
+    "mean_baseline": {
+      "applicability_domain": {
+        "inside_count": 2165,
+        "inside_metrics": {
+          "mae": 0.7453685673222007,
+          "r2": -0.0059932253787859935,
+          "rmse": 0.930935892765382
+        },
+        "mean_test_to_train_tanimoto": 0.6311738495488953,
+        "method": "5th percentile of training nearest-neighbor Morgan Tanimoto, derived within each fold",
+        "outside_count": 279,
+        "outside_metrics": {
+          "mae": 0.6822692759274676,
+          "r2": -0.25482038551106045,
+          "rmse": 0.8754614151565498
+        }
+      },
+      "natural_product_subgroup": {
+        "metrics": {
+          "mae": 0.6616459289275566,
+          "r2": -0.5480996784656909,
+          "rmse": 0.8133627477636252
+        },
+        "n": 362
+      },
+      "overall": {
+        "mae": 0.7381653339755843,
+        "r2": -0.005814703350181194,
+        "rmse": 0.9247713618524075
+      },
+      "scaffold_cluster_bootstrap_ci95": {
+        "mae": [
+          0.6894992250586616,
+          0.7886544965610529
+        ],
+        "r2": [
+          -0.018218419671942564,
+          -0.00014589241301684054
+        ],
+        "rmse": [
+          0.8667245296706915,
+          0.9853591140800579
+        ]
+      },
+      "uncertainty": {
+        "absolute_error_interval_width_spearman": -0.0037825558701771304,
+        "empirical_coverage": 0.8997545008183306,
+        "mean_interval_width": 2.9293728015960214,
+        "median_interval_width": 2.82385084211656,
+        "method": "nested scaffold split-conformal absolute residuals; distance-inflated outside domain",
+        "target_coverage": 0.9
+      }
+    },
+    "random_forest": {
+      "applicability_domain": {
+        "inside_count": 2138,
+        "inside_metrics": {
+          "mae": 0.4452353455864463,
+          "r2": 0.610475115348828,
+          "rmse": 0.5781025853791018
+        },
+        "mean_test_to_train_tanimoto": 0.6286841525040404,
+        "method": "5th percentile of training nearest-neighbor Morgan Tanimoto, derived within each fold",
+        "outside_count": 306,
+        "outside_metrics": {
+          "mae": 0.5247917150882384,
+          "r2": 0.20232703412105324,
+          "rmse": 0.7152443812185777
+        }
+      },
+      "natural_product_subgroup": {
+        "metrics": {
+          "mae": 0.3957422922764162,
+          "r2": 0.26574774081389074,
+          "rmse": 0.5601540279335797
+        },
+        "n": 362
+      },
+      "overall": {
+        "mae": 0.455196167627178,
+        "r2": 0.5808209432343702,
+        "rmse": 0.5970011533876423
+      },
+      "scaffold_cluster_bootstrap_ci95": {
+        "mae": [
+          0.4282897873268116,
+          0.48640097489624845
+        ],
+        "r2": [
+          0.5283080863120831,
+          0.6263127829034456
+        ],
+        "rmse": [
+          0.5603411488985749,
+          0.6372350601037852
+        ]
+      },
+      "uncertainty": {
+        "absolute_error_interval_width_spearman": -0.031732567842564174,
+        "empirical_coverage": 0.9046644844517185,
+        "mean_interval_width": 2.011778981576608,
+        "median_interval_width": 1.9305256274846485,
+        "method": "nested scaffold split-conformal absolute residuals; distance-inflated outside domain",
+        "target_coverage": 0.9
+      }
+    },
+    "xgboost": {
+      "applicability_domain": {
+        "inside_count": 2129,
+        "inside_metrics": {
+          "mae": 0.42036636981631165,
+          "r2": 0.6443505733214876,
+          "rmse": 0.5561465860146932
+        },
+        "mean_test_to_train_tanimoto": 0.6284905651724897,
+        "method": "5th percentile of training nearest-neighbor Morgan Tanimoto, derived within each fold",
+        "outside_count": 315,
+        "outside_metrics": {
+          "mae": 0.5106910159323365,
+          "r2": 0.18285165851579366,
+          "rmse": 0.6869576829681772
+        }
+      },
+      "natural_product_subgroup": {
+        "metrics": {
+          "mae": 0.36790439275065784,
+          "r2": 0.38407781228312365,
+          "rmse": 0.5130358833523522
+        },
+        "n": 362
+      },
+      "overall": {
+        "mae": 0.43200804883699406,
+        "r2": 0.6115795917704442,
+        "rmse": 0.5746804224145521
+      },
+      "scaffold_cluster_bootstrap_ci95": {
+        "mae": [
+          0.4076982335452567,
+          0.46149366297133615
+        ],
+        "r2": [
+          0.5487019583853108,
+          0.6648282593261018
+        ],
+        "rmse": [
+          0.5421776095091674,
+          0.6151755404986478
+        ]
+      },
+      "uncertainty": {
+        "absolute_error_interval_width_spearman": -0.0033208395994045333,
+        "empirical_coverage": 0.92430441898527,
+        "mean_interval_width": 2.0690501908228103,
+        "median_interval_width": 1.952211296297719,
+        "method": "nested scaffold split-conformal absolute residuals; distance-inflated outside domain",
+        "target_coverage": 0.9
+      }
+    }
+  },
+  "selection": {
+    "beats_mean_baseline_on_mae": true,
+    "best_learned_model": "xgboost",
+    "best_mae": 0.43200804883699406,
+    "mean_baseline_mae": 0.7381653339755843,
+    "primary_metric": "outer-fold MAE"
+  },
+  "serialized_model": {
+    "applicability_similarity_threshold": 0.4225352112676056,
+    "conformal_half_width_90": 0.9274354447893529,
+    "file": "best_model.joblib"
+  },
+  "validation": {
+    "bootstrap_iterations": 1000,
+    "folds": 5,
+    "seed": 2026,
+    "strategy": "5-fold Bemis-Murcko scaffold holdout with nested scaffold calibration split",
+    "target_aggregation": "median per standardized InChIKey before splitting",
+    "unique_scaffolds": 1086
+  }
+}

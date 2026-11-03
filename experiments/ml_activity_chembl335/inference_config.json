@@ -1,0 +1,73 @@
+{
+  "applicability_domain": {
+    "fingerprints_file": "reference_fingerprints.npz",
+    "fingerprints_sha256": "3aadf3ac01f1806a450e224db9f812517de637efa753b02698971f2b48318cca",
+    "method": "5th percentile training nearest-neighbor Morgan Tanimoto",
+    "packed_bytes_per_fingerprint": 256,
+    "reference_count": 2444,
+    "similarity_threshold": 0.4225352112676056
+  },
+  "artifact_version": 2,
+  "exported_at": "2026-10-20T12:32:30.853958+00:00",
+  "feature_config": {
+    "descriptor_names": [
+      "molecular_weight",
+      "logp",
+      "tpsa",
+      "hbd",
+      "hba",
+      "rotatable_bonds",
+      "fraction_csp3",
+      "ring_count",
+      "heavy_atoms",
+      "formal_charge"
+    ],
+    "feature_count": 2058,
+    "fingerprint": "Morgan",
+    "n_bits": 2048,
+    "radius": 2,
+    "use_chirality": false
+  },
+  "model": {
+    "exported_with_xgboost": "3.4.1",
+    "file": "model.xgb.json",
+    "format": "xgboost-json",
+    "name": "xgboost",
+    "sha256": "c20d771793acbba76c12e9dd6e16fa62713232d3ad2d65a316c5bafc7e94606a",
+    "version": "chembl335-xgboost-c20d771793ac"
+  },
+  "prediction_semantics": {
+    "confidence_level": 0.9,
+    "limitations": [
+      "Research prioritization only; not confirmed experimental activity.",
+      "Not evidence of drug efficacy, clinical benefit, or safety.",
+      "Intervals are retrospective cross-validated residual diagnostics, not guaranteed prospective coverage.",
+      "Predictions outside the applicability domain must not be treated as reliable."
+    ],
+    "output": "target-specific experimental pActivity estimate, reported as predicted pChEMBL"
+  },
+  "source_joblib": {
+    "conversion_only_no_retraining": true,
+    "file": "best_model.joblib",
+    "sha256": "3c6bb9d4efdbeb3839711c7bbc5cb171e12cc11ec5a861b21ec44270acbbd693"
+  },
+  "training": {
+    "model_name": "xgboost",
+    "n_scaffolds": 1086,
+    "n_structures": 2444,
+    "seed": 2026,
+    "target": {
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "standard_type": "IC50",
+      "target_chembl_id": "CHEMBL335",
+      "target_organism": "Homo sapiens"
+    },
+    "target_definition": "median computed pActivity per standard InChIKey"
+  },
+  "uncertainty": {
+    "conformal_half_width_90": 0.9274354447893529,
+    "coverage_target": 0.9,
+    "source": "outer scaffold-held-out absolute residuals"
+  }
+}

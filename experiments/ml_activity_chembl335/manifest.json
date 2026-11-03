@@ -1,0 +1,9 @@
+{
+  "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.normalized.jsonl",
+  "activities_sha256": "442c53a321dea17c74533970a688efec5cddfd118b4c24ea4daa92e48d61288a",
+  "dataset_sha256": "12e0b71007e11fc88935226c6897962ed6aa5b193b8c292bd9a902dcf34f0e77",
+  "metrics_sha256": "67d2c0587b6d161a9509eb4a04816cf798fdec74cbb5463b94da9cdd9a2839b3",
+  "model_sha256": "3c6bb9d4efdbeb3839711c7bbc5cb171e12cc11ec5a861b21ec44270acbbd693",
+  "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.npass.jsonl",
+  "natural_products_sha256": "a1991e053a612c009ab3915d47f73e43eda30c1f3471878a826ab9254d0725c2"
+}

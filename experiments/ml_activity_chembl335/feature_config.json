@@ -1,0 +1,19 @@
+{
+  "fingerprint": "Morgan",
+  "radius": 2,
+  "n_bits": 2048,
+  "use_chirality": false,
+  "descriptor_names": [
+    "molecular_weight",
+    "logp",
+    "tpsa",
+    "hbd",
+    "hba",
+    "rotatable_bonds",
+    "fraction_csp3",
+    "ring_count",
+    "heavy_atoms",
+    "formal_charge"
+  ],
+  "feature_count": 2058
+}

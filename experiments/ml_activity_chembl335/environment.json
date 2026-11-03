@@ -1,0 +1,16 @@
+{
+  "joblib": "1.6.0",
+  "models_attempted": [
+    "mean_baseline",
+    "random_forest",
+    "xgboost"
+  ],
+  "numpy": "2.4.3",
+  "pandas": "3.0.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.3",
+  "rdkit": "2026.09.1",
+  "scikit_learn": "1.8.0",
+  "scipy": "1.17.1",
+  "xgboost": "3.4.1"
+}

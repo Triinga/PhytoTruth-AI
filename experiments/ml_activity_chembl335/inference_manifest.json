@@ -1,0 +1,9 @@
+{
+  "config": "inference_config.json",
+  "config_sha256": "3487b3b8ced736614cf76751e03d72a7eae5127fc0b122c813741503bdb3b1e9",
+  "fingerprints": "reference_fingerprints.npz",
+  "fingerprints_sha256": "3aadf3ac01f1806a450e224db9f812517de637efa753b02698971f2b48318cca",
+  "model": "model.xgb.json",
+  "model_sha256": "c20d771793acbba76c12e9dd6e16fa62713232d3ad2d65a316c5bafc7e94606a",
+  "model_version": "chembl335-xgboost-c20d771793ac"
+}

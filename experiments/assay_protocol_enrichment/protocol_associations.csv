@@ -1,0 +1,19 @@
+partition,subgroup,feature,feature_timing,comparable_events,changed_events,same_events,changed_disagreement_rate,same_disagreement_rate,risk_difference,odds_ratio,fisher_exact_p,study_clustered_ci95,fisher_bh_q
+development,all,protocol_organism_changed,post_outcome_explanatory_only,100,3,97,0.3333333333333333,0.17525773195876287,0.15807560137457044,2.3529411764705883,0.45231910946196663,"[-0.26755868544600936, 0.8550461133069829]",1.0
+development,all,protocol_methodology_changed,post_outcome_explanatory_only,13,3,10,0.3333333333333333,0.3,0.033333333333333326,1.1666666666666667,1.0,"[-0.552020202020202, 0.8280303030303027]",1.0
+development,all,protocol_detection_changed,post_outcome_explanatory_only,13,7,6,0.2857142857142857,0.3333333333333333,-0.047619047619047616,0.8,1.0,"[-0.55, 0.5282196969696966]",1.0
+development,all,protocol_biological_system_text_changed,post_outcome_explanatory_only,18,2,16,0.0,0.3125,-0.3125,0.0,1.0,"[-0.5294117647058824, -0.125]",1.0
+development,all,protocol_duration_changed,post_outcome_explanatory_only,13,8,5,0.0,0.2,-0.2,0.0,0.38461538461538464,"[-0.75, 0.0]",1.0
+development,natural_products,protocol_organism_changed,post_outcome_explanatory_only,25,2,23,0.5,0.30434782608695654,0.19565217391304346,2.2857142857142856,1.0,"[-0.43478260869565216, 0.8]",1.0
+development,natural_products,protocol_methodology_changed,post_outcome_explanatory_only,2,1,1,1.0,0.0,1.0,inf,1.0,"[1.0, 1.0]",1.0
+development,natural_products,protocol_biological_system_text_changed,post_outcome_explanatory_only,7,1,6,0.0,0.3333333333333333,-0.3333333333333333,0.0,1.0,"[-0.75, 0.0]",1.0
+development,natural_products,protocol_duration_changed,post_outcome_explanatory_only,5,4,1,0.0,0.0,0.0,,1.0,"[0.0, 0.0]",1.0
+evaluation,all,protocol_organism_changed,post_outcome_explanatory_only,290,3,287,0.6666666666666666,0.5296167247386759,0.1370499419279907,1.7763157894736843,1.0,"[-0.5598191468038551, 0.7104931501577773]",1.0
+evaluation,all,protocol_variant_mutation_changed,post_outcome_explanatory_only,31,24,7,0.3333333333333333,0.2857142857142857,0.047619047619047616,1.25,1.0,"[-0.44135087135087137, 0.6]",1.0
+evaluation,all,protocol_detection_changed,post_outcome_explanatory_only,32,23,9,0.30434782608695654,0.2222222222222222,0.08212560386473433,1.53125,1.0,"[-0.2739087301587302, 0.4445833333333332]",1.0
+evaluation,all,protocol_biological_system_text_changed,post_outcome_explanatory_only,19,4,15,0.75,0.26666666666666666,0.48333333333333334,8.25,0.11738906088751287,"[-0.35279411764705887, 0.8823529411764706]",0.5336617405582923
+evaluation,all,protocol_ph_changed,post_outcome_explanatory_only,18,7,11,0.5714285714285714,0.9090909090909091,-0.33766233766233766,0.13333333333333333,0.24509803921568624,"[-0.33766233766233766, -0.33766233766233766]",0.5336617405582923
+evaluation,all,protocol_duration_changed,post_outcome_explanatory_only,29,26,3,0.3076923076923077,0.6666666666666666,-0.3589743589743589,0.2222222222222222,0.26683087027914615,"[-0.8148148148148149, 0.2962962962962963]",0.5336617405582923
+evaluation,natural_products,protocol_organism_changed,post_outcome_explanatory_only,53,3,50,0.6666666666666666,0.3,0.36666666666666664,4.666666666666667,0.23802612481857763,"[-0.32725524475524476, 0.7959183673469388]",0.3
+evaluation,natural_products,protocol_detection_changed,post_outcome_explanatory_only,20,15,5,0.4666666666666667,0.0,0.4666666666666667,inf,0.1137125902992776,"[0.21428571428571427, 0.7333333333333333]",0.3
+evaluation,natural_products,protocol_biological_system_text_changed,post_outcome_explanatory_only,10,1,9,1.0,0.2222222222222222,0.7777777777777778,inf,0.3,"[0.4, 1.0]",0.3

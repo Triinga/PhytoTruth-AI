@@ -1,0 +1,344 @@
+[
+  {
+    "changed_disagreement_rate": 0.3333333333333333,
+    "changed_events": 3,
+    "comparable_events": 100,
+    "feature": "protocol_organism_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 0.45231910946196663,
+    "odds_ratio": 2.3529411764705883,
+    "partition": "development",
+    "risk_difference": 0.15807560137457044,
+    "same_disagreement_rate": 0.17525773195876287,
+    "same_events": 97,
+    "study_clustered_ci95": [
+      -0.26755868544600936,
+      0.8550461133069829
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.3333333333333333,
+    "changed_events": 3,
+    "comparable_events": 13,
+    "feature": "protocol_methodology_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 1.1666666666666667,
+    "partition": "development",
+    "risk_difference": 0.033333333333333326,
+    "same_disagreement_rate": 0.3,
+    "same_events": 10,
+    "study_clustered_ci95": [
+      -0.552020202020202,
+      0.8280303030303027
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.2857142857142857,
+    "changed_events": 7,
+    "comparable_events": 13,
+    "feature": "protocol_detection_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 0.8,
+    "partition": "development",
+    "risk_difference": -0.047619047619047616,
+    "same_disagreement_rate": 0.3333333333333333,
+    "same_events": 6,
+    "study_clustered_ci95": [
+      -0.55,
+      0.5282196969696966
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.0,
+    "changed_events": 2,
+    "comparable_events": 18,
+    "feature": "protocol_biological_system_text_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 0.0,
+    "partition": "development",
+    "risk_difference": -0.3125,
+    "same_disagreement_rate": 0.3125,
+    "same_events": 16,
+    "study_clustered_ci95": [
+      -0.5294117647058824,
+      -0.125
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.0,
+    "changed_events": 8,
+    "comparable_events": 13,
+    "feature": "protocol_duration_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 0.38461538461538464,
+    "odds_ratio": 0.0,
+    "partition": "development",
+    "risk_difference": -0.2,
+    "same_disagreement_rate": 0.2,
+    "same_events": 5,
+    "study_clustered_ci95": [
+      -0.75,
+      0.0
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.5,
+    "changed_events": 2,
+    "comparable_events": 25,
+    "feature": "protocol_organism_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 2.2857142857142856,
+    "partition": "development",
+    "risk_difference": 0.19565217391304346,
+    "same_disagreement_rate": 0.30434782608695654,
+    "same_events": 23,
+    "study_clustered_ci95": [
+      -0.43478260869565216,
+      0.8
+    ],
+    "subgroup": "natural_products"
+  },
+  {
+    "changed_disagreement_rate": 1.0,
+    "changed_events": 1,
+    "comparable_events": 2,
+    "feature": "protocol_methodology_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": Infinity,
+    "partition": "development",
+    "risk_difference": 1.0,
+    "same_disagreement_rate": 0.0,
+    "same_events": 1,
+    "study_clustered_ci95": [
+      1.0,
+      1.0
+    ],
+    "subgroup": "natural_products"
+  },
+  {
+    "changed_disagreement_rate": 0.0,
+    "changed_events": 1,
+    "comparable_events": 7,
+    "feature": "protocol_biological_system_text_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 0.0,
+    "partition": "development",
+    "risk_difference": -0.3333333333333333,
+    "same_disagreement_rate": 0.3333333333333333,
+    "same_events": 6,
+    "study_clustered_ci95": [
+      -0.75,
+      0.0
+    ],
+    "subgroup": "natural_products"
+  },
+  {
+    "changed_disagreement_rate": 0.0,
+    "changed_events": 4,
+    "comparable_events": 5,
+    "feature": "protocol_duration_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": NaN,
+    "partition": "development",
+    "risk_difference": 0.0,
+    "same_disagreement_rate": 0.0,
+    "same_events": 1,
+    "study_clustered_ci95": [
+      0.0,
+      0.0
+    ],
+    "subgroup": "natural_products"
+  },
+  {
+    "changed_disagreement_rate": 0.6666666666666666,
+    "changed_events": 3,
+    "comparable_events": 290,
+    "feature": "protocol_organism_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 1.7763157894736843,
+    "partition": "evaluation",
+    "risk_difference": 0.1370499419279907,
+    "same_disagreement_rate": 0.5296167247386759,
+    "same_events": 287,
+    "study_clustered_ci95": [
+      -0.5598191468038551,
+      0.7104931501577773
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.3333333333333333,
+    "changed_events": 24,
+    "comparable_events": 31,
+    "feature": "protocol_variant_mutation_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 1.25,
+    "partition": "evaluation",
+    "risk_difference": 0.047619047619047616,
+    "same_disagreement_rate": 0.2857142857142857,
+    "same_events": 7,
+    "study_clustered_ci95": [
+      -0.44135087135087137,
+      0.6
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.30434782608695654,
+    "changed_events": 23,
+    "comparable_events": 32,
+    "feature": "protocol_detection_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 1.0,
+    "fisher_exact_p": 1.0,
+    "odds_ratio": 1.53125,
+    "partition": "evaluation",
+    "risk_difference": 0.08212560386473433,
+    "same_disagreement_rate": 0.2222222222222222,
+    "same_events": 9,
+    "study_clustered_ci95": [
+      -0.2739087301587302,
+      0.4445833333333332
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.75,
+    "changed_events": 4,
+    "comparable_events": 19,
+    "feature": "protocol_biological_system_text_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 0.5336617405582923,
+    "fisher_exact_p": 0.11738906088751287,
+    "odds_ratio": 8.25,
+    "partition": "evaluation",
+    "risk_difference": 0.48333333333333334,
+    "same_disagreement_rate": 0.26666666666666666,
+    "same_events": 15,
+    "study_clustered_ci95": [
+      -0.35279411764705887,
+      0.8823529411764706
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.5714285714285714,
+    "changed_events": 7,
+    "comparable_events": 18,
+    "feature": "protocol_ph_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 0.5336617405582923,
+    "fisher_exact_p": 0.24509803921568624,
+    "odds_ratio": 0.13333333333333333,
+    "partition": "evaluation",
+    "risk_difference": -0.33766233766233766,
+    "same_disagreement_rate": 0.9090909090909091,
+    "same_events": 11,
+    "study_clustered_ci95": [
+      -0.33766233766233766,
+      -0.33766233766233766
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.3076923076923077,
+    "changed_events": 26,
+    "comparable_events": 29,
+    "feature": "protocol_duration_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 0.5336617405582923,
+    "fisher_exact_p": 0.26683087027914615,
+    "odds_ratio": 0.2222222222222222,
+    "partition": "evaluation",
+    "risk_difference": -0.3589743589743589,
+    "same_disagreement_rate": 0.6666666666666666,
+    "same_events": 3,
+    "study_clustered_ci95": [
+      -0.8148148148148149,
+      0.2962962962962963
+    ],
+    "subgroup": "all"
+  },
+  {
+    "changed_disagreement_rate": 0.6666666666666666,
+    "changed_events": 3,
+    "comparable_events": 53,
+    "feature": "protocol_organism_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 0.3,
+    "fisher_exact_p": 0.23802612481857763,
+    "odds_ratio": 4.666666666666667,
+    "partition": "evaluation",
+    "risk_difference": 0.36666666666666664,
+    "same_disagreement_rate": 0.3,
+    "same_events": 50,
+    "study_clustered_ci95": [
+      -0.32725524475524476,
+      0.7959183673469388
+    ],
+    "subgroup": "natural_products"
+  },
+  {
+    "changed_disagreement_rate": 0.4666666666666667,
+    "changed_events": 15,
+    "comparable_events": 20,
+    "feature": "protocol_detection_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 0.3,
+    "fisher_exact_p": 0.1137125902992776,
+    "odds_ratio": Infinity,
+    "partition": "evaluation",
+    "risk_difference": 0.4666666666666667,
+    "same_disagreement_rate": 0.0,
+    "same_events": 5,
+    "study_clustered_ci95": [
+      0.21428571428571427,
+      0.7333333333333333
+    ],
+    "subgroup": "natural_products"
+  },
+  {
+    "changed_disagreement_rate": 1.0,
+    "changed_events": 1,
+    "comparable_events": 10,
+    "feature": "protocol_biological_system_text_changed",
+    "feature_timing": "post_outcome_explanatory_only",
+    "fisher_bh_q": 0.3,
+    "fisher_exact_p": 0.3,
+    "odds_ratio": Infinity,
+    "partition": "evaluation",
+    "risk_difference": 0.7777777777777778,
+    "same_disagreement_rate": 0.2222222222222222,
+    "same_events": 9,
+    "study_clustered_ci95": [
+      0.4,
+      1.0
+    ],
+    "subgroup": "natural_products"
+  }
+]

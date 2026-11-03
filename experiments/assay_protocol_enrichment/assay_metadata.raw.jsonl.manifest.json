@@ -1,0 +1,14 @@
+{
+  "batch_size": 50,
+  "data_file": "assay_metadata.raw.jsonl",
+  "event_dataset": "..\\experiments\\assay_disagreement_generalization\\dataset.csv",
+  "event_dataset_sha256": "759ee9123b0ecdddf328afcfdaa3a1c8a69a19651cba0b13368abde2b46f2d77",
+  "max_retries": 5,
+  "missing_assay_ids": [],
+  "requested_assays": 1050,
+  "retrieved_at": "2026-10-21T08:42:32.037270+00:00",
+  "returned_assays": 1050,
+  "sha256": "97262a32685a812851225f241a438f96df3fc99f67b2607f2de65805ecc872b9",
+  "source": "ChEMBL REST API",
+  "source_base": "https://www.ebi.ac.uk/chembl/api/data/assay"
+}

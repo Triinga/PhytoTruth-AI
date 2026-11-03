@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="100%" height="100%" fill="#07131d"/>
+<style>text{font-family:Arial,sans-serif;fill:#dcecf4}.muted{fill:#8da9b8}.bar{fill:#2dd4bf}.axis{stroke:#58717d}</style>
+<text x="45" y="48" font-size="25" font-weight="700">ChEMBL assay protocol metadata coverage</text>
+<text x="45" y="75" font-size="14" class="muted">Explicitly reported fields or literal description mentions; missing does not mean absent.</text>
+<text x="45" y="130" font-size="13">assay type description</text>
+<rect x="330" y="115" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="115" width="650.0" height="19" rx="4"/>
+<text x="995" y="130" font-size="13">100.0%</text>
+<text x="45" y="164" font-size="13">assay organism</text>
+<rect x="330" y="149" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="149" width="499.6" height="19" rx="4"/>
+<text x="995" y="164" font-size="13">76.9%</text>
+<text x="45" y="198" font-size="13">assay tissue</text>
+<rect x="330" y="183" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="183" width="7.4" height="19" rx="4"/>
+<text x="995" y="198" font-size="13">1.1%</text>
+<text x="45" y="232" font-size="13">assay cell type</text>
+<rect x="330" y="217" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="217" width="0.0" height="19" rx="4"/>
+<text x="995" y="232" font-size="13">0.0%</text>
+<text x="45" y="266" font-size="13">assay subcellular fraction</text>
+<rect x="330" y="251" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="251" width="0.0" height="19" rx="4"/>
+<text x="995" y="266" font-size="13">0.0%</text>
+<text x="45" y="300" font-size="13">assay strain</text>
+<rect x="330" y="285" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="285" width="0.0" height="19" rx="4"/>
+<text x="995" y="300" font-size="13">0.0%</text>
+<text x="45" y="334" font-size="13">bao label</text>
+<rect x="330" y="319" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="319" width="650.0" height="19" rx="4"/>
+<text x="995" y="334" font-size="13">100.0%</text>
+<text x="45" y="368" font-size="13">description</text>
+<rect x="330" y="353" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="353" width="650.0" height="19" rx="4"/>
+<text x="995" y="368" font-size="13">100.0%</text>
+<text x="45" y="402" font-size="13">assay category</text>
+<rect x="330" y="387" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="387" width="3.1" height="19" rx="4"/>
+<text x="995" y="402" font-size="13">0.5%</text>
+<text x="45" y="436" font-size="13">assay test type</text>
+<rect x="330" y="421" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="421" width="3.1" height="19" rx="4"/>
+<text x="995" y="436" font-size="13">0.5%</text>
+<text x="45" y="470" font-size="13">assay parameter types</text>
+<rect x="330" y="455" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="455" width="8.0" height="19" rx="4"/>
+<text x="995" y="470" font-size="13">1.2%</text>
+<text x="45" y="504" font-size="13">variant mutation</text>
+<rect x="330" y="489" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="489" width="73.0" height="19" rx="4"/>
+<text x="995" y="504" font-size="13">11.2%</text>
+<text x="45" y="538" font-size="13">methodology categories</text>
+<rect x="330" y="523" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="523" width="81.7" height="19" rx="4"/>
+<text x="995" y="538" font-size="13">12.6%</text>
+<text x="45" y="572" font-size="13">detection categories</text>
+<rect x="330" y="557" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="557" width="159.1" height="19" rx="4"/>
+<text x="995" y="572" font-size="13">24.5%</text>
+<text x="45" y="606" font-size="13">biological system text categories</text>
+<rect x="330" y="591" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="591" width="136.8" height="19" rx="4"/>
+<text x="995" y="606" font-size="13">21.0%</text>
+<text x="45" y="640" font-size="13">endpoint categories</text>
+<rect x="330" y="625" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="625" width="76.1" height="19" rx="4"/>
+<text x="995" y="640" font-size="13">11.7%</text>
+<text x="45" y="674" font-size="13">temperature mentions</text>
+<rect x="330" y="659" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="659" width="18.0" height="19" rx="4"/>
+<text x="995" y="674" font-size="13">2.8%</text>
+<text x="45" y="708" font-size="13">ph mentions</text>
+<rect x="330" y="693" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="693" width="27.2" height="19" rx="4"/>
+<text x="995" y="708" font-size="13">4.2%</text>
+<text x="45" y="742" font-size="13">duration mentions</text>
+<rect x="330" y="727" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="727" width="153.5" height="19" rx="4"/>
+<text x="995" y="742" font-size="13">23.6%</text>
+<text x="45" y="776" font-size="13">substrate mentions json</text>
+<rect x="330" y="761" width="650" height="19" rx="4" fill="#17303c"/>
+<rect class="bar" x="330" y="761" width="221.6" height="19" rx="4"/>
+<text x="995" y="776" font-size="13">34.1%</text>
+<text x="45" y="825" font-size="19" font-weight="700">Largest evaluation-set descriptive risk differences</text>
+<text x="45" y="849" font-size="13" class="muted">Post-outcome protocol comparisons; associative, not predictive or causal.</text>
+<text x="45" y="883" font-size="13">biological system text: +0.483 (19 comparable events)</text>
+<text x="45" y="914" font-size="13">duration: -0.359 (29 comparable events)</text>
+<text x="45" y="945" font-size="13">ph: -0.338 (18 comparable events)</text>
+<text x="45" y="976" font-size="13">organism: +0.137 (290 comparable events)</text>
+</svg>

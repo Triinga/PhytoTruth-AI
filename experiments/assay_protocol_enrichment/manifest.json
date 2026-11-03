@@ -1,0 +1,27 @@
+{
+  "bootstrap_iterations": 1000,
+  "created_at": "2026-10-21T08:49:13.332464+00:00",
+  "event_dataset": "..\\experiments\\assay_disagreement_generalization\\dataset.csv",
+  "event_dataset_sha256": "759ee9123b0ecdddf328afcfdaa3a1c8a69a19651cba0b13368abde2b46f2d77",
+  "extraction_version": "assay-protocol-rules-v1",
+  "feature_timing": {
+    "heldout_protocol_fields": "post_outcome_explanatory_only",
+    "prior_protocol_fields": "pre_prediction_available",
+    "protocol_comparison_fields": "post_outcome_explanatory_only"
+  },
+  "outputs": {
+    "SCIENTIFIC_REPORT.md": "087c0dfce022da8528c0567b6fabc347dd22f5e88e91d6c4962b7aaa72856456",
+    "assay_protocol_features.csv": "8b2aa56988fc597537b4e22c5e89fa76f00cb1e05c517ce0e22cf76b11df76d0",
+    "coverage_statistics.json": "d4b1c30c4566a89bf99d700c10e92e8a271414a5eaafd0d5934b883eb480c2c3",
+    "enriched_assay_disagreement_events.csv": "4bbfae2c673f1d89725fb1040611728cbe1701aa4326d62bcbe49808dec84cb0",
+    "heldout_study_metadata_coverage.csv": "5d793d1881f1b3f990845ff17e50543236b7e726b43dba8f1c39d115c45d5822",
+    "prior_metadata_missingness_associations.csv": "c9777d54a4471152aa925fdcce4c99066ab32b3632442f6e78a7428c809f8f40",
+    "prior_metadata_missingness_associations.json": "10ca220ae16d83eafd3c35ca542c01123bebf8143078e452d89d38ca313b39f5",
+    "protocol_associations.csv": "85fbad90308d2d089165dea212a79a72e8a11c655b1538e92f24ab5238277b0f",
+    "protocol_associations.json": "9bbaaa165f42df6b384f9e2e14743dc8ede85722696882f4639d35c7be5d11fd",
+    "protocol_coverage_and_associations.svg": "81676dcc9a4966c477e048fee5af129a4cb309539c81f4473b7cfc600f9d35a8"
+  },
+  "raw_assay_metadata": "..\\experiments\\assay_protocol_enrichment\\assay_metadata.raw.jsonl",
+  "raw_assay_metadata_sha256": "97262a32685a812851225f241a438f96df3fc99f67b2607f2de65805ecc872b9",
+  "seed": 2026
+}

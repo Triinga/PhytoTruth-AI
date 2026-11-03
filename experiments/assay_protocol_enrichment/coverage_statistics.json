@@ -1,0 +1,118 @@
+{
+  "assay_field_coverage": {
+    "assay_category": {
+      "fraction": 0.004761904761904762,
+      "reported": 5
+    },
+    "assay_cell_type": {
+      "fraction": 0.0,
+      "reported": 0
+    },
+    "assay_organism": {
+      "fraction": 0.7685714285714286,
+      "reported": 807
+    },
+    "assay_parameter_types": {
+      "fraction": 0.012380952380952381,
+      "reported": 13
+    },
+    "assay_strain": {
+      "fraction": 0.0,
+      "reported": 0
+    },
+    "assay_subcellular_fraction": {
+      "fraction": 0.0,
+      "reported": 0
+    },
+    "assay_test_type": {
+      "fraction": 0.004761904761904762,
+      "reported": 5
+    },
+    "assay_tissue": {
+      "fraction": 0.011428571428571429,
+      "reported": 12
+    },
+    "assay_type_description": {
+      "fraction": 1.0,
+      "reported": 1050
+    },
+    "bao_label": {
+      "fraction": 1.0,
+      "reported": 1050
+    },
+    "biological_system_text_categories": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 221,
+      "fraction": 0.21047619047619048
+    },
+    "description": {
+      "fraction": 1.0,
+      "reported": 1050
+    },
+    "detection_categories": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 257,
+      "fraction": 0.24476190476190476
+    },
+    "duration_mentions": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 248,
+      "fraction": 0.2361904761904762
+    },
+    "endpoint_categories": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 123,
+      "fraction": 0.11714285714285715
+    },
+    "methodology_categories": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 132,
+      "fraction": 0.12571428571428572
+    },
+    "ph_mentions": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 44,
+      "fraction": 0.0419047619047619
+    },
+    "substrate_mentions_json": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 358,
+      "fraction": 0.34095238095238095
+    },
+    "temperature_mentions": {
+      "absence_interpretation": "not reported or not detected; not evidence of experimental absence",
+      "explicit_mentions": 29,
+      "fraction": 0.02761904761904762
+    },
+    "variant_mutation": {
+      "fraction": 0.11238095238095239,
+      "reported": 118
+    }
+  },
+  "assays": 1050,
+  "event_metadata_availability": {
+    "heldout": {
+      "complete": 531
+    },
+    "prior": {
+      "complete": 531
+    }
+  },
+  "events": 531,
+  "partitions": {
+    "development": {
+      "disagreement_rate": 0.2358490566037736,
+      "events": 212,
+      "heldout_descriptions_complete": 212,
+      "natural_product_events": 47,
+      "prior_descriptions_complete": 212
+    },
+    "evaluation": {
+      "disagreement_rate": 0.5297805642633229,
+      "events": 319,
+      "heldout_descriptions_complete": 319,
+      "natural_product_events": 60,
+      "prior_descriptions_complete": 319
+    }
+  }
+}

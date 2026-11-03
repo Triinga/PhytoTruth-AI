@@ -1,0 +1,13 @@
+{
+  "source": "ChEMBL",
+  "input": "..\\data\\assay_disagreement_expansion\\CHEMBL3397.raw.jsonl",
+  "output": "..\\data\\assay_disagreement_expansion\\CHEMBL3397.normalized.jsonl",
+  "accepted": 3107,
+  "rejected": 0,
+  "duplicate_activity_ids": 0,
+  "unique_assay_contexts": 10,
+  "censored_measurements": 0,
+  "reported_pchembl_inconsistencies": 0,
+  "missing_structures": 0,
+  "sha256": "2e7caa53c3ac776edf212f1f9d7b847783800524118d4916d5a48cd1a4d64945"
+}

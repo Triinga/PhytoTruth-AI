@@ -1,0 +1,13 @@
+{
+  "source": "ChEMBL",
+  "input": "..\\data\\phytotrust_connected\\CHEMBL226.raw.jsonl",
+  "output": "..\\data\\phytotrust_connected\\CHEMBL226.normalized.jsonl",
+  "accepted": 609,
+  "rejected": 0,
+  "duplicate_activity_ids": 0,
+  "unique_assay_contexts": 7,
+  "censored_measurements": 0,
+  "reported_pchembl_inconsistencies": 0,
+  "missing_structures": 0,
+  "sha256": "e0f00f27f375fa0b72b6cd54c11320caaf4b2ccd56ca6187bd1c5e6c4a710b06"
+}

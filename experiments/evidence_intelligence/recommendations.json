@@ -1,0 +1,138 @@
+[
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL1201066",
+    "prior_median_pactivity": 5.242603971206976,
+    "predicted_future_pactivity": 5.234880319625122,
+    "prediction_interval_90": [
+      4.410971609768755,
+      6.058789029481488
+    ],
+    "disagreement_probability": 0.060860886087488714,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.8333333333333334,
+    "expected_information_gain_nats": 0.3930711490464478,
+    "recommended_experiment": "Independent confirmatory IC50 replication",
+    "rationale": "A new publication-level replicate would reduce uncertainty without reusing the historical assay batch.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  },
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL668",
+    "prior_median_pactivity": 8.769551078621726,
+    "predicted_future_pactivity": 8.762781160615274,
+    "prediction_interval_90": [
+      7.953599835854001,
+      9.571962485376549
+    ],
+    "disagreement_probability": 0.05791989777990096,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.9166666666666666,
+    "expected_information_gain_nats": 0.3833327177415816,
+    "recommended_experiment": "Protocol-complete independent IC50 replication",
+    "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  },
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL281594",
+    "prior_median_pactivity": 5.835647144215563,
+    "predicted_future_pactivity": 5.795535561056083,
+    "prediction_interval_90": [
+      5.017784786436869,
+      6.573286335675295
+    ],
+    "disagreement_probability": 0.05223452985883002,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.8333333333333334,
+    "expected_information_gain_nats": 0.3625112646464077,
+    "recommended_experiment": "Independent confirmatory IC50 replication",
+    "rationale": "A new publication-level replicate would reduce uncertainty without reusing the historical assay batch.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  },
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL1172928",
+    "prior_median_pactivity": 5.00436480540245,
+    "predicted_future_pactivity": 4.9285031998301605,
+    "prediction_interval_90": [
+      4.179692610904035,
+      5.677313788756285
+    ],
+    "disagreement_probability": 0.04783766248790526,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.9166666666666666,
+    "expected_information_gain_nats": 0.3433157326725684,
+    "recommended_experiment": "Protocol-complete independent IC50 replication",
+    "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  },
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL1171260",
+    "prior_median_pactivity": 6.381951903287908,
+    "predicted_future_pactivity": 6.306090297715619,
+    "prediction_interval_90": [
+      5.557279708789494,
+      7.054900886641743
+    ],
+    "disagreement_probability": 0.04783766248790516,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.9166666666666666,
+    "expected_information_gain_nats": 0.3433157326725681,
+    "recommended_experiment": "Protocol-complete independent IC50 replication",
+    "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  },
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL1173276",
+    "prior_median_pactivity": 6.036212172654444,
+    "predicted_future_pactivity": 5.960350567082155,
+    "prediction_interval_90": [
+      5.21153997815603,
+      6.709161156008279
+    ],
+    "disagreement_probability": 0.04783766248790516,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.9166666666666666,
+    "expected_information_gain_nats": 0.3433157326725681,
+    "recommended_experiment": "Protocol-complete independent IC50 replication",
+    "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  },
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL1173275",
+    "prior_median_pactivity": 6.130768280269024,
+    "predicted_future_pactivity": 6.054906674696734,
+    "prediction_interval_90": [
+      5.306096085770609,
+      6.803717263622858
+    ],
+    "disagreement_probability": 0.04783766248790508,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.9166666666666666,
+    "expected_information_gain_nats": 0.34331573267256776,
+    "recommended_experiment": "Protocol-complete independent IC50 replication",
+    "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  },
+  {
+    "target_chembl_id": "CHEMBL222",
+    "molecule_id": "CHEMBL1173597",
+    "prior_median_pactivity": 7.508638306165727,
+    "predicted_future_pactivity": 7.432776700593437,
+    "prediction_interval_90": [
+      6.683966111667313,
+      8.18158728951956
+    ],
+    "disagreement_probability": 0.04783766248790508,
+    "prior_studies": 1,
+    "protocol_missing_fraction": 0.9166666666666666,
+    "expected_information_gain_nats": 0.34331573267256776,
+    "recommended_experiment": "Protocol-complete independent IC50 replication",
+    "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+    "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth"
+  }
+]

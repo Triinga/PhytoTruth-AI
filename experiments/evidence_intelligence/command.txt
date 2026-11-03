@@ -1,0 +1,1 @@
+python -m app.evidence_intelligence --source-results ..\experiments\phytotrust_m1\results.json --predictions ..\experiments\phytotrust_m1\predictions.csv --output-dir ..\experiments\evidence_intelligence --bootstrap-iterations 5000 --seed 2026

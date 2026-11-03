@@ -1,0 +1,311 @@
+{
+  "disagreement_evaluation": {
+    "auroc": 0.8257575757575758,
+    "auroc_study_cluster_ci95": [
+      0.375,
+      0.9583333333333334
+    ],
+    "average_precision": 0.3277777777777778,
+    "average_precision_study_cluster_ci95": [
+      0.16666666666666666,
+      0.7285873015873061
+    ],
+    "brier": 0.10999830376483898,
+    "brier_study_cluster_ci95": [
+      0.0014231820085676612,
+      0.30154242806336706
+    ],
+    "disagreements": 3,
+    "n": 25,
+    "prevalence": 0.12,
+    "studies": 8
+  },
+  "experiment": "PhytoTruth Study-Aware Evidence Intelligence",
+  "forward_temporal_distribution_metrics": {
+    "compounds": 24,
+    "coverage_80": 0.64,
+    "coverage_90": 0.84,
+    "mae": 0.5168454880556085,
+    "mean_absolute_calibration_error": 0.11000000000000004,
+    "mean_width_80": 1.0270601750372583,
+    "mean_width_90": 1.4280759024811909,
+    "n": 25,
+    "nll": 1.1003012977737416,
+    "rmse": 0.6898999843407665,
+    "studies": 8
+  },
+  "generated_at": "2026-10-26T15:18:26.711446+00:00",
+  "integrity": {
+    "confirmatory_status": "retrospective_development_only_secondary_analysis",
+    "deployment_status": "research_planning_guardrail_not_validated_for_autonomous_decisions",
+    "heldout_outcome_used_for_recommendation_priority": false,
+    "heldout_protocol_used_as_predictor": false,
+    "natural_product_status_used_as_predictor": false,
+    "warning": "Expected information gain is a model-based Gaussian approximation. It prioritizes information collection; it is not a probability of efficacy, safety, or experimental success."
+  },
+  "recommendations": [
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.060860886087488714,
+      "expected_information_gain_nats": 0.3930711490464478,
+      "molecule_id": "CHEMBL1201066",
+      "predicted_future_pactivity": 5.234880319625122,
+      "prediction_interval_90": [
+        4.410971609768755,
+        6.058789029481488
+      ],
+      "prior_median_pactivity": 5.242603971206976,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.8333333333333334,
+      "rationale": "A new publication-level replicate would reduce uncertainty without reusing the historical assay batch.",
+      "recommended_experiment": "Independent confirmatory IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.05791989777990096,
+      "expected_information_gain_nats": 0.3833327177415816,
+      "molecule_id": "CHEMBL668",
+      "predicted_future_pactivity": 8.762781160615274,
+      "prediction_interval_90": [
+        7.953599835854001,
+        9.571962485376549
+      ],
+      "prior_median_pactivity": 8.769551078621726,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.9166666666666666,
+      "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+      "recommended_experiment": "Protocol-complete independent IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.05223452985883002,
+      "expected_information_gain_nats": 0.3625112646464077,
+      "molecule_id": "CHEMBL281594",
+      "predicted_future_pactivity": 5.795535561056083,
+      "prediction_interval_90": [
+        5.017784786436869,
+        6.573286335675295
+      ],
+      "prior_median_pactivity": 5.835647144215563,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.8333333333333334,
+      "rationale": "A new publication-level replicate would reduce uncertainty without reusing the historical assay batch.",
+      "recommended_experiment": "Independent confirmatory IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.04783766248790526,
+      "expected_information_gain_nats": 0.3433157326725684,
+      "molecule_id": "CHEMBL1172928",
+      "predicted_future_pactivity": 4.9285031998301605,
+      "prediction_interval_90": [
+        4.179692610904035,
+        5.677313788756285
+      ],
+      "prior_median_pactivity": 5.00436480540245,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.9166666666666666,
+      "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+      "recommended_experiment": "Protocol-complete independent IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.04783766248790516,
+      "expected_information_gain_nats": 0.3433157326725681,
+      "molecule_id": "CHEMBL1171260",
+      "predicted_future_pactivity": 6.306090297715619,
+      "prediction_interval_90": [
+        5.557279708789494,
+        7.054900886641743
+      ],
+      "prior_median_pactivity": 6.381951903287908,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.9166666666666666,
+      "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+      "recommended_experiment": "Protocol-complete independent IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.04783766248790516,
+      "expected_information_gain_nats": 0.3433157326725681,
+      "molecule_id": "CHEMBL1173276",
+      "predicted_future_pactivity": 5.960350567082155,
+      "prediction_interval_90": [
+        5.21153997815603,
+        6.709161156008279
+      ],
+      "prior_median_pactivity": 6.036212172654444,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.9166666666666666,
+      "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+      "recommended_experiment": "Protocol-complete independent IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.04783766248790508,
+      "expected_information_gain_nats": 0.34331573267256776,
+      "molecule_id": "CHEMBL1173275",
+      "predicted_future_pactivity": 6.054906674696734,
+      "prediction_interval_90": [
+        5.306096085770609,
+        6.803717263622858
+      ],
+      "prior_median_pactivity": 6.130768280269024,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.9166666666666666,
+      "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+      "recommended_experiment": "Protocol-complete independent IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "decision_status": "research_planning_only_not_validated_clinical_or_biological_truth",
+      "disagreement_probability": 0.04783766248790508,
+      "expected_information_gain_nats": 0.34331573267256776,
+      "molecule_id": "CHEMBL1173597",
+      "predicted_future_pactivity": 7.432776700593437,
+      "prediction_interval_90": [
+        6.683966111667313,
+        8.18158728951956
+      ],
+      "prior_median_pactivity": 7.508638306165727,
+      "prior_studies": 1,
+      "protocol_missing_fraction": 0.9166666666666666,
+      "rationale": "Historical protocol metadata are mostly missing; pre-register construct, substrate, detection method, duration, temperature, and pH.",
+      "recommended_experiment": "Protocol-complete independent IC50 replication",
+      "target_chembl_id": "CHEMBL222"
+    }
+  ],
+  "scientific_conclusion": "The robust probabilistic guardrail supplies calibrated-looking intervals and explicit abstention, but this secondary retrospective analysis does not establish independent generalization. Recommendations are auditable research-planning hypotheses, not validated biological decisions.",
+  "seed": 2026,
+  "selection": {
+    "candidates": [
+      {
+        "mean_calibration_error": 0.12474576271186441,
+        "mean_nll_rank": 4.0,
+        "method": "median_potency",
+        "ranks": {
+          "forward_temporal": 4,
+          "study_grouped": 4
+        },
+        "worst_nll_rank": 4
+      },
+      {
+        "mean_calibration_error": 0.06474576271186444,
+        "mean_nll_rank": 1.5,
+        "method": "student_t_regression",
+        "ranks": {
+          "forward_temporal": 2,
+          "study_grouped": 1
+        },
+        "worst_nll_rank": 2
+      },
+      {
+        "mean_calibration_error": 0.0964406779661017,
+        "mean_nll_rank": 3.0,
+        "method": "xgboost",
+        "ranks": {
+          "forward_temporal": 1,
+          "study_grouped": 5
+        },
+        "worst_nll_rank": 5
+      },
+      {
+        "mean_calibration_error": 0.050508474576271195,
+        "mean_nll_rank": 3.0,
+        "method": "phytotrust_m0",
+        "ranks": {
+          "forward_temporal": 3,
+          "study_grouped": 3
+        },
+        "worst_nll_rank": 3
+      },
+      {
+        "mean_calibration_error": 0.047457627118644125,
+        "mean_nll_rank": 3.5,
+        "method": "m1_no_protocol",
+        "ranks": {
+          "forward_temporal": 5,
+          "study_grouped": 2
+        },
+        "worst_nll_rank": 5
+      },
+      {
+        "mean_calibration_error": 0.13711864406779664,
+        "mean_nll_rank": 6.0,
+        "method": "phytotrust_m1",
+        "ranks": {
+          "forward_temporal": 6,
+          "study_grouped": 6
+        },
+        "worst_nll_rank": 6
+      }
+    ],
+    "rule": "Minimize worst NLL rank across study-grouped and forward-temporal validation; break ties by mean NLL rank, then calibration error.",
+    "selected": {
+      "mean_calibration_error": 0.06474576271186444,
+      "mean_nll_rank": 1.5,
+      "method": "student_t_regression",
+      "ranks": {
+        "forward_temporal": 2,
+        "study_grouped": 1
+      },
+      "worst_nll_rank": 2
+    },
+    "selected_method": "student_t_regression"
+  },
+  "selective_prediction": [
+    {
+      "abstained_n": 0,
+      "coverage_90": 0.84,
+      "mae": 0.5168454880556085,
+      "mean_interval_width_90": 1.4280759024811902,
+      "retained_fraction": 1.0,
+      "retained_n": 25
+    },
+    {
+      "abstained_n": 5,
+      "coverage_90": 0.9,
+      "mae": 0.4285786612509721,
+      "mean_interval_width_90": 1.388211605809063,
+      "retained_fraction": 0.8,
+      "retained_n": 20
+    },
+    {
+      "abstained_n": 10,
+      "coverage_90": 1.0,
+      "mae": 0.3171354932779068,
+      "mean_interval_width_90": 1.351741748461334,
+      "retained_fraction": 0.6,
+      "retained_n": 15
+    },
+    {
+      "abstained_n": 15,
+      "coverage_90": 1.0,
+      "mae": 0.3370286635153432,
+      "mean_interval_width_90": 1.3152718911136063,
+      "retained_fraction": 0.4,
+      "retained_n": 10
+    }
+  ],
+  "source_model_version": "phytotrust-m1-v1",
+  "source_status": "development_only_m1_not_independently_validated",
+  "study_grouped_distribution_metrics": {
+    "compounds": 29,
+    "coverage_80": 0.7796610169491526,
+    "coverage_90": 0.8813559322033898,
+    "mae": 0.4525074086152972,
+    "mean_absolute_calibration_error": 0.01949152542372884,
+    "mean_width_80": 1.3333974570316793,
+    "mean_width_90": 1.8540226007187044,
+    "n": 59,
+    "nll": 0.9641758768989713,
+    "rmse": 0.6261233236589862,
+    "studies": 18
+  }
+}

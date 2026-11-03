@@ -1,0 +1,15 @@
+{
+  "outcome_blind_recommendation_fields": [
+    "prediction",
+    "lower_90",
+    "upper_90",
+    "prior_median_pactivity",
+    "prior_study_count",
+    "protocol_missing_fraction"
+  ],
+  "predictions": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\phytotrust_m1\\predictions.csv",
+  "predictions_sha256": "08ab096d2897494a6d4e82af44b21d57506e075e8064c52bbe9acf94e2df2947",
+  "results_sha256": "9b1ccca366958216b72cf736e43da851c3d0c489004b1bc5b38e5cd6dc35ce98",
+  "source_results": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\phytotrust_m1\\results.json",
+  "source_results_sha256": "47cf07f897f141b76c79cffe2d43896193403bf3b81b1c88ad25099fe7bbff19"
+}

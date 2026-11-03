@@ -1,0 +1,31 @@
+target_chembl_id,target_name,eligible,normalized_measurements,compatible_measurements,future_evidence_molecules,verified_natural_products,assay_context_key,coverage_exclusions,split_exclusions,partition
+CHEMBL1824,Receptor tyrosine-protein kinase erbB-2,True,3375,1686,143,3,787a3a2d67f5a8410f78,"{""missing_year_or_activity"": 29, ""other_assay_context"": 1660}","{""single_publication_year"": 1197}",evaluation
+CHEMBL1862,Tyrosine-protein kinase ABL1,True,4158,3193,268,3,f04126065c63b25816d4,"{""other_assay_context"": 965}","{""single_publication_year"": 1411}",development
+CHEMBL1865,Protein deacetylase HDAC6,True,8602,5960,206,18,f866df3e4a02994c91ac,"{""other_assay_context"": 2642}","{""single_publication_year"": 4106}",development
+CHEMBL1871,Androgen receptor,True,3585,1910,50,3,1f27b0a4dc3531352ec6,"{""other_assay_context"": 1675}","{""single_publication_year"": 1377}",development
+CHEMBL1900,Aldo-keto reductase family 1 member B1,False,1090,504,10,0,b4f7d030c36cb7ccd077,"{""other_assay_context"": 586}","{""single_publication_year"": 431}",ineligible
+CHEMBL1929,Xanthine dehydrogenase/oxidase,True,789,752,54,13,6a6e70763cd3dcf33b18,"{""other_assay_context"": 37}","{""single_publication_year"": 544}",evaluation
+CHEMBL1951,Amine oxidase [flavin-containing] A,True,3687,2290,123,25,f88b4f5761e7a6de7b1c,"{""missing_year_or_activity"": 23, ""other_assay_context"": 1374}","{""single_publication_year"": 1646}",evaluation
+CHEMBL1973,Tyrosinase,False,255,150,11,4,561e0f867c15305e91e7,"{""other_assay_context"": 105}","{""single_publication_year"": 115}",ineligible
+CHEMBL1978,Aromatase,True,3848,1899,153,13,cb249566c5ef67a3c1a2,"{""other_assay_context"": 1949}","{""single_publication_year"": 1466}",evaluation
+CHEMBL2039,Amine oxidase [flavin-containing] B,True,5782,3320,184,23,1944868c975637c4d98c,"{""other_assay_context"": 2462}","{""single_publication_year"": 2483}",development
+CHEMBL205,Carbonic anhydrase 2,True,1185,975,43,10,0681995232b7bdbfd9d9,"{""missing_year_or_activity"": 11, ""other_assay_context"": 199}","{""single_publication_year"": 688}",development
+CHEMBL206,Estrogen receptor,True,5935,1867,94,15,8c28a3f797df0f0ce94a,"{""missing_year_or_activity"": 320, ""other_assay_context"": 3748}","{""single_publication_year"": 1383}",development
+CHEMBL214,5-hydroxytryptamine receptor 1A,False,623,205,8,3,1d28fc0c5f21543f1854,"{""other_assay_context"": 418}","{""single_publication_year"": 178}",ineligible
+CHEMBL215,Polyunsaturated fatty acid 5-lipoxygenase,True,3528,1387,33,10,924d758aafa14f254152,"{""other_assay_context"": 2141}","{""single_publication_year"": 1048}",development
+CHEMBL217,D(2) dopamine receptor,False,1091,325,6,3,4213ede3e41f12d1ac30,"{""missing_year_or_activity"": 59, ""other_assay_context"": 707}","{""single_publication_year"": 242}",ineligible
+CHEMBL218,Cannabinoid receptor 1,False,2020,647,8,1,3cdc45f051e371b0ed50,"{""missing_year_or_activity"": 100, ""other_assay_context"": 1273}","{""single_publication_year"": 515}",ineligible
+CHEMBL219,D(4) dopamine receptor,False,446,189,2,2,ba89a034866c2290e177,"{""missing_year_or_activity"": 14, ""other_assay_context"": 243}","{""single_publication_year"": 170}",ineligible
+CHEMBL221,Prostaglandin G/H synthase 1,True,2142,1270,84,20,3dab0a9d178c9e5ebd96,"{""missing_year_or_activity"": 45, ""other_assay_context"": 827}","{""single_publication_year"": 954}",development
+CHEMBL222,Sodium-dependent noradrenaline transporter,True,2585,1728,50,14,0ee2eccfc112354b355a,"{""missing_year_or_activity"": 109, ""other_assay_context"": 748}","{""single_publication_year"": 1386}",development
+CHEMBL224,5-hydroxytryptamine receptor 2A,False,1431,698,1,0,756e9441212f0bfb2491,"{""missing_year_or_activity"": 95, ""other_assay_context"": 638}","{""single_publication_year"": 618}",ineligible
+CHEMBL225,5-hydroxytryptamine receptor 2C,False,935,572,2,0,4bb2fb7b77899e62a96d,"{""missing_year_or_activity"": 104, ""other_assay_context"": 259}","{""single_publication_year"": 554}",ineligible
+CHEMBL226,Adenosine receptor A1,True,609,238,49,0,ad6e44eccd4f6c37bb22,"{""missing_year_or_activity"": 16, ""other_assay_context"": 355}","{""single_publication_year"": 114}",evaluation
+CHEMBL228,Sodium-dependent serotonin transporter,True,3657,2450,67,16,a1a5d5586fa6683aed37,"{""missing_year_or_activity"": 92, ""other_assay_context"": 1115}","{""single_publication_year"": 1990}",development
+CHEMBL233,Mu-type opioid receptor,False,1689,408,14,6,f0066dc9f1636ac9279f,"{""missing_year_or_activity"": 73, ""other_assay_context"": 1208}","{""single_publication_year"": 307}",ineligible
+CHEMBL235,Peroxisome proliferator-activated receptor gamma,True,1969,1380,27,5,fbffe72cc60da6ee0c76,"{""other_assay_context"": 589}","{""single_publication_year"": 1221}",evaluation
+CHEMBL236,Delta-type opioid receptor,False,1081,324,8,2,c9699d0df4f71b59d1b1,"{""missing_year_or_activity"": 44, ""other_assay_context"": 713}","{""single_publication_year"": 295}",ineligible
+CHEMBL279,Vascular endothelial growth factor receptor 2,True,13091,9292,648,11,6f1b75d97606c9c1a3fd,"{""other_assay_context"": 3799}","{""single_publication_year"": 7210}",evaluation
+CHEMBL289,Cytochrome P450 2D6,True,3349,1905,35,7,c42ca5fe253356b52e5e,"{""missing_year_or_activity"": 76, ""other_assay_context"": 1368}","{""single_publication_year"": 1719}",development
+CHEMBL3397,Cytochrome P450 2C9,True,3107,1759,38,7,e94515bd53110366966b,"{""missing_year_or_activity"": 51, ""other_assay_context"": 1297}","{""single_publication_year"": 1610}",evaluation
+CHEMBL340,Cytochrome P450 3A4,True,6642,3700,67,18,27a41f9c2f18ba6ebd25,"{""missing_year_or_activity"": 128, ""other_assay_context"": 2814}","{""single_publication_year"": 3108}",development

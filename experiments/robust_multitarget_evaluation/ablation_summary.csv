@@ -1,0 +1,13 @@
+ablation,metric,full_minus_ablation,ci95_low,ci95_high,exact_p,holm_adjusted_p
+without_support,ndcg_at_k,0.0011723777797913587,0.0,0.003517133339374076,1.0,1.0
+without_support,enrichment_factor_at_k,0.0,0.0,0.0,1.0,1.0
+without_support,precision_at_k,0.0,0.0,0.0,1.0,1.0
+without_support,kendall_tau,-0.0007034822142216735,-0.0016235453348479173,0.00016945349193792092,0.25,1.0
+without_consistency,ndcg_at_k,-0.0025372605744082566,-0.004669847644536582,-0.0005696611075912128,0.0625,0.25
+without_consistency,enrichment_factor_at_k,0.0,0.0,0.0,1.0,1.0
+without_consistency,precision_at_k,0.0,0.0,0.0,1.0,1.0
+without_consistency,kendall_tau,-0.0012421836298503464,-0.004517325756954932,0.0026363584489237646,0.546875,1.0
+without_reliability,ndcg_at_k,-0.0007045030951207815,-0.0016107410040390319,-3.633805018851688e-05,0.25,0.75
+without_reliability,enrichment_factor_at_k,0.0,0.0,0.0,1.0,1.0
+without_reliability,precision_at_k,0.0,0.0,0.0,1.0,1.0
+without_reliability,kendall_tau,-0.008585933801602386,-0.01456458929038286,-0.0036112229131160106,0.0078125,0.03125

@@ -1,0 +1,218 @@
+{
+  "evaluation_access": "single frozen evaluation after nested development selection",
+  "inputs": [
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.normalized.jsonl",
+      "activities_sha256": "cb1b525d2e17bde3d1afa231cb2ee5df4c54cab7cd494e1f512a86c9ca44edf4",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.natural.jsonl",
+      "natural_products_sha256": "87cc8412aef8e850f2c6b25d1aabb8a5779451d2abd5a5d8c56870f6326eb3b9",
+      "target_chembl_id": "CHEMBL1824"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.normalized.jsonl",
+      "activities_sha256": "f9c8356aded8245c354a2eed5d2ef08966baee60f239ae5f304e88189c7200dd",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.natural.jsonl",
+      "natural_products_sha256": "c1960f33d37375e52b563e4a9d5606c99b64922739364f35f0437a585ef6e81b",
+      "target_chembl_id": "CHEMBL1862"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1865.normalized.jsonl",
+      "activities_sha256": "b893930985de78c522109207a3e55d93b5193985360e2631b89a7454f25b39a3",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1865.natural.jsonl",
+      "natural_products_sha256": "0351533434a07610362cc300ec6ded9a1d43bbf0bf7faf826fba6fec2cf704cc",
+      "target_chembl_id": "CHEMBL1865"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.normalized.jsonl",
+      "activities_sha256": "1c46a073e6b28404c2af144b5b5226b820794e2b91a45585c9627986be46f9bd",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.natural.jsonl",
+      "natural_products_sha256": "0e4cd57162e06466caeda9b8447588a67439eceedf6833ab15e77b4dbf1ad938",
+      "target_chembl_id": "CHEMBL1871"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1900.normalized.jsonl",
+      "activities_sha256": "7275c71ea7f0b5f6cc72c891b780223e9e9fadabb5a62a872b1f831408c6106b",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1900.natural.jsonl",
+      "natural_products_sha256": "3fa135c821fb4b63c5bea56d3fbc7627d2efef61c4579f39c01b9d57c8b84f4b",
+      "target_chembl_id": "CHEMBL1900"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1929.normalized.jsonl",
+      "activities_sha256": "963af925664df9f57e48c873ecfa9ef93f23a314bb591debe6f0fc17a6de8670",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1929.natural.jsonl",
+      "natural_products_sha256": "b100c3f6ed987b29b3ea80b8a3656d8cf6dda487a9b564d5bd596e1aa02454dc",
+      "target_chembl_id": "CHEMBL1929"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1951.normalized.jsonl",
+      "activities_sha256": "e8cc9bcbe1b2895d331c9c060480adc360eca6c1a6419285e764502486e5effe",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1951.natural.jsonl",
+      "natural_products_sha256": "93beb917dec13c2ca5ad4b73cb72ffc6217211e90be3b13d479c295496e0b1c6",
+      "target_chembl_id": "CHEMBL1951"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1973.normalized.jsonl",
+      "activities_sha256": "bd392243eee0ed8e5dd7404bfc9d6fe0a0963f7c18078ed8b9666e09d3b632a9",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1973.natural.jsonl",
+      "natural_products_sha256": "2f7247b1b2b02b45f5fa900a1f39e6848bc075e84a6d847e908490c7414d669c",
+      "target_chembl_id": "CHEMBL1973"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1978.normalized.jsonl",
+      "activities_sha256": "e566351ab616ba42bd7fd6556a6649993dfaa900ab8c8406ad6be549803a309a",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL1978.natural.jsonl",
+      "natural_products_sha256": "39d24b8dce8fd880ea37bdafdd46cc102eddb5ed84c24402ee5ac8ac2c7d9796",
+      "target_chembl_id": "CHEMBL1978"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL2039.normalized.jsonl",
+      "activities_sha256": "72c957b9b8e991a88b775a03fa441426f20826d3bca296706fda6f68e037a36d",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL2039.natural.jsonl",
+      "natural_products_sha256": "2d43aaeffb6cd3e5d91e90ef21310dcf70753f7eb3494797be62352bc0924fb8",
+      "target_chembl_id": "CHEMBL2039"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL205.normalized.jsonl",
+      "activities_sha256": "b2093b781b210fe69996ebdb0277486a201a5b01d65a09da056fa652dce0faee",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL205.natural.jsonl",
+      "natural_products_sha256": "6638fda8917c72c37806331408734d67f731ceb30d6d13a965d5dff0dfd61a31",
+      "target_chembl_id": "CHEMBL205"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.normalized.jsonl",
+      "activities_sha256": "08e8c0bbec193f253f629d356347e4abda5def8b65fd944b930f7bd379c416de",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.natural.jsonl",
+      "natural_products_sha256": "e88c425f056c7a9189ab4b47b1a91b3c4d7b59e40779d7a4217dba53bee3169e",
+      "target_chembl_id": "CHEMBL206"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL214.normalized.jsonl",
+      "activities_sha256": "0ca47167ec7ff62215017179193ae2e65a0ad33306f3ab4ed3a9edc283e4cc98",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL214.natural.jsonl",
+      "natural_products_sha256": "629d6e61370d6f00e17ea637848148432979e32cb058cea30bc7a6e4940d1135",
+      "target_chembl_id": "CHEMBL214"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL215.normalized.jsonl",
+      "activities_sha256": "1833b0bb7a19671879d9ff29dc2d9fa6dc3865d0d86a6aa23204c060cde8f5fc",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL215.natural.jsonl",
+      "natural_products_sha256": "6fdc73a60f8a590bd48b1da9d08e7444acbcc7faaab0c8da4b0319f6ddb4259c",
+      "target_chembl_id": "CHEMBL215"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL217.normalized.jsonl",
+      "activities_sha256": "223f381a36bfcaeba930c605dcff5bf42acae141e53e868f4fe6413396fa343e",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL217.natural.jsonl",
+      "natural_products_sha256": "693505fe39cd0b99236df54c261578bb5491366c1661ec587c25909277e10021",
+      "target_chembl_id": "CHEMBL217"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL218.normalized.jsonl",
+      "activities_sha256": "af9d51a0d54ce7021bbb1969712dc73c8a832cfbc202d0d8567461466360b6b7",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL218.natural.jsonl",
+      "natural_products_sha256": "4b4462199b988754d0e75d52fdea76ba041ad23536dfc145ea99933ec04d5a1c",
+      "target_chembl_id": "CHEMBL218"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL219.normalized.jsonl",
+      "activities_sha256": "bc4da27a2f05f41773e26f0d3e4f982c81ebb84350d42edb55016565f20aa49d",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL219.natural.jsonl",
+      "natural_products_sha256": "02efcab1e14b2b64d5abc1c33087befc91282d3fa1aae86094b24dbb023a1233",
+      "target_chembl_id": "CHEMBL219"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL221.normalized.jsonl",
+      "activities_sha256": "616faa8c1d331de8a4bc18d906255d413ad3a07138c0ed75443fd83d3fb6afe1",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL221.natural.jsonl",
+      "natural_products_sha256": "7717d726c53b2ab17440ff477cb71b464645824a3d75a16a43caea9260add829",
+      "target_chembl_id": "CHEMBL221"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL222.normalized.jsonl",
+      "activities_sha256": "71081cba2cf033db0a93eca5b63f16e577408686303119748e35987206bcb59f",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL222.natural.jsonl",
+      "natural_products_sha256": "542c4ccc58fdd1dfef3e1e55975d6aa607b5cfb11352f1ba794296bdb6cd29a3",
+      "target_chembl_id": "CHEMBL222"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL224.normalized.jsonl",
+      "activities_sha256": "ec2e8afa96a05318dde10e41fdfd22d79619c3a68039eedb2ae0435854d6e868",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL224.natural.jsonl",
+      "natural_products_sha256": "12fa07c9427973db4a7c1617d374e75ee9af840302bd02be61cf36f969291a50",
+      "target_chembl_id": "CHEMBL224"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL225.normalized.jsonl",
+      "activities_sha256": "af9bbe72636a807650f4dc8c6ae9747d08a7c2bdeaa2b09a52dbb11a442a09e0",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL225.natural.jsonl",
+      "natural_products_sha256": "f60dac3678e736532cc986d63c723311f3a73aa9543341b247a09513dc96d41a",
+      "target_chembl_id": "CHEMBL225"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL226.normalized.jsonl",
+      "activities_sha256": "e0f00f27f375fa0b72b6cd54c11320caaf4b2ccd56ca6187bd1c5e6c4a710b06",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL226.natural.jsonl",
+      "natural_products_sha256": "f5de45f21e7efb2ae12916e010bb3fab3b3dc8fb0add07cc3449a6df30849bb7",
+      "target_chembl_id": "CHEMBL226"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL228.normalized.jsonl",
+      "activities_sha256": "12df67a41dfb987c25d5bcfcfb9ddc740e33f7fcc3029d3e973f3bd4dfc5840e",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL228.natural.jsonl",
+      "natural_products_sha256": "203ddb4de8946eebf1ca8cc14476f4d363840421be965b269323bafcb6b9619e",
+      "target_chembl_id": "CHEMBL228"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL233.normalized.jsonl",
+      "activities_sha256": "123e0eaf398f8c2ed0512186fca6b762b0dff8030bd411a083b55ce289fcb019",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL233.natural.jsonl",
+      "natural_products_sha256": "d546f29e1e7a210019a095b8bc34a6ea9a56f574f59b35a789bb4b079fde74ac",
+      "target_chembl_id": "CHEMBL233"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL235.normalized.jsonl",
+      "activities_sha256": "3f7770a4ebb33cfa848fd435972fa4165efb0ae7311de2f39060193f8abb7dc7",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL235.natural.jsonl",
+      "natural_products_sha256": "a592201d7bd743ba42d7f9cb7df5da83becabcf05912ab1c099fb16c61afd529",
+      "target_chembl_id": "CHEMBL235"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL236.normalized.jsonl",
+      "activities_sha256": "3bc2324bc5c1fa59b924541c434cfb3b046f2898a3d693536d9786af93171435",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\phytotrust_connected\\CHEMBL236.natural.jsonl",
+      "natural_products_sha256": "98b62c5017fbf949dffe89d5040f16b254f53d851db629ff27f3f03770043c1e",
+      "target_chembl_id": "CHEMBL236"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.normalized.jsonl",
+      "activities_sha256": "a7b80d2b0f5f7f33688d4615631980295f707ebe13ddcb68755da5fe9bedb052",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.natural.jsonl",
+      "natural_products_sha256": "51b9d700b2f0efd80ef02e6d4266dfea0d592de93eaa32664f27f53a35c87b91",
+      "target_chembl_id": "CHEMBL279"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL289.normalized.jsonl",
+      "activities_sha256": "2a620c18d1b39e14d0e66cd13c8c853b6e8291e25117cdb3006758cd520b0f66",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL289.natural.jsonl",
+      "natural_products_sha256": "4e6d7ad04c46865fff81670819b8cd171be8bad44833c9b8c706f4c9dbae39d2",
+      "target_chembl_id": "CHEMBL289"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL3397.normalized.jsonl",
+      "activities_sha256": "2e7caa53c3ac776edf212f1f9d7b847783800524118d4916d5a48cd1a4d64945",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL3397.natural.jsonl",
+      "natural_products_sha256": "3b28f43996fb283a79aeba98037d26be23b1061ef855ba1f1e9a869dd29c4f44",
+      "target_chembl_id": "CHEMBL3397"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL340.normalized.jsonl",
+      "activities_sha256": "8007e037543daf0862974749362e547d5a0097c8e2fa04e92ded840014255cd4",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\assay_disagreement_expansion\\CHEMBL340.natural.jsonl",
+      "natural_products_sha256": "81fe4e60c3dd1cad2f9a103d336b16d77cad82104394506df256459423776791",
+      "target_chembl_id": "CHEMBL340"
+    }
+  ],
+  "model_selection_data": "development targets only",
+  "results_sha256": "d00f2be292e17e9a1ad9f3a1df87da28a63f37ad58c40b453ea69eddfefc4e5f",
+  "target_partition_uses_outcomes": false
+}

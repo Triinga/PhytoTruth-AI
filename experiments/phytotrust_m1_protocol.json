@@ -1,0 +1,85 @@
+{
+  "protocol_version": "phytotrust-m1-v1",
+  "frozen_before_assay_metadata_retrieval_and_model_evaluation": true,
+  "development_input": "experiments/phytotrust_connected_dataset/development_measurements.csv",
+  "forbidden_inputs": [
+    "experiments/phytotrust_connected_dataset/future_evaluation_history.csv",
+    "experiments/phytotrust_connected_dataset/future_evaluation_index.csv",
+    "experiments/phytotrust_connected_dataset/QUARANTINED_future_evaluation_labels.csv"
+  ],
+  "target": "CHEMBL222",
+  "assay_context": "0ee2eccfc112354b355a",
+  "data_improvement": {
+    "measurement_expansion": "No additional outcome records: the uncapped frozen ChEMBL target snapshot was already exhausted and changing compatibility rules after outcome inspection is prohibited.",
+    "metadata_expansion": "Retrieve full ChEMBL assay records for development-only assay IDs and apply assay-protocol-rules-v1 literal extraction.",
+    "heldout_protocol_usage": "Forbidden. Only protocol metadata attached to allowed historical measurements may form predictors."
+  },
+  "estimand": "Distribution of a comparable IC50 pChEMBL measurement for a previously measured compound in a previously unseen publication",
+  "m1": {
+    "degrees_of_freedom": 4,
+    "quadrature_nodes": 15,
+    "mean_features": [
+      "history_mean_minus_median",
+      "history_mad",
+      "log1p_prior_studies",
+      "molecular_weight_scaled",
+      "logp_scaled"
+    ],
+    "scale_features": [
+      "history_mad",
+      "inverse_sqrt_prior_studies",
+      "protocol_missing_fraction",
+      "protocol_category_diversity",
+      "history_year_span_scaled"
+    ],
+    "mean_coefficient_scale": 0.35,
+    "log_scale_coefficient_scale": 0.5,
+    "minimum_scale": 0.001,
+    "optimizer_maxiter": 900,
+    "optimizer_maxfun": 100000,
+    "objective": "Equal-publication weighted marginal Student-t negative log likelihood with the unseen-study random intercept integrated by Gauss-Hermite quadrature plus fixed Gaussian penalties",
+    "uncertainty_decomposition": [
+      "Student-t residual/evidence-conditioned scale",
+      "between-study random-intercept variance"
+    ]
+  },
+  "baselines": {
+    "median_potency": "Historical compound median with training-only Student-t residual scale",
+    "student_t_regression": "Historical median plus a global correction and homoscedastic Student-t residual",
+    "xgboost": "Prespecified shallow regularized XGBoost residual regressor using the same prediction-time features; uncertainty scale obtained from internal publication-grouped cross-fitted residuals",
+    "m0": "Historical median plus global correction, homoscedastic Student-t residual, and unseen-study random intercept"
+  },
+  "ablations": [
+    "M1 without protocol-history features",
+    "M1 without evidence-conditioned scale",
+    "M1 without study variance"
+  ],
+  "validation": {
+    "study_grouped": "Leave one publication out; retrospective and explicitly not prospective",
+    "forward_temporal": "Train only on publications with strictly earlier years",
+    "historical_same_compound_evidence": "Allowed by estimand; held-out publication/activity/assay/outcome prohibited",
+    "natural_products": "Evaluation-only subgroup",
+    "model_selection": "No selection on quarantined cohorts; M1 and all ablations are prespecified"
+  },
+  "metrics": [
+    "MAE",
+    "RMSE",
+    "NLL",
+    "80% prediction-interval coverage and width",
+    "90% prediction-interval coverage and width",
+    "absolute calibration error"
+  ],
+  "inference": {
+    "study_cluster_bootstrap_iterations": 1000,
+    "seed": 2026,
+    "support_rule": "M1 must improve study-grouped and forward-temporal NLL over the strongest baseline with both publication-bootstrap 95% intervals excluding zero, without worse interval calibration or natural-product degradation."
+  },
+  "amendments": [
+    {
+      "stage": "artifact QA before accepting final results",
+      "change": "Set the numerical optimizer function-evaluation ceiling explicitly to 100000 and record optimizer messages.",
+      "reason": "Two folds reached SciPy's implicit function-evaluation ceiling despite finite objectives. This is a convergence repair only; features, penalties, folds, predictions, metrics, and the support rule were not changed.",
+      "outcome_information_used": false
+    }
+  ]
+}

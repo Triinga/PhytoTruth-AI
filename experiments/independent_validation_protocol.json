@@ -1,0 +1,38 @@
+{
+  "protocol_version": "independent-assay-disagreement-validation-v1",
+  "frozen_before_outcome_construction": true,
+  "target_selection_basis": [
+    "not among CHEMBL220, CHEMBL203, CHEMBL230, CHEMBL284, or CHEMBL335",
+    "human SINGLE PROTEIN target",
+    "biological relevance to natural-product or drug-discovery screening",
+    "at least 3000 ChEMBL exact-IC50 records with non-null pChEMBL before normalization"
+  ],
+  "outcome": "absolute difference between prior-publication and latest-year median exact-IC50 pActivity of at least 1.0 log10 unit",
+  "minimum_heldout_year": 2020,
+  "strict_exclusions": [
+    "target overlap with any previous five-target experiment",
+    "compound seen anywhere in the previous five normalized target snapshots",
+    "activity, assay, or publication identifier seen anywhere in the previous five normalized target snapshots",
+    "overlap with any prior 531-event development/evaluation row",
+    "same assay or publication on both sides of an event",
+    "non-exact, censored, invalid, duplicate, inconsistent, or incompatible measurements"
+  ],
+  "frozen_models": [
+    "experiments/assay_disagreement/assay_disagreement_model.joblib",
+    "experiments/assay_disagreement_generalization/study_generalized_model.joblib"
+  ],
+  "model_selection_or_tuning_on_validation": false,
+  "primary_inference": "held-out-publication clustered bootstrap within target",
+  "minimum_overall_evaluation": {
+    "events": 100,
+    "disagreements": 20,
+    "heldout_studies": 10
+  },
+  "minimum_natural_product_subgroup": {
+    "events": 30,
+    "disagreements": 10,
+    "heldout_studies": 5
+  },
+  "support_rule": "Frozen full-model study-clustered AUROC lower 95% bound > 0.5, PR-AUC lower 95% bound > observed prevalence, and Brier score no worse than the frozen constant-prevalence fallback.",
+  "natural_product_membership": "structure-verified NPASS/COCONUT index; subgroup only"
+}

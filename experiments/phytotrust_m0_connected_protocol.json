@@ -1,0 +1,52 @@
+{
+  "protocol_version": "phytotrust-m0-connected-v1",
+  "frozen_before_final_run": true,
+  "input": "experiments/phytotrust_connected_dataset/development_measurements.csv",
+  "forbidden_inputs": [
+    "experiments/phytotrust_connected_dataset/future_evaluation_history.csv",
+    "experiments/phytotrust_connected_dataset/QUARANTINED_future_evaluation_labels.csv"
+  ],
+  "target": "CHEMBL222",
+  "assay_context": "0ee2eccfc112354b355a",
+  "endpoint": "exact normalized IC50 represented as pChEMBL",
+  "prediction_estimand": "Comparable measurement for a previously measured compound in a publication whose outcomes are not available at prediction time",
+  "aggregation": "Median within compound-publication after upstream compatibility filtering",
+  "model": {
+    "equation": "Y_cs = median(Y_c, other allowed studies) + alpha + u_s + StudentT(4, 0, sigma)",
+    "study_effect": "u_s ~ Normal(0, tau^2)",
+    "unseen_study": "Integrate u_new over its population distribution",
+    "quadrature_nodes": 15,
+    "optimizer_maxiter": 700
+  },
+  "validation": {
+    "study_grouped": "Leave one publication out; retrospective and not time restricted",
+    "forward_temporal": "Train only on publication years strictly earlier than the held-out year",
+    "heldout_activity_assay_publication_exclusion": true,
+    "same_compound_prior_measurements": "Allowed by the declared transfer estimand",
+    "natural_product_status": "Subgroup reporting only"
+  },
+  "baselines": [
+    "global_mean",
+    "median_potency",
+    "nonhierarchical_student_t"
+  ],
+  "metrics": [
+    "MAE",
+    "RMSE",
+    "NLL",
+    "80% interval coverage and width",
+    "90% interval coverage and width"
+  ],
+  "identifiability_gate": {
+    "minimum_repeated_compounds": 20,
+    "minimum_studies_with_2_shared_compounds": 10,
+    "minimum_studies_with_3_shared_compounds": 5,
+    "maximum_cross_fold_tau_ratio": 4.0,
+    "minimum_bootstrap_tau_lower_bound": 0.01
+  },
+  "inference": {
+    "study_cluster_bootstrap_iterations": 1000,
+    "parameter_bootstrap_iterations": 200,
+    "seed": 2026
+  }
+}

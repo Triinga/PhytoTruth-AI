@@ -1,0 +1,35 @@
+{
+  "protocol_version": "expanded-frozen-model-validation-v1",
+  "created_before_frozen_model_scoring": true,
+  "dataset": "experiments/assay_disagreement_expansion/expansion_events.csv",
+  "models": {
+    "frozen_full": "experiments/assay_disagreement/assay_disagreement_model.joblib",
+    "frozen_selected": "experiments/assay_disagreement_generalization/study_generalized_model.joblib"
+  },
+  "models_retrained_recalibrated_or_tuned": false,
+  "outcome_threshold_pchembl": 1.0,
+  "primary_ranking_metric": "AUROC",
+  "metrics": [
+    "AUROC",
+    "PR-AUC",
+    "tie-aware Precision@10",
+    "Brier score",
+    "ECE-10",
+    "calibration intercept",
+    "calibration slope"
+  ],
+  "bootstrap": {
+    "iterations": 2000,
+    "seed": 2026,
+    "unit": "held-out publication cluster sampled within target"
+  },
+  "baselines": {
+    "frozen_constant_prevalence": "development prevalence stored in the previously selected artifact",
+    "historical_tenfold_fraction": "parameter-free fraction of historical publication medians at least 1.0 pChEMBL from the historical center"
+  },
+  "precision_k": 10,
+  "natural_product_subgroup": "exact standardized-InChIKey membership in NPASS and/or COCONUT",
+  "selection_on_expanded_evaluation": false,
+  "representativeness_claim": false,
+  "model_winner_selection_permitted": false
+}

@@ -1,0 +1,71 @@
+{
+  "protocol_version": "methodology-redesign-v1",
+  "frozen_before_model_fitting": true,
+  "seed": 2026,
+  "development_source": "experiments/assay_protocol_enrichment/enriched_assay_disagreement_events.csv",
+  "development_eligibility": {
+    "partition": "development",
+    "maximum_heldout_year": 2019,
+    "required_outcomes": ["absolute_pactivity_shift", "disagreement_label"],
+    "explicitly_forbidden_sources": [
+      "experiments/independent_assay_validation/independent_dataset.csv",
+      "experiments/assay_disagreement_expansion/final/enriched_expansion_events.csv",
+      "experiments/expanded_assay_validation/eligible_events.csv"
+    ]
+  },
+  "outcomes": {
+    "primary": "absolute_pactivity_shift in pChEMBL units",
+    "secondary": "disagreement_label at an absolute shift >= 1.0 pChEMBL",
+    "rationale": "Continuous magnitude preserves information discarded by a threshold and permits robust regression; binary risk remains a secondary operational view."
+  },
+  "validation": {
+    "study_grouped": "5-fold GroupKFold by connected study-compound components, so neither publications nor molecules cross folds",
+    "forward_temporal": [
+      {"train_through": 2010, "test_start": 2011, "test_end": 2013},
+      {"train_through": 2013, "test_start": 2014, "test_end": 2016},
+      {"train_through": 2016, "test_start": 2017, "test_end": 2019}
+    ],
+    "leave_target_out": "one complete ChEMBL target per fold",
+    "leakage_constraints": [
+      "held-out publication groups never enter training",
+      "held-out molecules never enter training",
+      "temporal training years strictly precede test years",
+      "only prior_* assay/protocol evidence is eligible",
+      "natural-product status is evaluated as a subgroup and is not a predictor"
+    ]
+  },
+  "methods": {
+    "constant": "training-fold prevalence plus training-fold median disagreement magnitude",
+    "historical_beta": "Jeffreys-smoothed prior cross-publication contradiction rate and prior document-median range",
+    "legacy_logistic": "the existing binary classifier feature contract, refit inside each development fold",
+    "huber_magnitude": "robust Huber regression on log1p magnitude with prior historical evidence",
+    "rf_history": "random-forest magnitude regression using prior historical evidence",
+    "rf_protocol": "the same random forest plus molecular descriptors and prior-only protocol completeness features"
+  },
+  "fixed_hyperparameters": {
+    "huber": {"epsilon": 1.35, "alpha": 0.0001, "max_iter": 10000, "prediction_bounds": "zero to maximum magnitude observed in that training fold"},
+    "random_forest": {"n_estimators": 400, "min_samples_leaf": 5, "max_features": 0.7, "bootstrap": true}
+  },
+  "uncertainty": {
+    "bootstrap_replicates": 1000,
+    "bootstrap_unit": "heldout_study_key",
+    "random_forest_interval": "10th to 90th percentiles across trees; descriptive ensemble interval, not a calibrated coverage guarantee"
+  },
+  "metrics": ["AUROC", "PR-AUC", "MAE", "Brier score", "ECE", "interval coverage", "interval width"],
+  "primary_candidate": "rf_protocol",
+  "implementation_amendment": {
+    "made_after_first_execution": true,
+    "reason": "One forward-time Huber fit hit its fixed optimizer limit and extrapolated far beyond the training outcome range.",
+    "change": "Increase only the optimizer iteration ceiling and apply training-range bounds to Huber predictions. This numerical-stability correction is fixed for every fold and does not alter features, outcomes, RF hyperparameters, validation splits, candidate selection, or readiness criteria."
+  },
+  "readiness_rule": {
+    "required": [
+      "study-grouped AUROC point estimate > 0.5",
+      "study-grouped PR-AUC point estimate > observed prevalence",
+      "study-grouped MAE lower than the constant-median baseline",
+      "directionally consistent performance in forward-temporal validation",
+      "no evidence that protocol features degrade natural-product results relative to rf_history"
+    ],
+    "interpretation": "Failure of any criterion means the method is not ready for a new independent test. Confidence intervals and subgroup sample size must be reported rather than used to relax the rule."
+  }
+}

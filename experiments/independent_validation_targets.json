@@ -1,0 +1,47 @@
+[
+  {
+    "target_chembl_id": "CHEMBL279",
+    "target_name": "Vascular endothelial growth factor receptor 2",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "selection_rationale": "Previously unused angiogenesis target with high exact-IC50 record volume; selected before disagreement outcomes were constructed.",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL206",
+    "target_name": "Estrogen receptor",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "selection_rationale": "Previously unused hormone receptor relevant to plant-derived ligands; selected before disagreement outcomes were constructed.",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1871",
+    "target_name": "Androgen receptor",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "selection_rationale": "Previously unused hormone receptor relevant to natural-product screening; selected before disagreement outcomes were constructed.",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1824",
+    "target_name": "Receptor tyrosine-protein kinase erbB-2",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "selection_rationale": "Previously unused oncology target with repeated exact-IC50 evidence; selected before disagreement outcomes were constructed.",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL1862",
+    "target_name": "Tyrosine-protein kinase ABL1",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "selection_rationale": "Previously unused oncology target with substantial exact-IC50 evidence; selected before disagreement outcomes were constructed.",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.natural.jsonl"
+  }
+]

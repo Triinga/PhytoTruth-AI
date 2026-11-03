@@ -1,0 +1,42 @@
+[
+  {
+    "target_chembl_id": "CHEMBL220",
+    "target_name": "Acetylcholinesterase",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl220_ic50.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL203",
+    "target_name": "Epidermal growth factor receptor",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl203_ic50.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL230",
+    "target_name": "Prostaglandin G/H synthase 2",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl230_ic50.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL284",
+    "target_name": "Dipeptidyl peptidase 4",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl284_ic50.natural.jsonl"
+  },
+  {
+    "target_chembl_id": "CHEMBL335",
+    "target_name": "Tyrosine-protein phosphatase non-receptor type 1",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.normalized.jsonl",
+    "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\multitarget\\chembl335_ic50.natural.jsonl"
+  }
+]

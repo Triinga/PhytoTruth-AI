@@ -1,0 +1,34 @@
+{
+  "protocol_version": "assay-disagreement-expansion-v1",
+  "frozen_before_disagreement_label_construction": true,
+  "target_selection": {
+    "criteria": [
+      "not present in the original five-target benchmark or the five-target independent validation",
+      "human SINGLE PROTEIN target",
+      "natural-product or drug-discovery relevance",
+      "at least 750 non-null-pChEMBL IC50 records, except human tyrosinase retained a priori with 255 records for explicit natural-product relevance"
+    ],
+    "outcome_values_not_inspected": true
+  },
+  "measurement_inclusion": [
+    "exact relation only",
+    "IC50 endpoint only",
+    "finite positive concentration convertible to molar units",
+    "reported pChEMBL consistent with recomputed value within 0.15 where reported",
+    "no ChEMBL data_validity_comment or potential_duplicate flag",
+    "same target, target organism, endpoint, assay type, and BAO format context within a target cohort",
+    "strictly earlier independent publications for historical evidence",
+    "document- and assay-disjoint latest-year evidence"
+  ],
+  "disagreement_threshold_pchembl": 1.0,
+  "minimum_heldout_year": 2020,
+  "previous_exposure_sources": [
+    "all normalized records from the original five targets",
+    "all normalized records from the prior independent five targets",
+    "the prior 531-event dataset",
+    "the prior 90-event independent validation dataset"
+  ],
+  "natural_product_index": "NPASS plus COCONUT standardized-structure index",
+  "labels_available_to_model_development": false,
+  "model_training_or_evaluation_in_this_phase": false
+}

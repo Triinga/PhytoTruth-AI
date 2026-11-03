@@ -1,0 +1,65 @@
+{
+  "protocol_version": "phytotrust-connected-dataset-v1",
+  "frozen_before_download": "2026-10-22",
+  "objective": "Construct a real compound-publication graph for study-effect identifiability without using activity outcomes for target or component selection.",
+  "candidate_targets": [
+    {"target_chembl_id": "CHEMBL214", "rationale": "human serotonin 1A receptor; established pharmacology target"},
+    {"target_chembl_id": "CHEMBL217", "rationale": "human dopamine D2 receptor; established pharmacology target"},
+    {"target_chembl_id": "CHEMBL218", "rationale": "human cannabinoid CB1 receptor; natural-product-relevant receptor"},
+    {"target_chembl_id": "CHEMBL219", "rationale": "human dopamine D4 receptor; established pharmacology target"},
+    {"target_chembl_id": "CHEMBL222", "rationale": "human norepinephrine transporter; established pharmacology target"},
+    {"target_chembl_id": "CHEMBL224", "rationale": "human serotonin 2A receptor; established pharmacology target"},
+    {"target_chembl_id": "CHEMBL225", "rationale": "human serotonin 2C receptor; established pharmacology target"},
+    {"target_chembl_id": "CHEMBL226", "rationale": "human adenosine A1 receptor; established pharmacology target"},
+    {"target_chembl_id": "CHEMBL233", "rationale": "human mu opioid receptor; natural-product-relevant receptor"},
+    {"target_chembl_id": "CHEMBL236", "rationale": "human delta opioid receptor; natural-product-relevant receptor"}
+  ],
+  "target_selection_rule": {
+    "uses_activity_values": false,
+    "minimum_eligible_measurements": 100,
+    "minimum_repeated_compounds": 20,
+    "minimum_multi_compound_studies": 10,
+    "rank": "lexicographic by repeated compounds, overlapping study pairs, multi-compound studies, then target ID",
+    "retain": 5
+  },
+  "eligibility": {
+    "source": "ChEMBL REST API",
+    "endpoint": "IC50",
+    "target_organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "relations": ["=", "", null],
+    "require_numeric_positive_concentration": true,
+    "require_pchembl_consistency_within": 0.15,
+    "exclude_data_validity_comment": true,
+    "exclude_potential_duplicates": true,
+    "require_document_assay_molecule_and_structure": true,
+    "compatible_context_fields": ["target_chembl_id", "target_organism", "standard_type", "assay_type", "bao_format"],
+    "context_selection": "largest connected eligible context per target using identifiers only; ties by context key"
+  },
+  "natural_product_definition": "exact standardized-InChIKey match to the existing NPASS-3.0 plus COCONUT-2024-08 index",
+  "locked_target_exclusions": [
+    "CHEMBL203", "CHEMBL205", "CHEMBL206", "CHEMBL215", "CHEMBL220", "CHEMBL221", "CHEMBL228", "CHEMBL230", "CHEMBL235", "CHEMBL279", "CHEMBL284", "CHEMBL289", "CHEMBL335", "CHEMBL340", "CHEMBL1824", "CHEMBL1862", "CHEMBL1865", "CHEMBL1871", "CHEMBL1900", "CHEMBL1929", "CHEMBL1951", "CHEMBL1973", "CHEMBL1978", "CHEMBL2039", "CHEMBL3397"
+  ],
+  "partition": {
+    "future_year_start": 2020,
+    "unit": "connected component of the compound-publication bipartite graph within target and compatible context",
+    "future_evaluation": "components containing at least one publication from 2020 onward",
+    "development": "components containing only publications through 2019",
+    "leakage_contract": "compound and publication nodes may occur in only one partition; evaluation labels remain quarantined"
+  },
+  "identifiability_gate": {
+    "per_target_minimum_multi_event_studies": 10,
+    "per_target_minimum_studies_with_at_least_3_compounds": 5,
+    "per_target_minimum_repeated_compounds": 20,
+    "required_shared_compound_study_cycles": 1,
+    "interpretation": "necessary structural gate only; it does not prove statistical identifiability"
+  },
+  "amendment_log": [
+    {
+      "date": "2026-10-22",
+      "field": "candidate_targets.CHEMBL226.rationale",
+      "change": "Corrected receptor name from serotonin 1B to adenosine A1 after authoritative ChEMBL target metadata retrieval.",
+      "effect_on_selection": "none; target ID, inclusion, and identifier-only selection rules were unchanged"
+    }
+  ]
+}

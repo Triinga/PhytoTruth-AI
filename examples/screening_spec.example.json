@@ -1,0 +1,26 @@
+{
+  "disease": {
+    "id": "MONDO:0005148",
+    "name": "type 2 diabetes mellitus"
+  },
+  "targets": [
+    {
+      "target_chembl_id": "CHEMBL335",
+      "target_name": "Protein-tyrosine phosphatase 1B",
+      "direction": "inhibit",
+      "weight": 1.0,
+      "model_dir": "../experiments/ml_activity_chembl335"
+    }
+  ],
+  "filters": {
+    "min_molecular_weight": 100,
+    "max_molecular_weight": 650,
+    "min_logp": -2,
+    "max_logp": 6,
+    "max_tpsa": 180,
+    "max_hbd": 8,
+    "max_hba": 14,
+    "max_rotatable_bonds": 15,
+    "max_abs_formal_charge": 2
+  }
+}

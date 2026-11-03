@@ -1,0 +1,16 @@
+{
+  "targets": [
+    {
+      "target_chembl_id": "CHEMBL335",
+      "target_name": "Protein-tyrosine phosphatase 1B",
+      "target_organism": "Homo sapiens",
+      "activities": "../data/processed/chembl335_ic50.normalized.jsonl",
+      "diseases": [
+        {
+          "id": "MONDO:0005148",
+          "name": "type 2 diabetes mellitus"
+        }
+      ]
+    }
+  ]
+}

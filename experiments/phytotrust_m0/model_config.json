@@ -1,0 +1,13 @@
+{
+  "model_version": "phytotrust-m0-v1",
+  "configuration": {
+    "degrees_of_freedom": 4.0,
+    "quadrature_nodes": 15,
+    "target_effect_scale": 1.5,
+    "log_tau_pooling_scale": 0.75,
+    "minimum_scale": 0.001,
+    "optimizer_maxiter": 700
+  },
+  "equation": "Y = prior_median + alpha_target + u_study,target + StudentT(df, 0, sigma)",
+  "blind_transfer": "u_new integrated over Normal(0, tau_target^2)"
+}

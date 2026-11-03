@@ -1,0 +1,20 @@
+{
+  "model_version": "phytotrust-m0-v1",
+  "source_dataset": "..\\experiments\\assay_protocol_enrichment\\enriched_assay_disagreement_events.csv",
+  "source_sha256": "4bbfae2c673f1d89725fb1040611728cbe1701aa4326d62bcbe49808dec84cb0",
+  "files": [
+    "SCIENTIFIC_REPORT.md",
+    "bootstrap_differences.csv",
+    "command.txt",
+    "comparison.svg",
+    "dominant_study_sensitivity.csv",
+    "fold_parameters.csv",
+    "manifest.json",
+    "metrics.csv",
+    "model_config.json",
+    "model_parameters.json",
+    "predictions.csv",
+    "results.json"
+  ],
+  "locked_evaluation_used": false
+}

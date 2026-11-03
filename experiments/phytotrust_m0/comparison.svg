@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="590" viewBox="0 0 1100 590">
+<rect width="1100" height="590" fill="#07111f"/>
+<text x="55" y="42" fill="#f8fafc" font-family="sans-serif" font-size="22">PhytoTRUST-M0 development-only validation</text>
+<text x="55" y="66" fill="#94a3b8" font-family="sans-serif" font-size="13">Lower is better; natural products are evaluation-only.</text>
+<text x="55" y="105" fill="#e2e8f0" font-family="sans-serif" font-size="17">Study-grouped</text>
+<text x="55" y="135" fill="#94a3b8" font-family="sans-serif" font-size="13">NLL</text>
+<text x="55" y="172" fill="#cbd5e1" font-family="sans-serif" font-size="12">Global mean</text>
+<rect x="200" y="157" width="300.0" height="21" rx="4" fill="#64748b"/>
+<text x="506.0" y="172" fill="#f8fafc" font-family="sans-serif" font-size="12">1.776</text>
+<text x="55" y="212" fill="#cbd5e1" font-family="sans-serif" font-size="12">Median potency</text>
+<rect x="200" y="197" width="228.5" height="21" rx="4" fill="#0ea5e9"/>
+<text x="434.5" y="212" fill="#f8fafc" font-family="sans-serif" font-size="12">1.353</text>
+<text x="55" y="252" fill="#cbd5e1" font-family="sans-serif" font-size="12">Non-hierarchical t</text>
+<rect x="200" y="237" width="232.8" height="21" rx="4" fill="#a78bfa"/>
+<text x="438.8" y="252" fill="#f8fafc" font-family="sans-serif" font-size="12">1.378</text>
+<text x="55" y="292" fill="#cbd5e1" font-family="sans-serif" font-size="12">PhytoTRUST-M0</text>
+<rect x="200" y="277" width="241.5" height="21" rx="4" fill="#22c55e"/>
+<text x="447.5" y="292" fill="#f8fafc" font-family="sans-serif" font-size="12">1.429</text>
+<text x="55" y="345" fill="#94a3b8" font-family="sans-serif" font-size="13">MAE</text>
+<text x="55" y="382" fill="#cbd5e1" font-family="sans-serif" font-size="12">Global mean</text>
+<rect x="200" y="367" width="300.0" height="21" rx="4" fill="#64748b"/>
+<text x="506.0" y="382" fill="#f8fafc" font-family="sans-serif" font-size="12">1.115</text>
+<text x="55" y="422" fill="#cbd5e1" font-family="sans-serif" font-size="12">Median potency</text>
+<rect x="200" y="407" width="183.1" height="21" rx="4" fill="#0ea5e9"/>
+<text x="389.1" y="422" fill="#f8fafc" font-family="sans-serif" font-size="12">0.681</text>
+<text x="55" y="462" fill="#cbd5e1" font-family="sans-serif" font-size="12">Non-hierarchical t</text>
+<rect x="200" y="447" width="192.6" height="21" rx="4" fill="#a78bfa"/>
+<text x="398.6" y="462" fill="#f8fafc" font-family="sans-serif" font-size="12">0.716</text>
+<text x="55" y="502" fill="#cbd5e1" font-family="sans-serif" font-size="12">PhytoTRUST-M0</text>
+<rect x="200" y="487" width="195.4" height="21" rx="4" fill="#22c55e"/>
+<text x="401.4" y="502" fill="#f8fafc" font-family="sans-serif" font-size="12">0.726</text>
+<text x="585" y="105" fill="#e2e8f0" font-family="sans-serif" font-size="17">Forward temporal</text>
+<text x="585" y="135" fill="#94a3b8" font-family="sans-serif" font-size="13">NLL</text>
+<text x="585" y="172" fill="#cbd5e1" font-family="sans-serif" font-size="12">Global mean</text>
+<rect x="730" y="157" width="300.0" height="21" rx="4" fill="#64748b"/>
+<text x="1036.0" y="172" fill="#f8fafc" font-family="sans-serif" font-size="12">1.729</text>
+<text x="585" y="212" fill="#cbd5e1" font-family="sans-serif" font-size="12">Median potency</text>
+<rect x="730" y="197" width="219.0" height="21" rx="4" fill="#0ea5e9"/>
+<text x="955.0" y="212" fill="#f8fafc" font-family="sans-serif" font-size="12">1.262</text>
+<text x="585" y="252" fill="#cbd5e1" font-family="sans-serif" font-size="12">Non-hierarchical t</text>
+<rect x="730" y="237" width="227.7" height="21" rx="4" fill="#a78bfa"/>
+<text x="963.7" y="252" fill="#f8fafc" font-family="sans-serif" font-size="12">1.312</text>
+<text x="585" y="292" fill="#cbd5e1" font-family="sans-serif" font-size="12">PhytoTRUST-M0</text>
+<rect x="730" y="277" width="244.6" height="21" rx="4" fill="#22c55e"/>
+<text x="980.6" y="292" fill="#f8fafc" font-family="sans-serif" font-size="12">1.410</text>
+<text x="585" y="345" fill="#94a3b8" font-family="sans-serif" font-size="13">MAE</text>
+<text x="585" y="382" fill="#cbd5e1" font-family="sans-serif" font-size="12">Global mean</text>
+<rect x="730" y="367" width="300.0" height="21" rx="4" fill="#64748b"/>
+<text x="1036.0" y="382" fill="#f8fafc" font-family="sans-serif" font-size="12">1.084</text>
+<text x="585" y="422" fill="#cbd5e1" font-family="sans-serif" font-size="12">Median potency</text>
+<rect x="730" y="407" width="170.8" height="21" rx="4" fill="#0ea5e9"/>
+<text x="906.8" y="422" fill="#f8fafc" font-family="sans-serif" font-size="12">0.617</text>
+<text x="585" y="462" fill="#cbd5e1" font-family="sans-serif" font-size="12">Non-hierarchical t</text>
+<rect x="730" y="447" width="186.9" height="21" rx="4" fill="#a78bfa"/>
+<text x="922.9" y="462" fill="#f8fafc" font-family="sans-serif" font-size="12">0.676</text>
+<text x="585" y="502" fill="#cbd5e1" font-family="sans-serif" font-size="12">PhytoTRUST-M0</text>
+<rect x="730" y="487" width="196.5" height="21" rx="4" fill="#22c55e"/>
+<text x="932.5" y="502" fill="#f8fafc" font-family="sans-serif" font-size="12">0.710</text>
+</svg>

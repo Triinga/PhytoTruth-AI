@@ -1,0 +1,31 @@
+{
+  "targets": [
+    "CHEMBL203",
+    "CHEMBL220",
+    "CHEMBL230",
+    "CHEMBL284",
+    "CHEMBL335"
+  ],
+  "target_effects": {
+    "CHEMBL203": -0.11460147453365156,
+    "CHEMBL220": -0.101532440804206,
+    "CHEMBL230": -0.12619783499021073,
+    "CHEMBL284": -0.0841505042494602,
+    "CHEMBL335": 0.15964737032868007
+  },
+  "residual_scale": 0.5194460994175473,
+  "target_between_study_sd": {
+    "CHEMBL203": 1.052047116399178,
+    "CHEMBL220": 0.41949420607797033,
+    "CHEMBL230": 0.6833227526292119,
+    "CHEMBL284": 0.2709976175383606,
+    "CHEMBL335": 0.19513527770612088
+  },
+  "degrees_of_freedom": 4.0,
+  "optimization": {
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 33,
+    "objective": 1.4020977127384024
+  }
+}

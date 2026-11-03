@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470">
+<rect width="100%" height="100%" fill="#07131d"/>
+<style>text{font-family:Arial,sans-serif;fill:#dcecf4}.muted{fill:#8da9b8}.full{fill:#2dd4bf}.base{fill:#f59e0b}</style>
+<text x="45" y="48" font-size="24" font-weight="700">Independent frozen-model validation</text>
+<text x="45" y="75" font-size="14" class="muted">Observed disagreement prevalence: 0.078</text>
+<text x="45" y="125" font-size="16">AUROC</text>
+<rect class="full" x="250" y="103" width="296.4" height="25" rx="4"/>
+<text x="865" y="121" font-size="14">full 0.494</text>
+<rect class="base" x="250" y="138" width="300.0" height="25" rx="4"/>
+<text x="865" y="157" font-size="14">frozen fallback 0.500</text>
+<text x="45" y="230" font-size="16">PR-AUC</text>
+<rect class="full" x="250" y="208" width="56.1" height="25" rx="4"/>
+<text x="865" y="226" font-size="14">full 0.093</text>
+<rect class="base" x="250" y="243" width="46.7" height="25" rx="4"/>
+<text x="865" y="262" font-size="14">frozen fallback 0.078</text>
+<text x="45" y="335" font-size="16">Brier (lower better)</text>
+<rect class="full" x="250" y="313" width="252.5" height="25" rx="4"/>
+<text x="865" y="331" font-size="14">full 0.421</text>
+<rect class="base" x="250" y="348" width="58.0" height="25" rx="4"/>
+<text x="865" y="367" font-size="14">frozen fallback 0.097</text>
+</svg>

@@ -1,0 +1,77 @@
+{
+  "created_at": "2026-10-21T09:19:21.163874+00:00",
+  "inputs": {
+    "full_model": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\Ethon-independent\\experiments\\assay_disagreement\\assay_disagreement_model.joblib",
+      "sha256": "0d2d032945eeb29d4c19dd0b910c491d8949d53b2bd79074000f1cd3652de716"
+    },
+    "previous_events": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\Ethon-independent\\experiments\\assay_disagreement_generalization\\dataset.csv",
+      "sha256": "759ee9123b0ecdddf328afcfdaa3a1c8a69a19651cba0b13368abde2b46f2d77"
+    },
+    "previous_specs": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\Ethon-independent\\experiments\\multitarget_targets.json",
+      "sha256": "18705f7a8f7329c25adf710212043c4d167e122a103bbf4ff4319f2a397c2201"
+    },
+    "protocol": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\Ethon-independent\\experiments\\independent_validation_protocol.json",
+      "sha256": "1a40ff0631a415d26128ea32c36d8815e91aeca656f2e981157eeb8a909d1b45"
+    },
+    "selected_model": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\Ethon-independent\\experiments\\assay_disagreement_generalization\\study_generalized_model.joblib",
+      "sha256": "27fc55fa4e6e39273915df6b2b7b57d043ce3c5abdf1c3eccd9f71db4f2a3842"
+    },
+    "specs": {
+      "path": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\Ethon-independent\\experiments\\independent_validation_targets.json",
+      "sha256": "bf51005506468ea3f95ba7bc7f808ec46dea13906179cfc855f224d46292c5af"
+    }
+  },
+  "new_target_inputs": [
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.normalized.jsonl",
+      "activities_sha256": "a7b80d2b0f5f7f33688d4615631980295f707ebe13ddcb68755da5fe9bedb052",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.natural.jsonl",
+      "natural_products_sha256": "51b9d700b2f0efd80ef02e6d4266dfea0d592de93eaa32664f27f53a35c87b91",
+      "target_chembl_id": "CHEMBL279"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.normalized.jsonl",
+      "activities_sha256": "08e8c0bbec193f253f629d356347e4abda5def8b65fd944b930f7bd379c416de",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.natural.jsonl",
+      "natural_products_sha256": "e88c425f056c7a9189ab4b47b1a91b3c4d7b59e40779d7a4217dba53bee3169e",
+      "target_chembl_id": "CHEMBL206"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.normalized.jsonl",
+      "activities_sha256": "1c46a073e6b28404c2af144b5b5226b820794e2b91a45585c9627986be46f9bd",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.natural.jsonl",
+      "natural_products_sha256": "0e4cd57162e06466caeda9b8447588a67439eceedf6833ab15e77b4dbf1ad938",
+      "target_chembl_id": "CHEMBL1871"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.normalized.jsonl",
+      "activities_sha256": "cb1b525d2e17bde3d1afa231cb2ee5df4c54cab7cd494e1f512a86c9ca44edf4",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.natural.jsonl",
+      "natural_products_sha256": "87cc8412aef8e850f2c6b25d1aabb8a5779451d2abd5a5d8c56870f6326eb3b9",
+      "target_chembl_id": "CHEMBL1824"
+    },
+    {
+      "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.normalized.jsonl",
+      "activities_sha256": "f9c8356aded8245c354a2eed5d2ef08966baee60f239ae5f304e88189c7200dd",
+      "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.natural.jsonl",
+      "natural_products_sha256": "c1960f33d37375e52b563e4a9d5606c99b64922739364f35f0437a585ef6e81b",
+      "target_chembl_id": "CHEMBL1862"
+    }
+  ],
+  "outputs": {
+    "SCIENTIFIC_REPORT.md": "57cd8c92c2a534252f9c889928e753678bff957dc808302eec56da5ed754212d",
+    "frozen_model_predictions.csv": "3e973d8fee2f068e792e10cc01f758b6dad1c20cccb1ab9faf7cf5b2df43aa7c",
+    "independence_exclusions.csv": "bbfc528141f7efc44459ac7ee6fe1e16dd9179c5edc0674772299ef23688f096",
+    "independent_dataset.csv": "d0667350270f1190e90dcb50e10c2c2f7cc0fd32c3094e98726f7abf7dcc2228",
+    "independent_validation.svg": "541036e38a74626d02f9b5527a1a5e0eac178974db7bb2a1407a804f48da7e03",
+    "results.json": "0108caac274099d5ab2303b31081c585ecf5f0461d060afbf800541e9535e8e7",
+    "target_metrics.csv": "c5d40d42c485ca1185c12c1330eb3b57f5d981b4b851f2835b17492ca8e82990",
+    "validation_measurements.csv": "debb4a14fe4f8450f9f7b4a2e4f178bcf4e46f55808d1826bc870c25b8d31e38"
+  },
+  "validation_version": "independent-assay-disagreement-validation-v1"
+}

@@ -1,0 +1,785 @@
+{
+  "bootstrap_iterations": 2000,
+  "candidate_events_before_independence_filter": 263,
+  "candidate_manifest": {
+    "exclusions": {
+      "cross_target_molecule_overlap_removed_from_development": 4,
+      "potential_duplicate": 3010,
+      "single_publication_year": 13318
+    },
+    "inputs": [
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.normalized.jsonl",
+        "activities_sha256": "a7b80d2b0f5f7f33688d4615631980295f707ebe13ddcb68755da5fe9bedb052",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL279.natural.jsonl",
+        "natural_products_sha256": "51b9d700b2f0efd80ef02e6d4266dfea0d592de93eaa32664f27f53a35c87b91",
+        "target_chembl_id": "CHEMBL279"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.normalized.jsonl",
+        "activities_sha256": "08e8c0bbec193f253f629d356347e4abda5def8b65fd944b930f7bd379c416de",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL206.natural.jsonl",
+        "natural_products_sha256": "e88c425f056c7a9189ab4b47b1a91b3c4d7b59e40779d7a4217dba53bee3169e",
+        "target_chembl_id": "CHEMBL206"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.normalized.jsonl",
+        "activities_sha256": "1c46a073e6b28404c2af144b5b5226b820794e2b91a45585c9627986be46f9bd",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1871.natural.jsonl",
+        "natural_products_sha256": "0e4cd57162e06466caeda9b8447588a67439eceedf6833ab15e77b4dbf1ad938",
+        "target_chembl_id": "CHEMBL1871"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.normalized.jsonl",
+        "activities_sha256": "cb1b525d2e17bde3d1afa231cb2ee5df4c54cab7cd494e1f512a86c9ca44edf4",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1824.natural.jsonl",
+        "natural_products_sha256": "87cc8412aef8e850f2c6b25d1aabb8a5779451d2abd5a5d8c56870f6326eb3b9",
+        "target_chembl_id": "CHEMBL1824"
+      },
+      {
+        "activities": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.normalized.jsonl",
+        "activities_sha256": "f9c8356aded8245c354a2eed5d2ef08966baee60f239ae5f304e88189c7200dd",
+        "natural_products": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\data\\independent_validation\\CHEMBL1862.natural.jsonl",
+        "natural_products_sha256": "c1960f33d37375e52b563e4a9d5606c99b64922739364f35f0437a585ef6e81b",
+        "target_chembl_id": "CHEMBL1862"
+      }
+    ],
+    "outcome": "absolute difference between prior-study and latest-year median exact IC50 pActivity >= 1.0 log10 unit",
+    "split": "development held-out publications <= 2019; untouched evaluation >= 2020",
+    "targets": [
+      {
+        "context_exclusions": {
+          "other_assay_context": 3491
+        },
+        "development_events": 63,
+        "eligible_events": 140,
+        "eligible_events_before_cross_target_deduplication": 143,
+        "evaluation_disagreements": 10,
+        "evaluation_events": 77,
+        "evaluation_natural_products": 5,
+        "event_exclusions": {
+          "single_publication_year": 7634
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 1297
+        },
+        "selected_context_key": "6f1b75d97606c9c1a3fd",
+        "selected_measurements": 8303,
+        "selected_molecules": 7777,
+        "target_chembl_id": "CHEMBL279",
+        "target_name": "Vascular endothelial growth factor receptor 2"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 320,
+          "other_assay_context": 3264
+        },
+        "development_events": 26,
+        "eligible_events": 36,
+        "eligible_events_before_cross_target_deduplication": 36,
+        "evaluation_disagreements": 0,
+        "evaluation_events": 10,
+        "evaluation_natural_products": 4,
+        "event_exclusions": {
+          "single_publication_year": 1370
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 722
+        },
+        "selected_context_key": "8c28a3f797df0f0ce94a",
+        "selected_measurements": 1629,
+        "selected_molecules": 1406,
+        "target_chembl_id": "CHEMBL206",
+        "target_name": "Estrogen receptor"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 1521
+        },
+        "development_events": 6,
+        "eligible_events": 22,
+        "eligible_events_before_cross_target_deduplication": 22,
+        "evaluation_disagreements": 3,
+        "evaluation_events": 16,
+        "evaluation_natural_products": 1,
+        "event_exclusions": {
+          "single_publication_year": 1387
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 261
+        },
+        "selected_context_key": "1f27b0a4dc3531352ec6",
+        "selected_measurements": 1803,
+        "selected_molecules": 1409,
+        "target_chembl_id": "CHEMBL1871",
+        "target_name": "Androgen receptor"
+      },
+      {
+        "context_exclusions": {
+          "missing_year_or_activity": 29,
+          "other_assay_context": 1610
+        },
+        "development_events": 12,
+        "eligible_events": 29,
+        "eligible_events_before_cross_target_deduplication": 29,
+        "evaluation_disagreements": 3,
+        "evaluation_events": 17,
+        "evaluation_natural_products": 2,
+        "event_exclusions": {
+          "single_publication_year": 1288
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 328
+        },
+        "selected_context_key": "787a3a2d67f5a8410f78",
+        "selected_measurements": 1408,
+        "selected_molecules": 1317,
+        "target_chembl_id": "CHEMBL1824",
+        "target_name": "Receptor tyrosine-protein kinase erbB-2"
+      },
+      {
+        "context_exclusions": {
+          "other_assay_context": 939
+        },
+        "development_events": 17,
+        "eligible_events": 36,
+        "eligible_events_before_cross_target_deduplication": 37,
+        "evaluation_disagreements": 1,
+        "evaluation_events": 19,
+        "evaluation_natural_products": 2,
+        "event_exclusions": {
+          "single_publication_year": 1639
+        },
+        "quality_exclusions": {
+          "potential_duplicate": 402
+        },
+        "selected_context_key": "f04126065c63b25816d4",
+        "selected_measurements": 2817,
+        "selected_molecules": 1676,
+        "target_chembl_id": "CHEMBL1862",
+        "target_name": "Tyrosine-protein kinase ABL1"
+      }
+    ]
+  },
+  "dataset": {
+    "by_target": [
+      {
+        "disagreements": 0,
+        "events": 2,
+        "heldout_year_max": 2023,
+        "heldout_year_min": 2020,
+        "natural_product_disagreements": 0,
+        "natural_products": 0,
+        "studies": 2,
+        "target_chembl_id": "CHEMBL1824",
+        "target_name": "Receptor tyrosine-protein kinase erbB-2"
+      },
+      {
+        "disagreements": 0,
+        "events": 8,
+        "heldout_year_max": 2024,
+        "heldout_year_min": 2021,
+        "natural_product_disagreements": 0,
+        "natural_products": 0,
+        "studies": 3,
+        "target_chembl_id": "CHEMBL1862",
+        "target_name": "Tyrosine-protein kinase ABL1"
+      },
+      {
+        "disagreements": 3,
+        "events": 16,
+        "heldout_year_max": 2025,
+        "heldout_year_min": 2020,
+        "natural_product_disagreements": 0,
+        "natural_products": 1,
+        "studies": 12,
+        "target_chembl_id": "CHEMBL1871",
+        "target_name": "Androgen receptor"
+      },
+      {
+        "disagreements": 0,
+        "events": 9,
+        "heldout_year_max": 2024,
+        "heldout_year_min": 2020,
+        "natural_product_disagreements": 0,
+        "natural_products": 3,
+        "studies": 8,
+        "target_chembl_id": "CHEMBL206",
+        "target_name": "Estrogen receptor"
+      },
+      {
+        "disagreements": 4,
+        "events": 55,
+        "heldout_year_max": 2025,
+        "heldout_year_min": 2020,
+        "natural_product_disagreements": 0,
+        "natural_products": 1,
+        "studies": 12,
+        "target_chembl_id": "CHEMBL279",
+        "target_name": "Vascular endothelial growth factor receptor 2"
+      }
+    ],
+    "disagreements": 7,
+    "events": 90,
+    "natural_product_disagreements": 0,
+    "natural_product_studies": 5,
+    "natural_products": 5,
+    "prevalence": 0.07777777777777778,
+    "studies": 37,
+    "targets": 5
+  },
+  "exclusions": {
+    "compound_repeated_across_new_targets": 6,
+    "heldout_before_frozen_temporal_boundary": 124,
+    "not_evaluation_partition": 124,
+    "previous_activity": 0,
+    "previous_assay": 0,
+    "previous_compound": 60,
+    "previous_publication": 86,
+    "previous_target": 0,
+    "within_event_assay_overlap": 0,
+    "within_event_publication_overlap": 0
+  },
+  "generated_at": "2026-10-21T09:19:21.142946+00:00",
+  "metrics": {
+    "natural_products": {
+      "frozen_full": {
+        "point": {
+          "auroc": null,
+          "brier": 0.09653298855938017,
+          "calibration_intercept": null,
+          "calibration_slope": null,
+          "ece_10": 0.2668121293472528,
+          "log_loss": 0.33384622501386885,
+          "n": 5,
+          "positives": 0,
+          "pr_auc": null,
+          "prevalence": 0.0
+        },
+        "study_clustered_ci95": {
+          "brier": [
+            0.020169321576549878,
+            0.14092841855788113
+          ],
+          "ece_10": [
+            0.0995387760159841,
+            0.3575551908135688
+          ],
+          "log_loss": [
+            0.1115099813300775,
+            0.45764269260157076
+          ]
+        }
+      },
+      "frozen_selected": {
+        "point": {
+          "auroc": null,
+          "brier": 0.05562477750089001,
+          "calibration_intercept": null,
+          "calibration_slope": null,
+          "ece_10": 0.2358490566037736,
+          "log_loss": 0.26898993943962846,
+          "n": 5,
+          "positives": 0,
+          "pr_auc": null,
+          "prevalence": 0.0
+        },
+        "study_clustered_ci95": {
+          "brier": [
+            0.05562477750089001,
+            0.05562477750089001
+          ],
+          "ece_10": [
+            0.2358490566037736,
+            0.2358490566037736
+          ],
+          "log_loss": [
+            0.26898993943962846,
+            0.26898993943962846
+          ]
+        }
+      }
+    },
+    "overall": {
+      "frozen_full": {
+        "point": {
+          "auroc": 0.4939759036144578,
+          "brier": 0.42075286497359043,
+          "calibration_intercept": -2.447976775976694,
+          "calibration_slope": -0.06841221286352502,
+          "ece_10": 0.5377740495826734,
+          "log_loss": 1.1554627016586403,
+          "n": 90,
+          "positives": 7,
+          "pr_auc": 0.09345500232477297,
+          "prevalence": 0.07777777777777778
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.37034908026755853,
+            0.8555875576036868
+          ],
+          "brier": [
+            0.20031780403405308,
+            0.5083407621453377
+          ],
+          "ece_10": [
+            0.30686547556098165,
+            0.6352080335888397
+          ],
+          "log_loss": [
+            0.6030134666083126,
+            1.3788299493158906
+          ],
+          "pr_auc": [
+            0.0771926406926407,
+            0.3333333333333333
+          ]
+        }
+      },
+      "frozen_selected": {
+        "point": {
+          "auroc": 0.5,
+          "brier": 0.0967149242514141,
+          "calibration_intercept": null,
+          "calibration_slope": null,
+          "ece_10": 0.1580712788259958,
+          "log_loss": 0.3604234206466248,
+          "n": 90,
+          "positives": 7,
+          "pr_auc": 0.07777777777777778,
+          "prevalence": 0.07777777777777778
+        },
+        "study_clustered_ci95": {
+          "auroc": [
+            0.5,
+            0.5
+          ],
+          "brier": [
+            0.07238971460780827,
+            0.12827197984311509
+          ],
+          "ece_10": [
+            0.09833828074170461,
+            0.20411542565139265
+          ],
+          "log_loss": [
+            0.3062951496450977,
+            0.43064394010376517
+          ],
+          "pr_auc": [
+            0.03333333333333333,
+            0.13759698275862065
+          ]
+        }
+      }
+    },
+    "paired_full_minus_selected": {
+      "auroc": {
+        "clustered_ci95": [
+          -0.13265796703296706,
+          0.34659659659659664
+        ],
+        "difference": -0.006024096385542188
+      },
+      "brier": {
+        "clustered_ci95": [
+          0.10037738170195326,
+          0.41402271964795556
+        ],
+        "difference": 0.32403794072217634
+      },
+      "pr_auc": {
+        "clustered_ci95": [
+          -0.004653713007348603,
+          0.20381119253018531
+        ],
+        "difference": 0.01567722454699519
+      }
+    },
+    "targets": {
+      "CHEMBL1824": {
+        "frozen_full": {
+          "point": {
+            "auroc": null,
+            "brier": 0.030023925510187663,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.17065881507964534,
+            "log_loss": 0.187777960333736,
+            "n": 2,
+            "positives": 0,
+            "pr_auc": null,
+            "prevalence": 0.0
+          },
+          "study_clustered_ci95": {
+            "brier": [
+              0.0197872734877768,
+              0.04026057753259853
+            ],
+            "ece_10": [
+              0.14066724383372556,
+              0.20065038632556512
+            ],
+            "log_loss": [
+              0.1515990557964818,
+              0.2239568648709902
+            ]
+          }
+        },
+        "frozen_selected": {
+          "point": {
+            "auroc": null,
+            "brier": 0.05562477750089001,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.2358490566037736,
+            "log_loss": 0.26898993943962846,
+            "n": 2,
+            "positives": 0,
+            "pr_auc": null,
+            "prevalence": 0.0
+          },
+          "study_clustered_ci95": {
+            "brier": [
+              0.05562477750089001,
+              0.05562477750089001
+            ],
+            "ece_10": [
+              0.2358490566037736,
+              0.2358490566037736
+            ],
+            "log_loss": [
+              0.26898993943962846,
+              0.26898993943962846
+            ]
+          }
+        }
+      },
+      "CHEMBL1862": {
+        "frozen_full": {
+          "point": {
+            "auroc": null,
+            "brier": 0.4452738351502711,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.6351254352311495,
+            "log_loss": 1.1453024953520359,
+            "n": 8,
+            "positives": 0,
+            "pr_auc": null,
+            "prevalence": 0.0
+          },
+          "study_clustered_ci95": {
+            "brier": [
+              0.02282264208276777,
+              0.5150706199075017
+            ],
+            "ece_10": [
+              0.1510716455287615,
+              0.7099831271254792
+            ],
+            "log_loss": [
+              0.16378048436919723,
+              1.314979437661805
+            ]
+          }
+        },
+        "frozen_selected": {
+          "point": {
+            "auroc": null,
+            "brier": 0.05562477750089001,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.2358490566037736,
+            "log_loss": 0.26898993943962846,
+            "n": 8,
+            "positives": 0,
+            "pr_auc": null,
+            "prevalence": 0.0
+          },
+          "study_clustered_ci95": {
+            "brier": [
+              0.05562477750089001,
+              0.05562477750089001
+            ],
+            "ece_10": [
+              0.23584905660377353,
+              0.23584905660377362
+            ],
+            "log_loss": [
+              0.26898993943962846,
+              0.26898993943962857
+            ]
+          }
+        }
+      },
+      "CHEMBL1871": {
+        "frozen_full": {
+          "point": {
+            "auroc": 0.6153846153846153,
+            "brier": 0.17351413814577638,
+            "calibration_intercept": -1.2721264553796328,
+            "calibration_slope": 0.14700926505967296,
+            "ece_10": 0.17504213179351882,
+            "log_loss": 0.5566776885108465,
+            "n": 16,
+            "positives": 3,
+            "pr_auc": 0.5054945054945055,
+            "prevalence": 0.1875
+          },
+          "study_clustered_ci95": {
+            "auroc": [
+              0.4,
+              0.8181818181818181
+            ],
+            "brier": [
+              0.07021703075891733,
+              0.24200669063234284
+            ],
+            "ece_10": [
+              0.12275543871317904,
+              0.32750620262722224
+            ],
+            "log_loss": [
+              0.259217321483353,
+              0.7544039620672218
+            ],
+            "pr_auc": [
+              0.14285714285714285,
+              0.6700525577363811
+            ]
+          }
+        },
+        "frozen_selected": {
+          "point": {
+            "auroc": 0.5,
+            "brier": 0.1546813812744749,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.04834905660377359,
+            "log_loss": 0.48940993877792305,
+            "n": 16,
+            "positives": 3,
+            "pr_auc": 0.1875,
+            "prevalence": 0.1875
+          },
+          "study_clustered_ci95": {
+            "auroc": [
+              0.5,
+              0.5
+            ],
+            "brier": [
+              0.05562477750089001,
+              0.23172540643170766
+            ],
+            "ece_10": [
+              0.014150943396226384,
+              0.23584905660377362
+            ],
+            "log_loss": [
+              0.2689899394396285,
+              0.6608477160410412
+            ],
+            "pr_auc": [
+              0.08333333333333333,
+              0.3333333333333333
+            ]
+          }
+        }
+      },
+      "CHEMBL206": {
+        "frozen_full": {
+          "point": {
+            "auroc": null,
+            "brier": 0.29856589646518134,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.47971941293711584,
+            "log_loss": 0.924872370739005,
+            "n": 9,
+            "positives": 0,
+            "pr_auc": null,
+            "prevalence": 0.0
+          },
+          "study_clustered_ci95": {
+            "brier": [
+              0.15444333417736839,
+              0.5091486677452445
+            ],
+            "ece_10": [
+              0.34455131403293754,
+              0.6631903646392139
+            ],
+            "log_loss": [
+              0.46691586295986576,
+              1.732118139435321
+            ]
+          }
+        },
+        "frozen_selected": {
+          "point": {
+            "auroc": null,
+            "brier": 0.05562477750089001,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.2358490566037736,
+            "log_loss": 0.26898993943962846,
+            "n": 9,
+            "positives": 0,
+            "pr_auc": null,
+            "prevalence": 0.0
+          },
+          "study_clustered_ci95": {
+            "brier": [
+              0.05562477750089001,
+              0.05562477750089001
+            ],
+            "ece_10": [
+              0.2358490566037736,
+              0.23584905660377362
+            ],
+            "log_loss": [
+              0.26898993943962846,
+              0.2689899394396285
+            ]
+          }
+        }
+      },
+      "CHEMBL279": {
+        "frozen_full": {
+          "point": {
+            "auroc": 0.5931372549019608,
+            "brier": 0.5233127279433006,
+            "calibration_intercept": -3.014438992094572,
+            "calibration_slope": 0.36969162123736404,
+            "ece_10": 0.6547467668537547,
+            "log_loss": 1.4040540529630778,
+            "n": 55,
+            "positives": 4,
+            "pr_auc": 0.11189024390243903,
+            "prevalence": 0.07272727272727272
+          },
+          "study_clustered_ci95": {
+            "auroc": [
+              0.43907563025210083,
+              1.0
+            ],
+            "brier": [
+              0.129221896752799,
+              0.5785421886751175
+            ],
+            "ece_10": [
+              0.28622968528651865,
+              0.709478670927841
+            ],
+            "log_loss": [
+              0.42044989013714323,
+              1.5577751528876542
+            ],
+            "pr_auc": [
+              0.09915667166416792,
+              1.0
+            ]
+          }
+        },
+        "frozen_selected": {
+          "point": {
+            "auroc": 0.5,
+            "brier": 0.09404673290397751,
+            "calibration_intercept": null,
+            "calibration_slope": null,
+            "ece_10": 0.16312178387650095,
+            "log_loss": 0.35448618160720935,
+            "n": 55,
+            "positives": 4,
+            "pr_auc": 0.07272727272727272,
+            "prevalence": 0.07272727272727272
+          },
+          "study_clustered_ci95": {
+            "auroc": [
+              0.5,
+              0.5
+            ],
+            "brier": [
+              0.05562477750089001,
+              0.1436750919662988
+            ],
+            "ece_10": [
+              0.06918238993710696,
+              0.23584905660377362
+            ],
+            "log_loss": [
+              0.2689899394396285,
+              0.4649188277403349
+            ],
+            "pr_auc": [
+              0.029411764705882353,
+              0.16666666666666666
+            ]
+          }
+        }
+      }
+    }
+  },
+  "model_hashes_after": {
+    "full_model": "0d2d032945eeb29d4c19dd0b910c491d8949d53b2bd79074000f1cd3652de716",
+    "selected_model": "27fc55fa4e6e39273915df6b2b7b57d043ce3c5abdf1c3eccd9f71db4f2a3842"
+  },
+  "model_hashes_before": {
+    "full_model": "0d2d032945eeb29d4c19dd0b910c491d8949d53b2bd79074000f1cd3652de716",
+    "selected_model": "27fc55fa4e6e39273915df6b2b7b57d043ce3c5abdf1c3eccd9f71db4f2a3842"
+  },
+  "models_retrained_or_tuned": false,
+  "previous_exposure_ledger": {
+    "previous_events_sha256": "759ee9123b0ecdddf328afcfdaa3a1c8a69a19651cba0b13368abde2b46f2d77",
+    "previous_specs_sha256": "18705f7a8f7329c25adf710212043c4d167e122a103bbf4ff4319f2a397c2201",
+    "prior_source_records_by_target": {
+      "CHEMBL203": 19378,
+      "CHEMBL220": 7275,
+      "CHEMBL230": 6116,
+      "CHEMBL284": 4709,
+      "CHEMBL335": 3796
+    },
+    "prior_targets": [
+      "CHEMBL203",
+      "CHEMBL220",
+      "CHEMBL230",
+      "CHEMBL284",
+      "CHEMBL335"
+    ],
+    "unique_activities": 41274,
+    "unique_assays": 4415,
+    "unique_documents": 2736,
+    "unique_molecules": 27996
+  },
+  "seed": 2026,
+  "source_measurements": {
+    "heldout_records": 97,
+    "prior_records": 180,
+    "records": 277
+  },
+  "validation_decision": {
+    "criteria": {
+      "auroc_ci_lower_above_half": false,
+      "brier_no_worse_than_frozen_selected": false,
+      "minimum_dataset_met": false,
+      "pr_auc_ci_lower_above_prevalence": false
+    },
+    "model_or_threshold_tuning_performed": false,
+    "natural_product_minimum_deficits": {
+      "disagreements": 10,
+      "events": 25,
+      "heldout_studies": 0
+    },
+    "natural_product_subgroup_sufficient": false,
+    "overall_minimum_deficits": {
+      "disagreements": 13,
+      "events": 10,
+      "heldout_studies": 0
+    },
+    "prespecified_rule": "Frozen full-model study-clustered AUROC lower 95% bound > 0.5, PR-AUC lower 95% bound > observed prevalence, and Brier score no worse than the frozen constant-prevalence fallback.",
+    "status": "not_independently_supported"
+  },
+  "validation_version": "independent-assay-disagreement-validation-v1"
+}

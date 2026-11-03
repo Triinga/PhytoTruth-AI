@@ -1,0 +1,12 @@
+{
+  "checked_measurements": 3585,
+  "matched_measurements": 68,
+  "matched_molecules": 24,
+  "matched_source_databases": [
+    "NPASS"
+  ],
+  "missing_structure": 1,
+  "invalid_structure": 0,
+  "natural_product_index": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\natural_products.sqlite",
+  "sha256": "0e4cd57162e06466caeda9b8447588a67439eceedf6833ab15e77b4dbf1ad938"
+}

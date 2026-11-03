@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520">
+<rect width="1040" height="520" fill="#07111f"/>
+<text x="55" y="42" fill="#f8fafc" font-family="sans-serif" font-size="22">Development-only study-grouped validation</text>
+<text x="55" y="78" fill="#cbd5e1" font-family="sans-serif" font-size="15">AUROC</text>
+<text x="55" y="122" fill="#cbd5e1" font-family="sans-serif" font-size="12">constant</text>
+<rect x="200" y="105" width="158.93703703703702" height="24" rx="4" fill="#64748b"/>
+<text x="363.93703703703704" y="122" fill="#f8fafc" font-family="sans-serif" font-size="12">0.408</text>
+<text x="55" y="180" fill="#cbd5e1" font-family="sans-serif" font-size="12">historical beta</text>
+<rect x="200" y="163" width="217.75" height="24" rx="4" fill="#0ea5e9"/>
+<text x="422.75" y="180" fill="#f8fafc" font-family="sans-serif" font-size="12">0.558</text>
+<text x="55" y="238" fill="#cbd5e1" font-family="sans-serif" font-size="12">legacy logistic</text>
+<rect x="200" y="221" width="210.88888888888889" height="24" rx="4" fill="#f59e0b"/>
+<text x="415.8888888888889" y="238" fill="#f8fafc" font-family="sans-serif" font-size="12">0.541</text>
+<text x="55" y="296" fill="#cbd5e1" font-family="sans-serif" font-size="12">huber magnitude</text>
+<rect x="200" y="279" width="221.28888888888886" height="24" rx="4" fill="#a78bfa"/>
+<text x="426.2888888888889" y="296" fill="#f8fafc" font-family="sans-serif" font-size="12">0.567</text>
+<text x="55" y="354" fill="#cbd5e1" font-family="sans-serif" font-size="12">rf history</text>
+<rect x="200" y="337" width="224.10555555555558" height="24" rx="4" fill="#14b8a6"/>
+<text x="429.1055555555556" y="354" fill="#f8fafc" font-family="sans-serif" font-size="12">0.575</text>
+<text x="55" y="412" fill="#cbd5e1" font-family="sans-serif" font-size="12">rf protocol</text>
+<rect x="200" y="395" width="223.1425925925926" height="24" rx="4" fill="#22c55e"/>
+<text x="428.14259259259256" y="412" fill="#f8fafc" font-family="sans-serif" font-size="12">0.572</text>
+<text x="555" y="78" fill="#cbd5e1" font-family="sans-serif" font-size="15">MAE</text>
+<text x="555" y="122" fill="#cbd5e1" font-family="sans-serif" font-size="12">constant</text>
+<rect x="700" y="105" width="137.01321051070676" height="24" rx="4" fill="#64748b"/>
+<text x="842.0132105107068" y="122" fill="#f8fafc" font-family="sans-serif" font-size="12">0.527</text>
+<text x="555" y="180" fill="#cbd5e1" font-family="sans-serif" font-size="12">historical beta</text>
+<rect x="700" y="163" width="190.22668046636085" height="24" rx="4" fill="#0ea5e9"/>
+<text x="895.2266804663609" y="180" fill="#f8fafc" font-family="sans-serif" font-size="12">0.732</text>
+<text x="555" y="296" fill="#cbd5e1" font-family="sans-serif" font-size="12">huber magnitude</text>
+<rect x="700" y="279" width="154.68776899097674" height="24" rx="4" fill="#a78bfa"/>
+<text x="859.6877689909768" y="296" fill="#f8fafc" font-family="sans-serif" font-size="12">0.595</text>
+<text x="555" y="354" fill="#cbd5e1" font-family="sans-serif" font-size="12">rf history</text>
+<rect x="700" y="337" width="154.19110099256906" height="24" rx="4" fill="#14b8a6"/>
+<text x="859.1911009925691" y="354" fill="#f8fafc" font-family="sans-serif" font-size="12">0.593</text>
+<text x="555" y="412" fill="#cbd5e1" font-family="sans-serif" font-size="12">rf protocol</text>
+<rect x="700" y="395" width="152.25545949835404" height="24" rx="4" fill="#22c55e"/>
+<text x="857.2554594983541" y="412" fill="#f8fafc" font-family="sans-serif" font-size="12">0.586</text>
+</svg>

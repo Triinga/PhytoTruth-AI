@@ -1,0 +1,17 @@
+{
+  "files": [
+    "SCIENTIFIC_REPORT.md",
+    "candidate_models.joblib",
+    "development_comparison.svg",
+    "development_metrics.csv",
+    "development_predictions.csv",
+    "feature_diagnostics.csv",
+    "manifest.json",
+    "natural_product_error_analysis.csv",
+    "protocol_ablation.csv",
+    "results.json"
+  ],
+  "development_source": "..\\experiments\\assay_protocol_enrichment\\enriched_assay_disagreement_events.csv",
+  "rows": 212,
+  "locked_rows_excluded": 319
+}

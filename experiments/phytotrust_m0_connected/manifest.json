@@ -1,0 +1,22 @@
+{
+  "model_version": "phytotrust-m0-connected-v1",
+  "source_dataset": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\phytotrust_connected_dataset\\development_measurements.csv",
+  "source_sha256": "37f732f0e591f3000a508510a235c3529850f9c7b0b03d034b44fbde45a00beb",
+  "files": {
+    "SCIENTIFIC_REPORT.md": "80e1df5284146ed91eea409e7bcc305b2f3777c61e0093958ae5c3b611e04805",
+    "bootstrap_differences.csv": "844dc9825af375744ce53813ace8bf5b831a371332fb81426fd6cdbf548e1843",
+    "command.txt": "e7fac2ef70847e4089963e8b4a725dc4e5c12de4fc1b8f513da72db4c4d34857",
+    "comparison.svg": "5709d78a811d578ed80494d77d134415a8981c3507b7379449eeae46ee8425b5",
+    "compound_study_aggregates.csv": "11701b319c9b511c176267037dd6d514748a3ac0dffe0030320ca1ec43346b3d",
+    "connected_variance_events.csv": "6c91f77fc1fe9628fe730cd3ff02426aef3aeb7e7aa5da30c416e1d05227dc42",
+    "dominant_study_sensitivity.csv": "4abf6b08d6ab1a46ee016105388ba5c5ade9bdaa5f6aab33b06e917cd8c29931",
+    "fold_parameters.csv": "9e1f2fd35084ca27691695d4d2faaf80c7034b98f195d7550b9e8f3c12ca04ba",
+    "metrics.csv": "be73f744454b4ef6995ece58e06ae36114d6221b79b9baaad6e0640425167a4e",
+    "model_config.json": "be4ae1d7f6ae82cd138455d1080bb00a4fc27c8d15c11665924967d27277641f",
+    "model_parameters.json": "7781fb5c95cdc80a6585a90f390d4b34c73745a453f783e47212031beff38615",
+    "parameter_bootstrap.csv": "4e709f4888c2d764afefde8c6593cb08d628e0dcb9f92d3fde29501a50610097",
+    "predictions.csv": "9c78072568df6163ede8aa7b04c27b7e4bcc4c8aac750c0be79512809acc66e4",
+    "results.json": "986aef74841868b6dda865182c915055e09572800eedff2c7d3feaa3c86fef2f"
+  },
+  "quarantined_artifacts_loaded": false
+}

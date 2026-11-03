@@ -1,0 +1,14 @@
+{
+  "model_version": "phytotrust-m0-connected-v1",
+  "configuration": {
+    "degrees_of_freedom": 4.0,
+    "quadrature_nodes": 15,
+    "target_effect_scale": 1.5,
+    "log_tau_pooling_scale": 0.75,
+    "minimum_scale": 0.001,
+    "optimizer_maxiter": 700
+  },
+  "equation": "Y_cs = median(Y_c,other allowed studies) + alpha + u_s + StudentT(df, 0, sigma)",
+  "study_effect": "u_s ~ Normal(0, tau^2); u_new integrated out for blind transfer",
+  "quarantine_contract": "Only development_measurements.csv may be loaded"
+}

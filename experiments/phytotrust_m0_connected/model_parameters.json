@@ -1,0 +1,19 @@
+{
+  "targets": [
+    "CHEMBL222"
+  ],
+  "target_effects": {
+    "CHEMBL222": 0.014915849167384108
+  },
+  "residual_scale": 0.3407648261813545,
+  "target_between_study_sd": {
+    "CHEMBL222": 0.3235272349672568
+  },
+  "degrees_of_freedom": 4.0,
+  "optimization": {
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 13,
+    "objective": 0.8031587575777963
+  }
+}

@@ -1,0 +1,1 @@
+python -m app.phytotrust_m0_connected --dataset ../experiments/phytotrust_connected_dataset/development_measurements.csv --output-dir ../experiments/phytotrust_m0_connected --bootstrap-iterations 1000 --parameter-bootstrap-iterations 200 --seed 2026

@@ -1,0 +1,1143 @@
+{
+  "generated_at": "2026-10-22T11:51:25.193150+00:00",
+  "model_version": "phytotrust-m0-connected-v1",
+  "seed": 2026,
+  "configuration": {
+    "degrees_of_freedom": 4.0,
+    "quadrature_nodes": 15,
+    "target_effect_scale": 1.5,
+    "log_tau_pooling_scale": 0.75,
+    "minimum_scale": 0.001,
+    "optimizer_maxiter": 700
+  },
+  "dataset": {
+    "source_path": "C:\\Users\\erand.kurtaliqi\\Desktop\\Ethon\\experiments\\phytotrust_connected_dataset\\development_measurements.csv",
+    "source_sha256": "37f732f0e591f3000a508510a235c3529850f9c7b0b03d034b44fbde45a00beb",
+    "raw_measurements": 966,
+    "compounds": 877,
+    "studies": 61,
+    "targets": [
+      "CHEMBL222"
+    ],
+    "contexts": [
+      "0ee2eccfc112354b355a"
+    ],
+    "year_range": [
+      2000,
+      2018
+    ],
+    "quarantined_files_opened": false,
+    "compound_study_edges": 907,
+    "connected_training_events": 59,
+    "repeated_compounds": 29,
+    "connected_studies": 18,
+    "verified_natural_product_compounds": 10,
+    "verified_natural_product_transfer_events": 6
+  },
+  "validation": {
+    "study_grouped": "leave-one-publication-out; retrospective, not time restricted",
+    "forward_temporal": "train publication year strictly earlier than test year",
+    "heldout_publication_assay_activity_excluded": true,
+    "same_compound_history_allowed_by_estimand": true,
+    "quarantined_artifacts_loaded": false,
+    "skipped_folds": [
+      {
+        "scheme": "forward_temporal",
+        "fold": 0,
+        "group": 2003,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 1,
+        "group": 2006,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 2,
+        "group": 2007,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 3,
+        "group": 2008,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 4,
+        "group": 2009,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 7,
+        "group": 2012,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 8,
+        "group": 2013,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 9,
+        "group": 2014,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      },
+      {
+        "scheme": "forward_temporal",
+        "fold": 13,
+        "group": 2018,
+        "reason": "no_eligible_transfer_events_or_connected_training_data"
+      }
+    ]
+  },
+  "metrics": {
+    "forward_temporal": {
+      "all": {
+        "global_mean": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.8650355309997295,
+          "rmse": 1.0183457453345761,
+          "nll": 1.526434293760573,
+          "coverage_80": 0.8,
+          "mean_width_80": 2.566272663436921,
+          "coverage_90": 1.0,
+          "mean_width_90": 3.5682740300184825
+        },
+        "median_potency": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5052989004563453,
+          "rmse": 0.6685000815480163,
+          "nll": 1.1673794616680493,
+          "coverage_80": 0.56,
+          "mean_width_80": 0.8788671215758304,
+          "coverage_90": 0.68,
+          "mean_width_90": 1.2220208594499633
+        },
+        "nonhierarchical_student_t": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5168454880556085,
+          "rmse": 0.6898999843407665,
+          "nll": 1.1003012977737416,
+          "coverage_80": 0.64,
+          "mean_width_80": 1.0270601750372583,
+          "coverage_90": 0.84,
+          "mean_width_90": 1.4280759024811909
+        },
+        "phytotrust_m0_connected": {
+          "n": 25,
+          "compounds": 24,
+          "studies": 8,
+          "mae": 0.5258294918476996,
+          "rmse": 0.701469157115047,
+          "nll": 1.1447682143585207,
+          "coverage_80": 0.68,
+          "mean_width_80": 1.1490966758953638,
+          "coverage_90": 0.84,
+          "mean_width_90": 1.4551757154645912
+        }
+      },
+      "natural_products": {
+        "global_mean": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 1.0462328812443689,
+          "rmse": 1.2160291321220162,
+          "nll": 1.7668926128824642,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 2.6219480941714908,
+          "coverage_90": 1.0,
+          "mean_width_90": 3.6456879371339475
+        },
+        "median_potency": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8542298395167561,
+          "rmse": 1.1764727560555186,
+          "nll": 2.2625697416640174,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.2082081273359158,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.6799530872359234
+        },
+        "nonhierarchical_student_t": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8798349525659868,
+          "rmse": 1.219752265820767,
+          "nll": 2.108720558117181,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.142028593432362,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.5879337490291767
+        },
+        "phytotrust_m0_connected": {
+          "n": 3,
+          "compounds": 3,
+          "studies": 3,
+          "mae": 0.8945923773988014,
+          "rmse": 1.2442822937922704,
+          "nll": 2.4681372365078564,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.1738596551783356,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.5535372132856156
+        }
+      },
+      "one_prior_study": {
+        "global_mean": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.8429591795728336,
+          "rmse": 0.9995841799126289,
+          "nll": 1.5025324708556582,
+          "coverage_80": 0.8333333333333334,
+          "mean_width_80": 2.5640428012748755,
+          "coverage_90": 1.0,
+          "mean_width_90": 3.565173517997016
+        },
+        "median_potency": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5032798011881275,
+          "rmse": 0.6728565302556749,
+          "nll": 1.1744824675572796,
+          "coverage_80": 0.5416666666666666,
+          "mean_width_80": 0.8596725892901654,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.1953318204989885
+        },
+        "nonhierarchical_student_t": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5155895765209623,
+          "rmse": 0.6952174279943109,
+          "nll": 1.1020834731023665,
+          "coverage_80": 0.625,
+          "mean_width_80": 1.0213579822189434,
+          "coverage_90": 0.8333333333333334,
+          "mean_width_90": 1.420147288021134
+        },
+        "phytotrust_m0_connected": {
+          "n": 24,
+          "compounds": 24,
+          "studies": 7,
+          "mae": 0.5250204689714443,
+          "rmse": 0.707229960671074,
+          "nll": 1.153041906922903,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.1489769205946139,
+          "coverage_90": 0.8333333333333334,
+          "mean_width_90": 1.4518763477538954
+        }
+      },
+      "multiple_prior_studies": {
+        "global_mean": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 1.3948679652452283,
+          "rmse": 1.3948679652452283,
+          "nll": 2.100078043478524,
+          "coverage_80": 0.0,
+          "mean_width_80": 2.619789355326006,
+          "coverage_90": 1.0,
+          "mean_width_90": 3.642686318533677
+        },
+        "median_potency": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.55375728289357,
+          "rmse": 0.55375728289357,
+          "nll": 0.9969073203265232,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.3395358964317907,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.862557794273357
+        },
+        "nonhierarchical_student_t": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5469873648871184,
+          "rmse": 0.5469873648871184,
+          "nll": 1.0575290898867487,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.1639128026768226,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.618362649522548
+        },
+        "phytotrust_m0_connected": {
+          "n": 1,
+          "compounds": 1,
+          "studies": 1,
+          "mae": 0.5452460408778279,
+          "rmse": 0.5452460408778279,
+          "nll": 0.9461995928133495,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.1519708031133664,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.5343605405212886
+        }
+      },
+      "single_bridge_study": {
+        "global_mean": {
+          "n": 5,
+          "compounds": 4,
+          "studies": 5,
+          "mae": 1.0746299201141558,
+          "rmse": 1.209857644523386,
+          "nll": 1.7933554443746977,
+          "coverage_80": 0.6,
+          "mean_width_80": 2.6107260771647662,
+          "coverage_90": 1.0,
+          "mean_width_90": 3.6300842826898814
+        },
+        "median_potency": {
+          "n": 5,
+          "compounds": 4,
+          "studies": 5,
+          "mae": 0.5729079559304889,
+          "rmse": 0.6515741236432282,
+          "nll": 1.3292111701699425,
+          "coverage_80": 0.6,
+          "mean_width_80": 1.2037155081718427,
+          "coverage_90": 0.6,
+          "mean_width_90": 1.6737063245601074
+        },
+        "nonhierarchical_student_t": {
+          "n": 5,
+          "compounds": 4,
+          "studies": 5,
+          "mae": 0.5763572235195016,
+          "rmse": 0.6616185334181749,
+          "nll": 1.2774854539930065,
+          "coverage_80": 0.6,
+          "mean_width_80": 1.115511627638948,
+          "coverage_90": 0.8,
+          "mean_width_90": 1.551063231821972
+        },
+        "phytotrust_m0_connected": {
+          "n": 5,
+          "compounds": 4,
+          "studies": 5,
+          "mae": 0.5740665985171983,
+          "rmse": 0.6613488242491902,
+          "nll": 1.2413135755055908,
+          "coverage_80": 0.6,
+          "mean_width_80": 1.1453624308378132,
+          "coverage_90": 0.8,
+          "mean_width_90": 1.4995894778587109
+        }
+      },
+      "multi_bridge_study": {
+        "global_mean": {
+          "n": 20,
+          "compounds": 20,
+          "studies": 3,
+          "mae": 0.8126369337211228,
+          "rmse": 0.9645445512252777,
+          "nll": 1.4597040061070423,
+          "coverage_80": 0.85,
+          "mean_width_80": 2.555159310004959,
+          "coverage_90": 1.0,
+          "mean_width_90": 3.552821466850633
+        },
+        "median_potency": {
+          "n": 20,
+          "compounds": 20,
+          "studies": 3,
+          "mae": 0.4883966365878095,
+          "rmse": 0.6726650274369631,
+          "nll": 1.1269215345425758,
+          "coverage_80": 0.55,
+          "mean_width_80": 0.7976550249268273,
+          "coverage_90": 0.7,
+          "mean_width_90": 1.1090994931724274
+        },
+        "nonhierarchical_student_t": {
+          "n": 20,
+          "compounds": 20,
+          "studies": 3,
+          "mae": 0.5019675541896352,
+          "rmse": 0.6967910121055906,
+          "nll": 1.0560052587189257,
+          "coverage_80": 0.65,
+          "mean_width_80": 1.004947311886836,
+          "coverage_90": 0.85,
+          "mean_width_90": 1.3973290701459953
+        },
+        "phytotrust_m0_connected": {
+          "n": 20,
+          "compounds": 20,
+          "studies": 3,
+          "mae": 0.5137702151803248,
+          "rmse": 0.7111456645059937,
+          "nll": 1.1206318740717531,
+          "coverage_80": 0.7,
+          "mean_width_80": 1.1500302371597515,
+          "coverage_90": 0.85,
+          "mean_width_90": 1.4440722748660613
+        }
+      }
+    },
+    "study_grouped": {
+      "all": {
+        "global_mean": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.9112958043907955,
+          "rmse": 1.0573339384039981,
+          "nll": 1.547945662049646,
+          "coverage_80": 0.7966101694915254,
+          "mean_width_80": 2.8830494281180075,
+          "coverage_90": 1.0,
+          "mean_width_90": 4.008736307791791
+        },
+        "median_potency": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.45178114258451957,
+          "rmse": 0.6228840743285761,
+          "nll": 1.0326730876439383,
+          "coverage_80": 0.7966101694915254,
+          "mean_width_80": 1.4249688026682845,
+          "coverage_90": 0.864406779661017,
+          "mean_width_90": 1.9813479855792244
+        },
+        "nonhierarchical_student_t": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.4525074086152972,
+          "rmse": 0.6261233236589862,
+          "nll": 0.9641758768989713,
+          "coverage_80": 0.7796610169491526,
+          "mean_width_80": 1.3333974570316793,
+          "coverage_90": 0.8813559322033898,
+          "mean_width_90": 1.8540226007187044
+        },
+        "phytotrust_m0_connected": {
+          "n": 59,
+          "compounds": 29,
+          "studies": 18,
+          "mae": 0.45251654727608454,
+          "rmse": 0.626698277507525,
+          "nll": 0.9732742769816245,
+          "coverage_80": 0.7796610169491526,
+          "mean_width_80": 1.3639380936514864,
+          "coverage_90": 0.8983050847457628,
+          "mean_width_90": 1.8054278834760475
+        }
+      },
+      "natural_products": {
+        "global_mean": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 1.417168650738221,
+          "rmse": 1.5348170182358656,
+          "nll": 2.124685148563956,
+          "coverage_80": 0.3333333333333333,
+          "mean_width_80": 2.8911020185467713,
+          "coverage_90": 1.0,
+          "mean_width_90": 4.019933032797173
+        },
+        "median_potency": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8542298395167561,
+          "rmse": 1.1764727560555188,
+          "nll": 2.1590092423078797,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.266295311942841,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.760720417715995
+        },
+        "nonhierarchical_student_t": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.8566136846377734,
+          "rmse": 1.1810666599580055,
+          "nll": 1.979082501759667,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.311186475478696,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.8231393396428206
+        },
+        "phytotrust_m0_connected": {
+          "n": 6,
+          "compounds": 3,
+          "studies": 6,
+          "mae": 0.855906984061115,
+          "rmse": 1.1788035778001082,
+          "nll": 2.1969939731839236,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3740391427265137,
+          "coverage_90": 0.6666666666666666,
+          "mean_width_90": 1.8122371366580208
+        }
+      },
+      "one_prior_study": {
+        "global_mean": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.9090685753489132,
+          "rmse": 1.059235352670824,
+          "nll": 1.5483712611992053,
+          "coverage_80": 0.7857142857142857,
+          "mean_width_80": 2.882921101140635,
+          "coverage_90": 1.0,
+          "mean_width_90": 4.0085578755358435
+        },
+        "median_potency": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.4494674665414852,
+          "rmse": 0.6267489374591335,
+          "nll": 1.0450846185994522,
+          "coverage_80": 0.7857142857142857,
+          "mean_width_80": 1.4279426809214502,
+          "coverage_90": 0.8571428571428571,
+          "mean_width_90": 1.9854830148340636
+        },
+        "nonhierarchical_student_t": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.45011628899927836,
+          "rmse": 0.6299823546175611,
+          "nll": 0.9659133595720706,
+          "coverage_80": 0.7857142857142857,
+          "mean_width_80": 1.33517210609663,
+          "coverage_90": 0.875,
+          "mean_width_90": 1.8564901616529261
+        },
+        "phytotrust_m0_connected": {
+          "n": 56,
+          "compounds": 28,
+          "studies": 17,
+          "mae": 0.44964680535060253,
+          "rmse": 0.6303511343751429,
+          "nll": 0.9766671777708877,
+          "coverage_80": 0.7857142857142857,
+          "mean_width_80": 1.3643529734541742,
+          "coverage_90": 0.8928571428571429,
+          "mean_width_90": 1.8061357874949715
+        }
+      },
+      "multiple_prior_studies": {
+        "global_mean": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.9528707465059307,
+          "rmse": 1.0211912274860362,
+          "nll": 1.5400011445912065,
+          "coverage_80": 1.0,
+          "mean_width_80": 2.885444865028988,
+          "coverage_90": 1.0,
+          "mean_width_90": 4.01206704323615
+        },
+        "median_potency": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.49496976205449555,
+          "rmse": 0.5457388628068965,
+          "nll": 0.8009911764743425,
+          "coverage_80": 1.0,
+          "mean_width_80": 1.3694564086091987,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.9041607728222196
+        },
+        "nonhierarchical_student_t": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.49714164144764944,
+          "rmse": 0.5491325310904784,
+          "nll": 0.9317428670011187,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3002706744859367,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.8079614632799073
+        },
+        "phytotrust_m0_connected": {
+          "n": 3,
+          "compounds": 1,
+          "studies": 3,
+          "mae": 0.506085063218416,
+          "rmse": 0.5541089498084225,
+          "nll": 0.9099401289153777,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3561936706679845,
+          "coverage_90": 1.0,
+          "mean_width_90": 1.7922136751227964
+        }
+      },
+      "single_bridge_study": {
+        "global_mean": {
+          "n": 9,
+          "compounds": 7,
+          "studies": 9,
+          "mae": 1.1827322801171491,
+          "rmse": 1.2994923333564805,
+          "nll": 1.8285599612442727,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 2.8818022019151845,
+          "coverage_90": 1.0,
+          "mean_width_90": 4.007002102018373
+        },
+        "median_potency": {
+          "n": 9,
+          "compounds": 7,
+          "studies": 9,
+          "mae": 0.4318440818856987,
+          "rmse": 0.5454752649716681,
+          "nll": 0.8769786219891246,
+          "coverage_80": 0.8888888888888888,
+          "mean_width_80": 1.3866110850889772,
+          "coverage_90": 0.8888888888888888,
+          "mean_width_90": 1.928013494104838
+        },
+        "nonhierarchical_student_t": {
+          "n": 9,
+          "compounds": 7,
+          "studies": 9,
+          "mae": 0.44425658648806987,
+          "rmse": 0.5614960585781696,
+          "nll": 0.9754107243367428,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3329165870342174,
+          "coverage_90": 0.8888888888888888,
+          "mean_width_90": 1.8533539749922916
+        },
+        "phytotrust_m0_connected": {
+          "n": 9,
+          "compounds": 7,
+          "studies": 9,
+          "mae": 0.4573484368256611,
+          "rmse": 0.5704619556135959,
+          "nll": 1.0129059608145528,
+          "coverage_80": 0.6666666666666666,
+          "mean_width_80": 1.3588805697434394,
+          "coverage_90": 0.8888888888888888,
+          "mean_width_90": 1.804359366595965
+        }
+      },
+      "multi_bridge_study": {
+        "global_mean": {
+          "n": 50,
+          "compounds": 27,
+          "studies": 9,
+          "mae": 0.8624372387600517,
+          "rmse": 1.0075834998716806,
+          "nll": 1.497435088194613,
+          "coverage_80": 0.82,
+          "mean_width_80": 2.8832739288345164,
+          "coverage_90": 1.0,
+          "mean_width_90": 4.009048464831007
+        },
+        "median_potency": {
+          "n": 50,
+          "compounds": 27,
+          "studies": 9,
+          "mae": 0.4553698135103074,
+          "rmse": 0.6358175878475627,
+          "nll": 1.060698091461805,
+          "coverage_80": 0.78,
+          "mean_width_80": 1.4318731918325605,
+          "coverage_90": 0.86,
+          "mean_width_90": 1.9909481940446137
+        },
+        "nonhierarchical_student_t": {
+          "n": 50,
+          "compounds": 27,
+          "studies": 9,
+          "mae": 0.45399255659819815,
+          "rmse": 0.6370603449464952,
+          "nll": 0.9621536043601726,
+          "coverage_80": 0.8,
+          "mean_width_80": 1.3334840136312227,
+          "coverage_90": 0.88,
+          "mean_width_90": 1.8541429533494587
+        },
+        "phytotrust_m0_connected": {
+          "n": 50,
+          "compounds": 27,
+          "studies": 9,
+          "mae": 0.4516468071571607,
+          "rmse": 0.6362931957140613,
+          "nll": 0.9661405738916973,
+          "coverage_80": 0.8,
+          "mean_width_80": 1.3648484479549352,
+          "coverage_90": 0.9,
+          "mean_width_90": 1.8056202165144628
+        }
+      }
+    }
+  },
+  "study_cluster_bootstrap_differences": {
+    "forward_temporal": {
+      "all": {
+        "global_mean": {
+          "point": {
+            "mae": -0.33920603915202985,
+            "rmse": -0.31687658821952924,
+            "nll": -0.38166607940205255
+          },
+          "ci95": {
+            "mae": [
+              -0.9131566931919404,
+              0.18113946165591732
+            ],
+            "rmse": [
+              -0.9045353126544213,
+              0.14484102066143778
+            ],
+            "nll": [
+              -1.3532716042141697,
+              0.8111490530211879
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        },
+        "median_potency": {
+          "point": {
+            "mae": 0.02053059139135438,
+            "rmse": 0.03296907556703055,
+            "nll": -0.02261124730952835
+          },
+          "ci95": {
+            "mae": [
+              -0.025265474992091114,
+              0.061919496310826494
+            ],
+            "rmse": [
+              -0.02442847273398458,
+              0.06787548891920592
+            ],
+            "nll": [
+              -0.19891151932232054,
+              0.11920423129696514
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        },
+        "nonhierarchical_student_t": {
+          "point": {
+            "mae": 0.008984003792091078,
+            "rmse": 0.011569172774280267,
+            "nll": 0.04446691658477908
+          },
+          "ci95": {
+            "mae": [
+              -0.0036274107026173785,
+              0.023231254895286668
+            ],
+            "rmse": [
+              -0.009187303792861017,
+              0.0248696560869965
+            ],
+            "nll": [
+              -0.04586559798705895,
+              0.110583193597193
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        }
+      },
+      "natural_products": {
+        "global_mean": {
+          "point": {
+            "mae": -0.1516405038455675,
+            "rmse": 0.028253161670254157,
+            "nll": 0.7012446236253924
+          },
+          "ci95": {
+            "mae": [
+              -1.4603211456709602,
+              1.9139370233299466
+            ],
+            "rmse": [
+              -1.4603211456709602,
+              1.9139370233299466
+            ],
+            "nll": [
+              -2.29055869002137,
+              5.8481838598820515
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        },
+        "median_potency": {
+          "point": {
+            "mae": 0.040362537882045246,
+            "rmse": 0.06780953773675158,
+            "nll": 0.20556749484383996
+          },
+          "ci95": {
+            "mae": [
+              -0.00851124201574116,
+              0.11883071213675489
+            ],
+            "rmse": [
+              -0.008511242015741188,
+              0.11883071213675511
+            ],
+            "nll": [
+              -0.09496792524764894,
+              0.7621376661505508
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        },
+        "nonhierarchical_student_t": {
+          "point": {
+            "mae": 0.014757424832814614,
+            "rmse": 0.024530027971503277,
+            "nll": 0.35941667839067604
+          },
+          "ci95": {
+            "mae": [
+              -0.0017413240092896132,
+              0.042969106564465065
+            ],
+            "rmse": [
+              -0.0017413240092896132,
+              0.042969106564465065
+            ],
+            "nll": [
+              -0.03797212261030236,
+              1.1056304565950468
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        }
+      }
+    },
+    "study_grouped": {
+      "all": {
+        "global_mean": {
+          "point": {
+            "mae": -0.4587792571147107,
+            "rmse": -0.4306356608964731,
+            "nll": -0.5746713850680216
+          },
+          "ci95": {
+            "mae": [
+              -0.7407536335440399,
+              -0.1950086095057485
+            ],
+            "rmse": [
+              -0.7736456289821293,
+              -0.16870932959323498
+            ],
+            "nll": [
+              -1.027467950197487,
+              -0.06697246229377507
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": true,
+            "rmse": true,
+            "nll": true
+          }
+        },
+        "median_potency": {
+          "point": {
+            "mae": 0.0007354046915650225,
+            "rmse": 0.0038142031789489828,
+            "nll": -0.059398810662314006
+          },
+          "ci95": {
+            "mae": [
+              -0.0060421857493144744,
+              0.00928349629439534
+            ],
+            "rmse": [
+              -0.006851251655402129,
+              0.01708865854612206
+            ],
+            "nll": [
+              -0.11521287361477824,
+              0.03558947719903971
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        },
+        "nonhierarchical_student_t": {
+          "point": {
+            "mae": 9.138660787277875e-06,
+            "rmse": 0.000574953848539006,
+            "nll": 0.009098400082652947
+          },
+          "ci95": {
+            "mae": [
+              -0.006218109452169329,
+              0.007195538016394453
+            ],
+            "rmse": [
+              -0.007241207522174747,
+              0.009518683568902946
+            ],
+            "nll": [
+              -0.012444731077872738,
+              0.0357053926190244
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        }
+      },
+      "natural_products": {
+        "global_mean": {
+          "point": {
+            "mae": -0.5612616666771061,
+            "rmse": -0.35601344043575756,
+            "nll": 0.07230882461996657
+          },
+          "ci95": {
+            "mae": [
+              -1.3866241568513498,
+              0.5386276815374058
+            ],
+            "rmse": [
+              -1.380263097476897,
+              0.4918109613934114
+            ],
+            "nll": [
+              -1.918164952754123,
+              2.727795757378811
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        },
+        "median_potency": {
+          "point": {
+            "mae": 0.001677144544358855,
+            "rmse": 0.0023308217445894286,
+            "nll": 0.03798473087604348
+          },
+          "ci95": {
+            "mae": [
+              -0.029223430167664932,
+              0.03322759011012488
+            ],
+            "rmse": [
+              -0.01458559527862762,
+              0.0202557289635239
+            ],
+            "nll": [
+              -0.06306374859655517,
+              0.11715992132763456
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": false
+          }
+        },
+        "nonhierarchical_student_t": {
+          "point": {
+            "mae": -0.0007067005766584478,
+            "rmse": -0.0022630821578975002,
+            "nll": 0.21791147142425626
+          },
+          "ci95": {
+            "mae": [
+              -0.017902264511900124,
+              0.016783443429253742
+            ],
+            "rmse": [
+              -0.01502207742624484,
+              0.011080120875961377
+            ],
+            "nll": [
+              0.01555869533867608,
+              0.43951261454407
+            ]
+          },
+          "ci_excludes_zero": {
+            "mae": false,
+            "rmse": false,
+            "nll": true
+          }
+        }
+      }
+    }
+  },
+  "parameter_uncertainty": {
+    "requested": 200,
+    "successful": 200,
+    "between_study_sd_point": 0.3235272349672568,
+    "between_study_sd_ci95_model_based": [
+      0.0743617719419368,
+      0.6004446663918986
+    ],
+    "residual_scale_ci95_model_based": [
+      0.2177969433123763,
+      0.45647025407445285
+    ],
+    "boundary_fraction_tau_below_0_01": 0.005,
+    "note": "Parametric bootstrap is conditional on the fitted M0 and does not correct graph-selection or publication bias."
+  },
+  "identifiability": {
+    "criterion": ">=20 repeated compounds, >=10 studies with >=2 shared-compound anchors, >=5 with >=3 anchors, fold tau range <=4-fold without boundary collapse, and model-based 95% interval above 0.01",
+    "repeated_compounds": 29,
+    "connected_edges": 59,
+    "connected_studies": 18,
+    "studies_with_at_least_2_shared_compounds": 9,
+    "studies_with_at_least_3_shared_compounds": 6,
+    "compounds_in_at_least_3_studies": 1,
+    "structural_gate_passed": false,
+    "final_between_study_sd": 0.3235272349672568,
+    "cross_fold_tau_range": [
+      0.23581117493312012,
+      0.41672749333637854
+    ],
+    "fold_stability_passed": true,
+    "model_based_uncertainty_away_from_boundary": true,
+    "between_study_variance_identifiable": false,
+    "conclusion": "Between-study variance is not reliably identifiable: the connected graph and/or fold/bootstrap stability criteria failed. The estimate is a regularized feasibility quantity, not a definitive variance component."
+  },
+  "dominant_study_sensitivity": {
+    "removed_study": "CHEMBL1156106",
+    "removed_transfer_events": 12,
+    "refit_between_study_sd": 0.2888691345480865,
+    "metrics_without_study": {
+      "global_mean": {
+        "n": 47,
+        "compounds": 29,
+        "studies": 17,
+        "mae": 0.9162899841873497,
+        "rmse": 1.0717848332956592,
+        "nll": 1.5599830514847557,
+        "coverage_80": 0.7872340425531915,
+        "mean_width_80": 2.882449371575306,
+        "coverage_90": 1.0,
+        "mean_width_90": 4.007901959124024
+      },
+      "median_potency": {
+        "n": 47,
+        "compounds": 29,
+        "studies": 17,
+        "mae": 0.48403943592400195,
+        "rmse": 0.6681719893980431,
+        "nll": 1.1269270501463866,
+        "coverage_80": 0.7446808510638298,
+        "mean_width_80": 1.3647126032804788,
+        "coverage_90": 0.8297872340425532,
+        "mean_width_90": 1.897564748323692
+      },
+      "nonhierarchical_student_t": {
+        "n": 47,
+        "compounds": 29,
+        "studies": 17,
+        "mae": 0.48495113157965886,
+        "rmse": 0.6727632000214441,
+        "nll": 1.0653910433991625,
+        "coverage_80": 0.7446808510638298,
+        "mean_width_80": 1.3388469804839367,
+        "coverage_90": 0.851063829787234,
+        "mean_width_90": 1.8615998910385103
+      },
+      "phytotrust_m0_connected": {
+        "n": 47,
+        "compounds": 29,
+        "studies": 17,
+        "mae": 0.48496260351554094,
+        "rmse": 0.6745821294182224,
+        "nll": 1.082604405900282,
+        "coverage_80": 0.7446808510638298,
+        "mean_width_80": 1.3761516135349712,
+        "coverage_90": 0.8723404255319149,
+        "mean_width_90": 1.8176985476189742
+      }
+    }
+  },
+  "final_parameters": {
+    "targets": [
+      "CHEMBL222"
+    ],
+    "target_effects": {
+      "CHEMBL222": 0.014915849167384108
+    },
+    "residual_scale": 0.3407648261813545,
+    "target_between_study_sd": {
+      "CHEMBL222": 0.3235272349672568
+    },
+    "degrees_of_freedom": 4.0,
+    "optimization": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 13,
+      "objective": 0.8031587575777963
+    }
+  },
+  "supported_as_foundation": false,
+  "scientific_verdict": "Development-only evidence does not establish M0 as a superior or statistically identified foundation. The connected graph permits a more relevant feasibility analysis, but sparse anchors and/or inconsistent held-out performance require more connected independent studies before M1 or a journal-level claim.",
+  "scientific_status": "development_only_connected_m0_feasibility"
+}

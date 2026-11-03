@@ -1,0 +1,3 @@
+measurements,graph_edges,compounds,studies,repeated_compounds,compounds_in_at_least_3_studies,multi_compound_studies,studies_with_at_least_3_compounds,study_pairs_sharing_compounds,study_pairs_sharing_at_least_2_compounds,bipartite_four_cycles,target_chembl_id,partition,connected_components,largest_component_compounds,largest_component_studies,verified_natural_product_compounds,verified_natural_product_measurements,structural_identifiability_gate
+966,907,877,61,29,1,54,52,13,4,78,CHEMBL222,development,49,88,5,10,13,True
+636,591,537,35,24,7,35,34,122,11,69,CHEMBL222,future_evaluation,4,500,32,21,60,True

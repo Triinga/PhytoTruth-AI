@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-10-22T11:29:24.781529+00:00",
+  "protocol_version": "phytotrust-connected-dataset-v1",
+  "protocol_sha256": "f53fea6b0d6d28ac251c58d5d430d403d4e65fbfd66e9061b1e47c3ef25cbbdf",
+  "target_metadata_sha256": "032eb60850e90e1abe41fcff516ba24f09dc8377f085d6d83feb3d1c5bf3ee59",
+  "candidate_targets": 10,
+  "retained_targets": [
+    "CHEMBL222"
+  ],
+  "raw_records": 12510,
+  "quality_eligible_before_context_selection": 11055,
+  "totals": {
+    "measurements": 1602,
+    "edges": 1498,
+    "compounds": 1414,
+    "studies": 96,
+    "components": 53,
+    "natural_product_compounds": 31,
+    "natural_product_measurements": 73,
+    "development_measurements": 966,
+    "future_evaluation_history_measurements": 575,
+    "quarantined_future_evaluation_labels": 61,
+    "natural_product_source_counts": {
+      "COCONUT": 27,
+      "NPASS": 13,
+      "both": 9
+    }
+  },
+  "partition_overlap": {
+    "compound_overlap": 0,
+    "publication_overlap": 0,
+    "assay_overlap": 0,
+    "activity_overlap": 0
+  },
+  "locked_ledger_counts": {
+    "molecules": 503,
+    "activities": 1937,
+    "assays": 1129,
+    "documents": 936
+  },
+  "locked_ledger_files": [
+    {
+      "path": "..\\experiments\\assay_protocol_enrichment\\enriched_assay_disagreement_events.csv",
+      "sha256": "4bbfae2c673f1d89725fb1040611728cbe1701aa4326d62bcbe49808dec84cb0",
+      "rows_examined": 319
+    },
+    {
+      "path": "..\\experiments\\independent_assay_validation\\independent_dataset.csv",
+      "sha256": "d0667350270f1190e90dcb50e10c2c2f7cc0fd32c3094e98726f7abf7dcc2228",
+      "rows_examined": 90
+    },
+    {
+      "path": "..\\experiments\\assay_disagreement_expansion\\final\\enriched_expansion_events.csv",
+      "sha256": "61bc9a3b888dcb40b73f221a0fb45c3b25f0deada8db5a04f12736be71d958b0",
+      "rows_examined": 94
+    }
+  ],
+  "exclusion_counts": {
+    "missing_or_invalid_document_year": 600,
+    "missing_structure": 7,
+    "overlap_with_previously_locked_evaluation": 91,
+    "potential_duplicate": 757
+  },
+  "identifiability": {
+    "targets_passing_development_structural_gate": [
+      "CHEMBL222"
+    ],
+    "targets_failing_development_structural_gate": [],
+    "all_retained_targets_pass": true,
+    "interpretation": "This graph gate is necessary but not sufficient for statistical identifiability; outcome-based variance estimation is intentionally outside this phase.",
+    "feasibility_verdict": "The dataset supports a limited single-target random-intercept feasibility study, not a multi-target or journal-level generalization claim. Only one frozen candidate passed selection; its development graph has 29 compounds repeated across studies, only one compound in at least three studies, and 49 disconnected components."
+  },
+  "future_evaluation_outcomes_used_for_selection": false
+}

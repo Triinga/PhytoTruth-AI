@@ -1,0 +1,24 @@
+{
+  "validated_at": "2026-10-22T11:29:30.131108+00:00",
+  "protocol_version": "phytotrust-connected-dataset-v1",
+  "status": "passed",
+  "checks": {
+    "unique_activity_ids": true,
+    "pchembl_recomputed_from_molar": true,
+    "development_pre_2020": true,
+    "future_labels_2020_or_later": true,
+    "future_index_outcomes_redacted": true,
+    "partition_nodes_disjoint": true,
+    "locked_ledger_disjoint": true,
+    "natural_product_provenance_complete": true,
+    "manifest_checksums": true
+  },
+  "counts": {
+    "development_measurements": 966,
+    "future_history_measurements": 575,
+    "quarantined_future_labels": 61,
+    "edges": 1498,
+    "nodes": 1510,
+    "components": 53
+  }
+}

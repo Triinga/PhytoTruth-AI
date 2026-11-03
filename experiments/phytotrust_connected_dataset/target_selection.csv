@@ -1,0 +1,11 @@
+target_chembl_id,selected_assay_context_key,eligible_for_target_selection,measurements,graph_edges,compounds,studies,repeated_compounds,compounds_in_at_least_3_studies,multi_compound_studies,studies_with_at_least_3_compounds,study_pairs_sharing_compounds,study_pairs_sharing_at_least_2_compounds,bipartite_four_cycles,retained
+CHEMBL222,0ee2eccfc112354b355a,True,1602,1498,1414,96,53,8,89,86,135,15,147,True
+CHEMBL233,5a49151eac9abbe75a6a,False,204,202,188,8,14,0,7,7,1,1,91,False
+CHEMBL218,5aedce9562e7cf86b5ff,False,94,94,82,10,10,1,7,7,7,2,29,False
+CHEMBL236,c9699d0df4f71b59d1b1,False,310,309,300,38,8,1,31,28,9,1,1,False
+CHEMBL214,edbb0736a74847207294,False,136,127,119,18,7,1,15,10,7,1,3,False
+CHEMBL217,4213ede3e41f12d1ac30,False,313,250,241,31,6,3,24,15,12,0,0,False
+CHEMBL219,bec697c6d1913fc6467f,False,109,108,99,22,2,2,11,8,28,3,3,False
+CHEMBL224,10dfae161faa0e635936,False,223,214,208,59,2,1,27,17,16,0,0,False
+CHEMBL225,f7243dca76bce5687a7d,False,129,129,126,29,2,1,16,11,4,0,0,False
+CHEMBL226,5d5e4f8bd7d7c25145ff,False,87,85,82,18,1,1,7,6,6,0,0,False

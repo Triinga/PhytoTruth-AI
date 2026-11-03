@@ -1,0 +1,1 @@
+python -m app.phytotrust_connected_dataset build --protocol ../experiments/phytotrust_connected_dataset_protocol.json --target-metadata ../data/phytotrust_connected/target_metadata.json --data-root ../data/phytotrust_connected --experiments-root ../experiments --output-dir ../experiments/phytotrust_connected_dataset

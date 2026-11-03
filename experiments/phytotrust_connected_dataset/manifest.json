@@ -1,0 +1,91 @@
+{
+  "protocol_version": "phytotrust-connected-dataset-v1",
+  "files": [
+    {
+      "name": "QUARANTINED_future_evaluation_labels.csv",
+      "bytes": 10276,
+      "sha256": "60a9219d4764fafa90611f24839ff4845406b5d62b1ce8da8161cbc559d372f1"
+    },
+    {
+      "name": "SCIENTIFIC_REPORT.md",
+      "bytes": 4742,
+      "sha256": "f9a2a0714bd5b043d3ca142f4613d0448d832a6b7f6876f7b69e7037efe32319"
+    },
+    {
+      "name": "candidate_context_statistics.csv",
+      "bytes": 5523,
+      "sha256": "f3ef534651f3f104368ffd57c9484377098d7175f61edcaa87c654795874faf1"
+    },
+    {
+      "name": "command.txt",
+      "bytes": 319,
+      "sha256": "2406cfad1f968b2a1a96754571e4a78fe4ba4c16417c65388c05cb9539190ba3"
+    },
+    {
+      "name": "compound_study_edges.csv",
+      "bytes": 218861,
+      "sha256": "0cb7a879c83846f3aa421f246a3abbcd3b1e89c46129d8e4def97c5cd384b603"
+    },
+    {
+      "name": "connected_components.csv",
+      "bytes": 4623,
+      "sha256": "9924df75c85d3ed0eddf7d9b1418c25cb5f80d5ce7ada6f32739f5bf7537e29b"
+    },
+    {
+      "name": "connectivity_overview.svg",
+      "bytes": 1431,
+      "sha256": "2f5069fbedc297d7715ffff2aceefc4bfa540ba967bb17572b8ef8e824db8962"
+    },
+    {
+      "name": "connectivity_statistics.csv",
+      "bytes": 613,
+      "sha256": "2000bcfe420ee8467cb5e5da3f4ac93259a4803fb714c09effa3c7a7641bfabd"
+    },
+    {
+      "name": "development_bipartite_graph.svg",
+      "bytes": 17010,
+      "sha256": "fe1593c6c23c37f9a3237930a0bfdee5dee32e33767e87e61d72b633d9e0054c"
+    },
+    {
+      "name": "development_measurements.csv",
+      "bytes": 937693,
+      "sha256": "37f732f0e591f3000a508510a235c3529850f9c7b0b03d034b44fbde45a00beb"
+    },
+    {
+      "name": "exclusions.csv",
+      "bytes": 207191,
+      "sha256": "c8d13a1a61555f778c1a5057d1813e96c5d961ea0348a21bafb02671288723c9"
+    },
+    {
+      "name": "future_evaluation_history.csv",
+      "bytes": 566336,
+      "sha256": "ef6f921c16a6f4c9ed6fe34d4ff9b2c33c91d51e678277934eb12458e74d079b"
+    },
+    {
+      "name": "future_evaluation_index.csv",
+      "bytes": 606850,
+      "sha256": "e532008f3c9dcbc5e3fc234123dc44f9d38d74a18dccc97ce83d465118d1e811"
+    },
+    {
+      "name": "graph_nodes.csv",
+      "bytes": 129245,
+      "sha256": "386a35eec19aa59afa61a082431877d9b09064ea9802d6aa3b4380c9d901cc6e"
+    },
+    {
+      "name": "results.json",
+      "bytes": 2884,
+      "sha256": "a0cd5c2d9c548d188076c15e3fe0318fa01e7acd605b6e7617088b19a5f46592"
+    },
+    {
+      "name": "target_selection.csv",
+      "bytes": 1077,
+      "sha256": "286fd9d6e9233dec3a9916fc8f9dcc7f7e5b6b5ccc81ebe508346d2b821186f6"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 718,
+      "sha256": "0ae7f0231d0d94c77a279576cfcca872b3759dfd4892d89ae74e58c0a16dc959"
+    }
+  ],
+  "locked_evaluation_outcomes_used_for_selection": false
+}

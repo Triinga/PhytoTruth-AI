@@ -1,0 +1,9 @@
+{
+  "activities": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.normalized.jsonl",
+  "activities_sha256": "442c53a321dea17c74533970a688efec5cddfd118b4c24ea4daa92e48d61288a",
+  "code_contract": "evaluation outcomes are not inputs to development selection",
+  "natural_products": "C:\\Users\\erand.kurtaliqi\\Documents\\Codex\\2026-10-20\\wo\\work\\chembl335_ic50.npass.jsonl",
+  "natural_products_sha256": "a1991e053a612c009ab3915d47f73e43eda30c1f3471878a826ab9254d0725c2",
+  "partition_sha256": "cb23ac7fa0c8c45a49acf2773f0ebfd3a3ab3916072a1bee4c6b76ce9173044e",
+  "results_sha256": "ee7e5ac5f7bdc692cc99118e23ef7a949d3c235c3c8d0faacb5e27fbe7f3e5f7"
+}

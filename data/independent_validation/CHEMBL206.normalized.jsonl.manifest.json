@@ -1,0 +1,13 @@
+{
+  "source": "ChEMBL",
+  "input": "..\\data\\CHEMBL206.raw.jsonl",
+  "output": "..\\data\\CHEMBL206.normalized.jsonl",
+  "accepted": 5935,
+  "rejected": 0,
+  "duplicate_activity_ids": 0,
+  "unique_assay_contexts": 7,
+  "censored_measurements": 0,
+  "reported_pchembl_inconsistencies": 0,
+  "missing_structures": 8,
+  "sha256": "08e8c0bbec193f253f629d356347e4abda5def8b65fd944b930f7bd379c416de"
+}

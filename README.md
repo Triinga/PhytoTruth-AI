@@ -4,6 +4,64 @@
 
 > Research prioritization only. The system does not make medical recommendations or claims of efficacy or safety.
 
+---
+
+## In one minute
+
+**The problem.** Natural-product drug discovery has hundreds of thousands of candidate compounds and a bioactivity literature that frequently disagrees with itself. The same compound against the same target can differ by more than tenfold between studies. Ranking candidates on that evidence without accounting for its reliability produces confident, wrong shortlists.
+
+**What we built.** An end-to-end pipeline that goes from public databases to a ranked, auditable candidate list — and a validation regime strict enough to tell you when the ranking should *not* be trusted.
+
+1. **Ingest** — streaming COCONUT + NPASS importers build a provenance-preserving index of **702,036 unique standardized structures** from **897,099 source records**, with RDKit standardization and full upstream traceability.
+2. **Model** — scaffold-held-out XGBoost on ChEMBL bioactivity (**MAE 0.432, R² 0.612** on 2,444 structures across 1,086 scaffolds), with calibrated residual intervals and an explicit applicability-domain flag.
+3. **Screen** — **100,000 NPASS compounds** streamed against PTP1B (type 2 diabetes, MONDO:0005148); 33,711 removed by physicochemical filters; **100 ranked candidates** exported with per-candidate uncertainty, structural alerts, source organism and provenance.
+4. **Audit** — a semantic knowledge graph where every edge carries an evidence source and identifier, plus five workspaces that keep *measured evidence* and *model prediction* visually and structurally separate.
+
+**What we found — including what didn't work.** We ran prespecified validation gates before looking at outcomes, and we report the results whether or not they favour our method:
+
+| Question | Result | Verdict |
+|---|---|---|
+| Does reliability-aware ranking beat median potency? | +0.0007 macro nDCG@10 across 8 held-out targets (exact *p*=0.89) | ❌ **No** — median potency stays deployed |
+| Can we predict which assays will disagree? | AUROC 0.642, PR-AUC gain CI crosses zero | ❌ **Not validated** |
+| Does it replicate on independent targets? | AUROC 0.390 on 94 locked events | ❌ **Negative** |
+| Are the uncertainty intervals molecule-specific? | Spearman −0.003 vs. absolute error | ❌ **No** — aggregate coverage only |
+| Does uncertainty-based abstention help? | Narrowest 60% → MAE 0.517 → 0.317, coverage → 100% | ✅ **Yes** |
+
+Four of our five headline hypotheses failed their own prespecified gates, and we kept the simpler baseline each time. That is the result. A pipeline that reports this honestly is more useful to a lab deciding where to spend bench time than one that reports an unvalidated win.
+
+**Every negative result above is reproducible from this repository** with a recorded command, input checksums and a generated report.
+
+## Quick start
+
+```powershell
+# Backend (Python 3.11 or 3.12)
+cd backend
+python -m venv .venv; .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+# Frontend (Node 20+), in a second terminal
+cd frontend; npm install; npm run dev
+```
+
+Open `http://localhost:5173`. Or run everything with `docker compose up --build` and open `http://localhost:4173`.
+
+To see the headline artifacts without running anything, read
+[`artifacts/npass_screen_100000/ranked_candidates.csv`](artifacts/npass_screen_100000/ranked_candidates.csv)
+and [`experiments/robust_multitarget_evaluation/report.md`](experiments/robust_multitarget_evaluation/report.md).
+
+## Team
+
+| Member | Focus |
+|---|---|
+| **Tringa Baftiu** | Research design, evidence methodology, scientific reporting |
+| **Erand Kurtaliqi** | Data pipeline, ML experiments, backend and screening infrastructure |
+| **Deliza Kadriu** | React research workspaces, prediction and visualization frontend |
+
+Submitted to **EthnoHack 2026, Track 02 — Natural Products for Drug Discovery**.
+
+---
+
 ## What is working
 
 - A FastAPI service exposes a real, traceable ChEMBL PTP1B demonstration slice retrieved on 2026-10-20, including activity, assay and document IDs.
@@ -388,6 +446,61 @@ The test suite also covers temporal splitting, activity/document leakage prevent
 
 See [architecture](docs/architecture.md) and [experiment protocol](docs/experiment.md) for assumptions, leakage controls and evaluation design.
 
+## Data sources, licences and attribution
+
+This repository does **not** redistribute any upstream dataset. All datasets are downloaded
+by the user from their official source, and each release used is recorded by version and
+SHA-256 checksum in the relevant experiment manifest.
+
+| Resource | Use here | Licence / terms | Attribution |
+|---|---|---|---|
+| **ChEMBL** (EMBL-EBI) | Bioactivity measurements, assay and document metadata, retrieved via the public REST API | CC BY-SA 3.0; web/API access additionally subject to EMBL-EBI Terms of Use | Cited per the current ChEMBL paper; derived data in this repo is released under the same ShareAlike terms |
+| **COCONUT 2.0** | Natural-product structure and provenance index | Curated dataset released under **CC0**; no attribution required, but given anyway. Infrastructure code MIT | [doi:10.1093/nar/gkae1063](https://doi.org/10.1093/nar/gkae1063) |
+| **NPASS** (BIDD group) | Natural-product structure index and membership verification | **No explicit licence statement is published** by NPASS; the database provides a "How to cite" instruction only. Used here for non-commercial academic research, cited as requested | [doi:10.1093/nar/gkac1069](https://doi.org/10.1093/nar/gkac1069) |
+| **RDKit** | Standardization, fingerprints, descriptors, scaffolds, depiction | BSD 3-Clause | — |
+| **scikit-learn, XGBoost, pandas, NumPy, SciPy** | Modelling and analysis | BSD 3-Clause / Apache 2.0 | — |
+| **FastAPI, Uvicorn, Pydantic** | Backend service | MIT / BSD | — |
+| **React, Vite, TypeScript, Tailwind CSS** | Frontend workspaces | MIT | — |
+| **MONDO Disease Ontology** | Disease identifiers (e.g. `MONDO:0005148`) | CC BY 4.0 | — |
+
+Because COCONUT aggregates many upstream collections, each of which carries its own licence,
+any downstream redistribution of a COCONUT-derived subset should be checked against the
+original source licences rather than relying on the CC0 status of the COCONUT curation alone.
+
+Source code in this repository is MIT licensed — see [LICENSE](LICENSE). The licence covers
+the code only, not the third-party data described above.
+
+## AI usage disclosure
+
+Per the EthnoHack 2026 rules, we disclose our use of AI tooling.
+
+**AI-assisted development was used substantially in this project.** Generative AI coding
+assistants (Anthropic Claude, via Claude Code) were used throughout the hackathon for:
+
+- Implementation of pipeline, backend, experiment-runner and frontend code from
+  specifications written by the team.
+- Drafting and refactoring the test suite.
+- Drafting documentation, including sections of this README and the generated reports'
+  prose scaffolding.
+- Code review, refactoring and debugging.
+
+**What AI was *not* used for, and what the team is responsible for:**
+
+- **No measurement, activity value, citation, identifier or experimental result was generated
+  by an AI model.** Every bioactivity record traces to a real ChEMBL activity, assay and
+  document ID retrieved from the live API, with checksummed snapshots.
+- **Experimental design, hypotheses, prespecified gates, thresholds and stopping rules were
+  set by the team** and frozen in version-controlled protocol JSON files before outcomes were
+  constructed.
+- **All numerical results in this README and in the generated reports are outputs of executed
+  code**, reproducible from the recorded commands and input checksums — not AI-authored text.
+- The team has reviewed the code and results and takes responsibility for their accuracy,
+  originality, licensing and appropriateness.
+
+Statistical results were computed by the committed analysis code; AI assistance in writing
+that code does not substitute for the validation evidence, which is recorded in the
+experiment artifacts.
+
 ## Integrity checklist
 
 - No generated assay values or fabricated citations.
@@ -404,7 +517,7 @@ See [architecture](docs/architecture.md) and [experiment protocol](docs/experime
 - The NPASS structure file verifies NPASS membership. NPASS organism and activity downloads are separate files and are not joined in this phase; their evidence must not be attributed to a compound until a future keyed join is implemented and tested.
 - Assay-context keys prevent accidental pooling but do not by themselves prove two assays are biologically equivalent.
 
-# Independent assay-disagreement dataset expansion
+## Independent assay-disagreement dataset expansion
 
 The `assay-disagreement-dataset-expansion-v1` phase adds a label-quarantined,
 strictly independent cohort from 15 prespecified human single-protein targets.

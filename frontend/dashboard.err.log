@@ -1,6 +1,0 @@
-3:39:55 PM [vite] http proxy error: /api/predict
-Error: connect ECONNREFUSED 127.0.0.1:8000
-    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1638:16)
-3:40:54 PM [vite] http proxy error: /api/predict
-Error: connect ECONNREFUSED 127.0.0.1:8000
-    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1638:16)

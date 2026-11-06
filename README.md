@@ -17,19 +17,23 @@
 3. **Screen** — **100,000 NPASS compounds** streamed against PTP1B (type 2 diabetes, MONDO:0005148); 33,711 removed by physicochemical filters; **100 ranked candidates** exported with per-candidate uncertainty, structural alerts, source organism and provenance.
 4. **Audit** — a semantic knowledge graph where every edge carries an evidence source and identifier, plus five workspaces that keep *measured evidence* and *model prediction* visually and structurally separate.
 
-**What we found — including what didn't work.** We ran prespecified validation gates before looking at outcomes, and we report the results whether or not they favour our method:
+**How we decided what to ship.** Every method below had its acceptance gate written down *before* outcomes were constructed. We then honoured those gates, in both directions:
 
-| Question | Result | Verdict |
+| What we tested | What the data showed | What we shipped |
 |---|---|---|
-| Does reliability-aware ranking beat median potency? | +0.0007 macro nDCG@10 across 8 held-out targets (exact *p*=0.89) | ❌ **No** — median potency stays deployed |
-| Can we predict which assays will disagree? | AUROC 0.642, PR-AUC gain CI crosses zero | ❌ **Not validated** |
-| Does it replicate on independent targets? | AUROC 0.390 on 94 locked events | ❌ **Negative** |
-| Are the uncertainty intervals molecule-specific? | Spearman −0.003 vs. absolute error | ❌ **No** — aggregate coverage only |
-| Does uncertainty-based abstention help? | Narrowest 60% → MAE 0.517 → 0.317, coverage → 100% | ✅ **Yes** |
+| Reliability-aware ranking vs. a plain median-potency baseline | +0.0007 macro nDCG@10 over 8 held-out targets (exact *p*=0.89) — no demonstrated gain | Kept median potency as the deployed ranker |
+| A model predicting which assays will disagree | AUROC 0.642; PR-AUC gain interval spans zero | Labelled unvalidated; not promoted to the product |
+| Replication of that model on 5 unseen targets | AUROC 0.390 on 94 locked events | Reported in full; no model selected |
+| Whether uncertainty intervals are molecule-specific | Spearman −0.003 against absolute error | Intervals documented as aggregate-coverage only |
+| Uncertainty-based abstention | Narrowest 60% of intervals: MAE 0.517 → 0.317, coverage → 100% | **Adopted** — it drives the Study Planner |
 
-Four of our five headline hypotheses failed their own prespecified gates, and we kept the simpler baseline each time. That is the result. A pipeline that reports this honestly is more useful to a lab deciding where to spend bench time than one that reports an unvalidated win.
+Four of the five did not clear their gate, so in each case we kept the simpler, better-behaved
+baseline instead of shipping an unvalidated improvement. The fifth did clear it, and is in the
+product. The discipline is the point: a shortlist a lab can act on is worth more than a
+headline number that does not survive a held-out target.
 
-**Every negative result above is reproducible from this repository** with a recorded command, input checksums and a generated report.
+**Every result above is reproducible from this repository** with a recorded command, input
+checksums and a generated report.
 
 ## Quick start
 

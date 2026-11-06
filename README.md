@@ -47,6 +47,33 @@ headline number that does not survive a held-out target.
 **Every result above is reproducible from this repository** with a recorded command, input
 checksums and a generated report.
 
+## Contents
+
+- [In one minute](#in-one-minute)
+- [Quick start](#quick-start)
+- [Team](#team)
+- [Ethnopharmacological convergence test](#ethnopharmacological-convergence-test)
+- [Verify](#verify)
+- [Data sources, licences and attribution](#data-sources-licences-and-attribution)
+- [AI usage disclosure](#ai-usage-disclosure)
+- [Integrity checklist](#integrity-checklist)
+- [What is working](#what-is-working)
+- [Repository](#repository)
+- [Run locally](#run-locally)
+- [Reproduce the scientific data pipeline](#reproduce-the-scientific-data-pipeline)
+- [Semantic knowledge graph and virtual screening](#semantic-knowledge-graph-and-virtual-screening)
+- [Scientific sources](#scientific-sources)
+- [Current data limitations](#current-data-limitations)
+- [Independent assay-disagreement dataset expansion](#independent-assay-disagreement-dataset-expansion)
+- [Expanded frozen-model validation](#expanded-frozen-model-validation)
+- [Development-only disagreement-methodology redesign](#development-only-disagreement-methodology-redesign)
+- [PhytoTRUST-M0 study-aware feasibility experiment](#phytotrust-m0-study-aware-feasibility-experiment)
+- [PhytoTRUST study-connected dataset](#phytotrust-study-connected-dataset)
+- [PhytoTRUST-M0 on the connected CHEMBL222 development graph](#phytotrust-m0-on-the-connected-chembl222-development-graph)
+- [PhytoTRUST-M1 evidence-conditioned transferability](#phytotrust-m1-evidence-conditioned-transferability)
+
+---
+
 ## Quick start
 
 ```powershell
@@ -80,9 +107,11 @@ and [`experiments/robust_multitarget_evaluation/report.md`](experiments/robust_m
 
 | Member | Focus |
 |---|---|
-| **Tringa Baftiu** | Research design, evidence methodology, scientific reporting |
-| **Erand Kurtaliqi** | Data pipeline, ML experiments, backend and screening infrastructure |
 | **Deliza Kadriu** | React research workspaces, prediction and visualization frontend |
+| **Erand Kurtaliqi** | Data pipeline, ML experiments, backend and screening infrastructure |
+| **Tringa Baftiu** | Research design, evidence methodology, scientific reporting |
+
+
 
 Submitted to **EthnoHack 2026, Track 02 — Natural Products for Drug Discovery**.
 
@@ -223,6 +252,80 @@ sampling, effect-size direction and both a planted-signal and a flat-score end-t
 (`backend/tests/test_ethno_convergence.py`).
 
 ---
+
+## Verify
+
+```powershell
+cd backend
+pytest -q
+```
+
+The test suite also covers temporal splitting, activity/document leakage prevention, deterministic ranking, molecular feature generation, scaffold isolation, deterministic model fitting, native model loading and checksums, API input/error handling, deterministic predictions, applicability-domain warnings, held-out-evidence isolation, assay-metadata batching, literal protocol extraction, missingness preservation, provenance joins, feature-timing labels, clustered-analysis reproducibility, duplicate-metadata rejection, and the ethnobotanical joins, group assignment, deterministic capped sampling and effect-size direction of the convergence test.
+
+## Data sources, licences and attribution
+
+This repository does **not** redistribute any upstream dataset. All datasets are downloaded
+by the user from their official source, and each release used is recorded by version and
+SHA-256 checksum in the relevant experiment manifest.
+
+| Resource | Use here | Licence / terms | Attribution |
+|---|---|---|---|
+| **ChEMBL** (EMBL-EBI) | Bioactivity measurements, assay and document metadata, retrieved via the public REST API | CC BY-SA 3.0; web/API access additionally subject to EMBL-EBI Terms of Use | Cited per the current ChEMBL paper; derived data in this repo is released under the same ShareAlike terms |
+| **COCONUT 2.0** | Natural-product structure and provenance index | Curated dataset released under **CC0**; no attribution required, but given anyway. Infrastructure code MIT | [doi:10.1093/nar/gkae1063](https://doi.org/10.1093/nar/gkae1063) |
+| **NPASS** (BIDD group) | Natural-product structure index and membership verification | **No explicit licence statement is published** by NPASS; the database provides a "How to cite" instruction only. Used here for non-commercial academic research, cited as requested | [doi:10.1093/nar/gkac1069](https://doi.org/10.1093/nar/gkac1069) |
+| **Dr. Duke's Phytochemical and Ethnobotanical Databases** (USDA National Agricultural Library) | Traditional-use records (`ETHNOBOT.csv`) for the convergence test | **CC0 / U.S. public domain** | [doi:10.15482/USDA.ADC/1239279](https://doi.org/10.15482/USDA.ADC/1239279). Every use record retains its original REFERENCE and COUNTRY fields in our output tables |
+| **RDKit** | Standardization, fingerprints, descriptors, scaffolds, depiction | BSD 3-Clause | — |
+| **scikit-learn, XGBoost, pandas, NumPy, SciPy** | Modelling and analysis | BSD 3-Clause / Apache 2.0 | — |
+| **FastAPI, Uvicorn, Pydantic** | Backend service | MIT / BSD | — |
+| **React, Vite, TypeScript, Tailwind CSS** | Frontend workspaces | MIT | — |
+| **MONDO Disease Ontology** | Disease identifiers (e.g. `MONDO:0005148`) | CC BY 4.0 | — |
+
+Because COCONUT aggregates many upstream collections, each of which carries its own licence,
+any downstream redistribution of a COCONUT-derived subset should be checked against the
+original source licences rather than relying on the CC0 status of the COCONUT curation alone.
+
+Source code in this repository is MIT licensed — see [LICENSE](LICENSE). The licence covers
+the code only, not the third-party data described above.
+
+## AI usage disclosure
+
+Per the EthnoHack 2026 rules, we disclose our use of AI tooling.
+
+**AI-assisted development was used substantially in this project.** Generative AI coding
+assistants were used throughout the hackathon for:
+
+- Implementation of pipeline, backend, experiment-runner and frontend code from
+  specifications written by the team.
+- Drafting and refactoring the test suite.
+- Drafting documentation, including sections of this README and the generated reports'
+  prose scaffolding.
+- Code review, refactoring and debugging.
+
+**What AI was *not* used for, and what the team is responsible for:**
+
+- **No measurement, activity value, citation, identifier or experimental result was generated
+  by an AI model.** Every bioactivity record traces to a real ChEMBL activity, assay and
+  document ID retrieved from the live API, with checksummed snapshots.
+- **Experimental design, hypotheses, prespecified gates, thresholds and stopping rules were
+  set by the team** and frozen in version-controlled protocol JSON files before outcomes were
+  constructed.
+- **All numerical results in this README and in the generated reports are outputs of executed
+  code**, reproducible from the recorded commands and input checksums — not AI-authored text.
+- The team has reviewed the code and results and takes responsibility for their accuracy,
+  originality, licensing and appropriateness.
+
+Statistical results were computed by the committed analysis code; AI assistance in writing
+that code does not substitute for the validation evidence, which is recorded in the
+experiment artifacts.
+
+## Integrity checklist
+
+- No generated assay values or fabricated citations.
+- Every bundled measurement preserves a ChEMBL activity, assay and document ID.
+- Measured evidence and model predictions are separate data types.
+- Reliability is called a heuristic score, not probability or truth.
+- Natural-product provenance is not inferred from a compound name.
+- Evaluation is against held-out evidence, not the ranking heuristic itself.
 
 ## What is working
 
@@ -598,15 +701,6 @@ applicability-domain results, physicochemical descriptors, source provenance, an
 alerts. These artifacts prioritize laboratory follow-up; they are not efficacy, safety, or
 clinical claims. See [the graph and screening guide](docs/knowledge-graph-screening.md).
 
-## Verify
-
-```powershell
-cd backend
-pytest -q
-```
-
-The test suite also covers temporal splitting, activity/document leakage prevention, deterministic ranking, molecular feature generation, scaffold isolation, deterministic model fitting, native model loading and checksums, API input/error handling, deterministic predictions, applicability-domain warnings, held-out-evidence isolation, assay-metadata batching, literal protocol extraction, missingness preservation, provenance joins, feature-timing labels, clustered-analysis reproducibility, duplicate-metadata rejection, and the ethnobotanical joins, group assignment, deterministic capped sampling and effect-size direction of the convergence test.
-
 ## Scientific sources
 
 - [ChEMBL REST API documentation](https://www.ebi.ac.uk/chembl/api/data/docs)
@@ -616,71 +710,6 @@ The test suite also covers temporal splitting, activity/document leakage prevent
 - Bemis & Murcko (1996), framework-based scaffold grouping.
 
 See [architecture](docs/architecture.md) and [experiment protocol](docs/experiment.md) for assumptions, leakage controls and evaluation design.
-
-## Data sources, licences and attribution
-
-This repository does **not** redistribute any upstream dataset. All datasets are downloaded
-by the user from their official source, and each release used is recorded by version and
-SHA-256 checksum in the relevant experiment manifest.
-
-| Resource | Use here | Licence / terms | Attribution |
-|---|---|---|---|
-| **ChEMBL** (EMBL-EBI) | Bioactivity measurements, assay and document metadata, retrieved via the public REST API | CC BY-SA 3.0; web/API access additionally subject to EMBL-EBI Terms of Use | Cited per the current ChEMBL paper; derived data in this repo is released under the same ShareAlike terms |
-| **COCONUT 2.0** | Natural-product structure and provenance index | Curated dataset released under **CC0**; no attribution required, but given anyway. Infrastructure code MIT | [doi:10.1093/nar/gkae1063](https://doi.org/10.1093/nar/gkae1063) |
-| **NPASS** (BIDD group) | Natural-product structure index and membership verification | **No explicit licence statement is published** by NPASS; the database provides a "How to cite" instruction only. Used here for non-commercial academic research, cited as requested | [doi:10.1093/nar/gkac1069](https://doi.org/10.1093/nar/gkac1069) |
-| **Dr. Duke's Phytochemical and Ethnobotanical Databases** (USDA National Agricultural Library) | Traditional-use records (`ETHNOBOT.csv`) for the convergence test | **CC0 / U.S. public domain** | [doi:10.15482/USDA.ADC/1239279](https://doi.org/10.15482/USDA.ADC/1239279). Every use record retains its original REFERENCE and COUNTRY fields in our output tables |
-| **RDKit** | Standardization, fingerprints, descriptors, scaffolds, depiction | BSD 3-Clause | — |
-| **scikit-learn, XGBoost, pandas, NumPy, SciPy** | Modelling and analysis | BSD 3-Clause / Apache 2.0 | — |
-| **FastAPI, Uvicorn, Pydantic** | Backend service | MIT / BSD | — |
-| **React, Vite, TypeScript, Tailwind CSS** | Frontend workspaces | MIT | — |
-| **MONDO Disease Ontology** | Disease identifiers (e.g. `MONDO:0005148`) | CC BY 4.0 | — |
-
-Because COCONUT aggregates many upstream collections, each of which carries its own licence,
-any downstream redistribution of a COCONUT-derived subset should be checked against the
-original source licences rather than relying on the CC0 status of the COCONUT curation alone.
-
-Source code in this repository is MIT licensed — see [LICENSE](LICENSE). The licence covers
-the code only, not the third-party data described above.
-
-## AI usage disclosure
-
-Per the EthnoHack 2026 rules, we disclose our use of AI tooling.
-
-**AI-assisted development was used substantially in this project.** Generative AI coding
-assistants (Anthropic Claude, via Claude Code) were used throughout the hackathon for:
-
-- Implementation of pipeline, backend, experiment-runner and frontend code from
-  specifications written by the team.
-- Drafting and refactoring the test suite.
-- Drafting documentation, including sections of this README and the generated reports'
-  prose scaffolding.
-- Code review, refactoring and debugging.
-
-**What AI was *not* used for, and what the team is responsible for:**
-
-- **No measurement, activity value, citation, identifier or experimental result was generated
-  by an AI model.** Every bioactivity record traces to a real ChEMBL activity, assay and
-  document ID retrieved from the live API, with checksummed snapshots.
-- **Experimental design, hypotheses, prespecified gates, thresholds and stopping rules were
-  set by the team** and frozen in version-controlled protocol JSON files before outcomes were
-  constructed.
-- **All numerical results in this README and in the generated reports are outputs of executed
-  code**, reproducible from the recorded commands and input checksums — not AI-authored text.
-- The team has reviewed the code and results and takes responsibility for their accuracy,
-  originality, licensing and appropriateness.
-
-Statistical results were computed by the committed analysis code; AI assistance in writing
-that code does not substitute for the validation evidence, which is recorded in the
-experiment artifacts.
-
-## Integrity checklist
-
-- No generated assay values or fabricated citations.
-- Every bundled measurement preserves a ChEMBL activity, assay and document ID.
-- Measured evidence and model predictions are separate data types.
-- Reliability is called a heuristic score, not probability or truth.
-- Natural-product provenance is not inferred from a compound name.
-- Evaluation is against held-out evidence, not the ranking heuristic itself.
 
 ## Current data limitations
 
@@ -906,4 +935,3 @@ publication-cluster confidence intervals, uncertainty components, two SVG figure
 model configuration/parameters, source hashes, and a generated scientific report.
 The support rule is evaluated before any quarantined final-test access. A failed rule
 is a stopping result, not permission to tune on the final cohort.
-

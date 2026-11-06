@@ -1,0 +1,64 @@
+{
+  "protocol_version": "ethno-convergence-v1",
+  "question": "Do plants with a documented traditional antidiabetic use yield natural products with higher model-predicted PTP1B activity than Duke-covered control plants without such a use?",
+  "cohort": {
+    "duke_use_records": 82873,
+    "npass_organisms": 48940,
+    "duke_covered_plants": 4388,
+    "eligible_plants": 3871,
+    "analysed_plants": 3870,
+    "families": 305,
+    "compounds_scored": 111485,
+    "compounds_unusable": 654
+  },
+  "primary_outcome": {
+    "case_plants": 121,
+    "control_plants": 3749,
+    "case_median_score": 4.87647819519043,
+    "control_median_score": 4.88556170463562,
+    "median_shift_hodges_lehmann": -0.0027179718017578125,
+    "mann_whitney_u": 224329.5,
+    "p_value": 0.8372717207223594,
+    "rank_biserial": -0.010956089667988556,
+    "insufficient_data": false,
+    "family_clustered_ci_95": [
+      -0.026657938957214355,
+      0.034744662046432465
+    ]
+  },
+  "negative_control": {
+    "case_plants": 54,
+    "control_plants": 3816,
+    "case_median_score": 4.886021256446838,
+    "control_median_score": 4.885039329528809,
+    "median_shift_hodges_lehmann": 0.013166069984436035,
+    "mann_whitney_u": 109092.0,
+    "p_value": 0.45735115727243514,
+    "rank_biserial": 0.058816678313533766,
+    "insufficient_data": false
+  },
+  "support_rule": {
+    "conditions": {
+      "p_below_alpha": false,
+      "ci_excludes_zero": false,
+      "negative_control_smaller": false
+    },
+    "convergence_supported": false,
+    "verdict": "NOT SUPPORTED"
+  },
+  "inputs_sha256": {
+    "species_info": "d7d4d429e64de1268ba9d5c69f7d72fe16674731b04362b239f801b63d17d275",
+    "species_pair": "0c80055682df5e648941833876c03956cbb4fa3254d1ac6d5dd1f2896bd480cb",
+    "structures": "5f2ca5c3fcd0386d65a31146122e4c8bf6dfcbea7a786ea01e6be764d69f65dc",
+    "duke": "ff325bc477c355799d12194e2d172c9e181ba44e59056c5ca97f41db595b7d19"
+  },
+  "declared_limitations": [
+    "Predicted activity is not measured activity. This tests convergence with a model, not experimental confirmation.",
+    "Duke coverage is biased toward well-studied and temperate/North American floras.",
+    "Traditional 'antidiabetic' use is recorded against a modern disease label applied retrospectively to heterogeneous historical sources.",
+    "NPASS compound-organism edges are reported provenance, not independently verified occurrence.",
+    "A single target (PTP1B) cannot represent antidiabetic activity in general.",
+    "Exact species-name matching misses synonyms and will undercount true overlap.",
+    "This analysis does not and cannot establish efficacy or safety of any plant or preparation."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "protocol_version": "ethno-convergence-v1",
+  "frozen_before_outcome_inspection": true,
+  "frozen_at": "2026-11-06",
+  "question": "Do plants with a documented traditional antidiabetic use yield natural products with higher model-predicted PTP1B activity than Duke-covered control plants without such a use?",
+  "motivation": "Ethnopharmacology assumes traditional use enriches for bioactivity. This assumption is rarely tested quantitatively at scale. The PhytoTruth PTP1B model never observes ethnobotanical data, so traditional-use status is an independent label.",
+
+  "prior_inspection_disclosure": {
+    "statement": "Full disclosure of what was examined before this protocol was frozen. A feasibility gate was run on 2026-11-06 to decide whether the data sources could be joined at all.",
+    "what_was_inspected": [
+      "Counts of Duke ETHNOBOT records, unique taxa, and antidiabetic taxa.",
+      "Overlap counts between NPASS species names and Duke taxa.",
+      "Resolution rate of the 101 existing PTP1B screening candidates to source plants.",
+      "A candidate-level overlap statistic: 5/71 Duke-covered candidate plants carried an antidiabetic use versus 115/3480 background (2.13x, Fisher one-sided p=0.0903)."
+    ],
+    "why_that_does_not_invalidate_this_protocol": "The primary outcome specified below is plant-level median predicted pChEMBL over NPASS compounds. No predicted activity value, no plant-level score, and no group comparison of model output was computed or inspected before freezing. The inspected candidate-overlap statistic is a different estimand on a different population (101 pre-ranked candidates, not the Duke-covered NPASS population) and is reported here as exploratory context only, never as a confirmatory result.",
+    "underpowered_prior_result_must_not_be_reported_as_a_finding": true
+  },
+
+  "data_sources": {
+    "npass_species_pair": {
+      "file": "NPASS3.0_naturalproducts_species_pair.txt",
+      "provides": "compound (np_id) to source organism (org_id) edges"
+    },
+    "npass_species_info": {
+      "file": "NPASS3.0_species_info.txt",
+      "provides": "organism taxonomy: species_name, genus_name, family_name"
+    },
+    "npass_structures": {
+      "file": "NPASS3.0_naturalproducts_structure.txt",
+      "provides": "canonical SMILES per np_id"
+    },
+    "duke_ethnobotany": {
+      "file": "Duke-Source-CSV.zip :: ETHNOBOT.csv",
+      "licence": "CC0 (USDA National Agricultural Library)",
+      "provides": "plant TAXON to traditional ACTIVITY records with references"
+    },
+    "model": "experiments/ml_activity_chembl335 (frozen; not refitted, retuned, or recalibrated by this phase)"
+  },
+
+  "population": {
+    "unit_of_analysis": "plant species",
+    "inclusion": "NPASS source organism whose normalized species_name matches a Duke ETHNOBOT TAXON exactly after normalization, and which has at least `min_compounds_per_plant` NPASS compounds with a parsable structure.",
+    "rationale_for_conditioning_on_duke_coverage": "Only plants Duke covers can be labelled. Including Duke-absent plants would confound traditional-use status with database coverage."
+  },
+
+  "group_assignment": {
+    "case": "At least one ETHNOBOT record whose ACTIVITY matches any of the diabetes terms below.",
+    "control": "Duke-covered, with zero matching records.",
+    "diabetes_activity_terms": ["diabet", "hypoglyc", "hyperglyc"],
+    "assignment_uses_no_model_output": true
+  },
+
+  "negative_control": {
+    "purpose": "Guard against the confound that well-studied plants have more compounds and more recorded uses of every kind.",
+    "design": "Repeat the identical comparison using a traditional-use category with no expected PTP1B relevance.",
+    "control_activity_terms": ["toothache", "dentifrice"],
+    "interpretation_rule": "If the negative-control comparison is as large as the diabetes comparison, the primary result is attributed to study bias, not to pharmacological convergence, and must be reported as such."
+  },
+
+  "scoring": {
+    "model_output": "predicted pChEMBL from the frozen PTP1B XGBoost artifact",
+    "max_compounds_per_plant": 50,
+    "min_compounds_per_plant": 3,
+    "sampling": "If a plant exceeds the cap, draw a uniform random sample without replacement using the fixed seed. Caps bound compute and prevent heavily sampled plants from dominating.",
+    "seed": 2026,
+    "invalid_structures": "Rejected and counted; never imputed."
+  },
+
+  "primary_outcome": {
+    "statistic": "per-plant median predicted pChEMBL",
+    "comparison": "traditional antidiabetic plants versus Duke-covered control plants",
+    "test": "two-sided Mann-Whitney U at the plant level",
+    "effect_size": "rank-biserial correlation and Hodges-Lehmann median shift",
+    "alpha": 0.05
+  },
+
+  "uncertainty": {
+    "clustering": "Plants within the same botanical family are not independent. Report a family-clustered bootstrap 95% CI for the median shift, resampling families with replacement.",
+    "bootstrap_iterations": 2000
+  },
+
+  "support_rule": {
+    "declare_convergence_supported_only_if": [
+      "primary Mann-Whitney p < 0.05",
+      "family-clustered bootstrap 95% CI for the median shift excludes 0",
+      "the negative-control median shift is smaller than the primary median shift"
+    ],
+    "if_any_condition_fails": "Report as NOT SUPPORTED. Do not reframe a secondary analysis as the primary outcome. Do not drop the negative control."
+  },
+
+  "sensitivity_analyses": [
+    "Restrict to compounds inside the model applicability domain.",
+    "Use per-plant mean and per-plant 90th percentile instead of the median.",
+    "Exclude plants contributing more than one genus-level duplicate.",
+    "Vary max_compounds_per_plant to 20 and 100."
+  ],
+
+  "declared_limitations": [
+    "Predicted activity is not measured activity. This tests convergence with a model, not experimental confirmation.",
+    "Duke coverage is biased toward well-studied and temperate/North American floras.",
+    "Traditional 'antidiabetic' use is recorded against a modern disease label applied retrospectively to heterogeneous historical sources.",
+    "NPASS compound-organism edges are reported provenance, not independently verified occurrence.",
+    "A single target (PTP1B) cannot represent antidiabetic activity in general.",
+    "Exact species-name matching misses synonyms and will undercount true overlap.",
+    "This analysis does not and cannot establish efficacy or safety of any plant or preparation."
+  ],
+
+  "traditional_knowledge_handling": {
+    "attribution": "Every traditional-use claim retains its Duke REFERENCE and COUNTRY fields in the output tables.",
+    "framing": "Convergence evidence only. The analysis must never state that traditional knowledge is validated or invalidated by a model prediction.",
+    "nagoya_note": "No genetic resources are accessed. Only published literature records are used."
+  }
+}

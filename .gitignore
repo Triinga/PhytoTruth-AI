@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+.vite/
+*.tsbuildinfo
+
+# --- Logs & runtime output ---
+*.log
+*.err.log
+*.out.log
+*.part
+
+# --- Large / immutable source downloads (see README: not redistributed) ---
+data/raw/
+data/processed/
+*.sqlite
+*.sqlite-journal
+
+# --- Trained model artifacts ---
+models/*
+!models/.gitkeep
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

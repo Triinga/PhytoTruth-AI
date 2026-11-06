@@ -4,6 +4,339 @@
 
 > Research prioritization only. The system does not make medical recommendations or claims of efficacy or safety.
 
+---
+
+## In one minute
+
+**The problem.** Natural-product drug discovery has hundreds of thousands of candidate compounds and a bioactivity literature that frequently disagrees with itself. The same compound against the same target can differ by more than tenfold between studies. Ranking candidates on that evidence without accounting for its reliability produces confident, wrong shortlists.
+
+**What we built.** An end-to-end pipeline that goes from public databases to a ranked, auditable candidate list — and a validation regime strict enough to tell you when the ranking should *not* be trusted.
+
+1. **Ingest** — streaming COCONUT + NPASS importers build a provenance-preserving index of **702,036 unique standardized structures** from **897,099 source records**, with RDKit standardization and full upstream traceability.
+2. **Model** — scaffold-held-out XGBoost on ChEMBL bioactivity (**MAE 0.432, R² 0.612** on 2,444 structures across 1,086 scaffolds), with calibrated residual intervals and an explicit applicability-domain flag.
+3. **Screen** — **100,000 NPASS compounds** streamed against PTP1B (type 2 diabetes, MONDO:0005148); 33,711 removed by physicochemical filters; **100 ranked candidates** exported with per-candidate uncertainty, structural alerts, source organism and provenance.
+4. **Audit** — a semantic knowledge graph where every edge carries an evidence source and identifier, plus five workspaces that keep *measured evidence* and *model prediction* visually and structurally separate.
+
+**What we then asked of the field itself.** Ethnopharmacology rests on an assumption that is
+cited far more often than it is measured: that traditional medicinal use enriches for
+bioactivity. Because our PTP1B model never sees ethnobotanical data, traditional-use status is
+an independent label — so we could test that assumption directly. Across **3,870 plant species
+in 305 botanical families and 111,485 natural products**, plants with a documented traditional
+antidiabetic use scored **no higher** than matched control plants (median shift −0.003,
+*p* = 0.84, family-clustered 95% CI **−0.027 to +0.035**). The protocol was frozen in a
+timestamped commit 16 minutes before the first number existed. The interval is tight, so this
+is a bound on the effect rather than a shortage of data — but it is a bound *within our model's
+reach*, and 70.6% of this chemistry lies outside its applicability domain. Both halves of that
+sentence matter; see [Ethnopharmacological convergence test](#ethnopharmacological-convergence-test).
+
+**How we decided what to ship.** Every method below had its acceptance gate written down *before* outcomes were constructed. We then honoured those gates, in both directions:
+
+| What we tested | What the data showed | What we shipped |
+|---|---|---|
+| Reliability-aware ranking vs. a plain median-potency baseline | +0.0007 macro nDCG@10 over 8 held-out targets (exact *p*=0.89) — no demonstrated gain | Kept median potency as the deployed ranker |
+| A model predicting which assays will disagree | AUROC 0.642; PR-AUC gain interval spans zero | Labelled unvalidated; not promoted to the product |
+| Replication of that model on 5 unseen targets | AUROC 0.390 on 94 locked events | Reported in full; no model selected |
+| Whether uncertainty intervals are molecule-specific | Spearman −0.003 against absolute error | Intervals documented as aggregate-coverage only |
+| Uncertainty-based abstention | Narrowest 60% of intervals: MAE 0.517 → 0.317, coverage → 100% | **Adopted** — it drives the Study Planner |
+
+Four of the five did not clear their gate, so in each case we kept the simpler, better-behaved
+baseline instead of shipping an unvalidated improvement. The fifth did clear it, and is in the
+product. The discipline is the point: a shortlist a lab can act on is worth more than a
+headline number that does not survive a held-out target.
+
+**Every result above is reproducible from this repository** with a recorded command, input
+checksums and a generated report.
+
+## Contents
+
+- [In one minute](#in-one-minute)
+- [Quick start](#quick-start)
+- [Team](#team)
+- [Ethnopharmacological convergence test](#ethnopharmacological-convergence-test)
+- [Verify](#verify)
+- [Data sources, licences and attribution](#data-sources-licences-and-attribution)
+- [AI usage disclosure](#ai-usage-disclosure)
+- [Integrity checklist](#integrity-checklist)
+- [What is working](#what-is-working)
+- [Repository](#repository)
+- [Run locally](#run-locally)
+- [Reproduce the scientific data pipeline](#reproduce-the-scientific-data-pipeline)
+- [Semantic knowledge graph and virtual screening](#semantic-knowledge-graph-and-virtual-screening)
+- [Scientific sources](#scientific-sources)
+- [Current data limitations](#current-data-limitations)
+- [Independent assay-disagreement dataset expansion](#independent-assay-disagreement-dataset-expansion)
+- [Expanded frozen-model validation](#expanded-frozen-model-validation)
+- [Development-only disagreement-methodology redesign](#development-only-disagreement-methodology-redesign)
+- [PhytoTRUST-M0 study-aware feasibility experiment](#phytotrust-m0-study-aware-feasibility-experiment)
+- [PhytoTRUST study-connected dataset](#phytotrust-study-connected-dataset)
+- [PhytoTRUST-M0 on the connected CHEMBL222 development graph](#phytotrust-m0-on-the-connected-chembl222-development-graph)
+- [PhytoTRUST-M1 evidence-conditioned transferability](#phytotrust-m1-evidence-conditioned-transferability)
+
+---
+
+## Quick start
+
+```powershell
+# Backend — Python 3.11 or 3.12 REQUIRED (see note below)
+cd backend
+py -3.12 -m venv .venv; .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+# Frontend (Node 20+), in a second terminal
+cd frontend; npm ci; npm run dev
+```
+
+Open `http://localhost:5173`. Or run everything with `docker compose up --build`
+from the repository root and open `http://localhost:4173`.
+
+> **Python 3.11 or 3.12 is a hard requirement, not a preference.** The pinned
+> `pydantic==2.10.4` publishes no wheel for Python 3.13+, so `pip install` on a newer
+> interpreter falls back to a Rust source build and fails. The pins are kept exactly as
+> executed, because the checksummed experiment runs recorded in `experiments/` were
+> produced with them. Use `py -3.12 -m venv .venv` to select the right interpreter
+> explicitly rather than relying on whichever `python` is first on PATH.
+
+To see the headline artifacts without running anything, read
+[`artifacts/npass_screen_100000/ranked_candidates.csv`](artifacts/npass_screen_100000/ranked_candidates.csv)
+and [`experiments/robust_multitarget_evaluation/report.md`](experiments/robust_multitarget_evaluation/report.md).
+
+## Team
+
+**University of Prishtina "Hasan Prishtina"**, Prishtina, Kosovo
+
+| Member | Focus |
+|---|---|
+| **Deliza Kadriu** | React research workspaces, prediction and visualization frontend |
+| **Erand Kurtaliqi** | Data pipeline, ML experiments, backend and screening infrastructure |
+| **Tringa Baftiu** | Research design, evidence methodology, scientific reporting |
+
+
+
+Submitted to **EthnoHack 2026, Track 02 — Natural Products for Drug Discovery**.
+
+---
+
+## Ethnopharmacological convergence test
+
+> **Question.** Do plants with a documented traditional antidiabetic use yield natural products
+> with higher model-predicted PTP1B activity than control plants without such a use?
+>
+> **Answer.** No — not at any effect size this design could resolve.
+
+Protocol: [`experiments/ethno_convergence_protocol.json`](experiments/ethno_convergence_protocol.json)
+(`ethno-convergence-v1`) · Report: [`experiments/ethno_convergence/SCIENTIFIC_REPORT.md`](experiments/ethno_convergence/SCIENTIFIC_REPORT.md)
+
+### Why this is a real test and not a retrofit
+
+The hypothesis, the grouping terms, the per-plant statistic, the compound cap, the random seed,
+the bootstrap design, the negative control and a **three-part support rule** were all committed
+before any score was computed. The repository proves the order:
+
+| When (UTC+0) | Commit | What entered the repository |
+|---|---|---|
+| 2026-11-06 **11:22:01** | [`482bf0d`](https://github.com/Triinga/PhytoTruth-AI/commit/482bf0ded20eeb1d2bdc8841d9bbcae3db43b9b4) | The protocol — hypothesis, terms, statistic, cap, seed, bootstrap, negative control, support rule |
+| 2026-11-06 **11:25:17** | [`97cb951`](https://github.com/Triinga/PhytoTruth-AI/commit/97cb951229ca28ed495228ee7261665d188ff704) | The implementation and the NPASS organism join |
+| 2026-11-06 **13:32:39** | [`ed63264`](https://github.com/Triinga/PhytoTruth-AI/commit/ed63264beefc5909622fb5fdd48e81e438476ef3) | `results.json` — the first outcome to exist anywhere |
+
+**The protocol commit is public and immutable.** Open
+[`482bf0d`](https://github.com/Triinga/PhytoTruth-AI/commit/482bf0ded20eeb1d2bdc8841d9bbcae3db43b9b4)
+and read the support rule, the α, the seed and the negative-control terms as they stood **two
+hours and ten minutes before** any number existed. GitHub shows the authored date; no local
+clone, archive or file timestamp is needed to check it. Offline, the same ordering is in
+`git log --format='%ad %h %s' --date=iso -- experiments/`.
+
+The analysis itself ran at 11:38:55, between the second and third commits — recoverable from
+the artifact mtimes in a clone, but the publicly verifiable claim is the commit ordering above,
+which is the one we rest the argument on.
+
+The protocol also carries a
+`prior_inspection_disclosure` block recording exactly what was examined during a feasibility
+gate beforehand — including an underpowered 2.13× candidate-level overlap (Fisher one-sided
+*p* = 0.090) that the protocol explicitly forbids reporting as a finding, because it is a
+different estimand on a different population.
+
+### Design
+
+| Element | Choice |
+|---|---|
+| Unit of analysis | Plant species |
+| Case | ≥1 Duke ETHNOBOT record whose ACTIVITY matches `diabet`, `hypoglyc`, `hyperglyc` |
+| Control | Duke-covered plant with zero matching records |
+| Population | NPASS source organisms matching a Duke TAXON, with ≥3 parsable structures |
+| Statistic | Per-plant median predicted pChEMBL, capped at 50 compounds (seed 2026) |
+| Test | Two-sided Mann-Whitney U, α = 0.05 |
+| Uncertainty | Family-clustered bootstrap, 2,000 iterations |
+| Negative control | Identical comparison on `toothache` / `dentifrice` uses |
+
+Conditioning on Duke coverage is what makes the comparison interpretable: only plants Duke
+covers *can* be labelled, so including Duke-absent plants would confound traditional-use status
+with database coverage. The negative control guards the other obvious confound — that
+well-studied plants accumulate more compounds and more recorded uses of every kind.
+
+### Result
+
+| Quantity | Primary (antidiabetic) | Negative control (toothache) |
+|---|---:|---:|
+| Case plants | 121 | 54 |
+| Control plants | 3,749 | 3,816 |
+| Case median predicted pChEMBL | 4.876 | 4.886 |
+| Control median predicted pChEMBL | 4.886 | 4.885 |
+| Median shift (Hodges–Lehmann) | **−0.003** | +0.013 |
+| Family-clustered 95% CI | **−0.027 to +0.035** | — |
+| Mann-Whitney *p* | 0.837 | 0.457 |
+| Rank-biserial correlation | −0.011 | +0.059 |
+
+Cohort: 82,873 Duke use records × 48,940 NPASS organisms → 4,388 plants covered by both →
+**3,870 analysed** across **305 families**, **111,485 compounds scored**, 654 rejected for
+absent or unparsable structure and never imputed.
+
+| Prespecified condition | Met |
+|---|:--:|
+| *p* < 0.05 | no |
+| Family-clustered 95% CI excludes 0 | no |
+| Negative-control shift smaller than primary | no |
+
+All three were required. **Verdict: NOT SUPPORTED.** The negative control moved *further* from
+zero than the hypothesis under test, which is itself the cleanest reading available: whatever
+small differences exist here track how well a plant has been studied, not what it was used for.
+
+### The caveat we will not bury
+
+**70.6% of the 111,485 compounds (78,730) fall outside the model's applicability domain**, and
+the per-plant score distribution is narrow (SD 0.332; 5th–95th percentile 4.58–5.61). A model
+asked to score chemistry it was not trained on regresses toward its mean, and a flattened score
+cannot express a difference even where one exists. So the honest statement is bounded:
+*traditional antidiabetic use does not predict PTP1B activity **as this model estimates it***.
+It is not evidence that traditional knowledge lacks pharmacological content.
+
+The prespecified in-domain sensitivity analysis
+([`sensitivity_in_domain.py`](experiments/ethno_convergence/sensitivity_in_domain.py) →
+[`sensitivity_in_domain.json`](experiments/ethno_convergence/sensitivity_in_domain.json))
+restricts to in-domain compounds only — 2,694 plants, 98 case vs 2,596 control. The shift turns
+positive (+0.015) but stays well inside noise (*p* = 0.46, CI −0.029 to +0.071), and the
+negative control rises to +0.038, still larger. Narrowing to the chemistry the model actually
+covers does not rescue the hypothesis; it reproduces the null with a smaller cohort.
+
+### What this contributes
+
+1. **A quantitative bound on a foundational assumption of the field.** The tight CI means the
+   claim is "any single-target convergence effect here is smaller than ±0.03 log units", not
+   "we could not tell". Nulls of this kind are what the ethnopharmacology literature is short
+   of, precisely because they are unrewarding to publish.
+2. **A reusable protocol.** The Duke↔NPASS species join, the per-plant scoring rule and the
+   negative-control design transfer to any target model and any traditional-use category.
+3. **A closed self-declared limitation.** The NPASS compound→source-organism join that this
+   README previously listed as not implemented now exists, is tested, and resolved 48,940
+   organisms.
+4. **A boundary on our own model, measured rather than asserted.** The 70.6% out-of-domain
+   figure is a property of applying a ChEMBL-trained model to natural-product chemical space,
+   and it quantifies how much of that space is currently unreachable.
+
+Honest scope: this tests convergence **with a model prediction**, not experimental confirmation.
+Duke coverage skews toward well-studied temperate and North American floras; "antidiabetic" is a
+modern label applied retrospectively to heterogeneous historical sources; exact species-name
+matching misses synonyms and undercounts true overlap; and PTP1B alone cannot represent
+antidiabetic activity. Every traditional-use claim keeps its Duke REFERENCE and COUNTRY fields
+in the output tables. No genetic resources were accessed — only published literature records.
+**Nothing here establishes the efficacy or safety of any plant or preparation.**
+
+### Reproduce it
+
+Stage the four inputs under `data/raw/ethno/` (NPASS 3.0 `species_info`, `species_pair` and
+`structure` files; Duke `Duke-Source-CSV.zip`), then from the repository root:
+
+```powershell
+backend\.venv\Scripts\python.exe -m app.ethno_convergence `
+  --species-info ..\data\raw\ethno\species_info.txt `
+  --species-pair ..\data\raw\ethno\species_pair.txt `
+  --structures   ..\data\raw\ethno\npass_structures.txt `
+  --duke         ..\data\raw\ethno\duke.zip `
+  --protocol     ..\experiments\ethno_convergence_protocol.json `
+  --output-dir   ..\experiments\ethno_convergence
+```
+
+Input SHA-256 checksums are recorded in `results.json`, so a divergent download is detectable
+rather than silent. 13 unit tests cover the joins, the group assignment, deterministic capped
+sampling, effect-size direction and both a planted-signal and a flat-score end-to-end run
+(`backend/tests/test_ethno_convergence.py`).
+
+---
+
+## Verify
+
+```powershell
+cd backend
+pytest -q
+```
+
+The test suite also covers temporal splitting, activity/document leakage prevention, deterministic ranking, molecular feature generation, scaffold isolation, deterministic model fitting, native model loading and checksums, API input/error handling, deterministic predictions, applicability-domain warnings, held-out-evidence isolation, assay-metadata batching, literal protocol extraction, missingness preservation, provenance joins, feature-timing labels, clustered-analysis reproducibility, duplicate-metadata rejection, and the ethnobotanical joins, group assignment, deterministic capped sampling and effect-size direction of the convergence test.
+
+## Data sources, licences and attribution
+
+This repository does **not** redistribute any upstream dataset. All datasets are downloaded
+by the user from their official source, and each release used is recorded by version and
+SHA-256 checksum in the relevant experiment manifest.
+
+| Resource | Use here | Licence / terms | Attribution |
+|---|---|---|---|
+| **ChEMBL** (EMBL-EBI) | Bioactivity measurements, assay and document metadata, retrieved via the public REST API | CC BY-SA 3.0; web/API access additionally subject to EMBL-EBI Terms of Use | Cited per the current ChEMBL paper; derived data in this repo is released under the same ShareAlike terms |
+| **COCONUT 2.0** | Natural-product structure and provenance index | Curated dataset released under **CC0**; no attribution required, but given anyway. Infrastructure code MIT | [doi:10.1093/nar/gkae1063](https://doi.org/10.1093/nar/gkae1063) |
+| **NPASS** (BIDD group) | Natural-product structure index and membership verification | **No explicit licence statement is published** by NPASS; the database provides a "How to cite" instruction only. Used here for non-commercial academic research, cited as requested | [doi:10.1093/nar/gkac1069](https://doi.org/10.1093/nar/gkac1069) |
+| **Dr. Duke's Phytochemical and Ethnobotanical Databases** (USDA National Agricultural Library) | Traditional-use records (`ETHNOBOT.csv`) for the convergence test | **CC0 / U.S. public domain** | [doi:10.15482/USDA.ADC/1239279](https://doi.org/10.15482/USDA.ADC/1239279). Every use record retains its original REFERENCE and COUNTRY fields in our output tables |
+| **RDKit** | Standardization, fingerprints, descriptors, scaffolds, depiction | BSD 3-Clause | — |
+| **scikit-learn, XGBoost, pandas, NumPy, SciPy** | Modelling and analysis | BSD 3-Clause / Apache 2.0 | — |
+| **FastAPI, Uvicorn, Pydantic** | Backend service | MIT / BSD | — |
+| **React, Vite, TypeScript, Tailwind CSS** | Frontend workspaces | MIT | — |
+| **MONDO Disease Ontology** | Disease identifiers (e.g. `MONDO:0005148`) | CC BY 4.0 | — |
+
+Because COCONUT aggregates many upstream collections, each of which carries its own licence,
+any downstream redistribution of a COCONUT-derived subset should be checked against the
+original source licences rather than relying on the CC0 status of the COCONUT curation alone.
+
+Source code in this repository is MIT licensed — see [LICENSE](LICENSE). The licence covers
+the code only, not the third-party data described above.
+
+## AI usage disclosure
+
+Per the EthnoHack 2026 rules, we disclose our use of AI tooling.
+
+**AI-assisted development was used substantially in this project.** Generative AI coding
+assistants were used throughout the hackathon for:
+
+- Implementation of pipeline, backend, experiment-runner and frontend code from
+  specifications written by the team.
+- Drafting and refactoring the test suite.
+- Drafting documentation, including sections of this README and the generated reports'
+  prose scaffolding.
+- Code review, refactoring and debugging.
+
+**What AI was *not* used for, and what the team is responsible for:**
+
+- **No measurement, activity value, citation, identifier or experimental result was generated
+  by an AI model.** Every bioactivity record traces to a real ChEMBL activity, assay and
+  document ID retrieved from the live API, with checksummed snapshots.
+- **Experimental design, hypotheses, prespecified gates, thresholds and stopping rules were
+  set by the team** and frozen in version-controlled protocol JSON files before outcomes were
+  constructed.
+- **All numerical results in this README and in the generated reports are outputs of executed
+  code**, reproducible from the recorded commands and input checksums — not AI-authored text.
+- The team has reviewed the code and results and takes responsibility for their accuracy,
+  originality, licensing and appropriateness.
+
+Statistical results were computed by the committed analysis code; AI assistance in writing
+that code does not substitute for the validation evidence, which is recorded in the
+experiment artifacts.
+
+## Integrity checklist
+
+- No generated assay values or fabricated citations.
+- Every bundled measurement preserves a ChEMBL activity, assay and document ID.
+- Measured evidence and model predictions are separate data types.
+- Reliability is called a heuristic score, not probability or truth.
+- Natural-product provenance is not inferred from a compound name.
+- Evaluation is against held-out evidence, not the ranking heuristic itself.
+
 ## What is working
 
 - A FastAPI service exposes a real, traceable ChEMBL PTP1B demonstration slice retrieved on 2026-10-20, including activity, assay and document IDs.
@@ -19,6 +352,8 @@
 - A bounded-memory, multi-target screening pipeline streams the complete NPASS/COCONUT index, applies configurable physicochemical filters and PAINS/Brenk research alerts, scores checksum-validated target models with applicability-domain and uncertainty penalties, and exports reproducible ranked candidates to CSV/JSONL plus the graph.
 - The Reversal Lab reads the generated multi-target artifact and exposes target-cluster confidence intervals, exact target sign-flip p-values, effect sizes, power limits, and ablations—including the negative primary conclusion.
 - The Study Planner converts a robust Student-t future-study distribution into disagreement risk, uncertainty-based abstention, and outcome-blind next-experiment recommendations based on expected information gain.
+
+- The ethnopharmacological convergence module joins Duke ETHNOBOT traditional-use records to NPASS source organisms, scores each plant's compounds through the frozen PTP1B model, and executes a prespecified Mann-Whitney comparison with a family-clustered bootstrap and a negative control. It reports the prespecified verdict whichever way the data falls.
 
 The bundled five-molecule dashboard is deliberately a small evidence demonstration, not a claim that all five molecules are natural products. Okadaic acid and calyculin A are labeled as known natural products; unlabeled compounds remain `not yet cross-matched` until the COCONUT/NPASS importer establishes source provenance.
 
@@ -38,7 +373,7 @@ models/               ignored trained model artifacts
 
 ## Run locally
 
-Recommended: Python 3.11 or 3.12 and Node 20+.
+Python 3.11 or 3.12 is required (see the note under [Quick start](#quick-start)); Node 20+.
 
 ```powershell
 cd backend
@@ -92,13 +427,20 @@ The `predev`, `pretest`, and `prebuild` hooks copy the executed single-target, r
 
 Set `VITE_API_URL` only when the browser should call an API on another origin. During local development, Vite proxies `/api` and `/health` to `http://127.0.0.1:8000`.
 
-Docker is also supported:
+Docker is also supported. Run this **from the repository root**:
 
 ```powershell
 docker compose up --build
 ```
 
 Then open `http://localhost:4173`.
+
+Both images build from the repository root rather than from `backend/` or `frontend/`.
+This is deliberate: the API resolves `experiments/` and `artifacts/` relative to the repo
+root, and the frontend's `prebuild` artifact sync reads `../experiments` and fails hard if
+an executed artifact is missing. Building from the service subdirectories would place those
+paths outside the build context. The compose file sets `PHYTOTRUTH_MODEL_DIR` explicitly so
+the API loads the checksum-validated model from the image.
 
 ## Reproduce the scientific data pipeline
 
@@ -369,15 +711,6 @@ applicability-domain results, physicochemical descriptors, source provenance, an
 alerts. These artifacts prioritize laboratory follow-up; they are not efficacy, safety, or
 clinical claims. See [the graph and screening guide](docs/knowledge-graph-screening.md).
 
-## Verify
-
-```powershell
-cd backend
-pytest -q
-```
-
-The test suite also covers temporal splitting, activity/document leakage prevention, deterministic ranking, molecular feature generation, scaffold isolation, deterministic model fitting, native model loading and checksums, API input/error handling, deterministic predictions, applicability-domain warnings, held-out-evidence isolation, assay-metadata batching, literal protocol extraction, missingness preservation, provenance joins, feature-timing labels, clustered-analysis reproducibility, and duplicate-metadata rejection.
-
 ## Scientific sources
 
 - [ChEMBL REST API documentation](https://www.ebi.ac.uk/chembl/api/data/docs)
@@ -388,23 +721,15 @@ The test suite also covers temporal splitting, activity/document leakage prevent
 
 See [architecture](docs/architecture.md) and [experiment protocol](docs/experiment.md) for assumptions, leakage controls and evaluation design.
 
-## Integrity checklist
-
-- No generated assay values or fabricated citations.
-- Every bundled measurement preserves a ChEMBL activity, assay and document ID.
-- Measured evidence and model predictions are separate data types.
-- Reliability is called a heuristic score, not probability or truth.
-- Natural-product provenance is not inferred from a compound name.
-- Evaluation is against held-out evidence, not the ranking heuristic itself.
-
 ## Current data limitations
 
 - Upstream records with absent or invalid structures remain explicit rejects; the pipeline does not repair them heuristically.
 - The compact COCONUT Drug Discovery export contains structures and derived scores but not all organism/reference fields available in richer exports. Use a fuller official export when those fields are required.
-- The NPASS structure file verifies NPASS membership. NPASS organism and activity downloads are separate files and are not joined in this phase; their evidence must not be attributed to a compound until a future keyed join is implemented and tested.
+- The NPASS structure file verifies NPASS membership. The NPASS **organism** join is now implemented and tested — `species_pair` → `species_info` resolves 48,940 source organisms and is used by the [ethnopharmacological convergence test](#ethnopharmacological-convergence-test). These edges remain *reported provenance*, not independently verified occurrence. The NPASS **activity** download is still a separate file and is not joined; its evidence must not be attributed to a compound until a keyed join is implemented and tested.
+- The ranked screening candidates in `artifacts/npass_screen_100000/` predate that join and still carry empty `reported_source_organisms`; re-exporting them through the organism join is outstanding work.
 - Assay-context keys prevent accidental pooling but do not by themselves prove two assays are biologically equivalent.
 
-# Independent assay-disagreement dataset expansion
+## Independent assay-disagreement dataset expansion
 
 The `assay-disagreement-dataset-expansion-v1` phase adds a label-quarantined,
 strictly independent cohort from 15 prespecified human single-protein targets.
@@ -620,4 +945,3 @@ publication-cluster confidence intervals, uncertainty components, two SVG figure
 model configuration/parameters, source hashes, and a generated scientific report.
 The support rule is evaluated before any quarantined final-test access. A failed rule
 is a stopping result, not permission to tune on the final cohort.
-

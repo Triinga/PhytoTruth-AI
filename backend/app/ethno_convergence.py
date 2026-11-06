@@ -448,7 +448,113 @@ def run_experiment(
     (output_dir / "results.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
     _write_csv(output_dir / "plant_level_scores.csv", plant_rows)
     _write_csv(output_dir / "compound_level_scores.csv", compound_rows)
+    (output_dir / "SCIENTIFIC_REPORT.md").write_text(
+        render_report(results, protocol), encoding="utf-8"
+    )
     return results
+
+
+def render_report(results: dict[str, Any], protocol: dict[str, Any]) -> str:
+    """Generate the scientific report. States the verdict before the numbers."""
+    cohort = results["cohort"]
+    primary = results["primary_outcome"]
+    negative = results["negative_control"]
+    rule = results["support_rule"]
+
+    lines: list[str] = []
+    add = lines.append
+    add("# Ethnopharmacological convergence: traditional antidiabetic use vs predicted PTP1B activity")
+    add("")
+    add(f"**Protocol:** `{results['protocol_version']}` — frozen before any outcome was computed.")
+    add("")
+    add(f"## Verdict: {rule['verdict']}")
+    add("")
+    add(f"> {results['question']}")
+    add("")
+
+    if primary.get("insufficient_data"):
+        add("The cohort was too small to evaluate the primary outcome.")
+    else:
+        shift = primary["median_shift_hodges_lehmann"]
+        low, high = primary["family_clustered_ci_95"]
+        direction = "higher" if shift > 0 else "lower"
+        add(
+            f"Plants with a documented traditional antidiabetic use had a median "
+            f"predicted pChEMBL **{abs(shift):.3f} log units {direction}** than "
+            f"Duke-covered control plants."
+        )
+        add("")
+        add("| Quantity | Value |")
+        add("|---|---:|")
+        add(f"| Traditional antidiabetic plants | {primary['case_plants']:,} |")
+        add(f"| Control plants | {primary['control_plants']:,} |")
+        add(f"| Case median predicted pChEMBL | {primary['case_median_score']:.3f} |")
+        add(f"| Control median predicted pChEMBL | {primary['control_median_score']:.3f} |")
+        add(f"| Median shift (Hodges-Lehmann) | {shift:+.3f} |")
+        add(f"| Family-clustered 95% CI | {low:+.3f} to {high:+.3f} |")
+        add(f"| Mann-Whitney p | {primary['p_value']:.4g} |")
+        add(f"| Rank-biserial correlation | {primary['rank_biserial']:+.3f} |")
+    add("")
+
+    add("## Negative control")
+    add("")
+    add(
+        "The same comparison using a traditional-use category with no expected "
+        "PTP1B relevance. If this matched the primary effect, the primary result "
+        "would be attributable to study bias rather than pharmacological convergence."
+    )
+    add("")
+    if negative.get("insufficient_data"):
+        add("Too few negative-control plants to evaluate.")
+    else:
+        add(f"- Negative-control plants: {negative['case_plants']:,}")
+        add(f"- Median shift: {negative['median_shift_hodges_lehmann']:+.3f}")
+        add(f"- Mann-Whitney p: {negative['p_value']:.4g}")
+    add("")
+
+    add("## Prespecified support rule")
+    add("")
+    add("| Condition | Met |")
+    add("|---|:--:|")
+    for name, met in rule["conditions"].items():
+        add(f"| {name.replace('_', ' ')} | {'yes' if met else 'no'} |")
+    add("")
+    add(
+        f"All three conditions were required. Outcome: **{rule['verdict']}**."
+        if not rule["convergence_supported"]
+        else "All three conditions were met."
+    )
+    add("")
+
+    add("## Cohort")
+    add("")
+    add(f"- Duke ethnobotanical use records: {cohort['duke_use_records']:,}")
+    add(f"- NPASS source organisms: {cohort['npass_organisms']:,}")
+    add(f"- Plants covered by both sources: {cohort['duke_covered_plants']:,}")
+    add(f"- Plants analysed: {cohort['analysed_plants']:,} across {cohort['families']:,} families")
+    add(f"- Compounds scored: {cohort['compounds_scored']:,}")
+    add(f"- Compounds unusable (absent or unparsable structure): {cohort['compounds_unusable']:,}")
+    add("")
+
+    add("## Limitations")
+    add("")
+    for limitation in results["declared_limitations"]:
+        add(f"- {limitation}")
+    add("")
+    add("## Traditional knowledge handling")
+    add("")
+    handling = protocol.get("traditional_knowledge_handling", {})
+    for value in handling.values():
+        add(f"- {value}")
+    add("")
+    add("## Input checksums")
+    add("")
+    add("| Input | SHA-256 |")
+    add("|---|---|")
+    for key, digest in results["inputs_sha256"].items():
+        add(f"| {key} | `{digest}` |")
+    add("")
+    return "\n".join(lines) + "\n"
 
 
 def _write_csv(path: Path, rows: Sequence[dict[str, Any]]) -> None:

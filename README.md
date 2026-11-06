@@ -34,17 +34,25 @@ Four of our five headline hypotheses failed their own prespecified gates, and we
 ## Quick start
 
 ```powershell
-# Backend (Python 3.11 or 3.12)
+# Backend — Python 3.11 or 3.12 REQUIRED (see note below)
 cd backend
-python -m venv .venv; .venv\Scripts\Activate.ps1
+py -3.12 -m venv .venv; .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 
 # Frontend (Node 20+), in a second terminal
-cd frontend; npm install; npm run dev
+cd frontend; npm ci; npm run dev
 ```
 
-Open `http://localhost:5173`. Or run everything with `docker compose up --build` and open `http://localhost:4173`.
+Open `http://localhost:5173`. Or run everything with `docker compose up --build`
+from the repository root and open `http://localhost:4173`.
+
+> **Python 3.11 or 3.12 is a hard requirement, not a preference.** The pinned
+> `pydantic==2.10.4` publishes no wheel for Python 3.13+, so `pip install` on a newer
+> interpreter falls back to a Rust source build and fails. The pins are kept exactly as
+> executed, because the checksummed experiment runs recorded in `experiments/` were
+> produced with them. Use `py -3.12 -m venv .venv` to select the right interpreter
+> explicitly rather than relying on whichever `python` is first on PATH.
 
 To see the headline artifacts without running anything, read
 [`artifacts/npass_screen_100000/ranked_candidates.csv`](artifacts/npass_screen_100000/ranked_candidates.csv)
@@ -96,7 +104,7 @@ models/               ignored trained model artifacts
 
 ## Run locally
 
-Recommended: Python 3.11 or 3.12 and Node 20+.
+Python 3.11 or 3.12 is required (see the note under [Quick start](#quick-start)); Node 20+.
 
 ```powershell
 cd backend
@@ -150,13 +158,20 @@ The `predev`, `pretest`, and `prebuild` hooks copy the executed single-target, r
 
 Set `VITE_API_URL` only when the browser should call an API on another origin. During local development, Vite proxies `/api` and `/health` to `http://127.0.0.1:8000`.
 
-Docker is also supported:
+Docker is also supported. Run this **from the repository root**:
 
 ```powershell
 docker compose up --build
 ```
 
 Then open `http://localhost:4173`.
+
+Both images build from the repository root rather than from `backend/` or `frontend/`.
+This is deliberate: the API resolves `experiments/` and `artifacts/` relative to the repo
+root, and the frontend's `prebuild` artifact sync reads `../experiments` and fails hard if
+an executed artifact is missing. Building from the service subdirectories would place those
+paths outside the build context. The compose file sets `PHYTOTRUTH_MODEL_DIR` explicitly so
+the API loads the checksum-validated model from the image.
 
 ## Reproduce the scientific data pipeline
 

@@ -133,14 +133,24 @@ The hypothesis, the grouping terms, the per-plant statistic, the compound cap, t
 the bootstrap design, the negative control and a **three-part support rule** were all committed
 before any score was computed. The repository proves the order:
 
-```
-11:22:01  482bf0de  protocol: freeze ethno-convergence-v1 before any outcome is computed
-11:25:17  97cb9512  feat: implement the ethno-convergence experiment and NPASS organism join
-11:38:55            results.json written
-```
+| When (UTC+0) | Commit | What entered the repository |
+|---|---|---|
+| 2026-11-06 **11:22:01** | [`482bf0d`](https://github.com/Triinga/PhytoTruth-AI/commit/482bf0ded20eeb1d2bdc8841d9bbcae3db43b9b4) | The protocol — hypothesis, terms, statistic, cap, seed, bootstrap, negative control, support rule |
+| 2026-11-06 **11:25:17** | [`97cb951`](https://github.com/Triinga/PhytoTruth-AI/commit/97cb951229ca28ed495228ee7261665d188ff704) | The implementation and the NPASS organism join |
+| 2026-11-06 **13:32:39** | [`ed63264`](https://github.com/Triinga/PhytoTruth-AI/commit/ed63264beefc5909622fb5fdd48e81e438476ef3) | `results.json` — the first outcome to exist anywhere |
 
-Verify it yourself: `git log --format='%ad %h %s' --date=iso` against the mtime of
-`experiments/ethno_convergence/results.json`. The protocol also carries a
+**The protocol commit is public and immutable.** Open
+[`482bf0d`](https://github.com/Triinga/PhytoTruth-AI/commit/482bf0ded20eeb1d2bdc8841d9bbcae3db43b9b4)
+and read the support rule, the α, the seed and the negative-control terms as they stood **two
+hours and ten minutes before** any number existed. GitHub shows the authored date; no local
+clone, archive or file timestamp is needed to check it. Offline, the same ordering is in
+`git log --format='%ad %h %s' --date=iso -- experiments/`.
+
+The analysis itself ran at 11:38:55, between the second and third commits — recoverable from
+the artifact mtimes in a clone, but the publicly verifiable claim is the commit ordering above,
+which is the one we rest the argument on.
+
+The protocol also carries a
 `prior_inspection_disclosure` block recording exactly what was examined during a feasibility
 gate beforehand — including an underpowered 2.13× candidate-level overlap (Fisher one-sided
 *p* = 0.090) that the protocol explicitly forbids reporting as a finding, because it is a

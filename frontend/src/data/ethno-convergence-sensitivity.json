@@ -1,0 +1,39 @@
+{
+  "analysis": "sensitivity_in_domain",
+  "protocol_version": "ethno-convergence-v1",
+  "prespecified_as": "sensitivity_analyses[0]",
+  "scope": "Per-plant median over in-domain compounds only; plants retained when they have at least 3 in-domain compounds.",
+  "analysed_plants": 2694,
+  "primary_outcome": {
+    "case_plants": 98,
+    "control_plants": 2596,
+    "case_median_score": 4.93460488319397,
+    "control_median_score": 4.917881727218628,
+    "median_shift_hodges_lehmann": 0.014882564544677734,
+    "p_value": 0.4645343386269517,
+    "rank_biserial": 0.043465614288858756,
+    "family_clustered_ci_95": [
+      -0.029388427734375,
+      0.07148889303207395
+    ]
+  },
+  "negative_control": {
+    "case_plants": 40,
+    "control_plants": 2654,
+    "case_median_score": 4.981060266494751,
+    "control_median_score": 4.91674280166626,
+    "median_shift_hodges_lehmann": 0.03800392150878906,
+    "p_value": 0.21355044486999897,
+    "rank_biserial": 0.11443104747550858,
+    "family_clustered_ci_95": [
+      -0.016665655374526977,
+      0.10307426452636716
+    ]
+  },
+  "conditions": {
+    "p_below_alpha": false,
+    "ci_excludes_zero": false,
+    "negative_control_smaller": false
+  },
+  "convergence_supported": false
+}

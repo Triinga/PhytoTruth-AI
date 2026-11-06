@@ -13,10 +13,11 @@ import { getDashboard, moleculeSvgUrl } from './api'
 import { ExperimentWorkspace } from './ExperimentWorkspace'
 import { GraphScreeningWorkspace } from './GraphScreeningWorkspace'
 import { PredictionWorkspace } from './PredictionWorkspace'
+import { ScientificValidationWorkspace } from './ScientificValidationWorkspace'
 import { StudyPlannerWorkspace } from './StudyPlannerWorkspace'
 import type { Candidate, Dashboard } from './types'
 
-type View = 'Discovery' | 'Graph & Screening' | 'Predict' | 'Evidence' | 'Study Planner' | 'Reversal Lab' | 'Data Sources'
+type View = 'Discovery' | 'Graph & Screening' | 'Predict' | 'Evidence' | 'Scientific Validation' | 'Study Planner' | 'Reversal Lab' | 'Data Sources'
 
 const nav: { label: View; icon: typeof Atom }[] = [
   { label: 'Discovery', icon: Atom },
@@ -24,6 +25,7 @@ const nav: { label: View; icon: typeof Atom }[] = [
   { label: 'Predict', icon: Sparkles },
   { label: 'Evidence', icon: ShieldCheck },
   { label: 'Study Planner', icon: BrainCircuit },
+  { label: 'Scientific Validation', icon: Microscope },
   { label: 'Reversal Lab', icon: GitCompareArrows },
   { label: 'Data Sources', icon: Database },
 ]
@@ -262,6 +264,7 @@ export default function App() {
     if (view === 'Graph & Screening') return <GraphScreeningWorkspace data={data}/>
     if (view === 'Predict') return <PredictionWorkspace candidates={data.candidates}/>
     if (view === 'Evidence') return <EvidenceView data={data} select={setSelected}/>
+    if (view === 'Scientific Validation') return <ScientificValidationWorkspace/>
     if (view === 'Study Planner') return <StudyPlannerWorkspace/>
     if (view === 'Reversal Lab') return <ExperimentWorkspace/>
     if (view === 'Data Sources') return <DataSources data={data}/>

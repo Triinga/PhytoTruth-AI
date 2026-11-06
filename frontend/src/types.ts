@@ -315,3 +315,92 @@ export type EvidenceIntelligenceResults = {
   scientific_conclusion: string
 }
 
+
+export interface EthnoGroupOutcome {
+  case_plants: number
+  control_plants: number
+  case_median_score: number
+  control_median_score: number
+  median_shift_hodges_lehmann: number
+  mann_whitney_u?: number
+  p_value: number
+  rank_biserial: number
+  insufficient_data?: boolean
+  family_clustered_ci_95?: [number, number]
+}
+
+export interface EthnoConvergenceResults {
+  protocol_version: string
+  question: string
+  cohort: {
+    duke_use_records: number
+    npass_organisms: number
+    duke_covered_plants: number
+    eligible_plants: number
+    analysed_plants: number
+    families: number
+    compounds_scored: number
+    compounds_unusable: number
+  }
+  primary_outcome: EthnoGroupOutcome & { family_clustered_ci_95: [number, number] }
+  negative_control: EthnoGroupOutcome
+  support_rule: {
+    conditions: {
+      p_below_alpha: boolean
+      ci_excludes_zero: boolean
+      negative_control_smaller: boolean
+    }
+    convergence_supported: boolean
+    verdict: string
+  }
+  inputs_sha256: Record<string, string>
+  declared_limitations: string[]
+}
+
+export interface EthnoSensitivityResults {
+  analysis: string
+  protocol_version: string
+  prespecified_as: string
+  scope: string
+  analysed_plants: number
+  primary_outcome: EthnoGroupOutcome & { family_clustered_ci_95: [number, number] }
+  negative_control: EthnoGroupOutcome & { family_clustered_ci_95: [number, number] }
+  conditions: {
+    p_below_alpha: boolean
+    ci_excludes_zero: boolean
+    negative_control_smaller: boolean
+  }
+  convergence_supported: boolean
+}
+
+export interface EthnoPlant {
+  species: string
+  family: string
+  isCase: boolean
+  isNegativeControl: boolean
+  compounds: number
+  inDomain: number
+  highPotential: number
+  score: number | null
+  scoreInDomain: number | null
+  activities?: string
+  references?: string
+  countries?: string
+}
+
+export interface EthnoPlantSummary {
+  high_potential_definition: {
+    predicted_pchembl_at_least: number
+    requires_inside_applicability_domain: boolean
+    note: string
+  }
+  totals: {
+    plants: number
+    families: number
+    case_plants: number
+    compounds_scored: number
+    compounds_in_domain: number
+    compounds_high_potential: number
+  }
+  plants: EthnoPlant[]
+}

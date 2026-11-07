@@ -14,25 +14,27 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "lucide-react": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "recharts": "latest"
+    "@vitejs/plugin-react": "6.1.2",
+    "lucide-react": "1.60.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "recharts": "3.10.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "latest",
-    "@testing-library/react": "latest",
-    "@testing-library/user-event": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "postcss": "latest",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "autoprefixer": "10.6.1",
+    "postcss": "8.5.31",
     "tailwindcss": "3.4.17",
-    "typescript": "latest",
-    "vite": "latest",
-    "vitest": "latest",
-    "jsdom": "latest"
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5",
+    "jsdom": "30.1.3"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
   }
 }
-

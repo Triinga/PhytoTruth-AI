@@ -83,7 +83,7 @@ py -3.12 -m venv .venv; .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 
-# Frontend (Node 20+), in a second terminal
+# Frontend (Node 20.19+ or 22.12+), in a second terminal
 cd frontend; npm ci; npm run dev
 ```
 
@@ -373,7 +373,7 @@ models/               ignored trained model artifacts
 
 ## Run locally
 
-Python 3.11 or 3.12 is required (see the note under [Quick start](#quick-start)); Node 20+.
+Python 3.11 or 3.12 is required (see the note under [Quick start](#quick-start)); Node 20.19+ or 22.12+ (required by Vite 8; older Node 20 releases fail with "Cannot find native binding").
 
 ```powershell
 cd backend

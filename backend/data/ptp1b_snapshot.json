@@ -1,1 +1,72 @@
+{
+  "metadata": {
+    "source": "ChEMBL REST API",
+    "target_chembl_id": "CHEMBL335",
+    "target_name": "Tyrosine-protein phosphatase non-receptor type 1 (PTP1B)",
+    "organism": "Homo sapiens",
+    "standard_type": "IC50",
+    "retrieved_at": "2026-10-20",
+    "query": "target_chembl_id=CHEMBL335&standard_type=IC50&standard_units=nM&pchembl_value__isnull=false",
+    "note": "Small, traceable demonstration slice. It is not a claim that every molecule is a natural product. COCONUT/NPASS cross-matching is performed by the ingestion pipeline."
+  },
+  "molecules": [
+    {
+      "id": "CHEMBL280487",
+      "name": "Okadaic acid",
+      "natural_product_status": "known natural product; verify organism provenance through COCONUT/NPASS import",
+      "smiles": "C=C1[C@@H](O)[C@@H]2O[C@]3(CC[C@H](/C=C/[C@@H](C)[C@@H]4CC(C)=C[C@@]5(O[C@H](C[C@@](C)(O)C(=O)O)CC[C@H]5O)O4)O3)CC[C@H]2O[C@@H]1[C@@H](O)C[C@H](C)[C@H]1O[C@@]2(CCCCO2)CC[C@H]1C",
+      "records": [
+        {"activity_id": 86936, "assay_id": "CHEMBL767486", "document_id": "CHEMBL1130173", "pchembl_value": 8.91, "standard_value_nm": 1.24, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 86937, "assay_id": "CHEMBL767326", "document_id": "CHEMBL1130173", "pchembl_value": 5.89, "standard_value_nm": 1300.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 204928, "assay_id": "CHEMBL767327", "document_id": "CHEMBL1135037", "pchembl_value": 7.22, "standard_value_nm": 60.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 479782, "assay_id": "CHEMBL766691", "document_id": "CHEMBL1150469", "pchembl_value": 8.47, "standard_value_nm": 3.4, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false}
+      ]
+    },
+    {
+      "id": "CHEMBL430266",
+      "name": "Calyculin A",
+      "natural_product_status": "known natural product; verify organism provenance through COCONUT/NPASS import",
+      "smiles": "COC[C@@H]([C@H](O)[C@H](O)C(=O)NCC[C@H](C)c1nc(/C=C/C[C@@H]2O[C@]3(C[C@@H](O)[C@@H]2C)O[C@H]([C@H](C[C@H](O)[C@H](C)[C@H](O)[C@H](C)/C=C(C)/C(C)=C/C=C/C(C)=C\\C#N)OC)[C@H](OP(=O)(O)O)C3(C)C)co1)N(C)C",
+      "records": [
+        {"activity_id": 99052, "assay_id": "CHEMBL857419", "document_id": "CHEMBL1130173", "pchembl_value": 8.92, "standard_value_nm": 1.2, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 208508, "assay_id": "CHEMBL767328", "document_id": "CHEMBL1135037", "pchembl_value": 9.30, "standard_value_nm": 0.5, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 502389, "assay_id": "CHEMBL766691", "document_id": "CHEMBL1150469", "pchembl_value": 9.52, "standard_value_nm": 0.3, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false}
+      ]
+    },
+    {
+      "id": "CHEMBL89067",
+      "name": "CHEMBL89067",
+      "natural_product_status": "not yet cross-matched",
+      "smiles": "CSc1ccnc(C[S+]([O-])c2nc3cc(OC(C)C)ccc3[nH]2)c1",
+      "records": [
+        {"activity_id": 206232, "assay_id": "CHEMBL767784", "document_id": "CHEMBL1132831", "pchembl_value": 4.74, "standard_value_nm": 18200.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 206233, "assay_id": "CHEMBL767788", "document_id": "CHEMBL1132831", "pchembl_value": 4.26, "standard_value_nm": 55400.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 206234, "assay_id": "CHEMBL767787", "document_id": "CHEMBL1132831", "pchembl_value": 4.26, "standard_value_nm": 55200.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 2574490, "assay_id": "CHEMBL981143", "document_id": "CHEMBL1155785", "pchembl_value": 4.26, "standard_value_nm": 55400.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": true}
+      ]
+    },
+    {
+      "id": "CHEMBL420456",
+      "name": "CHEMBL420456",
+      "natural_product_status": "not yet cross-matched",
+      "smiles": "Nc1nc(N)c2nc(CN3CCN(Cc4ccc(-c5ccccc5)cc4)CC3)nnc2n1",
+      "records": [
+        {"activity_id": 596570, "assay_id": "CHEMBL771833", "document_id": "CHEMBL1136184", "pchembl_value": 5.54, "standard_value_nm": 2900.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 596571, "assay_id": "CHEMBL771832", "document_id": "CHEMBL1136184", "pchembl_value": 4.75, "standard_value_nm": 18000.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 596572, "assay_id": "CHEMBL771833", "document_id": "CHEMBL1136184", "pchembl_value": 5.10, "standard_value_nm": 8000.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false}
+      ]
+    },
+    {
+      "id": "CHEMBL96952",
+      "name": "CHEMBL96952",
+      "natural_product_status": "not yet cross-matched",
+      "smiles": "Nc1nc(N)c2nc(CN3CCN(Cc4ccccc4)CC3)nnc2n1",
+      "records": [
+        {"activity_id": 613760, "assay_id": "CHEMBL771833", "document_id": "CHEMBL1136184", "pchembl_value": 5.21, "standard_value_nm": 6200.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 613761, "assay_id": "CHEMBL771832", "document_id": "CHEMBL1136184", "pchembl_value": 4.01, "standard_value_nm": 98000.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false},
+        {"activity_id": 613762, "assay_id": "CHEMBL771833", "document_id": "CHEMBL1136184", "pchembl_value": 5.10, "standard_value_nm": 8000.0, "relation": "=", "organism": "Homo sapiens", "potential_duplicate": false}
+      ]
+    }
+  ]
+}
 

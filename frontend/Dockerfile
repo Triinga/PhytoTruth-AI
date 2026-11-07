@@ -16,6 +16,11 @@ COPY frontend ./
 COPY experiments/evidence_reversal_chembl335/results.json /app/experiments/evidence_reversal_chembl335/
 COPY experiments/robust_multitarget_evaluation/results.json /app/experiments/robust_multitarget_evaluation/
 COPY experiments/evidence_intelligence/results.json /app/experiments/evidence_intelligence/
+COPY experiments/ethno_convergence/results.json \
+     experiments/ethno_convergence/sensitivity_in_domain.json \
+     experiments/ethno_convergence/plant_level_scores.csv \
+     experiments/ethno_convergence/compound_level_scores.csv \
+     /app/experiments/ethno_convergence/
 
 RUN npm run build
 
